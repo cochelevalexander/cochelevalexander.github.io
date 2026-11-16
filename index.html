@@ -1,502 +1,530 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="format-detection" content="telephone=no">
-<meta name="theme-color" content="#0f1117">
-<title>Как отдыхают предприниматели крупного бизнеса: Россия и мир</title>
-<style>
-    :root {
-        --bg: #0f1117;
-        --card: #1a1d27;
-        --border: #2a2d3a;
-        --text: #e4e6eb;
-        --muted: #8b8f9a;
-        --accent: #6c8cff;
-        --accent2: #4ecdc4;
-        --accent3: #ffb347;
-        --accent4: #ff6b6b;
-        --radius: 14px;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { -webkit-text-size-adjust: 100%; }
-
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.55;
-        padding: 20px 12px;
-        padding-top: max(20px, env(safe-area-inset-top));
-        padding-right: max(12px, env(safe-area-inset-right));
-        padding-bottom: max(20px, env(safe-area-inset-bottom));
-        padding-left: max(12px, env(safe-area-inset-left));
-        min-height: 100vh;
-        overflow-x: hidden;
-    }
-    .container { max-width: 1200px; margin: 0 auto; }
-
-    header {
-        text-align: center;
-        margin-bottom: 32px;
-        padding-bottom: 24px;
-        border-bottom: 1px solid var(--border);
-    }
-    header h1 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        letter-spacing: -0.3px;
-        margin-bottom: 10px;
-        line-height: 1.3;
-        color: var(--accent);
-    }
-    @supports ((-webkit-background-clip: text) or (background-clip: text)) {
-        header h1 {
-            background: linear-gradient(135deg, var(--accent), var(--accent2));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0f1117">
+    <title>Как отдыхают предприниматели крупного бизнеса: Россия и мир</title>
+    <style>
+        :root {
+            --bg: #0f1117;
+            --card: #1a1d27;
+            --border: #2a2d3a;
+            --text: #e4e6eb;
+            --muted: #8b8f9a;
+            --accent: #6c8cff;
+            --accent2: #4ecdc4;
+            --accent3: #ffb347;
+            --accent4: #ff6b6b;
+            --radius: 14px;
         }
-    }
-    header p { color: var(--muted); font-size: 0.92rem; max-width: 760px; margin: 0 auto; }
-
-    .kpi-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-bottom: 36px;
-    }
-    .kpi {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        padding: 16px 12px;
-        text-align: center;
-    }
-    .kpi .value {
-        font-size: 1.55rem;
-        font-weight: 800;
-        color: var(--accent);
-        line-height: 1.2;
-    }
-    .kpi .label {
-        font-size: 0.72rem;
-        color: var(--muted);
-        margin-top: 6px;
-        line-height: 1.35;
-    }
-
-    section { margin-bottom: 36px; }
-    section h2 {
-        font-size: 1.15rem;
-        font-weight: 700;
-        margin-bottom: 8px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        line-height: 1.3;
-    }
-    section h2 .dot {
-        flex: 0 0 auto;
-        width: 8px; height: 8px; border-radius: 50%;
-        background: var(--accent);
-        display: inline-block;
-    }
-    section .subtitle {
-        color: var(--muted);
-        font-size: 0.82rem;
-        margin-bottom: 16px;
-    }
-
-    .chart-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
-        gap: 16px;
-    }
-    .chart-card {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        padding: 16px 14px;
-        min-width: 0;
-    }
-    .chart-card h3 {
-        font-size: 0.92rem;
-        font-weight: 600;
-        margin-bottom: 12px;
-        color: var(--text);
-        line-height: 1.35;
-    }
-    .chart-card .chart-wrap {
-        position: relative;
-        width: 100%;
-        height: 260px;
-    }
-    .chart-card .chart-wrap.h-240 { height: 240px; }
-    .chart-card .chart-wrap.h-280 { height: 280px; }
-    .chart-card .chart-wrap.h-320 { height: 320px; }
-
-    .chart-wrap canvas {
-        display: block !important;
-        max-width: 100%;
-    }
-
-    .chart-error {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        text-align: center;
-        color: var(--muted);
-        font-size: 0.85rem;
-        padding: 20px;
-        border: 1px dashed var(--border);
-        border-radius: 8px;
-        line-height: 1.5;
-    }
-
-    .chart-card .note {
-        font-size: 0.72rem;
-        color: var(--muted);
-        margin-top: 10px;
-        padding-top: 8px;
-        border-top: 1px solid var(--border);
-        line-height: 1.45;
-        word-break: break-word;
-    }
-    .chart-card .note a {
-        color: var(--accent);
-        text-decoration: underline;
-        text-underline-offset: 2px;
-    }
-    .chart-card .note a:active { color: var(--accent2); }
-
-    .full-width { grid-column: 1 / -1; }
-
-    .insight-box {
-        background: linear-gradient(135deg, rgba(108,140,255,0.08), rgba(78,205,196,0.06));
-        border: 1px solid rgba(108,140,255,0.2);
-        border-radius: var(--radius);
-        padding: 16px 16px;
-        margin-top: 16px;
-    }
-    .insight-box h4 {
-        font-size: 0.88rem;
-        color: var(--accent);
-        margin-bottom: 8px;
-    }
-    .insight-box ul { list-style: none; padding: 0; }
-    .insight-box li {
-        font-size: 0.82rem;
-        color: var(--muted);
-        padding: 4px 0 4px 16px;
-        position: relative;
-        line-height: 1.5;
-    }
-    .insight-box li::before {
-        content: '→';
-        position: absolute;
-        left: 0;
-        color: var(--accent2);
-    }
-    .insight-box li a {
-        color: var(--accent);
-        text-decoration: underline;
-        text-underline-offset: 2px;
-        word-break: break-word;
-    }
-
-    .sources-section {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        padding: 18px 16px;
-        margin-top: 32px;
-    }
-    .sources-section h2 {
-        font-size: 1.05rem;
-        margin-bottom: 14px;
-        color: var(--accent);
-    }
-    .sources-section ol {
-        padding-left: 18px;
-        color: var(--muted);
-        font-size: 0.8rem;
-    }
-    .sources-section ol li {
-        margin-bottom: 8px;
-        line-height: 1.5;
-    }
-    .sources-section ol li a {
-        color: var(--accent);
-        text-decoration: underline;
-        text-underline-offset: 2px;
-        word-break: break-word;
-    }
-    .sources-section .disclaimer {
-        margin-top: 14px;
-        font-size: 0.72rem;
-        color: var(--muted);
-        line-height: 1.5;
-    }
-
-    footer {
-        text-align: center;
-        padding-top: 24px;
-        margin-top: 24px;
-        border-top: 1px solid var(--border);
-        font-size: 0.72rem;
-        color: var(--muted);
-        line-height: 1.5;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-
-    /* Планшет и десктоп */
-    @media (min-width: 641px) {
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { -webkit-text-size-adjust: 100%; }
         body {
-            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.55;
+            padding: 20px 12px;
+            padding-top: max(20px, env(safe-area-inset-top));
+            padding-bottom: max(20px, env(safe-area-inset-bottom));
+            padding-left: max(12px, env(safe-area-inset-left));
+            padding-right: max(12px, env(safe-area-inset-right));
+            min-height: 100vh;
+            overflow-x: hidden;
         }
-        header { margin-bottom: 50px; padding-bottom: 30px; }
-        header h1 { font-size: 2.1rem; letter-spacing: -0.5px; }
-        header p { font-size: 1rem; }
-        .kpi-grid {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            margin-bottom: 45px;
-        }
-        .kpi { padding: 22px 20px; }
-        .kpi .value { font-size: 2rem; }
-        .kpi .label { font-size: 0.82rem; }
-        section { margin-bottom: 50px; }
-        section h2 { font-size: 1.35rem; gap: 10px; }
-        section .subtitle { font-size: 0.88rem; margin-bottom: 20px; }
-        .chart-grid { gap: 24px; }
-        .chart-card { padding: 22px; }
-        .chart-card h3 { font-size: 1rem; margin-bottom: 14px; }
-        .chart-card .chart-wrap { height: 300px; }
-        .chart-card .chart-wrap.h-240 { height: 260px; }
-        .chart-card .chart-wrap.h-280 { height: 320px; }
-        .chart-card .chart-wrap.h-320 { height: 360px; }
-        .chart-card .note { font-size: 0.75rem; margin-top: 12px; padding-top: 10px; }
-        .insight-box { padding: 22px 24px; margin-top: 20px; }
-        .insight-box h4 { font-size: 0.95rem; }
-        .insight-box li { font-size: 0.88rem; padding: 4px 0 4px 18px; }
-        .sources-section { padding: 30px; margin-top: 50px; }
-        .sources-section h2 { font-size: 1.2rem; margin-bottom: 20px; }
-        .sources-section ol { font-size: 0.85rem; padding-left: 20px; }
-        .sources-section ol li { margin-bottom: 10px; }
-        .sources-section .disclaimer { margin-top: 20px; font-size: 0.78rem; }
-        footer { padding-top: 30px; margin-top: 30px; font-size: 0.78rem; }
-    }
+        .container { max-width: 1200px; margin: 0 auto; }
 
-    @media (prefers-reduced-motion: reduce) {
-        * { transition: none !important; animation: none !important; }
-    }
-</style>
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            margin-bottom: 10px;
+            line-height: 1.3;
+            color: var(--accent);
+        }
+        @supports ((-webkit-background-clip: text) or (background-clip: text)) {
+            header h1 {
+                background: linear-gradient(135deg, var(--accent), var(--accent2));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        header p { color: var(--muted); font-size: 0.9rem; max-width: 760px; margin: 0 auto; }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 36px;
+        }
+        .kpi {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 12px;
+            text-align: center;
+        }
+        .kpi .value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1.2;
+        }
+        .kpi .label {
+            font-size: 0.72rem;
+            color: var(--muted);
+            margin-top: 6px;
+            line-height: 1.35;
+        }
+
+        section { margin-bottom: 36px; }
+        section h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1.3;
+        }
+        section h2 .dot {
+            flex: 0 0 auto;
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--accent);
+            display: inline-block;
+        }
+        section .subtitle {
+            color: var(--muted);
+            font-size: 0.82rem;
+            margin-bottom: 16px;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+            gap: 16px;
+        }
+        .chart-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 14px;
+            min-width: 0;
+        }
+        .chart-card h3 {
+            font-size: 0.92rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text);
+            line-height: 1.35;
+        }
+        .chart-card .chart-wrap {
+            position: relative;
+            width: 100%;
+            height: 260px;
+        }
+        .chart-card .chart-wrap.h-240 { height: 240px; }
+        .chart-card .chart-wrap.h-280 { height: 280px; }
+        .chart-card .chart-wrap.h-320 { height: 320px; }
+
+        .chart-wrap canvas {
+            display: block !important;
+            max-width: 100%;
+        }
+
+        .chart-error {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+            padding: 20px;
+            border: 1px dashed var(--border);
+            border-radius: 8px;
+            line-height: 1.5;
+        }
+
+        .chart-card .note {
+            font-size: 0.72rem;
+            color: var(--muted);
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
+            line-height: 1.45;
+            word-break: break-word;
+        }
+        .chart-card .note a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .chart-card .note a:active { color: var(--accent2); }
+
+        .full-width { grid-column: 1 / -1; }
+
+        .insight-box {
+            background: linear-gradient(135deg, rgba(108,140,255,0.08), rgba(78,205,196,0.06));
+            border: 1px solid rgba(108,140,255,0.2);
+            border-radius: var(--radius);
+            padding: 16px;
+            margin-top: 16px;
+        }
+        .insight-box h4 {
+            font-size: 0.88rem;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        .insight-box ul { list-style: none; padding: 0; }
+        .insight-box li {
+            font-size: 0.82rem;
+            color: var(--muted);
+            padding: 4px 0 4px 16px;
+            position: relative;
+            line-height: 1.5;
+        }
+        .insight-box li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent2);
+        }
+        .insight-box li a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            word-break: break-word;
+        }
+
+        .sources-section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 16px;
+            margin-top: 32px;
+        }
+        .sources-section h2 {
+            font-size: 1.05rem;
+            margin-bottom: 14px;
+            color: var(--accent);
+        }
+        .sources-section ol {
+            padding-left: 18px;
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+        .sources-section ol li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .sources-section ol li a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            word-break: break-word;
+        }
+        .sources-section .disclaimer {
+            margin-top: 14px;
+            font-size: 0.72rem;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 24px;
+            margin-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.72rem;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        @media (min-width: 641px) {
+            body { padding: 40px 20px; }
+            header { margin-bottom: 50px; padding-bottom: 30px; }
+            header h1 { font-size: 2.1rem; letter-spacing: -0.5px; }
+            header p { font-size: 1rem; }
+            .kpi-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 16px;
+                margin-bottom: 45px;
+            }
+            .kpi { padding: 22px 20px; }
+            .kpi .value { font-size: 2rem; }
+            .kpi .label { font-size: 0.82rem; }
+            section { margin-bottom: 50px; }
+            section h2 { font-size: 1.35rem; gap: 10px; }
+            section .subtitle { font-size: 0.88rem; margin-bottom: 20px; }
+            .chart-grid { gap: 24px; }
+            .chart-card { padding: 22px; }
+            .chart-card h3 { font-size: 1rem; margin-bottom: 14px; }
+            .chart-card .chart-wrap { height: 300px; }
+            .chart-card .chart-wrap.h-240 { height: 260px; }
+            .chart-card .chart-wrap.h-280 { height: 320px; }
+            .chart-card .chart-wrap.h-320 { height: 360px; }
+            .chart-card .note { font-size: 0.75rem; margin-top: 12px; padding-top: 10px; }
+            .insight-box { padding: 22px 24px; margin-top: 20px; }
+            .insight-box h4 { font-size: 0.95rem; }
+            .insight-box li { font-size: 0.88rem; padding: 4px 0 4px 18px; }
+            .sources-section { padding: 30px; margin-top: 50px; }
+            .sources-section h2 { font-size: 1.2rem; margin-bottom: 20px; }
+            .sources-section ol { font-size: 0.85rem; padding-left: 20px; }
+            .sources-section ol li { margin-bottom: 10px; }
+            .sources-section .disclaimer { margin-top: 20px; font-size: 0.78rem; }
+            footer { padding-top: 30px; margin-top: 30px; font-size: 0.78rem; }
+        }
+    </style>
 </head>
 <body>
 <div class="container">
 
     <header>
         <h1>Как отдыхают предприниматели крупного бизнеса</h1>
-        <p>Сводный отчёт по данным опросов и отраслевых исследований: Россия и глобальный сегмент UHNWI. Продолжительность отпуска, направления, форматы отдыха и «тихая роскошь».</p>
+        <p>Сводный отчёт по данным опросов и отраслевых исследований: Россия и глобальный сегмент UHNWI. Продолжительность отпуска, направления, форматы отдыха, цифровой детокс и косвенные индикаторы (бизнес-джеты, суперяхты).</p>
     </header>
 
     <!-- KPI -->
     <div class="kpi-grid">
         <div class="kpi">
-            <div class="value">51%</div>
-            <div class="label">считают оптимумом 10–14 дней отпуска</div>
+            <div class="value">56%</div>
+            <div class="label">регулярно проверяют рабочие чаты в отпуске</div>
         </div>
         <div class="kpi">
-            <div class="value">72%</div>
-            <div class="label">берут всего 7–10 дней, если берут отпуск</div>
+            <div class="value">46%</div>
+            <div class="label">отдыхают всего 1–2 недели</div>
         </div>
         <div class="kpi">
-            <div class="value">51%</div>
-            <div class="label">остаются на связи в отпуске (почта/чаты)</div>
+            <div class="value">57%</div>
+            <div class="label">топ-менеджеров за цифровой детокс</div>
         </div>
         <div class="kpi">
-            <div class="value">32%</div>
-            <div class="label">выбирают Турцию как зарубежное направление</div>
+            <div class="value">+269%</div>
+            <div class="label">рост трафика на маршруте Джидда–Рияд</div>
+        </div>
+        <div class="kpi">
+            <div class="value">150</div>
+            <div class="label">компаний в опросе предпринимателей (ЮKassa)</div>
+        </div>
+        <div class="kpi">
+            <div class="value">220+</div>
+            <div class="label">управленцев в опросе топ-менеджеров (АМ)</div>
         </div>
     </div>
 
-    <!-- 1. Продолжительность -->
+    <!-- 0. Охват отчёта -->
     <section>
-        <h2><span class="dot"></span>Продолжительность отдыха (Россия)</h2>
-        <p class="subtitle">Данные опросов Ассоциации менеджеров, «Бланка» и ЮKassa — разные выборки, но устойчивый паттерн: короткий отпуск и частичная рабочая включённость.</p>
+        <h2><span class="dot"></span>Охват отчёта: на скольких людях основана статистика</h2>
+        <p class="subtitle">Российская часть отчёта — выборочные опросы предпринимателей и топ-менеджеров. Глобальная часть — модельные оценки всей мировой популяции UHNWI, а не выборочные данные.</p>
         <div class="chart-grid">
             <div class="chart-card">
-                <h3>Оптимальная длительность отпуска (топ-менеджеры, 270+ компаний)</h3>
-                <div class="chart-wrap"><canvas id="chartDurationIdeal"></canvas></div>
-                <div class="note">Источник: <a href="https://www.tourprom.ru/news/86798/" target="_blank" rel="noopener">Ассоциация менеджеров, опрос топ-менеджеров крупного и среднего бизнеса, май 2026 г. (ТУРПРОМ)</a></div>
+                <h3>Российские опросы: размер выборки (человек)</h3>
+                <div class="chart-wrap h-240"><canvas id="chartSampleSize"></canvas></div>
+                <div class="note">
+                    <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa — 150 компаний</a>; 
+                    <a href="https://fedpress.ru/news/77/society/3390316" target="_blank" rel="noopener">Ассоциация менеджеров — более 220 управленцев</a>.
+                </div>
             </div>
+            <div class="chart-card">
+                <h3>Глобальные оценки: численность UHNWI (тыс. человек)</h3>
+                <div class="chart-wrap h-240"><canvas id="chartGlobalPopulation"></canvas></div>
+                <div class="note">
+                    <a href="https://altrata.com/reports/world-ultra-wealth-report-2025" target="_blank" rel="noopener">Altrata, 2025 — 510 810</a>; 
+                    <a href="https://www.knightfrank.com.hk/blog/2026/04/23/knight-frank-launches-the-wealth-report-2026-20th-edition" target="_blank" rel="noopener">Knight Frank, 2026 — 713 626</a>; 
+                    <a href="https://www.cnbc.com/2026/06/04/stocks-new-millionaires.html" target="_blank" rel="noopener">Capgemini, 2025 — 250 000</a>.
+                </div>
+            </div>
+        </div>
+        <div class="insight-box">
+            <h4>Как читать эти цифры</h4>
+            <ul>
+                <li><strong>150 компаний и 220+ управленцев</strong> — это реальные люди, ответившие на вопросы. Все проценты в российских блоках отчёта — их доли.</li>
+                <li><strong>510 810 и 713 626 UHNWI</strong> — это оценки <em>всей мировой популяции</em> сверхбогатых, а не опрошенные. Knight Frank и Altrata не опрашивают сотни тысяч человек, а строят модели на основе баз данных.</li>
+                <li><strong>VHNWI ($5–30 млн)</strong> в отчёте практически не используется: публичных данных об их отдыхе нет, а численность оценивается в ~5,8 млн человек по модели Altrata.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 1. Продолжительность и частота -->
+    <section>
+        <h2><span class="dot"></span>Продолжительность и частота отдыха (Россия)</h2>
+        <p class="subtitle">Данные опросов ЮKassa (онлайн-предприниматели, 2025) и Ассоциации менеджеров (топ-менеджеры, 2025–2026).</p>
+        <div class="chart-grid">
             <div class="chart-card">
                 <h3>Фактическая длительность отпуска (предприниматели)</h3>
                 <div class="chart-wrap"><canvas id="chartDurationActual"></canvas></div>
-                <div class="note">Источник: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / ЮMoney, опрос онлайн-предпринимателей, январь 2025 г.</a></div>
+                <div class="note">Источник: <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / СберБизнес Live, январь 2025 г.</a></div>
             </div>
-        </div>
-        <div class="insight-box">
-            <h4>Что важно</h4>
-            <ul>
-                <li>Запрос на «нормальный» отпуск (10–14 дней и больше) есть, но фактически большинство укладывается в 1–2 недели или ещё меньше.</li>
-                <li>28% топ-менеджеров хотели бы отдыхать дольше двух недель, 12% — не менее месяца <a href="https://www.tourprom.ru/news/86798/" target="_blank" rel="noopener">[ТУРПРОМ]</a>.</li>
-                <li>27% предпринимателей вообще не ходят в отпуск; половина из них объясняет это тем, что «не на кого оставить бизнес» <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">[ЮMoney]</a>.</li>
-            </ul>
+            <div class="chart-card">
+                <h3>Как часто предприниматели берут отпуск</h3>
+                <div class="chart-wrap"><canvas id="chartFrequency"></canvas></div>
+                <div class="note">Источник: <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / СберБизнес Live, январь 2025 г.</a></div>
+            </div>
+            <div class="chart-card">
+                <h3>Оптимальная длительность новогоднего отдыха (мнение компаний)</h3>
+                <div class="chart-wrap"><canvas id="chartIdealNewYear"></canvas></div>
+                <div class="note">Источник: <a href="https://soundstream.media/" target="_blank" rel="noopener">Ассоциация менеджеров / Радио РБК, декабрь 2025 г.</a></div>
+            </div>
         </div>
     </section>
 
-    <!-- 2. Направления Россия -->
+    <!-- 2. Направления -->
     <section>
         <h2><span class="dot"></span>Направления отдыха: Россия и зарубеж</h2>
-        <p class="subtitle">Сравнение двух срезов: топ-менеджеры крупных компаний (2026) и предприниматели более широкого сегмента (2024).</p>
+        <p class="subtitle">Данные Туту (состоятельные путешественники, 2025) и Ассоциации менеджеров (топ-менеджеры, 2025).</p>
         <div class="chart-grid">
             <div class="chart-card">
-                <h3>Зарубежные направления (топ-менеджеры, 2026)</h3>
-                <div class="chart-wrap"><canvas id="chartDestinationsIntl"></canvas></div>
-                <div class="note">Источник: <a href="https://www.tourprom.ru/news/86798/" target="_blank" rel="noopener">Ассоциация менеджеров, май 2026 г. (ТУРПРОМ)</a></div>
+                <h3>Внутрироссийские направления (VIP-туристы, 2025)</h3>
+                <div class="chart-wrap"><canvas id="chartDomestic"></canvas></div>
+                <div class="note">Источник: <a href="https://lenta.ru/news/2025/12/17/nazvany-lyubimye-napravleniya-rossiyskih-bogachey-v-2025-godu/" target="_blank" rel="noopener">Туту / Lenta.ru, декабрь 2025 г.</a></div>
             </div>
             <div class="chart-card">
-                <h3>Направления предпринимателей (2024, множественный выбор)</h3>
-                <div class="chart-wrap"><canvas id="chartDestinations2024"></canvas></div>
-                <div class="note">Источник: <a href="https://rb.ru/news/vacation-business/" target="_blank" rel="noopener">банк «Бланк» / RB.RU, опрос 2,5 тыс. предпринимателей, май 2024 г.</a></div>
+                <h3>Зарубежные направления (VIP-туристы, 2025)</h3>
+                <div class="chart-wrap"><canvas id="chartIntl"></canvas></div>
+                <div class="note">Источник: <a href="https://lenta.ru/news/2025/12/17/nazvany-lyubimye-napravleniya-rossiyskih-bogachey-v-2025-godu/" target="_blank" rel="noopener">Туту / Lenta.ru, декабрь 2025 г.</a></div>
             </div>
             <div class="chart-card full-width">
-                <h3>Внутрироссийские направления (топ-менеджеры, 2026)</h3>
-                <div class="chart-wrap h-240"><canvas id="chartDestinationsDomestic"></canvas></div>
-                <div class="note">Источник: <a href="https://www.tourprom.ru/news/86798/" target="_blank" rel="noopener">Ассоциация менеджеров, май 2026 г. (ТУРПРОМ)</a>. Точные доли по регионам в открытой публикации не детализированы — шкала иллюстративная.</div>
+                <h3>Зарубежные предпочтения топ-менеджеров (лето 2025)</h3>
+                <div class="chart-wrap h-280"><canvas id="chartTopManagerIntl"></canvas></div>
+                <div class="note">Источник: <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ассоциация менеджеров / TTG Russia, июль 2025 г.</a></div>
             </div>
         </div>
     </section>
 
-    <!-- 3. Форматы отдыха -->
+    <!-- 3. Чем занимаются -->
     <section>
         <h2><span class="dot"></span>Чем занимаются в отпуске</h2>
-        <p class="subtitle">Форматы отдыха российских предпринимателей (можно было выбрать несколько вариантов).</p>
+        <p class="subtitle">Предпочтения предпринимателей (ЮKassa, 2025) и топ-менеджеров (Ассоциация менеджеров, 2025).</p>
         <div class="chart-grid">
-            <div class="chart-card full-width">
-                <h3>Предпочтительные форматы отдыха (онлайн-предприниматели, 2025)</h3>
+            <div class="chart-card">
+                <h3>Форматы отдыха предпринимателей</h3>
                 <div class="chart-wrap h-320"><canvas id="chartActivities"></canvas></div>
-                <div class="note">Источник: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / ЮMoney, январь 2025 г.</a></div>
+                <div class="note">Источник: <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / СберБизнес Live, январь 2025 г.</a></div>
             </div>
             <div class="chart-card">
-                <h3>Дополнительные активности (друзья, спорт, хобби)</h3>
-                <div class="chart-wrap"><canvas id="chartActivitiesExtra"></canvas></div>
-                <div class="note">Источник: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / ЮMoney, январь 2025 г.</a> (качественное описание, шкала иллюстративная)</div>
+                <h3>Досуг топ-менеджеров в летнем отпуске</h3>
+                <div class="chart-wrap h-320"><canvas id="chartTopManagerLeisure"></canvas></div>
+                <div class="note">Источник: <a href="https://fedpress.ru/news/77/society/3390316" target="_blank" rel="noopener">Ассоциация менеджеров / ФедералПресс, июль 2025 г.</a></div>
             </div>
-            <div class="chart-card">
-                <h3>Рабочая включённость в отпуске</h3>
-                <div class="chart-wrap"><canvas id="chartWorkInVacation"></canvas></div>
-                <div class="note">Источник: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / ЮMoney, январь 2025 г.</a></div>
-            </div>
-        </div>
-        <div class="insight-box">
-            <h4>Парадокс «отдыха»</h4>
-            <ul>
-                <li>Море, горы и городские прогулки — лидирующие форматы, но более половины регулярно проверяют рабочие чаты и почту в отпуске <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">[ЮMoney]</a>.</li>
-                <li>Полноценный отдых без работы удаётся лишь небольшой доле респондентов (4% в выборке ЮKassa) <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">[ЮMoney]</a>.</li>
-                <li>При этом 21% топ-менеджеров специально ищут возможности для «цифрового детокса» на отдыхе <a href="https://www.tourprom.ru/news/86798/" target="_blank" rel="noopener">[ТУРПРОМ]</a>.</li>
-            </ul>
         </div>
     </section>
 
-    <!-- 4. Глобальный контекст: джеты -->
+    <!-- 4. Цифровой детокс -->
     <section>
-        <h2><span class="dot"></span>Глобальный сегмент: куда летают бизнес-джеты</h2>
-        <p class="subtitle">Рост трафика на маршрутах частной авиации — косвенный индикатор направлений, где концентрируются ультра-богатые (Knight Frank / VistaJet, 2025).</p>
+        <h2><span class="dot"></span>Цифровой детокс и рабочая включённость</h2>
+        <p class="subtitle">Данные Ассоциации менеджеров (топ-менеджеры, 2025) и ЮKassa (предприниматели, 2025).</p>
+        <div class="chart-grid">
+            <div class="chart-card">
+                <h3>Отношение топ-менеджеров к digital detox</h3>
+                <div class="chart-wrap"><canvas id="chartDigitalDetox"></canvas></div>
+                <div class="note">Источник: <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ассоциация менеджеров / TTG Russia, июль 2025 г.</a></div>
+            </div>
+            <div class="chart-card">
+                <h3>Как топ-менеджеры справляются с работой в отпуске</h3>
+                <div class="chart-wrap"><canvas id="chartWorkDelegation"></canvas></div>
+                <div class="note">Источник: <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ассоциация менеджеров / TTG Russia, июль 2025 г.</a></div>
+            </div>
+            <div class="chart-card full-width">
+                <h3>Рабочая включённость предпринимателей в отпуске</h3>
+                <div class="chart-wrap h-240"><canvas id="chartWorkInVacation"></canvas></div>
+                <div class="note">Источник: <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / СберБизнес Live, январь 2025 г.</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Бизнес-джеты -->
+    <section>
+        <h2><span class="dot"></span>Глобальный сегмент: маршруты бизнес-авиации</h2>
+        <p class="subtitle">Рост трафика на маршрутах частной авиации — косвенный индикатор мобильности UHNWI (Knight Frank / VistaJet, 2025).</p>
         <div class="chart-grid">
             <div class="chart-card full-width">
-                <h3>Самые быстрорастущие маршруты частной авиации (рост трафика, 2025)</h3>
+                <h3>Самые быстрорастущие маршруты частной авиации (2025)</h3>
                 <div class="chart-wrap h-320"><canvas id="chartJetRoutes"></canvas></div>
-                <div class="note">Источник: <a href="https://www.vistajet.com/en-gb/news/rise-multi-location-living-long-haul-mobility-reshapes-global-wealth-mobility/" target="_blank" rel="noopener">VistaJet / Knight Frank Wealth Report, данные за 2025 г.</a></div>
+                <div class="note">Источник: <a href="https://www.businessinsider.com/private-jet-traffic-routes-popular-abu-dhabi-saudi-arabia-nantucket-2026-5" target="_blank" rel="noopener">Knight Frank Wealth Report / VistaJet / Business Insider, май 2026 г.</a></div>
             </div>
-        </div>
-        <div class="insight-box">
-            <h4>Ключевой сдвиг</h4>
-            <ul>
-                <li>Саудовская Аравия (Джидда–Рияд, +269%) и Абу-Даби–Лондон (+238%) — не «пляжный отдых», а переток капитала и второй дом <a href="https://www.vistajet.com/en-gb/news/rise-multi-location-living-long-haul-mobility-reshapes-global-wealth-mobility/" target="_blank" rel="noopener">[VistaJet]</a>.</li>
-                <li>Нантакет–Нью-Йорк (+192%) и Ницца–Пальма (+137%) — классические лайфстайл-направления для сверхбогатых <a href="https://www.vistajet.com/en-gb/news/rise-multi-location-living-long-haul-mobility-reshapes-global-wealth-mobility/" target="_blank" rel="noopener">[VistaJet]</a>.</li>
-                <li>Российский бизнес-джет-трафик: Москва–Дубай, Москва–Стамбул, Москва–Баку/Ереван — Турция и ОАЭ стали хабами <a href="https://moscowtimes.org/2025/05/06/rossiiskaya-elita-na-maiskie-prazdniki-uletela-v-emirati-i-turtsiyu-a162832/" target="_blank" rel="noopener">[The Moscow Times]</a>.</li>
-            </ul>
         </div>
     </section>
 
-    <!-- 5. Суперяхты -->
+    <!-- 6. Суперяхты -->
     <section>
         <h2><span class="dot"></span>Суперяхты: «летняя столица» миллиардеров</h2>
-        <p class="subtitle">Средиземноморье остаётся направлением №1 для яхт длиной более 30 метров (Knight Frank / Douglas Elliman).</p>
+        <p class="subtitle">Средиземноморье остаётся направлением №1 для яхт длиной более 30 метров (Knight Frank / Douglas Elliman, 2025).</p>
         <div class="chart-grid">
             <div class="chart-card">
                 <h3>Доля Средиземноморья среди направлений суперяхт</h3>
                 <div class="chart-wrap"><canvas id="chartYachtShare"></canvas></div>
-                <div class="note">Источник: <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">Knight Frank / Douglas Elliman, 12 мес. до 2025 г. (Business Insider)</a></div>
+                <div class="note">Источник: <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">Knight Frank / Douglas Elliman / Business Insider, 2025 г.</a></div>
             </div>
             <div class="chart-card">
-                <h3>Ключевые локации для суперяхт (2025)</h3>
+                <h3>Ключевые локации для суперяхт</h3>
                 <div class="chart-wrap"><canvas id="chartYachtSpots"></canvas></div>
-                <div class="note">Источник: <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">Business Insider / SuperYacht Times, 2025 г.</a> (шкала интенсивности иллюстративная)</div>
+                <div class="note">Источник: <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">Business Insider / SuperYacht Times, 2025 г.</a></div>
             </div>
-        </div>
-        <div class="insight-box">
-            <h4>Тихая роскошь вместо показной</h4>
-            <ul>
-                <li>Французская Ривьера, Амальфи, Сардиния и Балеары — «ядро» летнего отдыха миллиардеров <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">[Business Insider]</a>.</li>
-                <li>Растёт интерес к Эгейскому морю и Адриатике — за счёт относительной тишины и культурных целей <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">[Business Insider]</a>.</li>
-                <li>Российские яхты, оставшиеся в собственности, в основном перебазировались в ОАЭ; часть — в Турцию (Бодрум) и Малайзию <a href="https://www.moscowtimes.ru/2025/05/07/rossiiskaya-elita-nachala-plavat-na-yahtah-pod-flagom-malaizii-a162934" target="_blank" rel="noopener">[The Moscow Times]</a>.</li>
-            </ul>
         </div>
     </section>
 
-    <!-- 6. Сравнение -->
+    <!-- 7. UHNWI тренды -->
     <section>
-        <h2><span class="dot"></span>Россия vs. мир: два разных «отдыха»</h2>
+        <h2><span class="dot"></span>Глобальный контекст: UHNWI и «тихая роскошь»</h2>
         <div class="chart-grid">
             <div class="chart-card full-width">
-                <h3>Сравнение паттернов (качественная шкала)</h3>
-                <div class="chart-wrap h-280"><canvas id="chartCompare"></canvas></div>
-                <div class="note">Составлено на основе: Ассоциация менеджеров, ЮKassa, Knight Frank, VistaJet, Business Insider. Шкала условная (0–10), отражает интенсивность/распространённость паттерна, а не строгую статистику.</div>
+                <h3>Ключевые тренды UHNWI (2025–2026)</h3>
+                <div class="insight-box" style="margin-top:0; background: transparent; border: none; padding: 0;">
+                    <ul>
+                        <li><strong>Рост UHNWI:</strong> в 2026 году в мире насчитывалось 713 626 человек с капиталом от $30 млн; за последние 5 лет ежедневно 89 человек преодолевали этот порог <a href="https://www.forbes.com/sites/forbeswealth/2026/04/23/how-the-ultra-wealthy-are-spending-their-money-in-2026-according-to-knight-frank/" target="_blank" rel="noopener">[Knight Frank Wealth Report 2026 / Forbes]</a>.</li>
+                        <li><strong>Сдвиг от товаров к впечатлениям:</strong> богатые тратят всё больше на путешествия, гастрономию и уникальные впечатления, а не на традиционные предметы роскоши <a href="https://www.knightfrank.com/research/article/2025-08-29-the-changing-face-of-luxury-how-experience-is-defining-property" target="_blank" rel="noopener">[Knight Frank]</a>.</li>
+                        <li><strong>«Тихая роскошь» и digital detox:</strong> спрос на уединённые ретриты, места без интернета и «незаметные» направления растёт <a href="https://www.forbes.com/sites/forbeswealth/2026/07/01/why-affluent-travelers-are-paying-more-to-do-less/" target="_blank" rel="noopener">[Forbes, июль 2026 г.]</a>.</li>
+                        <li><strong>Мобильность как новая роскошь:</strong> «дип-ин-дип-аут» образ жизни (перемещение между домами, городами и континентами) становится нормой для UHNWI <a href="https://www.knightfrank.co.uk/research/article/2026-09-17-the-new-global-mobility-introducing-the-dip-in-and-dip-out-lifestyle" target="_blank" rel="noopener">[Knight Frank]</a>.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ИСТОЧНИКИ -->
     <div class="sources-section">
-        <h2>📚 Источники</h2>
+        <h2>📚 Источники и размер выборки</h2>
         <ol>
-            <li><strong>Ассоциация менеджеров (2026).</strong> Опрос топ-менеджеров крупного и среднего бизнеса (270+ компаний). Публикация: <a href="https://www.tourprom.ru/news/86798/" target="_blank" rel="noopener">ТУРПРОМ — «Отдых по-министерски: половина российских топ-менеджеров не выключает телефон даже на курорте»</a>.</li>
-            <li><strong>ЮKassa / ЮMoney (2025).</strong> Опрос онлайн-предпринимателей о планировании и форматах отпуска. Публикация: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮMoney — «Более половины предпринимателей работают в отпуске»</a>.</li>
-            <li><strong>Банк «Бланк» / RB.RU (2024).</strong> Опрос 2,5 тыс. предпринимателей о летнем отдыхе. Публикация: <a href="https://rb.ru/news/vacation-business/" target="_blank" rel="noopener">RB.RU — «Летний отпуск в 2024 году планируют только 28% предпринимателей»</a>.</li>
-            <li><strong>Knight Frank Wealth Report / VistaJet (2026).</strong> Данные о росте маршрутов частной авиации в 2025 г. Публикация: <a href="https://www.vistajet.com/en-gb/news/rise-multi-location-living-long-haul-mobility-reshapes-global-wealth-mobility/" target="_blank" rel="noopener">VistaJet — «Rise of multi-location living and long-haul mobility reshapes global wealth mobility»</a>.</li>
-            <li><strong>Knight Frank / Douglas Elliman / Business Insider (2025).</strong> Данные о направлениях суперяхт. Публикация: <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">Business Insider — «The billionaire superyacht hot spots of 2025»</a>.</li>
-            <li><strong>The Moscow Times (2025).</strong> Данные о перелётах российских бизнес-джетов. Публикация: <a href="https://moscowtimes.org/2025/05/06/rossiiskaya-elita-na-maiskie-prazdniki-uletela-v-emirati-i-turtsiyu-a162832/" target="_blank" rel="noopener">«Российская элита на майские праздники улетела в Эмираты и Турцию»</a>.</li>
-            <li><strong>The Moscow Times (2025).</strong> Данные о российской элите и яхтах под флагом Малайзии. Публикация: <a href="https://www.moscowtimes.ru/2025/05/07/rossiiskaya-elita-nachala-plavat-na-yahtah-pod-flagom-malaizii-a162934" target="_blank" rel="noopener">«Российская элита начала плавать на яхтах под флагом Малайзии»</a>.</li>
+            <li><strong>ЮKassa / СберБизнес Live (2025).</strong> Опрос <strong>150 компаний</strong> (онлайн-предприниматели). <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Ассоциация менеджеров / TTG Russia (2025).</strong> Опрос <strong>более 220 управленцев</strong> (топ-менеджеры). <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Ассоциация менеджеров / ФедералПресс (2025).</strong> Досуг и цифровой детокс топ-менеджеров (та же выборка 220+). <a href="https://fedpress.ru/news/77/society/3390316" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Туту / Lenta.ru (2025).</strong> Направления VIP-туристов. <a href="https://lenta.ru/news/2025/12/17/nazvany-lyubimye-napravleniya-rossiyskih-bogachey-v-2025-godu/" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Altrata — World Ultra Wealth Report 2025.</strong> Модельная оценка: <strong>510 810 UHNWI</strong>. <a href="https://altrata.com/reports/world-ultra-wealth-report-2025" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Knight Frank Wealth Report 2026.</strong> Модельная оценка: <strong>713 626 UHNWI</strong>. <a href="https://www.knightfrank.com.hk/blog/2026/04/23/knight-frank-launches-the-wealth-report-2026-20th-edition" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Capgemini World Wealth Report 2025.</strong> Оценка по финансовым активам: <strong>≈250 000 UHNWI</strong>. <a href="https://www.cnbc.com/2026/06/04/stocks-new-millionaires.html" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Knight Frank / VistaJet / Business Insider (2026).</strong> Быстрорастущие маршруты частной авиации. <a href="https://www.businessinsider.com/private-jet-traffic-routes-popular-abu-dhabi-saudi-arabia-nantucket-2026-5" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Knight Frank / Douglas Elliman / Business Insider (2025).</strong> Направления суперяхт. <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">Ссылка</a>.</li>
         </ol>
-        <p class="disclaimer">Примечание: графики «Внутрироссийские направления», «Дополнительные активности», «Рабочая включённость в отпуске», «Локации суперяхт» и «Россия vs. мир» частично построены на качественных выводах источников и используют иллюстративные шкалы. Точные проценты, где они были доступны, приведены в подписях к графикам.</p>
     </div>
 
     <footer>
-        <p>Отчёт составлен на основе открытых данных: Ассоциация менеджеров (2026), банк «Бланк» / RB.RU (2024), ЮKassa / ЮMoney (2025), Knight Frank Wealth Report, VistaJet, Douglas Elliman, Business Insider, The Moscow Times.</p>
-        <p style="margin-top:8px">Данные по «большому бизнесу» и UHNWI фрагментарны; часть графиков построена по опросам более широких групп предпринимателей и топ-менеджеров.</p>
+        <p>Отчёт составлен на основе открытых данных: ЮKassa / СберБизнес Live (2025), Ассоциация менеджеров (2025–2026), Туту / Lenta.ru (2025), Altrata (2025), Knight Frank Wealth Report (2026), Capgemini (2025), VistaJet, Douglas Elliman, Business Insider, Forbes, JETVIP.</p>
     </footer>
 
 </div>
 
-<!-- Chart.js с резервными CDN: первый скрипт грузится синхронно, если падает — сработает fallback-логика ниже -->
+<!-- Chart.js: основной CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
 <script>
 (function () {
     'use strict';
 
+    var chartInstances = [];
+    var lastMobile = null;
     var FALLBACK_CDNS = [
         'https://unpkg.com/chart.js@4.4.1/dist/chart.umd.min.js',
         'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js'
     ];
-    var chartInstances = [];
-    var lastMobileState = null;
 
     function isMobile() {
         return window.matchMedia('(max-width: 640px)').matches;
@@ -509,31 +537,29 @@
         }
     }
 
-    function loadFallback(index) {
-        index = index || 0;
-        if (index >= FALLBACK_CDNS.length) {
+    function loadFallback(idx) {
+        idx = idx || 0;
+        if (idx >= FALLBACK_CDNS.length) {
             showChartError();
             return;
         }
         var s = document.createElement('script');
-        s.src = FALLBACK_CDNS[index];
+        s.src = FALLBACK_CDNS[idx];
         s.async = true;
         s.onload = function () { bootstrap(); };
-        s.onerror = function () { loadFallback(index + 1); };
+        s.onerror = function () { loadFallback(idx + 1); };
         document.head.appendChild(s);
     }
 
     function buildCharts() {
-        // Уничтожаем старые экземпляры, чтобы избежать утечек при пересборке
         for (var i = 0; i < chartInstances.length; i++) {
             try { chartInstances[i].destroy(); } catch (e) {}
         }
         chartInstances = [];
 
         var mobile = isMobile();
-        lastMobileState = mobile;
+        lastMobile = mobile;
 
-        // Глобальные дефолты Chart.js
         Chart.defaults.color = '#8b8f9a';
         Chart.defaults.borderColor = '#2a2d3a';
         Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif";
@@ -542,20 +568,18 @@
         var gridColor = 'rgba(255,255,255,0.05)';
         var axisFont = mobile ? 9 : 11;
         var legendFont = mobile ? 10 : 12;
-        var legendPad = mobile ? 8 : 16;
 
-        // -------- helpers --------
-
-        function makeHorizontalBar(cfg) {
-            var el = document.getElementById(cfg.id);
+        function horizontalBar(id, labels, data, suffix, color) {
+            var el = document.getElementById(id);
             if (!el) return;
+            var sfx = (suffix === undefined || suffix === null) ? '%' : suffix;
             var chart = new Chart(el, {
                 type: 'bar',
                 data: {
-                    labels: cfg.labels,
+                    labels: labels,
                     datasets: [{
-                        data: cfg.data,
-                        backgroundColor: cfg.color,
+                        data: data,
+                        backgroundColor: color,
                         borderRadius: mobile ? 4 : 6,
                         barPercentage: 0.7,
                         maxBarThickness: mobile ? 22 : 30
@@ -566,13 +590,15 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     animation: { duration: 0 },
+                    layout: {
+                        padding: { left: 10, right: 15, top: 5, bottom: 5 }
+                    },
                     plugins: {
                         legend: { display: false },
                         tooltip: {
                             callbacks: {
                                 label: function (ctx) {
-                                    var suffix = cfg.suffix || '';
-                                    return ' ' + ctx.parsed.x + suffix;
+                                    return ' ' + ctx.parsed.x + sfx;
                                 }
                             }
                         }
@@ -582,7 +608,7 @@
                             grid: { color: gridColor },
                             ticks: {
                                 font: { size: axisFont },
-                                callback: function (v) { return v + (cfg.suffix || ''); }
+                                callback: function (v) { return v + sfx; }
                             }
                         },
                         y: {
@@ -590,7 +616,13 @@
                             ticks: {
                                 font: { size: axisFont },
                                 autoSkip: false,
-                                padding: mobile ? 4 : 8
+                                padding: 6,
+                                crossAlign: 'far'
+                            },
+                            afterFit: function(scale) {
+                                // Принудительно выделяем минимальную ширину оси Y, чтобы текст не обрезался
+                                var minWidth = mobile ? 120 : 180;
+                                scale.width = Math.max(scale.width, minWidth);
                             }
                         }
                     }
@@ -599,69 +631,16 @@
             chartInstances.push(chart);
         }
 
-        function makeVerticalBar(cfg) {
-            var el = document.getElementById(cfg.id);
-            if (!el) return;
-            var chart = new Chart(el, {
-                type: 'bar',
-                data: {
-                    labels: cfg.labels,
-                    datasets: [{
-                        data: cfg.data,
-                        backgroundColor: cfg.color,
-                        borderRadius: mobile ? 4 : 6,
-                        barPercentage: 0.65,
-                        maxBarThickness: mobile ? 40 : 60
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    animation: { duration: 0 },
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                label: function (ctx) {
-                                    return ' ' + ctx.parsed.y + (cfg.suffix || '%');
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            grid: { color: gridColor },
-                            ticks: {
-                                font: { size: axisFont },
-                                callback: function (v) { return v + (cfg.suffix || '%'); }
-                            }
-                        },
-                        x: {
-                            grid: { display: false },
-                            ticks: {
-                                font: { size: axisFont },
-                                autoSkip: false,
-                                maxRotation: mobile ? 35 : 0,
-                                minRotation: mobile ? 35 : 0
-                            }
-                        }
-                    }
-                }
-            });
-            chartInstances.push(chart);
-        }
-
-        function makeDoughnut(cfg) {
-            var el = document.getElementById(cfg.id);
+        function doughnut(id, labels, data, colors) {
+            var el = document.getElementById(id);
             if (!el) return;
             var chart = new Chart(el, {
                 type: 'doughnut',
                 data: {
-                    labels: cfg.labels,
+                    labels: labels,
                     datasets: [{
-                        data: cfg.data,
-                        backgroundColor: cfg.colors,
+                        data: data,
+                        backgroundColor: colors,
                         borderWidth: 2,
                         borderColor: '#1a1d27'
                     }]
@@ -676,7 +655,7 @@
                             position: 'bottom',
                             labels: {
                                 font: { size: legendFont },
-                                padding: legendPad,
+                                padding: mobile ? 8 : 16,
                                 usePointStyle: true,
                                 pointStyle: 'circle',
                                 boxWidth: 8
@@ -695,210 +674,140 @@
             chartInstances.push(chart);
         }
 
-        // -------- 1. Продолжительность — идеал --------
-        makeVerticalBar({
-            id: 'chartDurationIdeal',
-            labels: ['< 7 дней', '7 дней', '10–14 дней', '> 14 дней', '≥ 1 месяца'],
-            data: [3, 6, 51, 28, 12],
-            color: '#6c8cff',
-            suffix: '%'
-        });
+        // -------- 0. Охват --------
+        horizontalBar('chartSampleSize',
+            mobile ? ['ЮKassa (компании)', 'АМ (управленцы)'] : ['ЮKassa — 150 компаний', 'Ассоциация менеджеров — 220+ управленцев'],
+            [150, 220],
+            ' чел.',
+            '#6c8cff'
+        );
 
-        // -------- 2. Продолжительность — факт --------
-        makeDoughnut({
-            id: 'chartDurationActual',
-            labels: ['1–2 недели', '3–5 дней', '1–2 дня', '≥ 3 недель'],
-            data: [46, 35, 14, 5],
-            colors: ['#4ecdc4', '#ffb347', '#ff6b6b', '#a78bfa']
-        });
+        horizontalBar('chartGlobalPopulation',
+            mobile ? ['Altrata (2025)', 'Knight Frank (2026)', 'Capgemini (2025)'] : ['Altrata, июнь 2025', 'Knight Frank, 2026', 'Capgemini, 2025'],
+            [510.8, 713.6, 250],
+            ' тыс.',
+            '#4ecdc4'
+        );
 
-        // -------- 3. Зарубежные направления 2026 --------
-        makeHorizontalBar({
-            id: 'chartDestinationsIntl',
-            labels: mobile
-                ? ['Турция', 'Азия', 'Египет', 'Острова', 'Европа', 'Лат. Америка', 'Африка']
-                : ['Турция', 'Азия (Таиланд, Вьетнам, Китай)', 'Египет', 'Острова (Мальдивы, Сейшелы)', 'Европа', 'Латинская Америка', 'Африка'],
-            data: [32, 26, 14, 13, 7, 5, 3],
-            color: '#6c8cff',
-            suffix: '%'
-        });
+        // -------- 1. Длительность --------
+        doughnut('chartDurationActual',
+            ['1–2 недели', '3–5 дней', '1–2 дня', '≥ 3 недель'],
+            [46, 35, 14, 5],
+            ['#4ecdc4', '#ffb347', '#ff6b6b', '#a78bfa']
+        );
 
-        // -------- 4. Направления 2024 --------
-        makeHorizontalBar({
-            id: 'chartDestinations2024',
-            labels: mobile
-                ? ['Россия', 'Турция/Египет', 'ЮВА', 'Европа/Америка']
-                : ['Россия', 'Турция и Египет', 'ЮВА', 'Европа и Америка'],
-            data: [47, 25, 19, 5],
-            color: '#4ecdc4',
-            suffix: '%'
-        });
+        horizontalBar('chartFrequency',
+            mobile ? ['Раз в год', 'Раз в полгода', 'Каждый сезон', 'По возможности', 'Не ходят'] : ['Раз в год', 'Раз в полгода', 'Каждый сезон', 'По возможности', 'Не ходят в отпуск'],
+            [15, 15, 5, 28, 27],
+            '%',
+            '#6c8cff'
+        );
 
-        // -------- 5. Внутрироссийские направления --------
-        makeHorizontalBar({
-            id: 'chartDestinationsDomestic',
-            labels: mobile
-                ? ['Москва/МО', 'Сибирь', 'КМВ', 'Сочи/Кубань', 'Калининград', 'Крым', 'Сев. Кавказ']
-                : ['Москва и Подмосковье', 'Сибирь (Алтай, Байкал)', 'Кавказские Минеральные Воды', 'Сочи и Краснодарский край', 'Калининградская область', 'Крым', 'Северный Кавказ / удалённые регионы'],
-            data: [34, 26, 14, 13, 5, 4, 2],
-            color: '#ffb347',
-            suffix: '%'
-        });
+        doughnut('chartIdealNewYear',
+            mobile ? ['7–8 дней', '10–12 дней', '> 2 недель'] : ['7–8 дней (большинство)', '10–12 дней (четверть)', 'Более 2 недель'],
+            [65, 25, 10],
+            ['#6c8cff', '#4ecdc4', '#ffb347']
+        );
 
-        // -------- 6. Форматы отдыха --------
-        makeHorizontalBar({
-            id: 'chartActivities',
-            labels: mobile
-                ? ['Море', 'Горы', 'Прогулки', 'Деревня', 'Дома', 'Всё включено', 'Санатории', 'Экскурсии', 'Охота/рыбалка']
-                : ['Море (пляж, водный спорт)', 'Горы', 'Прогулки и экскурсии по городам', 'Деревня', 'Дома на диване', 'Отели «всё включено»', 'Санатории и спа', 'Экскурсионные туры', 'Охота и рыбалка'],
-            data: [22, 17, 16, 12, 10, 8, 6, 5, 4],
-            color: '#4ecdc4',
-            suffix: '%'
-        });
+        // -------- 2. Направления --------
+        horizontalBar('chartDomestic',
+            mobile ? ['Москва', 'СПб', 'Сочи', 'Мин. Воды', 'Калининград'] : ['Москва', 'Санкт-Петербург', 'Сочи', 'Минеральные Воды', 'Калининград'],
+            [30, 11, 10, 6, 4],
+            '%',
+            '#ffb347'
+        );
 
-        // -------- 7. Дополнительные активности --------
-        makeHorizontalBar({
-            id: 'chartActivitiesExtra',
-            labels: mobile
-                ? ['С друзьями', 'Спорт', 'Выставки', 'Хобби', 'Обучение']
-                : ['С друзьями', 'Спорт', 'Выставки', 'Новые хобби', 'Обучение по работе'],
-            data: [18, 12, 11, 11, 6],
-            color: '#a78bfa',
-            suffix: '%'
-        });
+        horizontalBar('chartIntl',
+            mobile ? ['Турция', 'Китай', 'ОАЭ', 'Беларусь', 'Узбекистан'] : ['Турция', 'Китай', 'ОАЭ', 'Беларусь', 'Узбекистан'],
+            [15, 14, 9, 7, 7],
+            '%',
+            '#4ecdc4'
+        );
 
-        // -------- 8. Работа в отпуске --------
-        makeDoughnut({
-            id: 'chartWorkInVacation',
-            labels: mobile
-                ? ['Регулярно на связи', 'Время от времени', 'По необходимости', 'Полный отдых']
-                : ['Регулярно проверяют чаты/почту', 'Подключаются время от времени', 'Только при необходимости', 'Полноценный отдых'],
-            data: [56, 25, 16, 4],
-            colors: ['#ff6b6b', '#ffb347', '#4ecdc4', '#6c8cff']
-        });
+        horizontalBar('chartTopManagerIntl',
+            mobile ? ['Турция/Египет/ОАЭ', 'ЮВА', 'Острова', 'Европа', 'Лат. Америка', 'Африка'] : ['Турция, Египет, ОАЭ', 'ЮВА', 'Острова', 'Европа', 'Латинская Америка', 'Африка'],
+            [28, 17, 14, 12, 13, 7],
+            '%',
+            '#6c8cff'
+        );
 
-        // -------- 9. Маршруты джетов --------
-        makeHorizontalBar({
-            id: 'chartJetRoutes',
-            labels: mobile
-                ? ['Джидда–Рияд', 'Абу-Даби–Лондон', 'Нантакет–NY', 'Ницца–Пальма', 'Вашингтон–У.-П.', 'Канны–Париж', 'Мумбаи–Дели']
-                : ['Джидда – Рияд', 'Абу-Даби – Лондон', 'Нантакет – Нью-Йорк', 'Ницца – Пальма', 'Вашингтон – Уайт-Плейнс', 'Канны – Париж', 'Мумбаи – Нью-Дели'],
-            data: [269, 238, 192, 137, 107, 85, 66],
-            color: '#ff6b6b',
-            suffix: '%'
-        });
+        // -------- 3. Чем занимаются --------
+        horizontalBar('chartActivities',
+            mobile ? ['Море', 'Горы', 'Прогулки', 'Деревня', 'Дома', 'Всё включено', 'Санатории', 'Экскурсии', 'Охота'] : ['Море', 'Горы', 'Прогулки и экскурсии', 'Деревня', 'Дома на диване', 'Отели «всё включено»', 'Санатории и спа', 'Экскурсионные туры', 'Охота и рыбалка'],
+            [22, 17, 16, 12, 10, 8, 6, 5, 4],
+            '%',
+            '#4ecdc4'
+        );
 
-        // -------- 10. Доля Средиземноморья --------
-        makeDoughnut({
-            id: 'chartYachtShare',
-            labels: mobile
-                ? ['Средиземноморье', 'Прочие регионы']
-                : ['Средиземноморье — направление №1', 'Остальные регионы'],
-            data: [72, 28],
-            colors: ['#4ecdc4', '#2a2d3a']
-        });
+        horizontalBar('chartTopManagerLeisure',
+            mobile ? ['Экскурсии', 'Гастротуризм', 'Чтение', 'Фестивали'] : ['Экскурсии', 'Гастрономический туризм', 'Чтение книг в тишине', 'Фестивали/концерты'],
+            [61, 57, 52, 26],
+            '%',
+            '#a78bfa'
+        );
 
-        // -------- 11. Локации суперяхт --------
-        makeHorizontalBar({
-            id: 'chartYachtSpots',
-            labels: mobile
-                ? ['Ривьера', 'Сардиния', 'Амальфи', 'Балеары', 'Греция', 'Турция', 'Хорватия']
-                : ['Французская Ривьера', 'Сардиния', 'Амальфи', 'Балеары (Испания)', 'Греция / Эгейское море', 'Турция (Бодрум, Мармарис)', 'Хорватия / Адриатика'],
-            data: [95, 90, 80, 78, 70, 55, 45],
-            color: '#ffb347',
-            suffix: ''
-        });
+        // -------- 4. Digital detox --------
+        doughnut('chartDigitalDetox',
+            mobile ? ['Частичный детокс', 'Полный отказ', 'С интернетом', 'Без технологий'] : ['Не против частичного', 'Полный отказ обязателен', 'Предпочитают с интернетом', 'Не могут без технологий'],
+            [57, 12, 23, 8],
+            ['#4ecdc4', '#6c8cff', '#ffb347', '#ff6b6b']
+        );
 
-        // -------- 12. Сравнение Россия vs мир --------
-        (function () {
-            var el = document.getElementById('chartCompare');
-            if (!el) return;
-            var chart = new Chart(el, {
-                type: 'bar',
-                data: {
-                    labels: mobile
-                        ? ['Длит. отпуск', 'Без работы', 'Тихая роскошь', 'Бизнес-авиация', 'Суперяхты']
-                        : ['Длительный непрерывный отпуск', 'Полное отключение от работы', 'Ставка на «тихую роскошь»', 'Использование бизнес-авиации', 'Суперяхты как формат'],
-                    datasets: [
-                        {
-                            label: mobile ? 'РФ' : 'Российские предприниматели / топ-менеджеры',
-                            data: [3, 2, 4, 6, 2],
-                            backgroundColor: 'rgba(108,140,255,0.75)',
-                            borderRadius: mobile ? 4 : 6
-                        },
-                        {
-                            label: mobile ? 'Мир' : 'Глобальные UHNWI / миллиардеры',
-                            data: [7, 6, 9, 10, 9],
-                            backgroundColor: 'rgba(78,205,196,0.75)',
-                            borderRadius: mobile ? 4 : 6
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    animation: { duration: 0 },
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                            labels: {
-                                font: { size: legendFont },
-                                padding: mobile ? 6 : 12,
-                                usePointStyle: true,
-                                pointStyle: 'circle',
-                                boxWidth: 8
-                            }
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 10,
-                            grid: { color: gridColor },
-                            ticks: { font: { size: axisFont } },
-                            title: {
-                                display: !mobile,
-                                text: 'Условная интенсивность (0–10)',
-                                font: { size: axisFont }
-                            }
-                        },
-                        x: {
-                            grid: { display: false },
-                            ticks: {
-                                font: { size: axisFont },
-                                autoSkip: false,
-                                maxRotation: mobile ? 35 : 0,
-                                minRotation: mobile ? 35 : 0
-                            }
-                        }
-                    }
-                }
-            });
-            chartInstances.push(chart);
-        })();
+        horizontalBar('chartWorkDelegation',
+            mobile ? ['Проверка почты', 'Делегирование', 'Только экстренно', 'Полное отключение', 'Удалённо 2–3 ч'] : ['Проверяют почту раз в несколько дней', 'Делегируют команде', 'Только в экстренных случаях', 'Полностью отключаются', 'Работают удалённо 2–3 ч/день'],
+            [34, 32, 14, 11, 9],
+            '%',
+            '#ffb347'
+        );
+
+        doughnut('chartWorkInVacation',
+            mobile ? ['Регулярно на связи', 'Время от времени', 'По необходимости', 'Полный отдых'] : ['Регулярно проверяют чаты/почту', 'Подключаются время от времени', 'Только при необходимости', 'Полноценный отдых'],
+            [56, 25, 16, 4],
+            ['#ff6b6b', '#ffb347', '#4ecdc4', '#6c8cff']
+        );
+
+        // -------- 5. Джеты --------
+        horizontalBar('chartJetRoutes',
+            mobile ? ['Джидда–Рияд', 'Абу-Даби–Лондон', 'Нантакет–NY', 'Ницца–Пальма', 'Вашингтон–У.-П.', 'Канны–Париж', 'Мумбаи–Дели'] : ['Джидда – Рияд', 'Абу-Даби – Лондон', 'Нантакет – Нью-Йорк', 'Ницца – Пальма', 'Вашингтон – Уайт-Плейнс', 'Канны – Париж', 'Мумбаи – Нью-Дели'],
+            [269, 238, 192, 137, 107, 85, 66],
+            '%',
+            '#ff6b6b'
+        );
+
+        // -------- 6. Яхты --------
+        doughnut('chartYachtShare',
+            mobile ? ['Средиземноморье', 'Прочие'] : ['Средиземноморье — направление №1', 'Остальные регионы'],
+            [72, 28],
+            ['#4ecdc4', '#2a2d3a']
+        );
+
+        horizontalBar('chartYachtSpots',
+            mobile ? ['Ривьера', 'Сардиния', 'Амальфи', 'Балеары', 'Греция', 'Турция', 'Хорватия'] : ['Французская Ривьера', 'Сардиния', 'Амальфи', 'Балеары', 'Греция/Эгейское море', 'Турция (Бодрум)', 'Хорватия/Адриатика'],
+            [95, 90, 80, 78, 70, 55, 45],
+            '',
+            '#ffb347'
+        );
     }
 
-    function resizeAll() {
-        for (var i = 0; i < chartInstances.length; i++) {
-            try { chartInstances[i].resize(); } catch (e) {}
+    function handleResize() {
+        var nowMobile = isMobile();
+        if (nowMobile !== lastMobile) {
+            buildCharts();
+        } else {
+            for (var i = 0; i < chartInstances.length; i++) {
+                try { chartInstances[i].resize(); } catch (e) {}
+            }
         }
     }
 
-    var resizeTimer;
-    function handleResize() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function () {
-            var nowMobile = isMobile();
-            if (nowMobile !== lastMobileState) {
-                buildCharts(); // пересобираем при переходе через breakpoint
-            } else {
-                resizeAll();
-            }
-        }, 250);
+    function handleOrientation() {
+        setTimeout(handleResize, 300);
     }
 
-    function handleOrientation() {
-        setTimeout(resizeAll, 300);
+    var resizeTimer;
+    function scheduleResize() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(handleResize, 250);
     }
 
     function bootstrap() {
@@ -913,17 +822,18 @@
             showChartError();
             return;
         }
-        window.addEventListener('resize', handleResize, { passive: true });
+        window.addEventListener('resize', scheduleResize, { passive: true });
         window.addEventListener('orientationchange', handleOrientation, { passive: true });
-        // Страховочный resize после полной загрузки (Safari иногда даёт canvas нулевой размер при первом рендере)
         window.addEventListener('load', function () {
-            setTimeout(resizeAll, 200);
+            setTimeout(function () {
+                for (var i = 0; i < chartInstances.length; i++) {
+                    try { chartInstances[i].resize(); } catch (e) {}
+                }
+            }, 200);
         });
     }
 
-    // Точка входа: скрипт Chart.js уже загружен синхронно выше.
     if (typeof Chart === 'undefined') {
-        // Если первый CDN не ответил — пробуем резервные
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', function () { loadFallback(0); });
         } else {
