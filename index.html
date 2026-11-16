@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#0f1117">
-    <title>Как отдыхают предприниматели крупного бизнеса: Россия и мир</title>
+    <title>Сверхбогатые в отпуске: полный сводный отчёт</title>
     <style>
         :root {
             --bg: #0f1117;
@@ -109,7 +109,7 @@
 
         .chart-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
             gap: 16px;
         }
         .chart-card {
@@ -289,230 +289,242 @@
 <div class="container">
 
     <header>
-        <h1>Как отдыхают предприниматели крупного бизнеса</h1>
-        <p>Сводный отчёт по данным опросов и отраслевых исследований: Россия и глобальный сегмент UHNWI. Продолжительность отпуска, направления, форматы отдыха, цифровой детокс и косвенные индикаторы (бизнес-джеты, суперяхты).</p>
+        <h1>Сверхбогатые в отпуске: полный сводный отчёт</h1>
+        <p>Российские предприниматели, глобальные HNWI и UHNWI: демография, образ жизни, длительность отпуска, направления, форматы досуга, рабочая включённость, расходы и косвенные индикаторы (бизнес-джеты, суперяхты).</p>
     </header>
 
     <!-- KPI -->
     <div class="kpi-grid">
         <div class="kpi">
+            <div class="value">21 день</div>
+            <div class="label">отпуск HNWI в год (Hurun, Китай)</div>
+        </div>
+        <div class="kpi">
+            <div class="value">6,7 ч</div>
+            <div class="label">сон HNWI (Hurun); UHNWI — 6,5 ч</div>
+        </div>
+        <div class="kpi">
+            <div class="value">90%</div>
+            <div class="label">HNWI APAC считают wellness ключевым (Marriott)</div>
+        </div>
+        <div class="kpi">
             <div class="value">56%</div>
-            <div class="label">регулярно проверяют рабочие чаты в отпуске</div>
+            <div class="label">российских предпринимателей работают в отпуске (ЮKassa)</div>
         </div>
         <div class="kpi">
-            <div class="value">46%</div>
-            <div class="label">отдыхают всего 1–2 недели</div>
+            <div class="value">+70%</div>
+            <div class="label">рост рынка суперяхт (Knight Frank, 2025)</div>
         </div>
         <div class="kpi">
-            <div class="value">57%</div>
-            <div class="label">топ-менеджеров за цифровой детокс</div>
-        </div>
-        <div class="kpi">
-            <div class="value">+269%</div>
-            <div class="label">рост трафика на маршруте Джидда–Рияд</div>
-        </div>
-        <div class="kpi">
-            <div class="value">150</div>
-            <div class="label">компаний в опросе предпринимателей (ЮKassa)</div>
-        </div>
-        <div class="kpi">
-            <div class="value">220+</div>
-            <div class="label">управленцев в опросе топ-менеджеров (АМ)</div>
+            <div class="value">47%</div>
+            <div class="label">новых пользователей джетов — младше 45 лет (Knight Frank)</div>
         </div>
     </div>
 
-    <!-- 0. Охват отчёта -->
+    <!-- 0. Охват и методология -->
     <section>
-        <h2><span class="dot"></span>Охват отчёта: на скольких людях основана статистика</h2>
-        <p class="subtitle">Российская часть отчёта — выборочные опросы предпринимателей и топ-менеджеров. Глобальная часть — модельные оценки всей мировой популяции UHNWI, а не выборочные данные.</p>
+        <h2><span class="dot"></span>Охват и методология</h2>
+        <p class="subtitle">Российская часть — выборочные опросы. Глобальная часть — модельные оценки популяции UHNWI и отраслевые исследования.</p>
         <div class="chart-grid">
             <div class="chart-card">
-                <h3>Российские опросы: размер выборки (человек)</h3>
+                <h3>Размер выборки в опросах (человек)</h3>
                 <div class="chart-wrap h-240"><canvas id="chartSampleSize"></canvas></div>
                 <div class="note">
-                    <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa — 150 компаний</a>; 
-                    <a href="https://fedpress.ru/news/77/society/3390316" target="_blank" rel="noopener">Ассоциация менеджеров — более 220 управленцев</a>.
+                    <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa — 150 компаний</a>; 
+                    <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ассоциация менеджеров — 220+</a>; 
+                    <a href="https://www.hurun.cn/zh-CN/Info/Detail?num=CSX6BTOMEWY4" target="_blank" rel="noopener">Hurun — 470 HNWI (70 UHNWI)</a>; 
+                    <a href="https://news.marriott.com/static-assets/component-resources/newscenter/news/2025/07/01/2025-intentional-traveler-report.pdf" target="_blank" rel="noopener">Marriott — 1 750 HNWI (APAC)</a>; 
+                    <a href="https://www.internova.com/" target="_blank" rel="noopener">Internova — 3 000 + 50 000 профилей</a>.
                 </div>
             </div>
             <div class="chart-card">
-                <h3>Глобальные оценки: численность UHNWI (тыс. человек)</h3>
-                <div class="chart-wrap h-240"><canvas id="chartGlobalPopulation"></canvas></div>
+                <h3>Численность HNWI и UHNWI (млн / тыс. человек)</h3>
+                <div class="chart-wrap h-240"><canvas id="chartPopulation"></canvas></div>
                 <div class="note">
-                    <a href="https://altrata.com/reports/world-ultra-wealth-report-2025" target="_blank" rel="noopener">Altrata, 2025 — 510 810</a>; 
-                    <a href="https://www.knightfrank.com.hk/blog/2026/04/23/knight-frank-launches-the-wealth-report-2026-20th-edition" target="_blank" rel="noopener">Knight Frank, 2026 — 713 626</a>; 
-                    <a href="https://www.cnbc.com/2026/06/04/stocks-new-millionaires.html" target="_blank" rel="noopener">Capgemini, 2025 — 250 000</a>.
+                    <a href="https://altrata.com/reports/world-ultra-wealth-report-2025" target="_blank" rel="noopener">Altrata, июнь 2025: 41,3 млн HNWI; 510 810 UHNWI</a>; 
+                    <a href="https://www.cnbc.com/2026/06/04/stocks-new-millionaires.html" target="_blank" rel="noopener">Capgemini, 2025: 25,3 млн HNWI; 250 000 UHNWI (только финансовые активы)</a>; 
+                    <a href="https://www.knightfrank.com.hk/blog/2026/04/23/knight-frank-launches-the-wealth-report-2026-20th-edition" target="_blank" rel="noopener">Knight Frank, 2026: 713 626 UHNWI</a>.
                 </div>
             </div>
         </div>
         <div class="insight-box">
             <h4>Как читать эти цифры</h4>
             <ul>
-                <li><strong>150 компаний и 220+ управленцев</strong> — это реальные люди, ответившие на вопросы. Все проценты в российских блоках отчёта — их доли.</li>
-                <li><strong>510 810 и 713 626 UHNWI</strong> — это оценки <em>всей мировой популяции</em> сверхбогатых, а не опрошенные. Knight Frank и Altrata не опрашивают сотни тысяч человек, а строят модели на основе баз данных.</li>
-                <li><strong>VHNWI ($5–30 млн)</strong> в отчёте практически не используется: публичных данных об их отдыхе нет, а численность оценивается в ~5,8 млн человек по модели Altrata.</li>
+                <li><strong>150 компаний, 220+ управленцев, 470 HNWI, 1 750 HNWI APAC</strong> — реальные респонденты выборочных опросов.</li>
+                <li><strong>41,3 млн, 510 810, 713 626, 250 000</strong> — модельные оценки всей мировой популяции, а не выборочные данные.</li>
+                <li><strong>VHNWI ($5–30 млн)</strong> в публичных опросах почти не выделяется; численность оценивается в ~5,8 млн человек по модели Altrata.</li>
             </ul>
         </div>
     </section>
 
-    <!-- 1. Продолжительность и частота -->
+    <!-- 1. Демография и образ жизни -->
     <section>
-        <h2><span class="dot"></span>Продолжительность и частота отдыха (Россия)</h2>
-        <p class="subtitle">Данные опросов ЮKassa (онлайн-предприниматели, 2025) и Ассоциации менеджеров (топ-менеджеры, 2025–2026).</p>
+        <h2><span class="dot"></span>Демография и образ жизни (HNWI, Китай)</h2>
+        <p class="subtitle">Данные Hurun Chinese Luxury Consumer Survey 2026: 470 HNWI, включая 70 UHNWI; средний возраст 36 лет.</p>
         <div class="chart-grid">
             <div class="chart-card">
-                <h3>Фактическая длительность отпуска (предприниматели)</h3>
-                <div class="chart-wrap"><canvas id="chartDurationActual"></canvas></div>
-                <div class="note">Источник: <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / СберБизнес Live, январь 2025 г.</a></div>
+                <h3>Сон и работа</h3>
+                <div class="chart-wrap h-240"><canvas id="chartSleepWork"></canvas></div>
+                <div class="note">Источник: <a href="https://www.hurun.cn/zh-CN/Info/Detail?num=CSX6BTOMEWY4" target="_blank" rel="noopener">Hurun, 2026</a>. Сон — 6,7 ч (UHNWI — 6,5 ч); рабочая неделя — 45 ч; отпуск — 21 день (было 24).</div>
             </div>
             <div class="chart-card">
-                <h3>Как часто предприниматели берут отпуск</h3>
-                <div class="chart-wrap"><canvas id="chartFrequency"></canvas></div>
-                <div class="note">Источник: <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / СберБизнес Live, январь 2025 г.</a></div>
+                <h3>Время с семьёй и поездки</h3>
+                <div class="chart-wrap h-240"><canvas id="chartFamilyTrips"></canvas></div>
+                <div class="note">Источник: <a href="https://www.hurun.cn/zh-CN/Info/Detail?num=CSX6BTOMEWY4" target="_blank" rel="noopener">Hurun, 2026</a>. Время с семьёй — 6,3 дня/мес; 5 выездов за рубеж (2,1 туризм + 2,9 бизнес); командировки — 6,9 дня/мес.</div>
             </div>
             <div class="chart-card">
-                <h3>Оптимальная длительность новогоднего отдыха (мнение компаний)</h3>
-                <div class="chart-wrap"><canvas id="chartIdealNewYear"></canvas></div>
-                <div class="note">Источник: <a href="https://soundstream.media/" target="_blank" rel="noopener">Ассоциация менеджеров / Радио РБК, декабрь 2025 г.</a></div>
+                <h3>Спорт и досуг</h3>
+                <div class="chart-wrap h-240"><canvas id="chartSports"></canvas></div>
+                <div class="note">Источник: <a href="https://www.hurun.cn/zh-CN/Info/Detail?num=CSX6BTOMEWY4" target="_blank" rel="noopener">Hurun, 2026</a>. 2+ часа спорта в неделю; главные увлечения: путешествия (32%), гастрономия (21%), спа/велнес (21%), спорт (19%).</div>
             </div>
         </div>
     </section>
 
-    <!-- 2. Направления -->
+    <!-- 2. Российские предприниматели -->
     <section>
-        <h2><span class="dot"></span>Направления отдыха: Россия и зарубеж</h2>
-        <p class="subtitle">Данные Туту (состоятельные путешественники, 2025) и Ассоциации менеджеров (топ-менеджеры, 2025).</p>
+        <h2><span class="dot"></span>Российские предприниматели: длительность и рабочая включённость</h2>
+        <p class="subtitle">Данные ЮKassa (150 компаний, 2025) и Ассоциации менеджеров (220+ управленцев, 2025).</p>
         <div class="chart-grid">
             <div class="chart-card">
-                <h3>Внутрироссийские направления (VIP-туристы, 2025)</h3>
-                <div class="chart-wrap"><canvas id="chartDomestic"></canvas></div>
-                <div class="note">Источник: <a href="https://lenta.ru/news/2025/12/17/nazvany-lyubimye-napravleniya-rossiyskih-bogachey-v-2025-godu/" target="_blank" rel="noopener">Туту / Lenta.ru, декабрь 2025 г.</a></div>
+                <h3>Фактическая длительность отпуска</h3>
+                <div class="chart-wrap"><canvas id="chartDurationRU"></canvas></div>
+                <div class="note">Источник: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa, январь 2025</a>. 46% — 1–2 недели; 35% — 3–5 дней; 14% — 1–2 дня; 5% — от 3 недель.</div>
             </div>
             <div class="chart-card">
-                <h3>Зарубежные направления (VIP-туристы, 2025)</h3>
-                <div class="chart-wrap"><canvas id="chartIntl"></canvas></div>
-                <div class="note">Источник: <a href="https://lenta.ru/news/2025/12/17/nazvany-lyubimye-napravleniya-rossiyskih-bogachey-v-2025-godu/" target="_blank" rel="noopener">Туту / Lenta.ru, декабрь 2025 г.</a></div>
+                <h3>Рабочая включённость</h3>
+                <div class="chart-wrap"><canvas id="chartWorkRU"></canvas></div>
+                <div class="note">Источник: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa, 2025</a>. 56% регулярно на связи; 25% — время от времени; 16% — по необходимости; 4% — полный отдых.</div>
+            </div>
+            <div class="chart-card">
+                <h3>Частота отпусков</h3>
+                <div class="chart-wrap"><canvas id="chartFrequencyRU"></canvas></div>
+                <div class="note">Источник: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa, 2025</a>. 27% не ходят в отпуск; 28% — «по возможности»; 15% — раз в год; 15% — раз в полгода; 5% — каждый сезон.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Направления и форматы -->
+    <section>
+        <h2><span class="dot"></span>Направления и форматы отдыха</h2>
+        <p class="subtitle">Российские предприниматели (ЮKassa), VIP-туристы (Туту) и глобальные HNWI (Marriott, Altiant).</p>
+        <div class="chart-grid">
+            <div class="chart-card">
+                <h3>Форматы отдыха (Россия, ЮKassa)</h3>
+                <div class="chart-wrap h-320"><canvas id="chartFormatsRU"></canvas></div>
+                <div class="note">Источник: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa, 2025</a>. Море 22%, горы 17%, прогулки 16%, деревня 12%, дома 10%.</div>
+            </div>
+            <div class="chart-card">
+                <h3>Направления VIP-туристов (Россия, 2025)</h3>
+                <div class="chart-wrap h-320"><canvas id="chartDestinationsRU"></canvas></div>
+                <div class="note">Источник: <a href="https://lenta.ru/news/2025/12/17/nazvany-lyubimye-napravleniya-rossiyskih-bogachey-v-2025-godu/" target="_blank" rel="noopener">Туту / Lenta.ru, декабрь 2025</a>. Внутри России: Москва 30%, СПб 11%, Сочи 10%. За рубежом: Турция 15%, Китай 14%, ОАЭ 9%.</div>
             </div>
             <div class="chart-card full-width">
-                <h3>Зарубежные предпочтения топ-менеджеров (лето 2025)</h3>
-                <div class="chart-wrap h-280"><canvas id="chartTopManagerIntl"></canvas></div>
-                <div class="note">Источник: <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ассоциация менеджеров / TTG Russia, июль 2025 г.</a></div>
+                <h3>Глобальные предпочтения HNWI APAC (Marriott, 2025)</h3>
+                <div class="chart-wrap h-280"><canvas id="chartPreferencesAPAC"></canvas></div>
+                <div class="note">Источник: <a href="https://news.marriott.com/static-assets/component-resources/newscenter/news/2025/07/01/2025-intentional-traveler-report.pdf" target="_blank" rel="noopener">Marriott Luxury Group, 2025 (1 750 HNWI)</a>. Wellness — 90%; кастомизация — 93%; сельский отдых — 28% (было 19%); сафари — 30%.</div>
             </div>
         </div>
     </section>
 
-    <!-- 3. Чем занимаются -->
+    <!-- 4. Чем занимаются: досуг и впечатления -->
     <section>
-        <h2><span class="dot"></span>Чем занимаются в отпуске</h2>
-        <p class="subtitle">Предпочтения предпринимателей (ЮKassa, 2025) и топ-менеджеров (Ассоциация менеджеров, 2025).</p>
+        <h2><span class="dot"></span>Чем занимаются в отпуске: досуг и впечатления</h2>
+        <p class="subtitle">Данные Internova (3 000 респондентов + 50 000 профилей) и Altiant (HNWI, 2025).</p>
         <div class="chart-grid">
             <div class="chart-card">
-                <h3>Форматы отдыха предпринимателей</h3>
-                <div class="chart-wrap h-320"><canvas id="chartActivities"></canvas></div>
-                <div class="note">Источник: <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / СберБизнес Live, январь 2025 г.</a></div>
+                <h3>Интересы ультра-люкс путешественников (Internova)</h3>
+                <div class="chart-wrap h-280"><canvas id="chartInterestsInternova"></canvas></div>
+                <div class="note">Источник: <a href="https://www.internova.com/" target="_blank" rel="noopener">Internova Travel Group Index, 2025</a>. Кулинарные путешествия — 70%, городские поездки — 62%, экскурсии — 61%, wellness — 40%.</div>
             </div>
             <div class="chart-card">
-                <h3>Досуг топ-менеджеров в летнем отпуске</h3>
-                <div class="chart-wrap h-320"><canvas id="chartTopManagerLeisure"></canvas></div>
-                <div class="note">Источник: <a href="https://fedpress.ru/news/77/society/3390316" target="_blank" rel="noopener">Ассоциация менеджеров / ФедералПресс, июль 2025 г.</a></div>
+                <h3>Wellness-предпочтения HNWI (Altiant)</h3>
+                <div class="chart-wrap h-280"><canvas id="chartWellnessAltiant"></canvas></div>
+                <div class="note">Источник: <a href="https://www.luxuriousmagazine.com/decoding-the-wealthy-mindset-insights-from-the-altiant-glam-q3-2025-study/" target="_blank" rel="noopener">Altiant GLAM Q3 2025</a>. 51% посещали спа за год; 21% планируют wellness-ретрит; 72% выберут отель со специализированными wellness-опциями.</div>
             </div>
         </div>
     </section>
 
-    <!-- 4. Цифровой детокс -->
+    <!-- 5. Работа и bleisure -->
     <section>
-        <h2><span class="dot"></span>Цифровой детокс и рабочая включённость</h2>
-        <p class="subtitle">Данные Ассоциации менеджеров (топ-менеджеры, 2025) и ЮKassa (предприниматели, 2025).</p>
+        <h2><span class="dot"></span>Работа в отпуске и «bleisure»</h2>
+        <p class="subtitle">Российские предприниматели (ЮKassa) и глобальные UHNWI (Kotak Private).</p>
         <div class="chart-grid">
             <div class="chart-card">
-                <h3>Отношение топ-менеджеров к digital detox</h3>
-                <div class="chart-wrap"><canvas id="chartDigitalDetox"></canvas></div>
-                <div class="note">Источник: <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ассоциация менеджеров / TTG Russia, июль 2025 г.</a></div>
+                <h3>Российские предприниматели: рабочая включённость</h3>
+                <div class="chart-wrap"><canvas id="chartWorkRU2"></canvas></div>
+                <div class="note">Источник: <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa, 2025</a>.</div>
             </div>
             <div class="chart-card">
-                <h3>Как топ-менеджеры справляются с работой в отпуске</h3>
-                <div class="chart-wrap"><canvas id="chartWorkDelegation"></canvas></div>
-                <div class="note">Источник: <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ассоциация менеджеров / TTG Russia, июль 2025 г.</a></div>
-            </div>
-            <div class="chart-card full-width">
-                <h3>Рабочая включённость предпринимателей в отпуске</h3>
-                <div class="chart-wrap h-240"><canvas id="chartWorkInVacation"></canvas></div>
-                <div class="note">Источник: <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">ЮKassa / СберБизнес Live, январь 2025 г.</a></div>
+                <h3>Глобальные UHNWI: отношение к bleisure</h3>
+                <div class="chart-wrap"><canvas id="chartBleisure"></canvas></div>
+                <div class="note">Источник: <a href="https://private.kotak.bank.in/insights/when-work-and-travel-move-together-for-uhnis.php" target="_blank" rel="noopener">Kotak Private / UHNWI, 2025</a>. 84% интересуются bleisure; 66% продлевали поездку; 14% — 3+ раза.</div>
             </div>
         </div>
     </section>
 
-    <!-- 5. Бизнес-джеты -->
+    <!-- 6. Расходы -->
     <section>
-        <h2><span class="dot"></span>Глобальный сегмент: маршруты бизнес-авиации</h2>
-        <p class="subtitle">Рост трафика на маршрутах частной авиации — косвенный индикатор мобильности UHNWI (Knight Frank / VistaJet, 2025).</p>
+        <h2><span class="dot"></span>Расходы: сдвиг от товаров к впечатлениям</h2>
+        <p class="subtitle">Bain & Company / Altagamma (UHNWI) и Hurun (HNWI).</p>
         <div class="chart-grid">
-            <div class="chart-card full-width">
-                <h3>Самые быстрорастущие маршруты частной авиации (2025)</h3>
-                <div class="chart-wrap h-320"><canvas id="chartJetRoutes"></canvas></div>
-                <div class="note">Источник: <a href="https://www.businessinsider.com/private-jet-traffic-routes-popular-abu-dhabi-saudi-arabia-nantucket-2026-5" target="_blank" rel="noopener">Knight Frank Wealth Report / VistaJet / Business Insider, май 2026 г.</a></div>
+            <div class="chart-card">
+                <h3>Рост расходов UHNWI по категориям (2025 к 2024)</h3>
+                <div class="chart-wrap"><canvas id="chartSpendBain"></canvas></div>
+                <div class="note">Источник: <a href="https://www.forbes.com/sites/forbes-research/2025/12/17/from-bleisure-to-sustainability-4-trends-that-defined-luxury-travel-in-2025/" target="_blank" rel="noopener">Bain & Company / Altagamma, ноябрь 2025</a>. Круизы +12%; джеты/яхты +11%; рестораны +7%; отели +7%; автомобили −4%; искусство −7%.</div>
+            </div>
+            <div class="chart-card">
+                <h3>Планы расходов HNWI (Hurun)</h3>
+                <div class="chart-wrap"><canvas id="chartSpendHurun"></canvas></div>
+                <div class="note">Источник: <a href="https://www.hurun.cn/zh-CN/Info/Detail?num=CSX6BTOMEWY4" target="_blank" rel="noopener">Hurun, 2026</a>. Туризм — чистый рост +58%; здоровье/велнес — +41%; образование детей — следующий приоритет.</div>
             </div>
         </div>
     </section>
 
-    <!-- 6. Суперяхты -->
+    <!-- 7. Косвенные индикаторы -->
     <section>
-        <h2><span class="dot"></span>Суперяхты: «летняя столица» миллиардеров</h2>
-        <p class="subtitle">Средиземноморье остаётся направлением №1 для яхт длиной более 30 метров (Knight Frank / Douglas Elliman, 2025).</p>
+        <h2><span class="dot"></span>Косвенные индикаторы: джеты и суперяхты (Knight Frank, 2026)</h2>
+        <p class="subtitle">Рост маршрутов частной авиации и рынка суперяхт — индикаторы мобильности и «тихой роскоши» UHNWI.</p>
         <div class="chart-grid">
             <div class="chart-card">
-                <h3>Доля Средиземноморья среди направлений суперяхт</h3>
-                <div class="chart-wrap"><canvas id="chartYachtShare"></canvas></div>
-                <div class="note">Источник: <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">Knight Frank / Douglas Elliman / Business Insider, 2025 г.</a></div>
+                <h3>Самые быстрорастущие маршруты джетов (2025)</h3>
+                <div class="chart-wrap"><canvas id="chartJetRoutes"></canvas></div>
+                <div class="note">Источник: <a href="https://www.knightfrank.com/research/article/2026/4/superyachts-private-jets-upward-mobility-wealthy" target="_blank" rel="noopener">Knight Frank Wealth Report 2026</a>. Абу-Даби–Лондон +238%; Нантакет–Нью-Йорк +192%; Милан–Париж +66%; Лондон–Савойя +50%.</div>
             </div>
             <div class="chart-card">
-                <h3>Ключевые локации для суперяхт</h3>
-                <div class="chart-wrap"><canvas id="chartYachtSpots"></canvas></div>
-                <div class="note">Источник: <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">Business Insider / SuperYacht Times, 2025 г.</a></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. UHNWI тренды -->
-    <section>
-        <h2><span class="dot"></span>Глобальный контекст: UHNWI и «тихая роскошь»</h2>
-        <div class="chart-grid">
-            <div class="chart-card full-width">
-                <h3>Ключевые тренды UHNWI (2025–2026)</h3>
-                <div class="insight-box" style="margin-top:0; background: transparent; border: none; padding: 0;">
-                    <ul>
-                        <li><strong>Рост UHNWI:</strong> в 2026 году в мире насчитывалось 713 626 человек с капиталом от $30 млн; за последние 5 лет ежедневно 89 человек преодолевали этот порог <a href="https://www.forbes.com/sites/forbeswealth/2026/04/23/how-the-ultra-wealthy-are-spending-their-money-in-2026-according-to-knight-frank/" target="_blank" rel="noopener">[Knight Frank Wealth Report 2026 / Forbes]</a>.</li>
-                        <li><strong>Сдвиг от товаров к впечатлениям:</strong> богатые тратят всё больше на путешествия, гастрономию и уникальные впечатления, а не на традиционные предметы роскоши <a href="https://www.knightfrank.com/research/article/2025-08-29-the-changing-face-of-luxury-how-experience-is-defining-property" target="_blank" rel="noopener">[Knight Frank]</a>.</li>
-                        <li><strong>«Тихая роскошь» и digital detox:</strong> спрос на уединённые ретриты, места без интернета и «незаметные» направления растёт <a href="https://www.forbes.com/sites/forbeswealth/2026/07/01/why-affluent-travelers-are-paying-more-to-do-less/" target="_blank" rel="noopener">[Forbes, июль 2026 г.]</a>.</li>
-                        <li><strong>Мобильность как новая роскошь:</strong> «дип-ин-дип-аут» образ жизни (перемещение между домами, городами и континентами) становится нормой для UHNWI <a href="https://www.knightfrank.co.uk/research/article/2026-09-17-the-new-global-mobility-introducing-the-dip-in-and-dip-out-lifestyle" target="_blank" rel="noopener">[Knight Frank]</a>.</li>
-                    </ul>
-                </div>
+                <h3>Суперяхты: рынок и возраст новых пользователей</h3>
+                <div class="chart-wrap"><canvas id="chartYachts"></canvas></div>
+                <div class="note">Источник: <a href="https://www.knightfrank.com/research/article/2026/4/superyachts-private-jets-upward-mobility-wealthy" target="_blank" rel="noopener">Knight Frank, 2026</a>. Рынок суперяхт +70%; продажи яхт >70 м +60%; 47% новых пользователей джетов — до 45 лет.</div>
             </div>
         </div>
     </section>
 
     <!-- ИСТОЧНИКИ -->
     <div class="sources-section">
-        <h2>📚 Источники и размер выборки</h2>
+        <h2>📚 Источники</h2>
         <ol>
-            <li><strong>ЮKassa / СберБизнес Live (2025).</strong> Опрос <strong>150 компаний</strong> (онлайн-предприниматели). <a href="https://sberbusiness.live/news/bolshe-polovini-predprinimatelei-rabotayut-v-otpuske" target="_blank" rel="noopener">Ссылка</a>.</li>
-            <li><strong>Ассоциация менеджеров / TTG Russia (2025).</strong> Опрос <strong>более 220 управленцев</strong> (топ-менеджеры). <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ссылка</a>.</li>
-            <li><strong>Ассоциация менеджеров / ФедералПресс (2025).</strong> Досуг и цифровой детокс топ-менеджеров (та же выборка 220+). <a href="https://fedpress.ru/news/77/society/3390316" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>ЮKassa / ЮMoney (2025).</strong> Опрос 150 компаний (онлайн-предприниматели). <a href="https://yoomoney.ru/document/bolee-polovini-predprinimateleie-rabotayut-v-otpuske" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Ассоциация менеджеров / TTG Russia (2025).</strong> Опрос 220+ управленцев. <a href="https://www.ttg-russia.ru/news/bez-gadzhetov.html" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Hurun Chinese Luxury Consumer Survey 2026.</strong> 470 HNWI (70 UHNWI). <a href="https://www.hurun.cn/zh-CN/Info/Detail?num=CSX6BTOMEWY4" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Marriott Luxury Group — The Intentional Traveler (2025).</strong> 1 750 HNWI из 7 стран APAC. <a href="https://news.marriott.com/static-assets/component-resources/newscenter/news/2025/07/01/2025-intentional-traveler-report.pdf" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Internova Travel Group Index (2025).</strong> 3 000 респондентов + 50 000 ультра-люкс профилей. <a href="https://www.internova.com/" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Altiant GLAM Q3 2025.</strong> Глобальный опрос HNWI. <a href="https://www.luxuriousmagazine.com/decoding-the-wealthy-mindset-insights-from-the-altiant-glam-q3-2025-study/" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Kotak Private — UHNWI & Bleisure (2025).</strong> Качественный обзор с макроданными. <a href="https://private.kotak.bank.in/insights/when-work-and-travel-move-together-for-uhnis.php" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Bain & Company / Altagamma (2025).</strong> Расходы UHNWI на люксовые впечатления. <a href="https://www.forbes.com/sites/forbes-research/2025/12/17/from-bleisure-to-sustainability-4-trends-that-defined-luxury-travel-in-2025/" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Knight Frank Wealth Report 2026.</strong> UHNWI, джеты, суперяхты. <a href="https://www.knightfrank.com/research/article/2026/4/superyachts-private-jets-upward-mobility-wealthy" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Altrata World Ultra Wealth Report 2025.</strong> 41,3 млн HNWI; 510 810 UHNWI. <a href="https://altrata.com/reports/world-ultra-wealth-report-2025" target="_blank" rel="noopener">Ссылка</a>.</li>
+            <li><strong>Capgemini World Wealth Report 2025.</strong> 25,3 млн HNWI; 250 000 UHNWI (финансовые активы). <a href="https://www.cnbc.com/2026/06/04/stocks-new-millionaires.html" target="_blank" rel="noopener">Ссылка</a>.</li>
             <li><strong>Туту / Lenta.ru (2025).</strong> Направления VIP-туристов. <a href="https://lenta.ru/news/2025/12/17/nazvany-lyubimye-napravleniya-rossiyskih-bogachey-v-2025-godu/" target="_blank" rel="noopener">Ссылка</a>.</li>
-            <li><strong>Altrata — World Ultra Wealth Report 2025.</strong> Модельная оценка: <strong>510 810 UHNWI</strong>. <a href="https://altrata.com/reports/world-ultra-wealth-report-2025" target="_blank" rel="noopener">Ссылка</a>.</li>
-            <li><strong>Knight Frank Wealth Report 2026.</strong> Модельная оценка: <strong>713 626 UHNWI</strong>. <a href="https://www.knightfrank.com.hk/blog/2026/04/23/knight-frank-launches-the-wealth-report-2026-20th-edition" target="_blank" rel="noopener">Ссылка</a>.</li>
-            <li><strong>Capgemini World Wealth Report 2025.</strong> Оценка по финансовым активам: <strong>≈250 000 UHNWI</strong>. <a href="https://www.cnbc.com/2026/06/04/stocks-new-millionaires.html" target="_blank" rel="noopener">Ссылка</a>.</li>
-            <li><strong>Knight Frank / VistaJet / Business Insider (2026).</strong> Быстрорастущие маршруты частной авиации. <a href="https://www.businessinsider.com/private-jet-traffic-routes-popular-abu-dhabi-saudi-arabia-nantucket-2026-5" target="_blank" rel="noopener">Ссылка</a>.</li>
-            <li><strong>Knight Frank / Douglas Elliman / Business Insider (2025).</strong> Направления суперяхт. <a href="https://www.businessinsider.com/billionaire-superyacht-spots-jeff-bezos-koru-david-geffen-rising-sun-2025-7" target="_blank" rel="noopener">Ссылка</a>.</li>
         </ol>
+        <p class="disclaimer">Примечание: российские данные основаны на выборочных опросах (150 компаний, 220+ управленцев). Глобальные оценки численности HNWI и UHNWI (41,3 млн; 510 810; 713 626; 250 000) — модельные, а не выборочные. Данные Hurun относятся к китайским HNWI; Marriott и Internova — к APAC и североамериканским путешественникам. Косвенные индикаторы (джеты, яхты) отражают поведение UHNWI, но не являются результатом прямого опроса об отдыхе.</p>
     </div>
 
     <footer>
-        <p>Отчёт составлен на основе открытых данных: ЮKassa / СберБизнес Live (2025), Ассоциация менеджеров (2025–2026), Туту / Lenta.ru (2025), Altrata (2025), Knight Frank Wealth Report (2026), Capgemini (2025), VistaJet, Douglas Elliman, Business Insider, Forbes, JETVIP.</p>
+        <p>Отчёт составлен на основе открытых данных: ЮKassa (2025), Hurun (2026), Marriott Luxury Group (2025), Internova (2025), Altiant (2025), Kotak Private (2025), Bain & Company / Altagamma (2025), Knight Frank (2026), Altrata (2025), Capgemini (2025).</p>
     </footer>
 
 </div>
 
-<!-- Chart.js: основной CDN -->
+<!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
 <script>
@@ -526,23 +538,18 @@
         'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js'
     ];
 
-    function isMobile() {
-        return window.matchMedia('(max-width: 640px)').matches;
-    }
+    function isMobile() { return window.matchMedia('(max-width: 640px)').matches; }
 
     function showChartError() {
         var wraps = document.querySelectorAll('.chart-wrap');
         for (var i = 0; i < wraps.length; i++) {
-            wraps[i].innerHTML = '<div class="chart-error">⚠️ Не удалось загрузить библиотеку графиков.<br>Проверьте подключение к интернету и обновите страницу.</div>';
+            wraps[i].innerHTML = '<div class="chart-error">⚠️ Не удалось загрузить библиотеку графиков.<br>Проверьте подключение к интернету.</div>';
         }
     }
 
     function loadFallback(idx) {
         idx = idx || 0;
-        if (idx >= FALLBACK_CDNS.length) {
-            showChartError();
-            return;
-        }
+        if (idx >= FALLBACK_CDNS.length) { showChartError(); return; }
         var s = document.createElement('script');
         s.src = FALLBACK_CDNS[idx];
         s.async = true;
@@ -590,41 +597,14 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     animation: { duration: 0 },
-                    layout: {
-                        padding: { left: 10, right: 15, top: 5, bottom: 5 }
-                    },
+                    layout: { padding: { left: 10, right: 15, top: 5, bottom: 5 } },
                     plugins: {
                         legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                label: function (ctx) {
-                                    return ' ' + ctx.parsed.x + sfx;
-                                }
-                            }
-                        }
+                        tooltip: { callbacks: { label: function (ctx) { return ' ' + ctx.parsed.x + sfx; } } }
                     },
                     scales: {
-                        x: {
-                            grid: { color: gridColor },
-                            ticks: {
-                                font: { size: axisFont },
-                                callback: function (v) { return v + sfx; }
-                            }
-                        },
-                        y: {
-                            grid: { display: false },
-                            ticks: {
-                                font: { size: axisFont },
-                                autoSkip: false,
-                                padding: 6,
-                                crossAlign: 'far'
-                            },
-                            afterFit: function(scale) {
-                                // Принудительно выделяем минимальную ширину оси Y, чтобы текст не обрезался
-                                var minWidth = mobile ? 120 : 180;
-                                scale.width = Math.max(scale.width, minWidth);
-                            }
-                        }
+                        x: { grid: { color: gridColor }, ticks: { font: { size: axisFont }, callback: function (v) { return v + sfx; } } },
+                        y: { grid: { display: false }, ticks: { font: { size: axisFont }, autoSkip: false, padding: 6, crossAlign: 'far' }, afterFit: function(scale) { scale.width = Math.max(scale.width, mobile ? 120 : 180); } }
                     }
                 }
             });
@@ -636,215 +616,126 @@
             if (!el) return;
             var chart = new Chart(el, {
                 type: 'doughnut',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        data: data,
-                        backgroundColor: colors,
-                        borderWidth: 2,
-                        borderColor: '#1a1d27'
-                    }]
-                },
+                data: { labels: labels, datasets: [{ data: data, backgroundColor: colors, borderWidth: 2, borderColor: '#1a1d27' }] },
                 options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    cutout: '60%',
-                    animation: { duration: 0 },
+                    responsive: true, maintainAspectRatio: false, cutout: '60%', animation: { duration: 0 },
                     plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                font: { size: legendFont },
-                                padding: mobile ? 8 : 16,
-                                usePointStyle: true,
-                                pointStyle: 'circle',
-                                boxWidth: 8
-                            }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function (ctx) {
-                                    return ' ' + ctx.label + ': ' + ctx.parsed + '%';
-                                }
-                            }
-                        }
+                        legend: { position: 'bottom', labels: { font: { size: legendFont }, padding: mobile ? 8 : 16, usePointStyle: true, pointStyle: 'circle', boxWidth: 8 } },
+                        tooltip: { callbacks: { label: function (ctx) { return ' ' + ctx.label + ': ' + ctx.parsed + '%'; } } }
                     }
                 }
             });
             chartInstances.push(chart);
         }
 
-        // -------- 0. Охват --------
+        // 0. Охват
         horizontalBar('chartSampleSize',
-            mobile ? ['ЮKassa (компании)', 'АМ (управленцы)'] : ['ЮKassa — 150 компаний', 'Ассоциация менеджеров — 220+ управленцев'],
-            [150, 220],
-            ' чел.',
-            '#6c8cff'
-        );
+            mobile ? ['ЮKassa', 'АМ', 'Hurun', 'Marriott', 'Internova'] : ['ЮKassa — 150', 'АМ — 220+', 'Hurun — 470', 'Marriott — 1750', 'Internova — 3000+'],
+            [150, 220, 470, 1750, 3000], ' чел.', '#6c8cff');
 
-        horizontalBar('chartGlobalPopulation',
-            mobile ? ['Altrata (2025)', 'Knight Frank (2026)', 'Capgemini (2025)'] : ['Altrata, июнь 2025', 'Knight Frank, 2026', 'Capgemini, 2025'],
-            [510.8, 713.6, 250],
-            ' тыс.',
-            '#4ecdc4'
-        );
+        horizontalBar('chartPopulation',
+            mobile ? ['HNWI (Altrata)', 'UHNWI (Altrata)', 'UHNWI (Capgemini)', 'UHNWI (KF)'] : ['HNWI — 41,3 млн (Altrata)', 'UHNWI — 510,8 тыс. (Altrata)', 'UHNWI — 250 тыс. (Capgemini)', 'UHNWI — 713,6 тыс. (KF)'],
+            [41.3, 510.8, 250, 713.6], ' (ед.)', '#4ecdc4');
 
-        // -------- 1. Длительность --------
-        doughnut('chartDurationActual',
-            ['1–2 недели', '3–5 дней', '1–2 дня', '≥ 3 недель'],
-            [46, 35, 14, 5],
-            ['#4ecdc4', '#ffb347', '#ff6b6b', '#a78bfa']
-        );
+        // 1. Демография
+        horizontalBar('chartSleepWork',
+            mobile ? ['Сон', 'Работа/нед'] : ['Сон (ч/день)', 'Рабочая неделя (ч)'],
+            [6.7, 45], '', '#a78bfa');
 
-        horizontalBar('chartFrequency',
-            mobile ? ['Раз в год', 'Раз в полгода', 'Каждый сезон', 'По возможности', 'Не ходят'] : ['Раз в год', 'Раз в полгода', 'Каждый сезон', 'По возможности', 'Не ходят в отпуск'],
-            [15, 15, 5, 28, 27],
-            '%',
-            '#6c8cff'
-        );
+        horizontalBar('chartFamilyTrips',
+            mobile ? ['Семья', 'Поездки', 'Командировки'] : ['Семья (дн./мес)', 'Выезды за рубеж (раз/год)', 'Командировки (дн./мес)'],
+            [6.3, 5, 6.9], '', '#ffb347');
 
-        doughnut('chartIdealNewYear',
-            mobile ? ['7–8 дней', '10–12 дней', '> 2 недель'] : ['7–8 дней (большинство)', '10–12 дней (четверть)', 'Более 2 недель'],
-            [65, 25, 10],
-            ['#6c8cff', '#4ecdc4', '#ffb347']
-        );
+        horizontalBar('chartSports',
+            mobile ? ['Путешествия', 'Гастрономия', 'Спа/велнес', 'Спорт'] : ['Путешествия', 'Гастрономия', 'Спа/велнес', 'Спорт'],
+            [32, 21, 21, 19], '%', '#4ecdc4');
 
-        // -------- 2. Направления --------
-        horizontalBar('chartDomestic',
-            mobile ? ['Москва', 'СПб', 'Сочи', 'Мин. Воды', 'Калининград'] : ['Москва', 'Санкт-Петербург', 'Сочи', 'Минеральные Воды', 'Калининград'],
-            [30, 11, 10, 6, 4],
-            '%',
-            '#ffb347'
-        );
+        // 2. Россия
+        doughnut('chartDurationRU',
+            ['1–2 недели (46%)', '3–5 дней (35%)', '1–2 дня (14%)', '≥ 3 недель (5%)'],
+            [46, 35, 14, 5], ['#4ecdc4', '#ffb347', '#ff6b6b', '#a78bfa']);
 
-        horizontalBar('chartIntl',
-            mobile ? ['Турция', 'Китай', 'ОАЭ', 'Беларусь', 'Узбекистан'] : ['Турция', 'Китай', 'ОАЭ', 'Беларусь', 'Узбекистан'],
-            [15, 14, 9, 7, 7],
-            '%',
-            '#4ecdc4'
-        );
+        doughnut('chartWorkRU',
+            ['Регулярно (56%)', 'Время от времени (25%)', 'По необходимости (16%)', 'Полный отдых (4%)'],
+            [56, 25, 16, 4], ['#ff6b6b', '#ffb347', '#4ecdc4', '#6c8cff']);
 
-        horizontalBar('chartTopManagerIntl',
-            mobile ? ['Турция/Египет/ОАЭ', 'ЮВА', 'Острова', 'Европа', 'Лат. Америка', 'Африка'] : ['Турция, Египет, ОАЭ', 'ЮВА', 'Острова', 'Европа', 'Латинская Америка', 'Африка'],
-            [28, 17, 14, 12, 13, 7],
-            '%',
-            '#6c8cff'
-        );
+        horizontalBar('chartFrequencyRU',
+            mobile ? ['Раз в год', 'Раз в полгода', 'Каждый сезон', 'По возможности', 'Не ходят'] : ['Раз в год', 'Раз в полгода', 'Каждый сезон', 'По возможности', 'Не ходят'],
+            [15, 15, 5, 28, 27], '%', '#6c8cff');
 
-        // -------- 3. Чем занимаются --------
-        horizontalBar('chartActivities',
-            mobile ? ['Море', 'Горы', 'Прогулки', 'Деревня', 'Дома', 'Всё включено', 'Санатории', 'Экскурсии', 'Охота'] : ['Море', 'Горы', 'Прогулки и экскурсии', 'Деревня', 'Дома на диване', 'Отели «всё включено»', 'Санатории и спа', 'Экскурсионные туры', 'Охота и рыбалка'],
-            [22, 17, 16, 12, 10, 8, 6, 5, 4],
-            '%',
-            '#4ecdc4'
-        );
+        // 3. Направления
+        horizontalBar('chartFormatsRU',
+            mobile ? ['Море', 'Горы', 'Прогулки', 'Деревня', 'Дома'] : ['Море', 'Горы', 'Прогулки', 'Деревня', 'Дома'],
+            [22, 17, 16, 12, 10], '%', '#4ecdc4');
 
-        horizontalBar('chartTopManagerLeisure',
-            mobile ? ['Экскурсии', 'Гастротуризм', 'Чтение', 'Фестивали'] : ['Экскурсии', 'Гастрономический туризм', 'Чтение книг в тишине', 'Фестивали/концерты'],
-            [61, 57, 52, 26],
-            '%',
-            '#a78bfa'
-        );
+        horizontalBar('chartDestinationsRU',
+            mobile ? ['Москва', 'СПб', 'Сочи', 'Турция', 'Китай'] : ['Москва (30%)', 'СПб (11%)', 'Сочи (10%)', 'Турция (15%)', 'Китай (14%)'],
+            [30, 11, 10, 15, 14], '%', '#ffb347');
 
-        // -------- 4. Digital detox --------
-        doughnut('chartDigitalDetox',
-            mobile ? ['Частичный детокс', 'Полный отказ', 'С интернетом', 'Без технологий'] : ['Не против частичного', 'Полный отказ обязателен', 'Предпочитают с интернетом', 'Не могут без технологий'],
-            [57, 12, 23, 8],
-            ['#4ecdc4', '#6c8cff', '#ffb347', '#ff6b6b']
-        );
+        horizontalBar('chartPreferencesAPAC',
+            mobile ? ['Wellness', 'Кастомизация', 'Сафари', 'Село'] : ['Wellness (90%)', 'Кастомизация (93%)', 'Сафари (30%)', 'Сельский отдых (28%)'],
+            [90, 93, 30, 28], '%', '#6c8cff');
 
-        horizontalBar('chartWorkDelegation',
-            mobile ? ['Проверка почты', 'Делегирование', 'Только экстренно', 'Полное отключение', 'Удалённо 2–3 ч'] : ['Проверяют почту раз в несколько дней', 'Делегируют команде', 'Только в экстренных случаях', 'Полностью отключаются', 'Работают удалённо 2–3 ч/день'],
-            [34, 32, 14, 11, 9],
-            '%',
-            '#ffb347'
-        );
+        // 4. Досуг
+        horizontalBar('chartInterestsInternova',
+            mobile ? ['Кулинария', 'Города', 'Экскурсии', 'Wellness'] : ['Кулинарные путешествия', 'Городские поездки', 'Экскурсии', 'Wellness'],
+            [70, 62, 61, 40], '%', '#a78bfa');
 
-        doughnut('chartWorkInVacation',
-            mobile ? ['Регулярно на связи', 'Время от времени', 'По необходимости', 'Полный отдых'] : ['Регулярно проверяют чаты/почту', 'Подключаются время от времени', 'Только при необходимости', 'Полноценный отдых'],
-            [56, 25, 16, 4],
-            ['#ff6b6b', '#ffb347', '#4ecdc4', '#6c8cff']
-        );
+        horizontalBar('chartWellnessAltiant',
+            mobile ? ['Спа за год', 'Wellness-ретрит', 'Спец. отель'] : ['Посещали спа (51%)', 'Планируют ретрит (21%)', 'Выберут отель со спец. wellness (72%)'],
+            [51, 21, 72], '%', '#4ecdc4');
 
-        // -------- 5. Джеты --------
+        // 5. Bleisure
+        doughnut('chartWorkRU2',
+            ['Регулярно (56%)', 'Время от времени (25%)', 'По необходимости (16%)', 'Полный отдых (4%)'],
+            [56, 25, 16, 4], ['#ff6b6b', '#ffb347', '#4ecdc4', '#6c8cff']);
+
+        horizontalBar('chartBleisure',
+            mobile ? ['Интерес', 'Продлевали', '3+ раза'] : ['Интерес к bleisure', 'Продлевали поездку', 'Продлевали 3+ раза'],
+            [84, 66, 14], '%', '#a78bfa');
+
+        // 6. Расходы
+        horizontalBar('chartSpendBain',
+            mobile ? ['Круизы', 'Джеты/яхты', 'Рестораны', 'Отели', 'Авто', 'Искусство'] : ['Круизы', 'Джеты/яхты', 'Рестораны', 'Отели', 'Автомобили', 'Искусство'],
+            [12, 11, 7, 7, -4, -7], '%', '#ff6b6b');
+
+        horizontalBar('chartSpendHurun',
+            mobile ? ['Туризм', 'Здоровье', 'Образование'] : ['Туризм (+58%)', 'Здоровье (+41%)', 'Образование'],
+            [58, 41, 30], '%', '#6c8cff');
+
+        // 7. Джеты и яхты
         horizontalBar('chartJetRoutes',
-            mobile ? ['Джидда–Рияд', 'Абу-Даби–Лондон', 'Нантакет–NY', 'Ницца–Пальма', 'Вашингтон–У.-П.', 'Канны–Париж', 'Мумбаи–Дели'] : ['Джидда – Рияд', 'Абу-Даби – Лондон', 'Нантакет – Нью-Йорк', 'Ницца – Пальма', 'Вашингтон – Уайт-Плейнс', 'Канны – Париж', 'Мумбаи – Нью-Дели'],
-            [269, 238, 192, 137, 107, 85, 66],
-            '%',
-            '#ff6b6b'
-        );
+            mobile ? ['Абу-Даби–Лондон', 'Нантакет–NY', 'Милан–Париж', 'Лондон–Савойя'] : ['Абу-Даби–Лондон (+238%)', 'Нантакет–Нью-Йорк (+192%)', 'Милан–Париж (+66%)', 'Лондон–Савойя (+50%)'],
+            [238, 192, 66, 50], '%', '#ff6b6b');
 
-        // -------- 6. Яхты --------
-        doughnut('chartYachtShare',
-            mobile ? ['Средиземноморье', 'Прочие'] : ['Средиземноморье — направление №1', 'Остальные регионы'],
-            [72, 28],
-            ['#4ecdc4', '#2a2d3a']
-        );
-
-        horizontalBar('chartYachtSpots',
-            mobile ? ['Ривьера', 'Сардиния', 'Амальфи', 'Балеары', 'Греция', 'Турция', 'Хорватия'] : ['Французская Ривьера', 'Сардиния', 'Амальфи', 'Балеары', 'Греция/Эгейское море', 'Турция (Бодрум)', 'Хорватия/Адриатика'],
-            [95, 90, 80, 78, 70, 55, 45],
-            '',
-            '#ffb347'
-        );
+        horizontalBar('chartYachts',
+            mobile ? ['Рынок', 'Яхты >70м', 'Новые <45 лет'] : ['Рынок суперяхт (+70%)', 'Продажи яхт >70 м (+60%)', 'Новые пользователи джетов <45 лет (47%)'],
+            [70, 60, 47], '%', '#ffb347');
     }
 
     function handleResize() {
         var nowMobile = isMobile();
-        if (nowMobile !== lastMobile) {
-            buildCharts();
-        } else {
-            for (var i = 0; i < chartInstances.length; i++) {
-                try { chartInstances[i].resize(); } catch (e) {}
-            }
-        }
-    }
-
-    function handleOrientation() {
-        setTimeout(handleResize, 300);
+        if (nowMobile !== lastMobile) { buildCharts(); }
+        else { for (var i = 0; i < chartInstances.length; i++) { try { chartInstances[i].resize(); } catch (e) {} } }
     }
 
     var resizeTimer;
-    function scheduleResize() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(handleResize, 250);
-    }
+    function scheduleResize() { clearTimeout(resizeTimer); resizeTimer = setTimeout(handleResize, 250); }
 
     function bootstrap() {
-        if (typeof Chart === 'undefined') {
-            loadFallback(0);
-            return;
-        }
-        try {
-            buildCharts();
-        } catch (e) {
-            console.error('Chart init error:', e);
-            showChartError();
-            return;
-        }
+        if (typeof Chart === 'undefined') { loadFallback(0); return; }
+        try { buildCharts(); } catch (e) { console.error('Chart init error:', e); showChartError(); return; }
         window.addEventListener('resize', scheduleResize, { passive: true });
-        window.addEventListener('orientationchange', handleOrientation, { passive: true });
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                for (var i = 0; i < chartInstances.length; i++) {
-                    try { chartInstances[i].resize(); } catch (e) {}
-                }
-            }, 200);
-        });
+        window.addEventListener('orientationchange', function () { setTimeout(handleResize, 300); }, { passive: true });
+        window.addEventListener('load', function () { setTimeout(function () { for (var i = 0; i < chartInstances.length; i++) { try { chartInstances[i].resize(); } catch (e) {} } }, 200); });
     }
 
     if (typeof Chart === 'undefined') {
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', function () { loadFallback(0); });
-        } else {
-            loadFallback(0);
-        }
+        if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', function () { loadFallback(0); }); }
+        else { loadFallback(0); }
     } else {
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', bootstrap);
-        } else {
-            bootstrap();
-        }
+        if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', bootstrap); }
+        else { bootstrap(); }
     }
 })();
 </script>
