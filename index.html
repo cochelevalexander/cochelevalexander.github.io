@@ -1,50 +1,29 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Бренды в выдаче · Яндекс и Алиса</title>
-<script id="config">
-// ИСТОЧНИК ДАННЫХ. Для сайта оставьте файл рядом с HTML или укажите прямой URL на JSON или CSV.
-const DATA_URL = "./combined.json";
-</script>
+<title>Видимость брендов — Яндекс, Алиса и GigaChat</title>
 <style>
-:root{--ink:#192b49;--muted:#516780;--line:#d4dfed;--bg:#f2f6fc;--paper:#fff;--search:#195db7;--alice:#7651a7;--ssoft:#deebff;--asoft:#eee9fa;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:15px}*{box-sizing:border-box}body{margin:0}header{color:#fff;background:#142d59;padding:27px max(5%,calc((100vw - 1320px)/2)) 31px}header .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px}.signature{display:flex;gap:10px;align-items:center;font-size:.85rem;color:#dce9ff}.mark{display:inline-flex;gap:3px;align-items:flex-end;height:20px}.mark i{background:#9dc8ff;width:5px;border-radius:2px}.mark i:nth-child(1){height:9px}.mark i:nth-child(2){height:15px}.mark i:nth-child(3){height:20px}h1{font-family:"Segoe UI",Inter,sans-serif;font-weight:630;font-size:clamp(30px,4vw,54px);letter-spacing:-.045em;margin:12px 0 0;line-height:1.08}button,select,input,.btn{font:inherit}button,.btn{cursor:pointer;text-decoration:none;border:1px solid #becde0;background:white;border-radius:7px;color:var(--ink);padding:9px 13px;font-weight:550;font-size:.86rem;display:inline-flex;align-items:center;justify-content:center}.primary{background:#dceaff;border-color:#dceaff;color:#173e78}header .ghost{background:none;border-color:#809bc2;color:white}button:hover,.btn:hover{filter:brightness(.95)}:focus-visible{outline:3px solid #e5a32a;outline-offset:3px}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}main{max-width:1430px;margin:auto;padding:0 max(3%,22px) 60px}.source{padding:13px 0;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.86rem;color:var(--muted)}.source strong{color:var(--ink)}.source a{color:var(--search)}.smallbutton{background:none;border:0;padding:1px 0;color:var(--search);text-decoration:underline;text-underline-offset:3px}.filters,.panel,.kpi{background:var(--paper);border:1px solid var(--line);border-radius:12px}.filters{margin-top:18px;padding:12px 17px;display:flex;gap:12px;align-items:end;flex-wrap:wrap}label small{display:block;font-weight:600;font-size:.74rem;color:var(--muted);margin-bottom:4px}input,select{max-width:100%;padding:8px 10px;border:1px solid #b9c9db;border-radius:6px;background:#fff;color:var(--ink);min-height:37px}label.search{flex:1;min-width:190px}label.search input{width:100%}nav{display:flex;gap:21px;overflow:auto;padding:16px 0 0;border-bottom:1px solid #c9d6e8}nav button{border:0;white-space:nowrap;border-radius:0;background:none;padding:8px 0 11px;color:var(--muted);border-bottom:3px solid transparent}nav button[aria-pressed=true]{border-color:var(--search);color:var(--ink)}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:19px 0}.kpi{padding:16px 18px}.kpi .name{color:var(--muted);font-weight:600;font-size:.84rem}.kpi b{display:block;font-size:2.28rem;letter-spacing:-.05em;font-weight:650;margin:4px 0;font-variant-numeric:tabular-nums}.kpi span:last-child,.hint,.note{font-size:.82rem;color:var(--muted);line-height:1.48}.panel{padding:clamp(14px,2vw,25px);margin:16px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pair .panel{margin:0}.panelhead{display:flex;justify-content:space-between;align-items:start;gap:12px;flex-wrap:wrap}.panelhead h2,.panel h2{font-weight:650;letter-spacing:-.025em;font-size:1.35rem;margin:0 0 5px}.panel p{margin:4px 0 12px}.panel h3{font-size:1rem;margin:20px 0 8px}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.78rem;color:var(--muted);margin:12px 0}.dot{display:inline-block;width:.63rem;height:.63rem;border-radius:50%;margin-right:5px}.green,.bar.s{background:var(--search)}.purple,.bar.a{background:var(--alice)}.chartrow{display:grid;grid-template-columns:minmax(102px,24%) 1fr minmax(60px,auto);align-items:center;gap:12px;padding:8px 0;border-top:1px solid #e8eff8}.brandlink{border:0;background:none;font-weight:640;color:var(--ink);text-align:left;padding:0;justify-content:flex-start;overflow-wrap:anywhere}.brandlink:hover{text-decoration:underline;color:var(--search)}.tracks,.values{display:grid;grid-template-rows:14px 14px;gap:4px;align-items:center}.track{height:8px;background:#ebf1fa;border-radius:5px;overflow:hidden}.bar{height:100%;border-radius:5px}.values{font-size:.75rem;text-align:right;font-variant-numeric:tabular-nums}.sc{color:var(--search)}.ac{color:var(--alice)}.scroll{overflow:auto;max-height:630px;margin-top:10px}table{border-collapse:separate;border-spacing:0;width:100%;font-size:.85rem;line-height:1.45}th,td{text-align:left;padding:9px 11px;border-bottom:1px solid #e5ecf6;vertical-align:top}th{position:sticky;top:0;background:#edf3fb;color:#375475;font-size:.75rem;z-index:1}td.num{font-variant-numeric:tabular-nums;white-space:nowrap}tbody tr:hover{background:#f4f8ff}td:first-child,th:first-child{padding-left:8px}.empty{padding:16px;color:var(--muted);background:#f2f6fc;border-radius:6px}.tag{display:inline-block;background:#eaf1fb;border-radius:5px;padding:2px 7px;color:#3a5275;font-size:.74rem}.tag.rec{background:var(--asoft);color:#583e83}.tag.searchtag{background:var(--ssoft);color:#214e90}.query{border-top:1px solid var(--line);padding:12px 0}.query>summary{cursor:pointer;font-weight:600;line-height:1.5}.query summary small{font-weight:400;color:var(--muted)}.evidence{margin:4px 0 10px;color:var(--muted);line-height:1.5}.detailgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.detailgrid ul,.detailgrid ol{margin:6px 0;padding-left:20px}.detailgrid li{margin:7px 0}.notice{background:#fff5dc;border:1px solid #e8d398;border-radius:8px;padding:11px 14px;margin:13px 0 0;color:#634b15;font-size:.86rem;line-height:1.5}.controls{display:flex;gap:10px;align-items:end;flex-wrap:wrap}.hidden,[hidden]{display:none!important}.right{text-align:right}.method{font-size:.9rem;line-height:1.6}.method li{margin:6px 0}.filterinfo{font-weight:600;font-size:.85rem;color:var(--muted)}#file{position:absolute;left:-9999px}#file:focus-visible+.btn{outline:3px solid #e5a32a}.statusline{margin:3px 0;line-height:1.45}.mini{font-weight:600;white-space:nowrap}.section-title{margin:20px 0 7px}.caption{font-size:.82rem;color:var(--muted);font-weight:400}footer{margin:22px 0;color:var(--muted);font-size:.8rem}
-@media(max-width:820px){.kpis{grid-template-columns:repeat(2,1fr)}.pair,.detailgrid{grid-template-columns:1fr}header .wrap{align-items:flex-start;flex-direction:column;gap:17px}.chartrow{grid-template-columns:minmax(82px,27%) 1fr 46px}.panel{padding:15px}main{padding:0 13px 35px}}@media(max-width:470px){.kpi{padding:12px}.kpis{gap:8px}.filters{padding:10px;gap:8px}.filters label{max-width:100%}.kpi b{font-size:1.8rem}header{padding:21px 14px}nav{gap:16px}.pair{gap:10px}}@media print{header{background:white;color:black;padding:8px}.actions,nav,.filters,.source button,.controls{display:none}.scroll{max-height:none;overflow:visible}.kpi,.panel{break-inside:avoid}body{background:white}.signature{color:black}}
-.original{white-space:pre-wrap;overflow-wrap:anywhere;max-height:420px;overflow:auto;padding:12px;background:#f1f5fb;font:13px/1.5 monospace}.raw-record{margin-top:14px}.raw-record>summary{cursor:pointer;color:var(--search)}
-.signplus{opacity:.6}.period{font-variant-numeric:tabular-nums;margin-top:10px;color:#d3e5ff;font-size:.92rem}
-header{background:linear-gradient(115deg,#10264d,#244e88);padding-top:24px;padding-bottom:26px}h1{font-family:Inter,"Segoe UI",Arial,sans-serif}
-:root{--search:#195eb8;--alice:#714eb0;--bg:#f2f5fb;--ink:#172b48;--muted:#536881}
-.kpi{border-top:3px solid #c4d3e6}.kpi:nth-child(2){border-top-color:var(--search)}.kpi:nth-child(3),.kpi:nth-child(4){border-top-color:var(--alice)}
-main{max-width:1520px}.filters{align-items:flex-end}.filters select{max-width:275px}.layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(250px,.85fr);gap:16px;margin-bottom:16px}.layout>.panel{margin:0;min-width:0}
-.side{background:#eaf1fb;border-color:#d2e0f2}.leader{padding:16px 0;border-top:1px solid #c8d7ed}.leader:first-of-type{margin-top:15px}.leader small,.rowhead{color:var(--muted);font-size:.78rem;font-weight:600}.leader b{display:block;font-size:1.2rem;line-height:1.35;letter-spacing:-.02em;margin:3px 0}.leader em{font-style:normal;font-size:.83rem;color:var(--muted)}
-.bargraph .chartrow{grid-template-columns:minmax(95px,23%) minmax(65px,1fr) minmax(73px,auto);gap:10px}.axis{margin:10px calc(75px + 10px) 0 calc(23% + 10px);display:flex;justify-content:space-between;color:var(--muted);font-size:.7rem}
-.bargraph .track{height:8px;background:#ebf1fa}.bargraph .chartrow{padding:6px 0}.values b{font-weight:600}.panelhead h2{line-height:1.25}.standfirst{font-size:.88rem;line-height:1.45;color:var(--muted)}
-.query summary .summarylist{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:15px;padding:7px 0 0 18px;font-weight:400;font-size:.84rem;color:var(--muted)}.summarylist strong{font-weight:600;color:var(--ink)}
-.catlink{color:var(--search)}.missinglist{columns:2;line-height:1.7}.badge{font-size:.76rem;font-weight:600;background:#dfeafa;color:#2e547b;padding:3px 8px;border-radius:14px}.tilegroup{display:flex;gap:10px;flex-wrap:wrap}.tilegroup span{background:#edf3fc;border-radius:5px;padding:5px 8px;color:#32527b;font-size:.8rem}
-.small-table th{white-space:normal}.methodbox{margin-top:14px}.methodbox summary{cursor:pointer;font-weight:600}.series{display:flex;gap:2px;align-items:flex-end;height:45px}.series span{min-width:4px;background:var(--search)}.scroll{overscroll-behavior:contain}nav{gap:22px}button[data-tab][aria-pressed=true]{font-weight:700}.panel [data-channel]{font-weight:500}
-@media(max-width:900px){.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.side>h2{grid-column:1/-1}.side .leader{margin:0}.filters select{max-width:210px}}
-@media(max-width:580px){.query summary .summarylist{grid-template-columns:1fr;gap:4px}.side{display:block}.missinglist{columns:1}.filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.filters label.search{grid-column:1/-1;min-width:0}.filters label select,.filters label input{width:100%}.controls{gap:6px}.controls label{max-width:100%}.axis{margin-left:30%}.panel,.kpi{min-width:0}.pair{grid-template-columns:minmax(0,1fr)}}
-
-.family-button{background:transparent;border:0;border-radius:3px;display:block;text-align:left;font-weight:650;padding:4px 6px;color:var(--search)}.family-button[aria-pressed=true]{background:var(--ssoft);color:var(--ink)}.family-reach{min-width:105px;font-variant-numeric:tabular-nums;white-space:nowrap}.family-reach>span{display:block;height:5px;border-radius:3px;background:#e8effa;margin:4px 0}.family-reach i{display:block;height:100%;border-radius:3px;background:var(--search)}.family-trace{border-top:1px solid var(--line);padding:11px 0}.family-trace summary{cursor:pointer;line-height:1.6}.family-trace summary small,.family-trace summary span{color:var(--muted);font-size:.8rem}.family-trace>summary span{display:block;margin-left:1rem}.family-trace .query{margin:8px 0 0 1rem}.family-trace h3{margin-top:12px}#familyDetail{scroll-margin:12px}
-
-.brand-board .panelhead{align-items:center}.brand-board .panelhead h2{font-size:clamp(1.4rem,2.4vw,2rem)}
-.rank-controls{margin:12px 0 18px}.rank-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.rank-card{border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden;display:flex;flex-direction:column;min-width:0}
-.rank-card h3{margin:0;background:#eef4fe;border-bottom:1px solid #d9e4f4}.rank-card h3 button{border:0;background:transparent;color:#123e78;display:flex;align-items:center;width:100%;justify-content:space-between;text-align:left;padding:12px 13px;min-height:55px;font-size:.95rem;line-height:1.23}
-.rank-card h3 button:after{content:'↓';font-size:.85em;color:#4f77a4}.rank-card ol{padding:4px 12px 0;margin:0;list-style:none}.rank-item{display:grid;grid-template-columns:1.55rem minmax(0,1fr) auto;gap:5px;align-items:baseline;padding:7px 0;border-bottom:1px solid #e9eff7;font-size:.88rem}.rank-item small{color:var(--muted)}
-.rank-num{font-variant-numeric:tabular-nums;color:#657790}.rank-item[data-first=true] .rank-num{font-weight:700;color:var(--search)}.rank-item[data-first=true] strong{color:#164b92}.rank-item strong{font-weight:600;overflow-wrap:anywhere}
-.rank-val{font-weight:650;font-variant-numeric:tabular-nums;color:#174986}.rank-meta{margin-top:auto;padding:9px 12px;font-size:.74rem;color:var(--muted);line-height:1.4}.rank-empty{padding:12px;font-size:.85rem;color:var(--muted)}.rank-evidence{color:var(--search);font-size:.77rem}
-@media(max-width:1150px){.rank-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.rank-grid{grid-template-columns:1fr}.rank-card h3 button{min-height:40px}.rank-controls label{flex:1 1 140px}.rank-controls select{width:100%}}
+:root{color-scheme:light;--ink:#142942;--muted:#516780;--blue:#195bbb;--dark:#112e53;--line:#d5e1ee;--paper:#fff;--pale:#eef4fc;font:15px/1.5 Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#f4f7fc}*{box-sizing:border-box}body{margin:0}button,select,input{font:inherit}button,select,summary{cursor:pointer}button:focus-visible,select:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #d67714;outline-offset:3px}button{color:inherit}.wrap{width:min(1260px,calc(100% - 56px));margin:auto}header{background:linear-gradient(112deg,#112c51,#1d4479);color:#fff}.header-inner{padding:25px 0 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}h1,h2,h3,p{margin:0}h1{font-size:clamp(30px,4vw,48px);letter-spacing:-.045em;font-weight:700;line-height:1.1}header p{margin-top:9px;color:#d9e7fc}.data-button{background:transparent;border:1px solid #91abd0;color:white;border-radius:7px;padding:8px 14px;white-space:nowrap}main{padding:20px 0 35px}h2{font-size:clamp(20px,2.2vw,27px);letter-spacing:-.035em;line-height:1.25}h3{font-size:17px;letter-spacing:-.017em;line-height:1.3}.sub,.fine{color:var(--muted);font-size:.88rem}.sub{margin-top:4px}.filters{display:flex;align-items:end;gap:20px 32px;flex-wrap:wrap;margin:0 0 15px}.filter-label{display:block;color:var(--muted);font-size:.78rem;font-weight:600;margin:0 0 5px}.check{min-height:38px;display:inline-flex;align-items:center;gap:6px;font-size:.88rem;cursor:pointer}.check input{accent-color:var(--blue);width:16px;height:16px}.filters select,.seg{min-height:38px;border:1px solid #b8cade;border-radius:7px;background:white}.filters select{padding:6px 28px 6px 11px;max-width:100%;color:var(--ink)}.seg{display:inline-flex;padding:2px;align-items:stretch;gap:1px}.seg button{border:0;background:transparent;border-radius:5px;padding:5px 11px;font-weight:600;font-size:.88rem}.seg button[aria-pressed=true]{background:var(--blue);color:#fff}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:17px 0 18px;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}.stat{background:#fff;padding:14px 20px;display:flex;align-items:baseline;gap:10px}.stat b{font-size:clamp(23px,3.1vw,36px);color:#194989;line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.04em}.stat span{font-size:.85rem;color:var(--muted)}.panel,.product{background:white;border:1px solid var(--line);border-radius:10px}.panel{padding:20px 22px}.overall{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(260px,1fr);gap:15px;margin-bottom:24px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:.9rem}th{font-size:.72rem;color:var(--muted);font-weight:600;text-align:right}th,td{padding:9px 6px;border-bottom:1px solid #e6ecf3;text-align:right;font-variant-numeric:tabular-nums}th:first-child,td:first-child{text-align:left}td:last-child,th:last-child{padding-right:0}thead th{vertical-align:bottom}tbody tr:last-child td{border-bottom:0}.brand-cell{display:flex;align-items:baseline;gap:7px;min-width:95px}.place{font-size:.75rem;color:var(--muted);width:19px;flex:none}.brand{font-weight:650}.count{color:#194989;font-weight:700}.mini-track{display:block;width:100%;height:3px;border-radius:2px;background:#edf2f9;margin-top:4px}.mini-track i{display:block;height:100%;background:#4485d8;border-radius:2px}.channel{padding:12px 0 8px;border-bottom:1px solid var(--line)}.channel:last-of-type{border:0}.channel-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}.channel b{font-size:.92rem}.channel em{font-style:normal;font-weight:650;color:#194989}.channel .mini-track{height:5px;margin-top:7px}.channel:nth-of-type(2) i{background:#7270c9}.channel:nth-of-type(3) i{background:#438791}.info{background:#eef4fd;border-left:3px solid #5486c6;padding:9px 12px;margin:12px 0 0;color:#324d71;font-size:.85rem}.info button,.link{border:0;padding:0;background:transparent;color:#1658a8;text-decoration:underline;text-underline-offset:2px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:12px}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.product{padding:15px 15px 11px;display:flex;flex-direction:column;min-width:0}.product h3{min-height:2.5em;color:#173b67}.product ol{list-style:none;padding:0;margin:9px 0 12px}.product li{display:grid;grid-template-columns:16px 1fr auto;gap:5px;align-items:baseline;padding:5px 0;font-size:.87rem;border-top:1px solid #e7edf5}.product li span:nth-child(2){overflow-wrap:anywhere}.product li[data-leader=true]{font-weight:700;color:#164d96}.product li .place{width:auto}.product-foot{margin-top:auto;border-top:1px solid var(--line);padding-top:8px;display:flex;align-items:center;justify-content:space-between;gap:8px}.product-foot small{color:var(--muted)}.product-foot .link{font-size:.83rem}.empty{font-size:.88rem;color:var(--muted);padding:15px 0}.method{margin:18px 0 0;padding:12px 16px;border:1px solid var(--line);border-radius:8px;background:#fff}.method summary,dialog details summary{font-size:.9rem;font-weight:600}.method p{margin:9px 0 2px;max-width:100ch}.banner{margin:0 0 13px;padding:9px 12px;border-radius:6px;background:#fff2d9;color:#594019;font-size:.87rem}.barline{display:flex;justify-content:space-between;gap:10px;align-items:baseline}dialog{width:min(740px,calc(100% - 28px));max-height:83vh;padding:0;border:1px solid var(--line);border-radius:12px;color:var(--ink);box-shadow:0 25px 70px #071e4733}dialog::backdrop{background:#0c213988}dialog>div{padding:22px}dialog .heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.close{border:1px solid var(--line);background:white;border-radius:6px;padding:3px 10px}.evidence{padding:8px 0;border-top:1px solid var(--line)}.evidence summary{padding:3px 0}.evidence ul{list-style:none;padding:0;margin:7px 0}.evidence li{padding:7px 4px;border-top:1px solid #e8edf4;font-size:.87rem}.evidence li small{display:block;color:var(--muted)}.data-row{display:flex;align-items:baseline;justify-content:space-between;gap:8px;border-bottom:1px solid var(--line);padding:10px 0;flex-wrap:wrap}.data-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0}.action{background:#ecf3fd;color:#184881;border:1px solid #becee3;border-radius:6px;padding:6px 12px;font-weight:600}#loadmsg{color:var(--muted);font-size:.86rem}.footnote{margin:8px 0 0;font-size:.77rem;color:var(--muted)}[hidden]{display:none!important}
+@media(max-width:1050px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.overall{grid-template-columns:minmax(0,1.5fr) minmax(220px,1fr)}.stat{padding:13px 15px}.product h3{min-height:0}}
+@media(max-width:760px){.wrap{width:calc(100% - 28px)}.overall{grid-template-columns:1fr}.stat{display:block}.stat span{display:block;margin-top:5px}.panel{padding:15px}.filters{gap:10px 16px}.header-inner{padding:20px 0}.product{padding:12px}.section-head{align-items:center}th,td{padding:8px 4px}.data-button{padding:6px 10px}.product-grid{gap:9px}}
+@media(max-width:490px){.product-grid{grid-template-columns:1fr}.filters{display:block}.filters>div+div{margin-top:10px}.stats{margin:13px 0;}.stat{padding:10px}.stat span{font-size:.75rem}.section-head{align-items:flex-start}.section-head .seg button{padding:5px 7px}.header-inner{gap:8px}.header-inner p{font-size:.8rem}.product ol{margin-bottom:8px}.brand-cell{gap:3px}.place{width:14px}.product h3{font-size:1.07rem}}
 </style></head><body>
-<header><div class="wrap"><div><div class="signature"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Яндекс Поиск <span class="signplus">/</span> Алиса AI</div><h1>Видимость брендов</h1><div id="period" class="period"></div></div><div class="actions"><button id="refresh" class="ghost">Обновить данные</button><input id="file" type="file" accept=".json,.csv,application/json,text/csv,text/plain"><label for="file" class="btn primary">Открыть JSON или CSV</label></div></div></header>
-<main><div class="source"><div><div id="origin" class="statusline" aria-live="polite"></div><div id="message" role="status" class="statusline"></div></div><div class="actions"><a id="sourceLink" target="_blank" rel="noopener noreferrer">Исходный документ ↗</a><button id="save" class="smallbutton" hidden>Сохранить HTML с данными</button></div></div>
-<div id="notice" class="notice" hidden></div>
-<div class="filters"><label class="search"><small>Текст запроса</small><input id="query" type="search" placeholder="Например, чистящая паста"></label><label><small>Категория запросов</small><select id="category"><option value="">Все категории</option></select></label><label id="subWrap" hidden><small>Подгруппа</small><select id="subgroup"></select></label><label><small>Поисковик</small><select id="engine"></select></label><button id="reset">Сбросить</button></div>
-<nav aria-label="Разделы отчёта"><button data-tab="families" aria-pressed="true">Бренды по товарам</button><button data-tab="overview" aria-pressed="false">Обзор</button><button data-tab="brands" aria-pressed="false">Бренды и позиции</button><button data-tab="formats" aria-pressed="false">Форматы выдачи</button><button data-tab="segments" aria-pressed="false">Категории</button><button data-tab="products" aria-pressed="false">Товары</button><button data-tab="queries" aria-pressed="false">Запросы</button><button data-tab="sources" aria-pressed="false">Сайты и источники</button><button data-tab="quality" aria-pressed="false">Покрытие и динамика</button></nav>
-<div class="kpis" id="kpis"></div><div id="view"></div><footer>Одна запись соответствует одному замеру поисковой выдачи. Все показатели пересчитываются по выбранным фильтрам.</footer></main>
-<script type="application/json" id="embedded">null</script>
-<script type="application/json" id="excludedQueries">["паста блеск чистящая","елизар отбеливатель","отбеливатель босс","grass пятновыводитель","synergetic пятновыводитель","vanish пятновыводитель","resolve пятновыводитель","dr beckmann пятновыводитель","ваниш пятновыводитель купить","чистящая паста просто блеск купить на озон","pinky clean чистящая паста","фаберлик карандаш пятновыводитель","сиф от пятен спрей","амвей спрей для выведения пятен","кислородный карандаш meine liebe","udalix пятновыводитель карандаш"]</script>
-<script type="application/json" id="plan">[{"name":"Группа А. Прямые товарные запросы","questions":[["отбеливатель",""],["чистящее средство",""],["пятновыводитель",""],["чистящая паста",""],["отбеливатель для белья",""],["пятновыводитель для одежды",""],["купить отбеливатель",""],["паста для чистки",""],["купить пятновыводитель",""],["кислородный отбеливатель для белья",""],["универсальная чистящая паста",""],["купить чистящую пасту",""],["кислородный отбеливатель купить",""],["карандаш пятновыводитель",""],["средство от пятен на одежде",""],["пена для стекол",""],["спрей от пятен",""],["карандаш от пятен",""],["салфетки от пятен на одежде",""],["кислородный карандаш",""],["влажные салфетки от пятен",""],["пятновыводящие салфетки",""],["хороший отбеливатель для белого белья",""],["чистящая паста для уборки",""],["кислородный карандаш пятновыводитель",""],["купить салфетки от пятен",""],["пена для стекол и зеркал",""],["энзимный карандаш",""],["спрей для выведения пятен",""],["паста для чистки ванны",""],["пятновыводитель для детской одежды",""],["спрей от пятен на одежде",""],["пенный очиститель для стекол",""],["пена для лобового стекла",""],["купить карандаш пятновыводитель",""],["средство от разводов на стекле",""],["спрей от жирных пятен",""],["крем паста для чистки металлических поверхностей",""],["энзимный карандаш пятновыводитель",""]]},{"name":"Группа Б. Решение проблемы","questions":[["как убрать пятно","Общий поиск решения проблемы"],["как отстирать пятна","Общий поиск решения проблемы"],["как отстирать кровь","Общий поиск решения проблемы"],["как вывести пятна с одежды","Общий поиск решения проблемы"],["как вывести жирное пятно","Общий поиск решения проблемы"],["как почистить диван","Общий поиск решения проблемы"],["как отмыть стекло","Общий поиск решения проблемы"],["как отмыть чернила","Общий поиск решения проблемы"],["как отстирать белые вещи","Общий поиск решения проблемы"],["как убрать старые пятна","Общий поиск решения проблемы"],["как вернуть белизну вещам","Общий поиск решения проблемы"],["как убрать разводы на стекле","Общий поиск решения проблемы"],["как убрать пятно от травы","Общий поиск решения проблемы"],["как отмыть стекло от налета","Общий поиск решения проблемы"],["как убрать разводы с зеркала","Общий поиск решения проблемы"],["как вывести пятна с детской одежды","Общий поиск решения проблемы"],["как вывести желтые пятна с детской одежды","Общий поиск решения проблемы"],["чем отстирать пятно","Поиск средства для решения проблемы"],["чем отмыть стекло","Поиск средства для решения проблемы"],["чем отмыть кухню","Поиск средства для решения проблемы"],["чем отмыть ванную","Поиск средства для решения проблемы"],["чем вывести пятно с одежды","Поиск средства для решения проблемы"],["чем отстирать чернила","Поиск средства для решения проблемы"],["чем отстирать жирное пятно","Поиск средства для решения проблемы"],["чем отстирать пятно на белом","Поиск средства для решения проблемы"],["чем отмыть плитку в ванной","Поиск средства для решения проблемы"],["чем отстирать желтые пятна","Поиск средства для решения проблемы"],["чем отмыть фасады кухни","Поиск средства для решения проблемы"],["чем отстирать старые пятна","Поиск средства для решения проблемы"],["чем отмыть налет в ванной","Поиск средства для решения проблемы"],["чем отбелить вещи","Поиск средства для решения проблемы"],["чем отмыть лобовое стекло","Поиск средства для решения проблемы"],["чем отстирать пятна крови","Поиск средства для решения проблемы"],["чем отстирать желтые пятна на белом","Поиск средства для решения проблемы"],["чем отстирать пятна от пота","Поиск средства для решения проблемы"],["чем отстирать масляное пятно","Поиск средства для решения проблемы"],["чем отмыть швы в ванной","Поиск средства для решения проблемы"],["чем отмыть желтизну в ванной","Поиск средства для решения проблемы"],["чем отмыть стекло в душевой","Поиск средства для решения проблемы"],["чем отстирать банан с детской одежды","Поиск средства для решения проблемы"],["чем отстирать пятна на детской одежде","Поиск средства для решения проблемы"],["чем отчистить белую подошву на обуви","Поиск средства для решения проблемы"],["чем отстирать детское пюре с одежды","Поиск средства для решения проблемы"]]},{"name":"Группа В. Сравнение и выбор","questions":[["лучший отбеливатель",""],["лучший пятновыводитель",""],["лучший пятновыводитель для одежды",""],["лучший кислородный отбеливатель",""],["какая чистящая паста лучше",""],["бренды пятновыводителей",""],["рейтинг пятновыводителей",""],["лучший кислородный пятновыводитель",""],["лучший пятновыводитель для цветного",""],["лучший отбеливатель и пятновыводитель",""],["лучший пятновыводитель для одежды застарелых пятен",""],["лучший пятновыводитель для детской одежды",""]]},{"name":"Группа Г. Коммерческие","questions":[]},{"name":"Группа Д. Смежные задачи и альтернативы","questions":[]}]</script>
-<script type="application/json" id="dictionary">{"Synergetic":["Синергетик","Синержетик"],"Vanish":["Ваниш","Вэниш"],"Елизар":["Elizar"],"BRANDFREE":["Брендфри","Брэндфри","Brand Free"],"Resolve":["Резолв","Ризолв"],"БОС":["БОС плюс","БОС-плюс","БОСС","Бос+"],"GRASS":["Грасс"],"Dr. Beckmann":["Dr Beckmann","Dr.Beckmann","Доктор Бекманн","Доктор Бекман"],"Просто Блеск":[],"Pinky Clean":["Пинки Клин"],"Faberlic":["Фаберлик"],"Cif":["Сиф"],"Amway":["Амвей","Эмвей"],"Meine Liebe":["Майне Либе"],"Udalix":["Удаликс"],"Персоль":[],"YokoSun":["Йокосан"],"LAMM":[],"Аист":[],"IQUP":[],"Sarma":["Сарма"],"The Pink Stuff":["Pink Stuff"],"Domestos":["Доместос"],"Sano":[],"Frosch":["Фрош"],"Ecover":["Эковер"],"Ariel":["Ариэль"],"Persil":["Персил"],"Ушастый нянь":[],"HG":[],"Clean Home":[],"Lion":[],"МОЙ, РЭББИТ!":[],"STIRALITI":[],"Easy Clean":[],"CLEANER O2":[],"Salton CleanTech":[],"OBLAKO2":[],"PINK MAGIC":[],"OXYGEN":[],"я твое средство":[],"WOWclean":[],"Белёк":[],"Белосвежик":[],"ECOchister":[],"Фенёк":[],"Бытовкин":[],"PANCLEAN":[],"ПКФ Илем":[],"Белое Чудо":[],"Jundo":[],"DUTYBOX":[],"Glantz":[],"PINK GLAM":[],"MAXIDEZ":[],"LEOMAX":[],"Perile":[],"AYS":[],"MOPS":[],"GoSpottyGo":[],"DOMOXY":[],"Милфи":[],"PINK PASTE":[],"ВЫРУЧАЙ":[],"De’art Khimiya":[],"ZONTEX":[],"Красные китайские салфетки":[],"AllFoxLab":[],"SMART WASH":[],"Romelly":[],"CleNexter":[],"Tand2G":[],"LAPSBAND":[],"Fresh Ray":[],"MAGIC WIPES":[],"Fanrou":[],"UBASE":[],"22 33":[],"NORDLAND":[],"BARFIN":[],"SDK":[],"LAVR":[],"Expel":[],"Клин":[],"WONDER LAB":[],"HADLEE":[],"ECOCLAR home":[],"SHIMA HOME":[],"ALITMILA":[],"SKINFINITY":[],"Chronos":[],"BIAOQUAN":[],"Sparkle moon":[],"Надежный поставщик тут":[],"Beauty Style":[],"Visual Magic":[],"Патчи для лба от морщин":[],"Grace FACE":[],"BIORICA":[],"d'Alba":[],"VOIS":[],"SunQUEEN":[],"MIXIT":[],"GEGEMON":[],"Mediva":[],"Levape":[],"Francua":[],"DiBa's Care":[],"Infinite Element":[],"APOLLONIA":[],"BIOAQUA":[],"LIFTHENG":[],"The Act":[],"KeepBeauty.":[],"Zozu":[],"Gegemoon":[],"SADOER":[],"IMAGES":[],"SIAYZU RAIOCEU":[],"HOLLY POLLY":[],"Makalu":[],"YASOMA":[],"ELEMENT-beauty":[],"Все скидки тут":[],"EWAM":[],"Clariskin":[],"Патчи для глаз":[],"bsc-opt":[],"Feminista":[],"LIveRU":[],"Патчи для глаз гидрогелевые":[],"Патчи для глаз от отеков и мешков":[],"ZHIDUO":[],"E-Rasy":[],"BioFlashSpot":[],"Green Karma":[],"ART\u0026FACT.":[],"L'OREAL PARIS":[],"sesderma":[],"Kaaral":[],"QÌNSÙ":[],"Fast Wash":[],"Aromika":[],"Mulsan":[],"BIMAX":[],"Dubaimi":[],"ЛАСКА":[],"Wellroom":[],"AROMA WASH":[],"Reva Care":[],"EVERREST":[],"OXY by TIMEWELLDONE":[],"ROX Star of clean":[],"webeshka":[],"BioMio":[],"лоск":[],"Tori":[],"Rudakov A.A.":[],"Clean Secret":[],"Gёsser":[],"Lamby pure":[],"БИОЛАН":[],"KIDDO.":[],"AKTIVOLIFE":[],"Lavandel":[],"Weissgauff":[],"YOSHIOTO":[],"Timewelldone":[],"MIKKOBEAR":[],"Lavandel botanicals":[],"PersimuS":[],"Clinx Biobotanica":[],"Finel":[],"ARIC":[],"ASK of clean":[],"Green Drago":[],"YooLoo":[],"Biolik":[],"MOMI":[],"TIDL":[],"YORI":[],"LUIR":[],"ECOWASH":[],"QUALITA":[],"EcoLand":[],"BEREJNO":[],"ЗАВОДЪ БРАТЬЕВЪ КРЕСТОВНИКОВЫХЪ":[],"AROMA DROP":[],"ABC":[],"MEPSI":[],"SEPTIVIT":[],"CHILL SKIN":[]}</script>
+<header><div class="wrap header-inner"><div><h1>Видимость брендов</h1><p>Бытовая химия в выдаче Яндекса и ответах Алисы и GigaChat</p></div><button class="data-button" id="dataOpen">Данные</button></div></header>
+<main class="wrap"><div id="notice" class="banner" role="status" hidden></div>
+<div class="filters"><div><label class="filter-label" for="scope">Источник</label><select id="scope">
+<option value="all">Все источники</option><option value="yandex">Яндекс и Алиса</option><option value="giga">GigaChat</option><option value="assistants">Оба ИИ-ассистента</option><option value="search">Только карточки Яндекса</option><option value="alice">Только Алиса</option></select></div>
+<div><span class="filter-label" id="modeLabel">Что учитывать</span><div class="seg" role="group" aria-labelledby="modeLabel"><button data-mode="strict" aria-pressed="true">Карточки и рекомендации</button><button data-mode="wide" aria-pressed="false">С упоминаниями</button></div></div><div><label class="check"><input type="checkbox" id="common"><span id="commonLabel">Только общие запросы</span></label></div></div>
+<div id="report" aria-live="polite"></div>
+<details class="method"><summary>Как считается рейтинг</summary><p class="fine">Место бренда определяется числом разных запросов, по которым он появился хотя бы раз. Повторы одной формулировки и совпадения между источниками учитываются один раз в общем итоге. Числа в колонках источников могут пересекаться. Регистр, «ё» и лишние пробелы не влияют на сравнение.</p><p class="fine">В основном режиме учитываются товарные карточки Яндекса и бренды с меткой recommendation в ответах ИИ. Режим «С упоминаниями» добавляет записи с меткой mention. Показ карточки означает присутствие товара в выдаче. Позиция № 1 относится к месту карточки в товарном блоке. Тип записи ИИ берётся из выгрузки.</p><p class="fine">Направление определяется по названию карточки, цитате или заголовку раздела ответа. Фраза запроса сама по себе не определяет вид товара. Поэтому общий рейтинг включает и бренды, которые не удалось отнести к одному из восьми направлений. При пустом поле бренда у карточки используется словарь названий марок.</p><p class="fine">Равный охват даёт одинаковое место. В пределах одного места бренды перечислены по алфавиту. Фильтр «Только общие запросы» оставляет формулировки, проверенные в обоих файлах. Из анализа исключаются запросы из прежней группы «Поиск конкурентов» и запросы с заполненным полем query_brands, а также неуспешные замеры. База каждого канала включает запросы с известным состоянием выдачи или ответа.</p></details>
+</main>
+<dialog id="productDialog" aria-labelledby="detailTitle"><div><div class="heading"><h2 id="detailTitle"></h2><button class="close" data-close="productDialog" aria-label="Закрыть подробности">Закрыть</button></div><div id="detailBody"></div></div></dialog>
+<dialog id="dataDialog" aria-labelledby="dataTitle"><div><div class="heading"><h2 id="dataTitle">Данные отчёта</h2><button class="close" data-close="dataDialog" aria-label="Закрыть окно данных">Закрыть</button></div><div id="sourceFiles"></div>
+<div class="data-actions"><button class="action" id="choose">Выбрать JSON</button><input hidden id="files" type="file" accept=".json,application/json" multiple><button class="action" id="refresh">Обновить с сайта</button></div><p id="loadmsg" role="status"></p></div></dialog>
+<script id="dictionary" type="application/json">{"Synergetic":["Синергетик","Синержетик"],"Vanish":["Ваниш","Вэниш"],"Елизар":["Elizar"],"BRANDFREE":["Брендфри","Брэндфри","Brand Free"],"Resolve":["Резолв","Ризолв"],"БОС":["БОС плюс","БОС-плюс","БОСС","Бос+"],"GRASS":["Грасс"],"Dr. Beckmann":["Dr Beckmann","Dr.Beckmann","Доктор Бекманн","Доктор Бекман"],"Просто Блеск":[],"Pinky Clean":["Пинки Клин"],"Faberlic":["Фаберлик"],"Cif":["Сиф"],"Amway":["Амвей","Эмвей"],"Meine Liebe":["Майне Либе"],"Udalix":["Удаликс"],"Персоль":[],"YokoSun":["Йокосан"],"LAMM":[],"Аист":[],"IQUP":[],"Sarma":["Сарма"],"The Pink Stuff":["Pink Stuff"],"Domestos":["Доместос"],"Sano":[],"Frosch":["Фрош"],"Ecover":["Эковер"],"Ariel":["Ариэль"],"Persil":["Персил"],"Ушастый нянь":[],"HG":[],"Clean Home":[],"Lion":[],"МОЙ, РЭББИТ!":[],"STIRALITI":[],"Easy Clean":[],"CLEANER O2":[],"Salton CleanTech":[],"OBLAKO2":[],"PINK MAGIC":[],"OXYGEN":[],"я твое средство":[],"WOWclean":[],"Белёк":[],"Белосвежик":[],"ECOchister":[],"Фенёк":[],"Бытовкин":[],"PANCLEAN":[],"ПКФ Илем":[],"Белое Чудо":[],"Jundo":[],"DUTYBOX":[],"Glantz":[],"PINK GLAM":[],"MAXIDEZ":[],"LEOMAX":[],"Perile":[],"AYS":[],"MOPS":[],"GoSpottyGo":[],"DOMOXY":[],"Милфи":[],"PINK PASTE":[],"ВЫРУЧАЙ":[],"De’art Khimiya":[],"ZONTEX":[],"Красные китайские салфетки":[],"AllFoxLab":[],"SMART WASH":[],"Romelly":[],"CleNexter":[],"Tand2G":[],"LAPSBAND":[],"Fresh Ray":[],"MAGIC WIPES":[],"Fanrou":[],"UBASE":[],"22 33":[],"NORDLAND":[],"BARFIN":[],"SDK":[],"LAVR":[],"Expel":[],"Клин":[],"WONDER LAB":[],"HADLEE":[],"ECOCLAR home":[],"SHIMA HOME":[],"ALITMILA":[],"SKINFINITY":[],"Chronos":[],"BIAOQUAN":[],"Sparkle moon":[],"Надежный поставщик тут":[],"Beauty Style":[],"Visual Magic":[],"Патчи для лба от морщин":[],"Grace FACE":[],"BIORICA":[],"d'Alba":[],"VOIS":[],"SunQUEEN":[],"MIXIT":[],"GEGEMON":[],"Mediva":[],"Levape":[],"Francua":[],"DiBa's Care":[],"Infinite Element":[],"APOLLONIA":[],"BIOAQUA":[],"LIFTHENG":[],"The Act":[],"KeepBeauty.":[],"Zozu":[],"Gegemoon":[],"SADOER":[],"IMAGES":[],"SIAYZU RAIOCEU":[],"HOLLY POLLY":[],"Makalu":[],"YASOMA":[],"ELEMENT-beauty":[],"Все скидки тут":[],"EWAM":[],"Clariskin":[],"Патчи для глаз":[],"bsc-opt":[],"Feminista":[],"LIveRU":[],"Патчи для глаз гидрогелевые":[],"Патчи для глаз от отеков и мешков":[],"ZHIDUO":[],"E-Rasy":[],"BioFlashSpot":[],"Green Karma":[],"ART&FACT.":[],"L'OREAL PARIS":[],"sesderma":[],"Kaaral":[],"QÌNSÙ":[],"Fast Wash":[],"Aromika":[],"Mulsan":[],"BIMAX":[],"Dubaimi":[],"ЛАСКА":[],"Wellroom":[],"AROMA WASH":[],"Reva Care":[],"EVERREST":[],"OXY by TIMEWELLDONE":[],"ROX Star of clean":[],"webeshka":[],"BioMio":[],"лоск":[],"Tori":[],"Rudakov A.A.":[],"Clean Secret":[],"Gёsser":[],"Lamby pure":[],"БИОЛАН":[],"KIDDO.":[],"AKTIVOLIFE":[],"Lavandel":[],"Weissgauff":[],"YOSHIOTO":[],"Timewelldone":[],"MIKKOBEAR":[],"Lavandel botanicals":[],"PersimuS":[],"Clinx Biobotanica":[],"Finel":[],"ARIC":[],"ASK of clean":[],"Green Drago":[],"YooLoo":[],"Biolik":[],"MOMI":[],"TIDL":[],"YORI":[],"LUIR":[],"ECOWASH":[],"QUALITA":[],"EcoLand":[],"BEREJNO":[],"ЗАВОДЪ БРАТЬЕВЪ КРЕСТОВНИКОВЫХЪ":[],"AROMA DROP":[],"ABC":[],"MEPSI":[],"SEPTIVIT":[],"CHILL SKIN":[],"House Lux":[],"BLITZ":[],"PRO LINE":[],"LAIMA":[],"VENWELL":[],"ATAS":[],"G-POWER":[]}</script>
+<script id="excluded" type="application/json">["паста блеск чистящая","елизар отбеливатель","отбеливатель босс","grass пятновыводитель","synergetic пятновыводитель","vanish пятновыводитель","resolve пятновыводитель","dr beckmann пятновыводитель","ваниш пятновыводитель купить","чистящая паста просто блеск купить на озон","pinky clean чистящая паста","фаберлик карандаш пятновыводитель","сиф от пятен спрей","амвей спрей для выведения пятен","кислородный карандаш meine liebe","udalix пятновыводитель карандаш","Расскажи про чистящую пасту «Блеск». Что ею можно чистить?","Для какого белья подходит отбеливатель «Елизар»?","Хочу попробовать отбеливатель «Босс». Для каких вещей он подойдёт?","У Grass есть пятновыводитель для одежды? Подскажи, какой посмотреть.","Расскажи, для каких пятен подойдёт пятновыводитель Synergetic.","Хочу взять пятновыводитель Vanish. Как выбрать подходящий?","Что можешь сказать про пятновыводитель Resolve?","Мне посоветовали пятновыводитель Dr. Beckmann. Как понять, какой взять?","Где купить пятновыводитель Vanish?","Найди на Ozon чистящую пасту «Просто блеск».","Что можно отмыть чистящей пастой Pinky Clean?","Как пользоваться карандашом-пятновыводителем Faberlic?","Ищу спрей «Сиф» от пятен. От каких пятен он помогает?","У Amway есть спрей для выведения пятен? Как им пользоваться?","Для каких пятен подходит кислородный карандаш Meine Liebe?","Как пользоваться карандашом-пятновыводителем Udalix?"]</script>
+<script id="snapshot" type="application/json">{"files":{"yandex":{"records":[[0,3,[[0,0,1,1,1,2],[0,0,3,0,2,4],[0,0,1,1,3,5],[1,1,1,1,0,6],[1,1,7,1,0,8],[1,1,9,1,0,10]]],[11,3,[[0,0,3,0,1,12],[0,0,3,0,2,13],[0,0,3,0,3,14],[1,1,1,1,0,15],[1,1,7,1,0,16],[1,1,9,1,0,17]]],[18,3,[[0,0,7,2,1,19],[0,0,20,2,2,21],[0,0,22,2,3,23],[1,2,24,0,0,25],[1,2,22,0,0,26],[1,2,7,0,0,27],[1,2,28,0,0,27]]],[29,3,[[0,0,1,1,1,2],[0,0,3,0,2,4],[0,0,30,1,3,31],[1,1,9,0,0,32],[1,1,33,0,0,34],[1,1,7,1,0,35]]],[36,3,[[0,0,1,1,1,5],[0,0,3,0,2,37],[0,0,1,1,3,2]]],[38,3,[[0,0,39,8,1,40],[0,0,3,0,2,41],[0,0,3,8,3,42]]],[43,3,[[0,0,44,64,1,45],[0,0,3,0,2,46],[0,0,3,0,3,47],[1,1,24,0,0,48],[1,1,49,0,0,50],[1,1,39,8,0,51],[1,1,52,0,0,53]]],[54,3,[[0,0,55,128,1,56],[0,0,57,128,2,58],[0,0,3,128,3,59],[1,1,60,0,0,61],[1,1,7,128,0,62],[1,1,63,0,0,64],[1,1,57,0,0,65]]],[66,3,[[0,0,44,64,1,45],[0,0,67,64,2,68],[0,0,3,0,3,69],[1,1,24,64,0,70],[1,1,67,64,0,71],[1,1,72,64,0,73],[1,1,63,64,0,74],[1,1,75,64,0,76],[1,1,49,64,0,77]]],[78,3,[[0,0,7,8,1,79],[0,0,7,8,2,80],[0,0,3,8,3,42]]],[81,3,[[0,0,3,4,1,82],[0,0,3,4,2,83],[0,0,84,4,3,85]]],[86,3,[[0,0,39,8,1,40],[0,0,87,8,2,88],[0,0,89,0,3,90]]],[91,3,[[0,0,84,4,1,92],[0,0,3,4,2,82],[0,0,3,4,3,83]]],[93,3,[[0,0,84,4,1,92],[0,0,3,4,2,82],[0,0,3,4,3,83]]],[94,3,[[0,0,22,2,1,23],[0,0,95,2,2,96],[0,0,97,0,3,98],[1,1,24,2,0,99],[1,1,7,2,0,100],[1,1,28,2,0,100]]],[101,3,[[0,0,1,1,1,2],[0,0,30,1,2,31],[0,0,1,1,3,5]]],[102,3,[[0,0,39,8,1,103],[0,0,87,8,2,88],[0,0,7,8,3,79]]],[104,3,[[0,0,84,4,1,92],[0,0,3,4,2,82],[0,0,3,4,3,83]]],[105,3,[[0,0,60,0,1,106],[0,0,63,0,2,107],[0,0,3,128,3,59],[1,2,7,0,0,108],[1,1,60,0,0,109],[1,1,57,128,0,110]]],[111,3,[[0,0,3,16,1,112],[0,0,7,16,2,113],[0,0,7,16,3,114]]],[115,3,[[0,0,116,64,1,117],[0,0,63,64,2,118],[0,0,44,64,3,45]]],[119,3,[[0,0,1,1,1,2],[0,0,120,1,2,121],[0,0,122,1,3,123]]],[124,3,[[0,0,44,64,1,45],[0,0,24,0,2,125],[0,0,126,0,3,127]]],[128,3,[[0,0,44,64,1,45],[0,0,67,64,2,68],[0,0,3,0,3,69],[1,1,75,64,0,129],[1,1,44,64,0,130],[1,1,131,64,0,132]]],[133,3,[[0,0,57,128,1,134],[0,0,3,128,2,59],[0,0,135,128,3,136],[1,1,57,0,0,137],[1,1,63,0,0,138]]],[139,3,[[0,0,57,128,1,134],[0,0,63,0,2,140],[0,0,141,128,3,142]]],[143,3,[[0,0,39,8,1,144],[0,0,145,0,2,146],[0,0,3,8,3,42]]],[147,3,[[0,0,63,0,1,140],[0,0,3,0,2,148],[0,0,3,0,3,149],[1,2,63,0,0,150],[1,2,24,0,0,24]]],[151,3,[[0,0,44,64,1,45],[0,0,3,0,2,152],[0,0,44,0,3,153]]],[154,3,[[0,0,3,1,1,155],[0,0,67,1,2,156],[0,0,3,1,3,157],[1,1,67,0,0,158]]],[159,3,[[0,0,39,8,1,103],[0,0,3,16,2,112],[0,0,7,16,3,113]]],[160,3,[]],[161,3,[]],[162,3,[]],[163,3,[]],[164,3,[]],[165,3,[]],[166,3,[[1,2,63,0,0,167]]],[168,3,[]],[169,3,[]],[170,3,[]],[171,3,[]],[172,3,[]],[173,3,[]],[174,3,[]],[175,3,[]],[176,3,[]],[177,3,[]],[178,3,[]],[179,3,[]],[180,3,[[1,2,63,0,0,181],[1,2,24,0,0,181]]],[182,3,[[1,2,63,0,0,183]]],[184,3,[]],[185,3,[]],[186,3,[]],[187,3,[]],[188,3,[]],[189,3,[]],[190,3,[[1,2,24,0,0,191],[1,2,63,0,0,192]]],[193,3,[[1,1,49,0,0,194],[1,1,24,0,0,194],[1,1,22,0,0,194]]],[195,3,[]],[196,3,[]],[197,3,[]],[198,3,[[1,2,22,24,0,199]]],[200,3,[]],[201,3,[[1,1,49,64,0,202]]],[203,3,[]],[204,3,[[1,2,44,0,0,205],[1,2,206,2,0,207],[1,2,22,2,0,207]]],[208,3,[[1,2,63,0,0,209]]],[210,3,[]],[211,3,[]],[212,3,[]],[213,3,[]],[214,3,[]],[215,3,[[0,0,22,2,1,23],[0,0,7,2,2,19],[0,0,216,2,3,217],[1,1,24,2,0,218],[1,1,22,2,0,218]]],[219,3,[[0,0,22,2,1,23],[0,0,24,0,2,125],[0,0,44,64,3,45],[1,1,24,0,0,220],[1,2,52,0,0,221]]],[222,3,[[0,0,44,64,1,45],[0,0,24,0,2,125],[0,0,3,0,3,47],[1,2,22,0,0,223],[1,2,24,0,0,224],[1,2,52,0,0,225]]],[226,3,[[0,0,22,2,1,23],[0,0,7,2,2,19],[0,0,216,2,3,217]]],[227,3,[[0,0,30,1,1,31],[0,0,1,1,2,2],[0,0,120,1,3,121]]],[228,3,[[0,0,22,2,1,23],[0,0,44,64,2,45],[0,0,24,0,3,125],[1,2,24,0,0,229],[1,2,39,8,0,230],[1,2,7,0,0,231],[1,2,28,0,0,231],[1,2,63,64,0,232],[1,2,75,0,0,233]]],[234,3,[[0,0,22,2,1,23],[0,0,44,64,2,45],[0,0,24,0,3,125]]],[235,3,[[0,0,22,2,1,23],[0,0,39,2,2,236],[0,0,3,0,3,237],[1,2,24,0,0,24],[1,2,49,0,0,49]]],[238,3,[[0,0,22,2,1,23],[0,0,44,64,2,45],[0,0,63,0,3,239],[1,1,24,0,0,240],[1,1,63,64,0,241]]],[242,3,[[0,0,22,2,1,23],[0,0,24,0,2,125],[0,0,95,2,3,96],[1,2,24,34,0,243],[1,2,7,2,0,244],[1,2,28,2,0,244],[1,2,49,0,0,245],[1,2,145,0,0,246],[1,2,52,0,0,247]]],[248,3,[[0,0,22,2,1,23],[0,0,44,64,2,45],[0,0,24,0,3,125],[1,2,22,0,0,249],[1,2,24,0,0,250],[1,2,49,0,0,251]]],[252,3,[[0,0,44,64,1,45],[0,0,126,0,2,127],[0,0,24,0,3,125],[1,1,39,8,0,253],[1,1,24,8,0,254]]],[255,3,[[0,0,22,2,1,23],[0,0,3,0,2,256],[0,0,7,2,3,19],[1,1,24,0,0,257],[1,1,63,0,0,257]]],[258,3,[[0,0,3,0,1,259],[0,0,260,0,2,261],[0,0,3,0,3,262],[1,1,63,0,0,263]]],[264,3,[[0,0,24,0,1,125],[0,0,44,64,2,45],[0,0,3,0,3,47]]],[265,3,[[0,0,22,2,1,23],[0,0,7,2,2,19],[0,0,216,2,3,217]]],[266,3,[[0,0,44,64,1,45],[0,0,24,0,2,125],[0,0,3,0,3,47],[1,1,24,0,0,267],[1,1,39,0,0,268]]],[269,3,[[0,0,3,0,1,256],[0,0,22,2,2,23],[0,0,3,0,3,270]]],[271,3,[[0,0,24,0,1,125],[0,0,44,64,2,45],[0,0,3,0,3,47]]],[272,3,[[0,0,7,2,1,19],[0,0,22,2,2,23],[0,0,216,2,3,217]]]],"total":94,"excluded":0,"failed":0},"giga":{"records":[[0,4,[[2,2,63,1,0,273]]],[274,4,[[2,2,75,4,0,275],[2,2,24,4,0,275]]],[276,4,[[2,2,63,0,0,277]]],[11,4,[]],[274,4,[[2,2,75,4,0,278]]],[18,4,[[2,2,75,0,0,279],[2,2,280,0,0,281]]],[282,4,[[2,2,63,0,0,277]]],[29,4,[]],[36,4,[]],[38,4,[[2,2,75,0,0,283],[2,2,67,0,0,284]]],[43,4,[[2,2,75,0,0,285]]],[286,4,[[2,2,75,0,0,287],[2,2,67,0,0,288]]],[54,4,[]],[66,4,[[2,2,75,64,0,289]]],[290,4,[[2,2,75,2,0,291]]],[292,4,[]],[78,4,[[2,2,75,0,0,293]]],[81,4,[]],[86,4,[]],[91,4,[]],[93,4,[[2,2,75,0,0,293],[2,2,67,0,0,294]]],[94,4,[[2,2,75,2,0,295],[2,2,280,2,0,295],[2,2,206,2,0,295]]],[101,4,[]],[296,4,[[2,2,63,0,0,277]]],[297,4,[[2,2,75,0,0,298],[2,2,24,0,0,299]]],[102,4,[]],[300,4,[]],[301,4,[[2,2,75,0,0,302]]],[303,4,[[2,2,75,0,0,304]]],[305,4,[[2,2,75,2,0,306],[2,2,307,2,0,308],[2,2,309,2,0,310],[2,2,52,0,0,311]]],[312,4,[[2,2,75,4,0,313]]],[314,4,[[2,2,63,0,0,277]]],[104,4,[[2,2,75,4,0,315]]],[105,4,[[2,2,44,0,0,316]]],[317,4,[]],[111,4,[[2,2,75,0,0,318]]],[115,4,[[2,2,75,0,0,319],[2,2,24,0,0,299]]],[320,4,[[2,2,75,0,0,321],[2,2,280,0,0,281]]],[119,4,[]],[124,4,[[2,2,75,0,0,322],[2,2,309,0,0,323],[2,2,307,0,0,323]]],[128,4,[[2,2,75,64,0,324],[2,2,67,0,0,325]]],[326,4,[[2,2,75,0,0,327],[2,2,67,0,0,328]]],[133,4,[]],[329,4,[[2,2,75,64,0,330],[2,2,67,0,0,331]]],[332,4,[]],[333,4,[[2,2,67,0,0,334],[2,2,75,0,0,335],[2,2,24,0,0,336]]],[139,4,[]],[143,4,[]],[147,4,[[2,2,63,0,0,337]]],[338,4,[]],[339,4,[]],[151,4,[[2,2,75,64,0,298]]],[339,4,[]],[154,4,[]],[159,4,[]],[160,4,[]],[340,4,[]],[341,4,[]],[161,4,[]],[342,4,[]],[162,4,[]],[163,4,[]],[164,4,[]],[343,4,[[2,2,75,0,0,344],[2,2,67,0,0,344]]],[165,4,[]],[166,4,[]],[345,4,[]],[168,4,[]],[346,4,[]],[347,4,[]],[169,4,[]],[170,4,[]],[348,4,[]],[349,4,[]],[171,4,[]],[172,4,[]],[173,4,[]],[350,4,[]],[174,4,[]],[351,4,[]],[175,4,[]],[176,4,[]],[352,4,[]],[353,4,[]],[354,4,[]],[177,4,[]],[355,4,[[2,2,75,0,0,356]]],[340,4,[]],[357,4,[[2,2,75,2,0,358],[2,2,307,2,0,358]]],[178,4,[]],[359,4,[]],[360,4,[]],[179,4,[[2,2,44,0,0,361]]],[180,4,[]],[182,4,[]],[184,4,[]],[362,4,[]],[185,4,[]],[186,4,[]],[363,4,[[2,2,75,0,0,364]]],[187,4,[]],[365,4,[[2,2,75,64,0,366]]],[367,4,[]],[188,4,[]],[189,4,[]],[368,4,[[2,2,75,0,0,369],[2,2,67,0,0,369]]],[370,4,[]],[190,4,[]],[193,4,[]],[195,4,[]],[196,4,[[2,2,307,2,0,371]]],[372,4,[[2,2,75,0,0,373]]],[374,4,[]],[197,4,[]],[375,4,[[2,2,75,2,0,376]]],[377,4,[]],[378,4,[]],[379,4,[]],[198,4,[]],[200,4,[]],[380,4,[]],[201,4,[]],[203,4,[]],[381,4,[]],[382,4,[]],[204,4,[]],[383,4,[]],[208,4,[]],[384,4,[[2,2,75,0,0,385]]],[386,4,[]],[387,4,[]],[388,4,[[2,2,75,0,0,389]]],[210,4,[[2,2,44,0,0,390]]],[391,4,[]],[392,4,[]],[393,4,[]],[211,4,[[2,2,75,0,0,394]]],[395,4,[]],[212,4,[[2,2,75,0,0,396]]],[213,4,[]],[214,4,[]],[397,4,[]],[215,4,[[2,2,307,0,0,398]]],[219,4,[[2,2,75,0,0,399]]],[400,4,[[2,2,307,0,0,401],[2,2,75,0,0,402],[2,2,280,0,0,403],[2,2,67,0,0,404],[2,2,52,0,0,404]]],[222,4,[[2,2,75,0,0,405],[2,2,67,0,0,406]]],[407,4,[[2,2,75,0,0,408]]],[226,4,[[2,2,75,0,0,409],[2,2,280,0,0,410]]],[227,4,[]],[228,4,[[2,2,67,0,0,411],[2,2,75,0,0,412]]],[413,4,[[2,2,75,0,0,414],[2,2,44,0,0,316],[2,2,309,0,0,415],[2,2,280,0,0,416],[2,2,67,0,0,417]]],[234,4,[[2,2,75,0,0,418],[2,2,67,0,0,419]]],[420,4,[[2,2,75,0,0,399]]],[421,4,[[2,2,75,0,0,422]]],[235,4,[[2,2,75,0,0,423]]],[424,4,[[2,2,75,0,0,425],[2,2,67,0,0,426]]],[238,4,[]],[427,4,[[2,2,75,0,0,428]]],[242,4,[[2,2,75,0,0,429]]],[248,4,[[2,2,75,0,0,399]]],[430,4,[[2,2,75,0,0,431]]],[432,4,[[2,2,75,0,0,433],[2,2,67,0,0,434]]],[435,4,[[2,2,75,0,0,436],[2,2,67,0,0,437]]],[438,4,[[2,2,75,2,0,439],[2,2,206,2,0,440]]],[441,4,[]],[442,4,[[2,2,75,0,0,443]]],[444,4,[[2,2,307,0,0,445],[2,2,75,0,0,446],[2,2,280,0,0,447]]],[448,4,[[2,2,75,2,0,439],[2,2,206,2,0,449]]],[332,4,[]],[450,4,[]],[451,4,[[2,2,307,0,0,445]]],[452,4,[[2,2,63,0,0,453]]],[454,4,[[2,2,75,2,0,455],[2,2,206,2,0,455]]],[456,4,[[2,2,75,0,0,457],[2,2,280,0,0,458]]],[252,4,[[2,2,75,0,0,459],[2,2,52,0,0,460]]],[461,4,[]],[255,4,[[2,2,75,0,0,462],[2,2,309,0,0,463]]],[258,4,[]],[264,4,[]],[265,4,[[2,2,75,2,0,464],[2,2,280,2,0,464],[2,2,206,2,0,464]]],[465,4,[]],[266,4,[[2,2,75,0,0,466]]],[269,4,[[2,2,280,0,0,467],[2,2,309,0,0,468]]],[271,4,[[2,2,75,0,0,446]]],[272,4,[[2,2,307,2,0,469],[2,2,75,2,0,470],[2,2,309,2,0,471]]]],"total":185,"excluded":0,"failed":0}},"strings":["чистящая паста","Просто Блеск","Чистящая паста Просто блеск, для кухни и сантехники, антибактериальная, 1000 г, розовая","","Чистящее средство САНРОС 500 г","Чистящая паста Просто блеск, антибактериальная, для кухни, розовая, 500 мл","«Просто Блеск» — универсальная паста с антибактериальным эффектом, подходит для кухни, сантехники и даже обуви.","BRANDFREE","«Чудо-паста» от Brandfree — предназначена для металлических, эмалированных и стеклокерамических поверхностей.","PINK GLAM","PINK GLAM — универсальная паста с натуральным составом, справляется с нагаром, жиром и известковым налётом.","паста для чистки","Паста для очистки рук Pingo","Паста для полировки и восстановления металла","Паста Pingo Чистая Звезда","«Просто блеск». Универсальная паста с антибактериальным эффектом. Подходит для кухни (духовка, плита, СВЧ), сантехники (раковина, унитаз, ванна), кафеля, металлических поверхностей. В составе — диоксид кремния, каолин, глицерин, жирные кислоты кокосового масла.","BRANDFREE. Универсальная паста для металлических, эмалированных и стеклокерамических поверхностей. Эффективна против жира, нагара, накипи, грибка и известкового налёта. При сильных загрязнениях пену с пастой оставляют на 5–10 минут.","PINK GLAM. Универсальная паста с натуральным составом (содержит кварц). Справляется с нагаром, жиром, известковым налётом, грязью на подошве. Обладает приятным запахом абрикоса.","кислородный отбеливатель для белья","Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг","Lion","Кислородный отбеливатель CJ Lion Clean Plus для стирки","Елизар","Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого","Synergetic","Synergetic — экологичный состав, подходит для всех типов тканей.","«Елизар» — концентрированный пятновыводитель, подходит для белого и цветного белья.","BRANDFREE «Я твоё средство для всего» — универсальный отбеливатель-пятновыводитель.","я твое средство","универсальная чистящая паста","BLITZ","Универсальная чистящая чудо паста BLITZ для ванной, посуды, кухни и обуви 400 гр, губка в подарок","PINK GLAM. Содержит кварц в качестве абразива, безопасна для кожи, имеет приятный аромат абрикоса. Подходит для удаления стойких загрязнений с разных поверхностей.","DUTYBOX","DUTYBOX Wow. В состав добавлены д-пантенол и витамин Е для ухода за кожей рук. Паста с нано-блёстками обеспечивает мягкий полирующий эффект.","BRANDFREE «Чудо-паста». Подходит для металлических, эмалированных и стеклокерамических поверхностей. При добавлении воды превращается в густую пену.","купить чистящую пасту","Чистящее средство Солита 3 в 1 620 г СЛ 1-05","карандаш пятновыводитель","Meine Liebe","Пятновыводитель-карандаш MEINE LIEBE кислородный, универсальный, 35г","Карандаш Золушка Б24-2","Кислородный карандаш пятновыводитель для одежды","средство от пятен на одежде","Cif","Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи","Пятновыводитель для одежды: выбор профессионалов","Пятновыводитель \"Пятноль\", Greenfield","Synergetic. Универсальный пятновыводитель для тканей любого цвета, но его не рекомендуют для деликатных тканей и мембран.","Salton CleanTech","Salton CleanTech. Порошковый кислородный пятновыводитель без хлора и фосфатов. Подходит для белых и цветных вещей, детского белья, но не для шёлка, шерсти и мембран.","Meine Liebe. Кислородный карандаш-пятновыводитель, подходит для детских вещей.","BioMio","BioMio Bio-Stain Remover. Гипоаллергенный гель, хорошо подходит для детских вещей, но может не справиться со слишком старыми или сильными загрязнениями.","пена для стекол","VENWELL","VENWELL VW-SL-011RU Очиститель стекол, пена GLASS Cleaner 500 мл Venwell VW-SL-011RU","LAVR","Пенный очиститель стекол Lavr","Пенный очиститель для стекол и зеркал, пена для поверхностей","BARFIN","Barfin «Чудо-пена». Бывает с разными ароматами (лайм-мята, апельсин, мята). Эффективно убирает жир, пыль и следы от капель, не оставляет разводов, быстро сохнет.","Brandfree. Воздушная пена для бережного очищения деликатных поверхностей. Подходит не только для стёкол и зеркал, но и для пластика.","GRASS","Grass Glass Cleaner. Универсальный очиститель для стёкол, зеркал и фар. Быстро справляется с загрязнениями, не оставляет разводов, безопасен для тонировочных плёнок и резиновых деталей.","LAVR. Ещё один популярный пенный очиститель, который встречается в разных объёмах (например, 400 мл).","спрей от пятен","Faberlic","Спрей пятновыводитель кислородный универсальный Faberlic","Пятновыводитель универсальный средство от пятен чая, кофе, вина, ягод и фруктов отбеливатель 125 мл Greenfield","Synergetic. Гипоаллергенный, биоразлагаемый, подходит для предварительной обработки пятен перед стиркой, в том числе для детских вещей.","Faberlic. Универсальный, с энзимами. Эффективен против пятен от еды, напитков, жира, косметики, чернил, ржавчины и потожировых загрязнений.","BIMAX","Bimax «100 пятен». Содержит энзимы, хорошо справляется с органическими пятнами (жир, белок, крахмал), включая застарелые.","Grass G-oxi Spray. Кислородный пятновыводитель-отбеливатель.","Amway","Amway SA8. Предназначен для предварительной обработки белья перед стиркой.","Salton CleanTech. Узкоспециализированный спрей против жирных пятен.","карандаш от пятен","Кислородный карандаш-пятновыводитель BRANDFREE, универсальный отбеливатель для белья, обуви и мебели, 35 г","Кислородный карандаш Brandfree, очиститель для белого и цветного белья, универсальный чудо-карандаш отбеливатель, пятновыводитель для обуви, мебели, тканей","салфетки от пятен на одежде","Салфетки для удаления пятен на одежде и обуви, салфетки пятновыводящие, средство от пятен на одежде мини саше 20 шт.","Салфетки от пятен на одежде влажные пятновыводящие 20 штук","House Lux","Салфетки влажные House Lux, для удаления пятен, 20 шт, 72056","кислородный карандаш","LAIMA","Пятновыводитель карандаш Laima EXPERT кислородный многофункциональный 35 г","Jundo","Карандаш-пятновыводитель Jundo Универсальный Премиум, 35 г 4903720021187","влажные салфетки от пятен","Влажные салфетки House Lux, для удаления пятен, 20 шт.","пятновыводящие салфетки","хороший отбеливатель для белого белья","Vanish","Пятновыводитель-отбеливатель Vanish, OxiAction, 450 мл, для стирки белого белья, кислородный, 8078299","LAMM","Отбеливатель для белых тканей LAMM порошкообразный, 500г","Synergetic «Кислородсодержащий бесхлорный отбеливатель». В составе — активный кислород и растительные компоненты. Средство биоразлагаемое, подходит для белого и цветного белья (если это разрешено инструкцией), безопасно для аллергиков и детской одежды.","BRANDFREE «Я твоё средство для всего». Универсальный кислородный концентрат. Подходит не только для белого, но и для цветного белья, а также для очистки других поверхностей. Не содержит хлора, фосфатов и отдушек.","чистящая паста для уборки","кислородный карандаш пятновыводитель","Кислородный карандаш пятновыводитель MEINE LIEBE универсальный, без хлора, 35г без шоу-бокса","купить салфетки от пятен","пена для стекол и зеркал","Средство для мытья окон, стекол и зеркал без разводов Barfin, мята 300 мл, спрей","Универсальное чистящее средство пена 15 в 1 GRASS Home Cleaner, спрей, 600мл","Учитывайте ограничения: например, пену Brandfree нельзя использовать для удаления стойкого нагара в духовке или микроволновке, а также на акриловых ваннах.","BARFIN «Чудо-пена» (с ароматами мяты, апельсина, лайма и мяты).","LAVR Пенный очиститель стёкол и зеркал — не оставляет радужной плёнки, обладает антистатическим эффектом.","энзимный карандаш","Энзимный карандаш пятновыводитель чудо-очиститель","Энзимный карандаш пятновыводитель Brandfree, очиститель для белого и цветного белья, универсальный чудо-карандаш отбеливатель, средство для обуви, мебели, тканей, пластика","Карандаш для отбеливания и удаления пятен BRANDFREE энзимный, 1шт","спрей для выведения пятен","HG","Пятновыводитель HG для удаления пятен от пота и дезодоранта, 250 мл, спрей","Пятновыводитель Grass G-oxi, спрей, для белых тканей, кислородный, 600 мл","паста для чистки ванны","Pinky Clean","Чудо паста для уборки розовая Pinky Clean чистящее средство","PRO LINE","Чистящая универсальная паста PRO LINE \"Лаванда\" 700 гр, гипоаллергенное","пятновыводитель для детской одежды","Пятновыводитель для белья SYNERGETIC 1л гипоаллергенный, эко, универсальный, для цветного, белого белья, детский, без запаха","Ушастый нянь","Пятновыводитель жидкий для детского белья ушастый нянь, 750мл","спрей от пятен на одежде","Amway SA8 — спрей для предварительной обработки пятен перед стиркой.","«Сиф» — универсальный спрей с мгновенным эффектом, заявлена эффективность против до 20 видов пятен.","BioFlashSpot","BioFlashSpot — кислородный спрей для удаления пятен без стирки.","пенный очиститель для стекол","Очиститель стекол LAVR пенный, Арт. Ln1621, 400мл","ATAS","Очиститель для стекол и зеркал CANDIVETRO пенный Atas 400 мл A750","LAVR «Антистатик» (Ln1621). Аэрозоль объёмом 400 мл. Эффективно удаляет дорожную пыль, следы насекомых, масляные пятна, глицериновый и никотиновый налёты. Не оставляет разводов и радужной плёнки, подходит для стёкол, зеркал и фар автомобиля, а также для бытового использования.","GRASS Glass cleaner. Аэрозоль объёмом 650 мл. Универсальный очиститель для стёкол, зеркал и фар. Обновляет внешний вид, не оставляет разводов, безопасен для тонировочной плёнки, резиновых деталей и лакокрасочного покрытия.","пена для лобового стекла","Средство для мытья стекол и зеркал Grass Clean glass","G-POWER","Очиститель пенный Стекол, Зеркал и Фар 400мл G-POWER GP-303","купить карандаш пятновыводитель","Кислородный карандаш пятновыводитель MEINE LIEBE универсальный, без хлора, спайка 2 штуки по 35г","Udalix","Пятновыводитель Udalix карандаш 0.035 кг","средство от разводов на стекле","Средство для стекол лента универсальный с нашатырным спиртом, 500мл","Средство для окон и зеркал мистер мускул Muscle После Дождя","Grass Clean Glass","спрей от жирных пятен","Пятновыводитель для жирных и масляных пятен Siliconi Pulimak 1 Пулимак 1","Средство чистящее СИФ Экспресс-пятновыводитель, 100% эффект без стирки, 100мл","крем паста для чистки металлических поверхностей","Крем-паста для чистки металлических поверхностей","Крем-паста для чистки металлических поверхностей Faberlic Home","Паста для чистки посуды и металлических поверхностей очищающая паста, универсальное, отбеливающее","Faberlic Home","энзимный карандаш пятновыводитель","как убрать пятно","как отстирать пятна","как отстирать кровь","как вывести пятна с одежды","как вывести жирное пятно","как почистить диван","как отмыть стекло","Профессиональные средства. В их составе часто есть спирт, аммиак или лимонная кислота, которые эффективно удаляют разводы и придают блеск. При выборе обращайте внимание на отсутствие абразивов и агрессивных растворителей (например, ацетона), которые могут повредить пластиковые рамы. Популярные бренды: Grass Clean Glass, Luscan Professional Glass Crystal, Pro-Brite Glass Cleaner.","как отмыть чернила","как отстирать белые вещи","как убрать старые пятна","как вернуть белизну вещам","как убрать разводы на стекле","как убрать пятно от травы","как отмыть стекло от налета","как убрать разводы с зеркала","как вывести пятна с детской одежды","как вывести желтые пятна с детской одежды","чем отстирать пятно","чем отмыть стекло","чем отмыть кухню","От застарелого жира и нагара: специализированные средства «антижир» (например, Grass Azelit, Synergetic, Unicum). Наносите, выдерживайте время по инструкции и тщательно смывайте.","чем отмыть ванную","Для акрила: Grass Gloss (на основе лимонной кислоты, создаёт грязеотталкивающую плёнку).","чем вывести пятно с одежды","чем отстирать чернила","чем отстирать жирное пятно","чем отстирать пятно на белом","чем отмыть плитку в ванной","чем отстирать желтые пятна","чем отмыть фасады кухни","Synergetic (на основе растительных тензидов и натуральных масел) — мягко расщепляет свежий жир и налёт, не повреждая покрытие.","Grass Azelit — мощный жироудалитель, но его нужно использовать осторожно и строго по инструкции, чтобы не повредить покрытие.","чем отстирать старые пятна","Примеры средств: Vanish Oxi Action, Salton CleanTech, Synergetic, «Елизар».","чем отмыть налет в ванной","чем отбелить вещи","чем отмыть лобовое стекло","чем отстирать пятна крови","Если домашние методы не сработали, выручат специальные пятновыводители. Ищите те, что специально созданы для белковых загрязнений (крови, еды). Ищите в составе энзимы (ферменты, расщепляющие белок) или кислородсодержащие компоненты. Есть и точечные варианты — например, кислородные карандаши: намочите пятно и потрите содержимым карандаша, затем застирайте. Примеры: Dr. Beckmann «Эксперт Кровь и белковые пятна», Vanish Oxi Action, «Елизар». Всегда следуйте инструкции на упаковке.","чем отстирать желтые пятна на белом","чем отстирать пятна от пота","Пятновыводители, специально предназначенные для пятен от пота и дезодоранта. Они часто содержат энзимы, которые целенаправленно разрушают компоненты пятна. Ищите на упаковке соответствующую маркировку. Примеры: Salton CleanTech, «Антипятин», спрей Dr. Beckmann.","чем отстирать масляное пятно","чем отмыть швы в ванной","Для профилактики и слабых загрязнений подойдут средства с поверхностно-активными веществами (ПАВ), которые растворяют мыльный и жировой налёт. Это могут быть Cilit, «Пемолюкс», Fairy, Cif.","OXYGEN","Кислородные отбеливатели («Персоль», Oxygen от ECO-Way, «Елизар») работают мягче хлора, подходят и для белых, и для цветных поверхностей. Разведите порошок до консистенции кашицы, нанесите на увлажнённые швы на 2–3 часа, затем смойте.","чем отмыть желтизну в ванной","Для акрила подойдут жидкие гели, которые производитель прямо разрешает для этого материала (например, Sanfor «Акрилайт», средства линейки Grass Gloss).","чем отмыть стекло в душевой","чем отстирать банан с детской одежды","чем отстирать пятна на детской одежде","чем отчистить белую подошву на обуви","чем отстирать детское пюре с одежды","лучший отбеливатель","Персоль","Отбеливатель Персоль, Extra, 200 г, порошок, кислородный, ЧС-09","Если у вас цветное бельё, вы хотите освежить оттенки, не испортив вещь — однозначно берите кислородный отбеливатель. В его основе — активный кислород (часто перкарбонат натрия), который расщепляет загрязнения, не разрушая волокна ткани. Такие средства подходят и для белого, и для цветного белья, часто безопасны для аллергиков и детской одежды. Многие из них ещё и работают как пятновыводители благодаря дополнительным компонентам (энзимам). Примеры: Vanish Oxi Action, Synergetic, «Елизар», LION BEAT O2.","лучший пятновыводитель","Для большинства повседневных задач (свежие пятна от травы, кофе, вина, косметики) отлично подойдут кислородные пятновыводители. Они работают за счёт активного кислорода, часто в составе есть перкарбонат натрия, и хорошо справляются с пигментированными загрязнениями. Примеры: Vanish Oxi Action (жидкий, работает даже в прохладной воде) или Synergetic (гипоаллергенный, биоразлагаемый, подходит для разных тканей).","Если речь о детских вещах или чувствительной коже, ищите гипоаллергенные варианты (например, «Ушастый нянь», BioMio Bio-Stain Remover). Они мягче, не содержат агрессивных отдушек и красителей.","лучший пятновыводитель для одежды","«Елизар» (порошок). Сильный кислородный вариант, который хорошо берёт сложные органические загрязнения: въевшуюся краску, чернила, йод. Но важно помнить: его нельзя применять на шёлке, шерсти, коже, а также на вещах с металлической фурнитурой.","Synergetic. Отличается экологичным составом: в нём нет хлора, агрессивных отдушек и фосфатов. При этом он эффективен — проникает в волокна и расщепляет загрязнение, работает даже в прохладной воде. Часто его выбирают для детских вещей или если у кого-то из домочадцев чувствительная кожа. Для сложных пятен может потребоваться замачивание.","BioMio Bio-Stain Remover (гель). Ещё один экологичный и гипоаллергенный вариант. Хорош для детских вещей, а также для цветных и белых тканей. Эффективен против свежих и старых пятен: от красок, фломастеров, чернил, пластилина, фруктовых соков. Но учтите: со слишком застарелыми или очень стойкими загрязнениями он может не справиться.","лучший кислородный отбеливатель","какая чистящая паста лучше","бренды пятновыводителей","Synergetic Российский бренд, выпускающий кислородные пятновыводители на основе растительных компонентов. Есть варианты без запаха и с пометкой «для детского белья».","Meine Liebe Бренд предлагает кислородные пятновыводители, в том числе популярный карандаш для детского белья.","Brandfree («Я твое средство для всего») Кислородный очиститель, который позиционируется как универсальное средство для борьбы с различными загрязнениями.","Grass (G-oxi spray) Бренд выпускает спреи-пятновыводители, в том числе специализированные формулы для цветных тканей.","Amway (PreWash) Средство в формате спрея для предварительного замачивания.","рейтинг пятновыводителей","лучший кислородный пятновыводитель","Кислородный очиститель и отбеливатель-пятновыводитель универсальный MEINE LIEBE для дома, 800 г","Пятновыводитель Антипятин, 300 г, порошок, усилитель стирки, кислородный, А0665","лучший пятновыводитель для цветного","Пятновыводитель GRASS G-Oxi Color 500мл гель для цветного","Synergetic. Экологичный пятновыводитель на основе активного кислорода. Гипоаллергенный, без хлора, подходит для детских вещей и деликатных тканей. Хорошо работает даже в холодной воде.","Grass G-oxi Spray Color. Спрей с активным кислородом, специально разработанный для цветных тканей. Удобен для точечной обработки сложных пятен.","лучший отбеливатель и пятновыводитель","Synergetic. Бесхлорный кислородный отбеливатель. В составе есть растительные компоненты, средство биоразлагается, подходит для белого и цветного белья, для детской одежды.","Brandfree «Я твоё средство для всего». На основе перкарбоната натрия. В формуле есть активатор (ТАЭД), который помогает средству работать даже в жёсткой и не очень горячей воде. Гипоаллергенный, без хлора, красителей и отдушек — хорош для вещей новорождённых.","Salton CleanTech. Порошковый кислородный пятновыводитель. В составе комплексный подход: активный кислород, энзимы, ПАВы и активатор TAED. Подходит для белых и цветных вещей, для детского белья (без фосфатов и хлора), но не для шёлка, шерсти и мембран.","Udalix. Выпускается в формате карандаша-стика — удобно для оперативной точечной обработки (воротнички, манжеты) перед стиркой.","BioMio Bio-Stain Remover. Экологичный, гипоаллергенный, без агрессивных компонентов, отдушек и красителей. Хорошо выполаскивается, обладает антибактериальным эффектом.","лучший пятновыводитель для одежды застарелых пятен","«Елизар». Кислородный пятновыводитель в форме порошка. Считается одним из самых сильных для сложных органических загрязнений: въевшаяся краска, чернила, йод, пятна от кофе, вина, фруктовых соков. Однако его нельзя использовать на шёлке и шерсти.","Synergetic. Гель с комплексом из пяти энзимов растительного происхождения. Натуральный состав без хлора, фосфатов и отдушек, хорошо вымывается из волокон. Подходит для застарелых пятен жира, крови, какао и вина. Его можно использовать для детской одежды.","Salton CleanTech. Порошковый кислородный пятновыводитель. В составе — активный кислород, TAED, энзимы и ПАВы, что обеспечивает комплексное воздействие на загрязнения. Максимальная эффективность при температуре от 40 °C. Подходит для большинства тканей (кроме шёлка, шерсти и мембран).","лучший пятновыводитель для детской одежды","Meine Liebe Кислородный карандаш. Кислородный состав без хлора и фосфатов. Пользователи отмечают, что он хорошо справляется с разными пятнами, в том числе застарелыми.","Synergetic. Биоразлагаемый кислородный отбеливатель-пятновыводитель в стиках. Подходит для цветного и белого белья, удаляет пятна от масла, жира, какао, ягод, травы, чернил, кофе, вина и крови. Работает даже в холодной воде.","отбеливатель","Отбеливатель порошковый 365 дней, 300г","Кислородные: «БОС плюс maximum», Synergetic, Vanish Oxi Action, Grass G-Oxy.","чистящее средство","Средство для чистки сантехники Адрилан 200113","Domestos","Чистящее средство для унитаза Доместос Свежесть Атлантики универсальное средство для уборки, гель 500 мл","Чистящее средство универсальное, Чистин, Яблоко, порошок, 400 г","Для стёкол: «Grass Clean».","пятновыводитель","отбеливатель для белья","пятновыводитель для одежды","Synergetic — биоразлагаемый кислородный пятновыводитель, подходит для цветных и белых тканей, в том числе детской одежды.","Meine Liebe — выпускается в разных форматах, включая карандаш, подходит для детского белья.","купить отбеливатель","Белизна химэкси 26002","купить пятновыводитель","кислородный отбеливатель купить","- Grass (черная и зеленая)","салфетки от пятен","Популярные марки салфеток от пятен представлены такими брендами, как Vanish, Amway, Frau Schmidt, Synergetic и Dr. Beckmann.","пенный очиститель","- Grass","- Amway (суперэффективные многофункциональные салфетки)","- Amway (персоль)","Persil","- Persil","пенный очиститель салона","- Amway (Амвей)","- Faberlic («Фаберлик»)","- **Amway PreWash Gel**: эффективно удаляет пятна фруктов, ягод, шоколада и косметики.","какой пятновыводитель лучше","- **Amway Natrоl Pro**","- **Faberlic Очиститель пятен**","Популярные марки спреев от пятен представлены такими брендами, как Vanish, Amway, Frau Schmidt, Dr. Beckmann и отечественными производителями («Капля», «Секунда», «Антипятин»).","отбеливатель для белья лучший","### 🌿 2. Безхлорные кислородосодержащие отбеливатели («Vanish», «Амвей», «ACV»):","купить пенный очиститель","- «Амвей»","- «Фаберлик»","- Примеры: Vanish Oxi Action, Amway Oxy Plus, Persil Oxygen.","пена для чистки салона","спрей для удаления пятен","- Amway (Авантайм)","- Synergetic («Синергетик»)","средство для унитаза без хлора","чистящие средства без хлора","- **Биоактивные гели и спреи** («Амвей», «Фрау Шмидт», «Ecover», «Mrs.Meyers Clean Day»): экологически чистые, биоразлагаемые, ароматизированы натуральными маслами.","салфетки пятновыводящие для одежды","- Amway (Vanish)","моющее средство без хлора","- «Амвей» («Avalanche»)","ЛАСКА","- «Ласка» («Lacoste»)","БИОЛАН","- «Биолан Экстра свежесть»","- «BioMio»","влажные салфетки от пятен на одежде","- Amway («Амовэй») — качественные салфетки с энзимами, эффективны против сложных белков и органических пятен.","пена для чистки салона автомобиля","- **Amway Natures Source Пятновыводители** — гипоаллергенные, подходят даже для деликатных тканей.","- «Сиф»","средство для ванны без хлора","Популярные марки энзимных карандашей представлены такими брендами, как Rembrandt, Colgate, Amway, White Glo и отечественными производителями косметики («Сплат», «Чистая линия»).","- Amway (Авань)","салфетки от пятен на одежде пятновыводящие","- Amway (Ariel)","- **Amway SA8** — проверенное временем средство, хорошо удаляет большинство видов загрязнений.","- Энзимные порошки и гели («Биолан», «Ласка», «Амвей») эффективно удаляют загрязнения белкового происхождения (молоко, кровь, фрукты).","- **Amway PreWash Spray** — эффективное удаление сложных пятен, подходит для деликатных тканей.","- **Faberlic ПятноOFF** — отечественный бренд, проверенное временем средство, отлично удаляет свежие пятна.","салфетки от пятен на одежде пятновыводящие влажные","- Amway,","- Faberlic,","спрей против пятен","- **Amway** («Фэйри Нейтрал») — эффективный спрей, удаляющий пятна с одежды и мягкой мебели.","- **Faberlic** («Антикофе», «Антижир») — российские бренды, подходящие для ежедневного домашнего использования.","средство для стирки детской одежды","карандаш для удаления пятен","- Faberlic («Чистый дом»)","- Amway («Vanish»)","- Synergetic («Доместос»)","- **Антидождь Grass**","пена для чистки ванны","карандаш от пятен на одежде","как выводить пятна","как вывести пятно","как удалить пятна","как отстирать жирное пятно","- Используйте пятновыводители («Vanish», «Амвей», «Faberlic») или жидкий порошок с энзимами.","как удалить пятна с одежды","как оттереть пятно","как удалить жирное пятно","как убрать пятна крови","как отмыть лобовое стекло","как отмыть стекло без разводов","как отмыть стекла в машине","как отстирать банан с детской одежды","как отстирать пятна на детской одежде","как отстирать детское пюре с одежды","как вывести запах мочи с детской одежды","- Специальные детские пятновыводители («Амвей», Vanish Baby, Dr. Beckmann и др.) помогут удалить загрязнения и убрать неприятный аромат.","как отстирать белое","- **Безхлорные кислородные отбеливатели** («БОС», «Амвей», «Ласка») бережно удаляют загрязнения и сохраняют цвет ткани.","чем отмыть пятно","чем отмыть пятна","- Обычные чистящие жидкости («Мистер Мускул», «Фейри», «Сиф») отлично справляются с загрязнениями и разводами. Нанеси средство на мягкую тряпочку или салфетку и протри поверхность круговыми движениями.","чем выводить пятна с одежды","чем отстирать пятна на одежде","- **Пятновыводители** (Vanish, Amway, Dr. Beckmann): внимательно читайте инструкцию и тестируйте на небольшом участке ткани.","чем можно отстирать пятна","- **Средства для предварительной обработки:** Ваниш PreWash Gel, Dr. Beckmann, Amway PreWash Spray помогают удалить загрязнения еще до стирки.","чем отстирать пятна в домашних условиях","чем вывести жирное пятно с одежды","- Пятновыводители с активным кислородом («Vanish», «Amway», «Faberlic»).","чем отмыть жирное пятно","- **Ласка Оптик», Vanish Active White**: кислородные отбеливатели, подходят для цветных и деликатных тканей.","чем отстирать пятна с одежды","- **Пятновыводители:** Ваниш, Амвей, Dr.Beckmann, Vanish и др. Применяйте строго по инструкции производителя, следите за типом ткани.","чем можно отмыть пятно","чем отстирать жирное пятно на одежде","- **Amway PreWash Gel**: мощный кислородный отбеливатель, подходит для цветных вещей.","чем отмыть желтые пятна","чем отбелить белые вещи","чем чистить обувь","чем отмыть стекло автомобиля","чем отстирать пятно от масла","чем вывести пятно с белой одежды","чем отстирать застарелые пятна","чем отстирать пятна на белой одежде","Используйте жидкие пятновыводители типа Vanish, Amway, Dr.Beckmann или Frau Schmidt. Обработайте загрязнённый участок согласно инструкции производителя, затем постирайте вещь вручную или в стиральной машине.","чем отбелить вещи в домашних условиях","чем отмыть скотч от стекла","чем можно отстирать жирное пятно","- **Средства для выведения пятен:** Ваниш, Amway, Dr. Beckmann, Vanish отлично справляются даже с застарелыми жирными пятнами. Используйте согласно инструкции на упаковке.","- **Средства для чистки окон и зеркал** («Мистер Мускул», «Сиф», «Доместос») — отлично справляются с любыми загрязнениями и оставляют приятный аромат.","чем отмыть стекла в душевой кабине","чем отмыть налет в ванной на ванне","чем убрать разводы на стекле","Для свежих пятен или сильных загрязнений можно предварительно нанести на пятно специальное средство для выведения пятен (например, Vanish Baby, Amway, Dr. Beckmann или отечественный «Антипятин»). Подождите указанное производителем время и прополощите изделие.","чем убрать разводы на лобовом стекле","- **Средства для выведения пятен:** используйте специализированные пятновыводители (Vanish, Amway, Dr.Beckmann и др.). Следуйте инструкции на упаковке, предварительно протестировав средство на незаметном участке ткани.","чем вывести пятна с детской одежды","- **Ласка Оптик Клинер**","- **Amway Natures Miracle**","лучшее средство для стирки","- **Средства на мыльной основе** («Ласка», «Ушастый нянь», «Аист») — отлично подходят для деликатных тканей, детских вещей и шерсти.","- **Гель-концентрат** («Био-Мастер», «Амвей», экологичные средства вроде Dr.Bronner’s) — экономичны, эффективно удаляют пятна и загрязнения.","- **Капсулы и таблетки** («Tide», «Ariel», «Persil Go») — удобны в применении, быстро растворяются, обеспечивают отличную эффективность даже при низких температурах воды.","- **Концентрированные гели** («Faberlic», «Burti», экологические бренды типа Ecover или BioMio) — экономичны, бережно стирают цветные вещи и деликатные ткани.","- **Amway Natures Promise**","- **Faberlic Экстрасила**","какой хороший отбеливатель","- **«Амвей» (Amway)**","### 2. Amway OxiClean Max Fresh","### 4. Persil Proffessional Oxi Action","- **Faberlic**","- **Amway**","бренды бытовой химии","- «Амвей» («Amway»)","- «Биолан»","- «Persil» (Персил)","- «Faberlic» (фаберлик)","3. **Amway Natures Miracle**","4. **Faberlic «Чистое решение»»","самый лучший пятновыводитель","пятновыводитель для одежды какой лучше","### 🔸 4. Amway Natrional Cleanser","### 2. Amway Natures Miracle","пятновыводитель лучший рейтинг","3. **Amway Natures Essence**","5. **Faberlic ЭкстраБелый»","топ пятновыводителей","### 3. Amway Natures Miracle","3. **Amway SA8**","самый лучший пятновыводитель для одежды","- **Amway Natures’ miracle**","рейтинг пятновыводителей для одежды","2. **Amway Natures Miracle**","4. **Faberlic «Чистая Линия»»","лучшие пятновыводители для одежды рейтинг лучших","2. **Amway Natrоlеan Oxi Action**","3. **Faberlic «Чистая Линия»»","рейтинг кислородных пятновыводителей","2. **Amway SA8**","5. **Prosept Oxygen Plus**","средства для чистки без хлора","пятновыводитель топ лучших","2. **Amway Natrional Cleanser**","топ кислородных отбеливателей","- **Ласка**","- **Amway SA8**","- **Persil Bio Oxi Action**","лучший кислородный отбеливатель и пятновыводитель рейтинг","5. **Sarma Oxygen Bleach**","лучший пенный очиститель салона автомобиля","российские бренды бытовой химии","какой пенный очиститель салона лучше","**3. Grass Auto Fresh Air**","кислородный пятновыводитель какой лучше выбрать","### 🟢 2. Amway Natrional Oxygen Bleach","топ лучших кислородных отбеливателей","### 🧹 2. Amway AO Sano (АО-Сана)","### 🧴 4. Persil ProClean Oxi White","### 🧺 3. Amway Natures Miracle","### 🌿 5. Эковер или BioMio","моющее средство","Действуют мягче, не содержат хлора, подходят практически для всех типов тканей и деликатных изделий. Активное вещество — перборат натрия или персульфат калия. Такие средства бережно очищают ткань, сохраняют яркость цвета и не вызывают аллергических реакций. Примеры: «Vanish», «БОС», «Амвей».","Применяются преимущественно для натуральных волокон (хлопок, лен, шерсть). Энзимы расщепляют органические загрязнения, делая вещи идеально чистыми и свежими. Например, «Асе», «Биолан».","Примеры: Vanish Oxi Action, Amway AOX, Persil Active Oxygen.","средство для чистки","- Amway (Ariel Powerwash Plus)","- **Для ткани** (например, Vanish, Персил): специально предназначены для стирки белья и одежды, устраняют пятна и сохраняют яркость цвета.","- Если вы хотите экологичный вариант, обратите внимание на биоразлагаемые средства («Эковер», «Биолан»).","2. **Ласка**","3. **Амвей (Amway)**","4. **Биолан**"]}</script>
 <script>
+// Пути к файлам на GitHub Pages. Относительные ссылки работают в подпапках проекта.
+const FILES={yandex:'./combined.json',giga:'./combined_giga_api.json'};
 'use strict';
 const dictionary = JSON.parse(document.getElementById('dictionary').textContent);
 const norm = value => String(value ?? '').normalize('NFKC').toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/\s+/g,' ').trim();
@@ -63,546 +42,7 @@ function titleBrands(title) {
   const words = ' '+wordForm(title)+' ';
   return [...new Set(titleDictionary.filter(([key])=>words.includes(' '+key+' ')).map(([,name])=>name))];
 }
-function parseCSV(text) {
-  text = text.replace(/^\uFEFF/,'');
-  if (/^\s*</.test(text)) throw Error('Получена HTML-страница вместо CSV.');
-  const first = text.split(/\r?\n/,1)[0];
-  const delimiter = [';',',','\t'].sort((a,b)=>first.split(b).length-first.split(a).length)[0];
-  const rows=[]; let row=[], field='', quoted=false;
-  const endRow=()=>{row.push(field); if(row.some(v=>v.trim()!=='')) rows.push(row); row=[]; field='';};
-  for(let i=0;i<text.length;i++){
-    const ch=text[i];
-    if(quoted){
-      if(ch!=='"'){field+=ch;continue;}
-      if(text[i+1]==='"'){field+='"';i++;} else quoted=false;
-    } else if(ch==='"' && field==='') quoted=true;
-    else if(ch===delimiter){row.push(field);field='';}
-    else if(ch==='\n'||ch==='\r'){if(ch==='\r'&&text[i+1]==='\n')i++;endRow();}
-    else field+=ch;
-  }
-  if(quoted) throw Error('Незакрытая кавычка в CSV.');
-  endRow();
-  if(!rows.length) throw Error('CSV пуст.');
-  if(rows.some(r=>r.length!==rows[0].length)) throw Error('В строках CSV разное количество полей. Проверьте разделитель и кавычки.');
-  return rows;
-}
-function host(label,url){
-  for (const candidate of [url,label]) {
-    if(!candidate)continue;
-    try{const s=String(candidate).trim();const u=new URL(s.includes('://')?s:'https://'+s);
-      if(u.hostname.includes('.')&&!/\s/.test(s.split('/')[0]))return u.hostname.toLowerCase().replace(/^www\./,'');
-    }catch{}
-  }
-  return '';
-}
-function priceRub(text){
-  if(!text || /[$€₸₴]|USD|EUR|BYN|KZT|UAH|бел\.|тенге|сом/i.test(text))return null;
-  const match=String(text).trim().match(/^(\d[\d \u00a0\u202f]*(?:[.,]\d{1,2})?)\s*(?:₽|руб\.?|RUB)$/i);
-  return match ? Number(match[1].replace(/\s/g,'').replace(',','.')) : null;
-}
-function schemaFor(headers){
-  const has=rx=>headers.some(h=>rx.test(h));
-  return {pBrand:has(/^products\[\d+\]\.brands(?:\[|$)/),kind:has(/^alice_brands\[\d+\]\.kind$/),
-    price:has(/^products\[\d+\]\.price$/),seller:has(/^products\[\d+\]\.seller$/),
-    promo:has(/^products\[\d+\]\.promo_signal$/),webDomain:has(/^web_results\[\d+\]\.(?:url|domain|host)$/)};
-}
-function buildDataset(matrix) {
-  if(!Array.isArray(matrix)||!matrix.length)throw Error('Нет заголовков CSV.');
-  const headers=matrix[0].map(h=>String(h).trim());
-  if (!headers.includes('query') || !headers.includes('status') ||
-      !headers.includes('product_status') || !headers.includes('alice_status'))
-    throw Error('Нужны колонки query, status, product_status и alice_status из отчёта мониторинга.');
-  if(new Set(headers).size!==headers.length)throw Error('Заголовки колонок повторяются.');
-  const schema=schemaFor(headers);
-  const columns=headers.map((h,i)=>{
-    const m=/^(products|alice_brands|alice_sources|web_results)\[(\d+)\]\.(\w+)(?:\[(\d+)\])?$/.exec(h);
-    return m?{i,group:m[1],idx:Number(m[2]),key:m[3],sub:m[4]}:null;
-  }).filter(Boolean);
-  const basic = new Map(headers.map((h,i)=>[h,i]));
-  const records=matrix.slice(1).map((cells,id)=>{
-    const value=k=>String(cells[basic.get(k)]??'').trim();
-    const query=value('query');
-    if(!query)throw Error('Пустой query в строке данных '+(id+1)+'.');
-    const groups={products:new Map(),alice_brands:new Map(),web_results:new Map(),alice_sources:new Map()};
-    for(const col of columns){
-      const v=String(cells[col.i]??'').trim();
-      if(!v||v==='[]'||v==='null'||v==='{}')continue;
-      let item=groups[col.group].get(col.idx);
-      if(!item){item={idx:col.idx,brands:[]};groups[col.group].set(col.idx,item);}
-      if(col.key==='brands'){
-        if(col.sub)item.brands.push(v);
-        else {let more;try{more=JSON.parse(v);}catch{} item.brands.push(...(Array.isArray(more)?more:[v]));}
-      }else if(['rank','title','price','seller','group','group_title','promo_signal','kind','brand','section','evidence','domain','host','label','url','href'].includes(col.key))item[col.key]=v;
-    }
-    const ordered=k=>[...groups[k].values()].sort((a,b)=>a.idx-b.idx);
-    return projectRecord(id,query,value,ordered,schema);
-  });
-  return {schema,records};
-}
-function projectRecord(id,query,value,ordered,schema){
-  const products=ordered('products').filter(p=>p.title||p.brands?.length).map(p=>({
-    title:p.title||'',brands:[...new Set((schema.pBrand?(p.brands||[]):titleBrands(p.title)).map(brandName).filter(Boolean))],
-    rank:Number(p.rank)>0?Number(p.rank):p.idx,group:String(p.group??''),groupTitle:p.group_title||'',
-    price:p.price||'',seller:p.seller||'',promo:/^(true|1|да)$/i.test(p.promo_signal)?true:/^(false|0|нет)$/i.test(p.promo_signal)?false:null
-  }));
-  const alice=ordered('alice_brands').filter(a=>a.brand).map(a=>({brand:brandName(a.brand),kind:norm(a.kind)||'unknown',pos:a.idx,section:a.section||'',evidence:a.evidence||''}));
-  const web=ordered('web_results').filter(w=>w.title||w.url).map(w=>({
-    title:w.title||'',rank:Number(w.rank)>0?Number(w.rank):w.idx,site:host(w.domain||w.host,w.domain||w.host||w.url)
-  }));
-  const sources=ordered('alice_sources').map(s=>host(s.label,s.href)||s.label||'').filter(Boolean);
-  const ts=value('timestamp_utc'); let date='';
-  if(ts && Number.isFinite(Date.parse(ts)))date=new Date(ts).toISOString().slice(0,10);
-  return {id,number:value('number'),engine:value('engine')||'не указан',query,ts,date,status:norm(value('status'))||'unknown',
-    ps:norm(value('product_status'))||'unknown',as:norm(value('alice_status'))||'unknown',products,alice,web,sources,region:value('returned_lr')};
-}
-const collator=new Intl.Collator('ru',{sensitivity:'base',numeric:true});
-const ok=r=>r.status==='ok', prodOK=r=>ok(r)&&r.ps==='observed', aliceOK=r=>ok(r)&&r.as==='observed';
-const selectedAlice=(r,mode)=>r.alice.filter(a=>mode==='all'||a.kind==='recommendation');
-function increment(map,key){map.set(key,(map.get(key)||0)+1);}
-function review(rows,mode){
-  const stats=new Map(),products=new Map(),sellers=new Map(),sites=new Map(),sources=new Map(),titles=new Map();
-  let pMeasured=0,aMeasured=0,pBase=0,aBase=0,success=0,cards=0,unknown=0,promo=0,knownPromo=0,pair=0,comatch=0,anyAlice=0;
-  function brand(name){
-    const k=brandKey(name);
-    if(!stats.has(k))stats.set(k,{k,name,p:0,a:0,cards:0,top:0,bestSum:0,aSum:0,aFirst:0,both:0,mentions:0});
-    return stats.get(k);
-  }
-  for(const row of rows){
-    if(!ok(row))continue;
-    success++;
-    if(['observed','not_detected'].includes(row.ps))pMeasured++;
-    if(['observed','not_detected'].includes(row.as))aMeasured++;
-    const searchSeen=new Map(),aliceSeen=new Map();
-    if(prodOK(row)){
-      pBase++;
-      const perProduct=new Set();
-      for(const p of row.products){
-        cards++;
-        if(!p.brands.length)unknown++;
-        if(p.promo!==null){knownPromo++;if(p.promo)promo++;}
-        if(p.seller)increment(sellers,p.seller);
-        const key=norm(p.title);
-        if(key){
-          if(!products.has(key))products.set(key,{name:p.title,brands:new Set(),n:0,runs:0,top:0,sum:0,prices:[]});
-          const item=products.get(key);item.n++;item.sum+=p.rank;if(p.rank===1)item.top++;
-          if(!perProduct.has(key)){item.runs++;perProduct.add(key);}
-          for(const b of p.brands)item.brands.add(brand(b).name);
-          const price=priceRub(p.price);if(price!==null)item.prices.push(price);
-        }
-        for(const k of new Set(p.brands.map(b=>brand(b).k))){
-          stats.get(k).cards++;searchSeen.set(k,Math.min(p.rank,searchSeen.get(k)??Infinity));
-        }
-      }
-      for(const [k,rank] of searchSeen){const b=stats.get(k);b.p++;b.bestSum+=rank;if(rank===1)b.top++;}
-    }
-    if(aliceOK(row)){
-      aBase++;
-      for(const a of row.alice)brand(a.brand).mentions++;
-      for(const a of selectedAlice(row,mode)){
-        const b=brand(a.brand);aliceSeen.set(b.k,Math.min(a.pos,aliceSeen.get(b.k)??Infinity));
-      }
-      if(aliceSeen.size)anyAlice++;
-      for(const [k,pos] of aliceSeen){const b=stats.get(k);b.a++;b.aSum+=pos;if(pos===1)b.aFirst++;}
-      for(const s of new Set(row.sources))increment(sources,s);
-    }
-    if(prodOK(row)&&aliceOK(row)){
-      pair++;let same=false;for(const k of searchSeen.keys())if(aliceSeen.has(k)){stats.get(k).both++;same=true;}
-      if(same)comatch++;
-    }
-    for(const w of row.web){
-      if(w.title)increment(titles,w.title);
-      if(w.site)increment(sites,w.site);
-    }
-  }
-  return {stats,products,sellers,sites,sources,titles,pMeasured,aMeasured,pBase,aBase,success,cards,unknown,promo,knownPromo,pair,comatch,anyAlice};
-}
 
-</script>
-<script>
-function parseMonitorJSON(text){
-  const original=JSON.parse(text);
-  if(!Array.isArray(original))throw Error('Ожидается JSON-массив замеров, созданный merge_json.py.');
-  const groups=['products','alice_brands','web_results','alice_sources'];
-  const schema={pBrand:false,kind:false,price:false,seller:false,promo:false,webDomain:false};
-  const isObject=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
-  const stringField={products:'title',alice_brands:'brand',web_results:'title',alice_sources:'label'};
-  const nested=original.map((row,i)=>{
-    if(!isObject(row)||typeof row.query!=='string'||!row.query.trim())throw Error('Запись '+(i+1)+': ожидается объект с текстовым полем query.');
-    const result={};
-    for(const group of groups){
-      const values=row[group]??[];
-      if(!Array.isArray(values))throw Error('Запись '+(i+1)+': поле '+group+' должно быть массивом.');
-      result[group]=values.map((value,j)=>{
-        if(typeof value==='string')return {idx:j+1,[stringField[group]]:value};
-        if(!isObject(value))throw Error('Запись '+(i+1)+': неверный элемент '+group+'['+(j+1)+'].');
-        const item={...value,idx:j+1};
-        if(group==='products'){
-          schema.pBrand ||= Object.hasOwn(item,'brands');
-          schema.price  ||= Object.hasOwn(item,'price');
-          schema.seller ||= Object.hasOwn(item,'seller');
-          schema.promo  ||= Object.hasOwn(item,'promo_signal');
-          if(typeof item.brands==='string')item.brands=[item.brands];
-          if(item.brands!=null&&(!Array.isArray(item.brands)||item.brands.some(b=>typeof b!=='string')))
-            throw Error('Запись '+(i+1)+': brands у товара '+(j+1)+' должен содержать названия брендов.');
-        }
-        if(group==='alice_brands')schema.kind ||= Object.hasOwn(item,'kind');
-        if(group==='web_results')schema.webDomain ||= ['url','host','domain'].some(k=>Object.hasOwn(item,k));
-        return item;
-      });
-    }
-    return result;
-  });
-  const records=original.map((row,id)=>projectRecord(id,row.query.trim(),k=>String(row[k]??'').trim(),k=>nested[id][k],schema));
-  return {schema,records,original,sourceText:text};
-}
-function readReport(text,filename=''){
-  const clean=text.replace(/^\uFEFF/,'');
-  if(/^\s*[\[{]/.test(clean)||/\.json$/i.test(filename))return parseMonitorJSON(clean);
-  if(/^\s*</.test(clean))throw Error('Получена страница просмотра. Выберите скачанный JSON или CSV.');
-  return buildDataset(parseCSV(clean));
-}
-
-</script>
-<script>
-const planGroups=JSON.parse(document.getElementById('plan').textContent);
-const excludedQueries=new Set(JSON.parse(document.getElementById('excludedQueries').textContent).map(norm));
-const byQuestion=new Map();
-for(const group of planGroups){
-  for(const [query,subgroup] of group.questions){
-    byQuestion.set(norm(query),{query,category:group.name,subgroup});
-  }
-}
-const unassigned='Вне справочника';
-function categoryOf(row){return byQuestion.get(norm(row.query))?.category||unassigned;}
-function groupOf(row){return byQuestion.get(norm(row.query))?.subgroup||'';}
-function groupBy(items,key){
-  const groups=new Map();
-  for(const item of items){
-    const value=key(item);
-    if(!groups.has(value))groups.set(value,[]);
-    groups.get(value).push(item);
-  }
-  return groups;
-}
-function productFormat(p){
-  const title=norm(p.groupTitle);
-  if(title.startsWith('быстрый ответ'))return 'Быстрый ответ';
-  if(title.startsWith('купить'))return 'Купить';
-  return title?'Другой товарный блок':'Формат не указан';
-}
-const webBrandsCache=new WeakMap();
-function webBrands(w){
-  if(!webBrandsCache.has(w))webBrandsCache.set(w,titleBrands(w.title));
-  return webBrandsCache.get(w);
-}
-function bestEntries(entries,getCount){
-  const list=[...entries];let max=0;
-  for(const item of list)max=Math.max(max,getCount(item));
-  return max?list.filter(item=>getCount(item)===max):[];
-}
-function brandReach(brand){return brand.p+brand.a-brand.both;}
-function formatStats(rows){
-  const columns=new Map(),brands=new Map();
-  function record(label,names){
-    increment(columns,label);
-    const unique=new Set();
-    for(const name of names){
-      const k=brandKey(name);if(!k||unique.has(k))continue;
-      unique.add(k);
-      if(!brands.has(k))brands.set(k,{name,k,counts:new Map()});
-      increment(brands.get(k).counts,label);
-    }
-  }
-  for(const row of rows){
-    if(!ok(row))continue;
-    if(prodOK(row))for(const [format,items] of groupBy(row.products,productFormat)){
-      record(format,items.flatMap(p=>p.brands));
-    }
-    if(aliceOK(row)){
-      record('Алиса · рекомендации',row.alice.filter(a=>a.kind==='recommendation').map(a=>a.brand));
-      record('Алиса · упоминания',row.alice.filter(a=>a.kind==='mention').map(a=>a.brand));
-    }
-    if(row.web.length)record('Веб · заголовки',row.web.flatMap(webBrands));
-  }
-  return {columns,brands};
-}
-function seriesByQuery(rows){
-  return [...groupBy(rows,r=>norm(r.query)).values()].map(measurements=>{
-    const firstProducts=new Map(),recommended=new Map();
-    for(const r of measurements){
-      if(prodOK(r))for(const title of new Set(r.products.filter(p=>p.rank===1&&p.title).map(p=>p.title)))increment(firstProducts,title);
-      if(aliceOK(r))for(const b of new Set(selectedAlice(r,'rec').map(a=>brandKey(a.brand))))increment(recommended,b);
-    }
-    return {measurements,firstProducts,recommended};
-  });
-}
-
-</script>
-<script>
-const $=id=>document.getElementById(id);
-const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const number=new Intl.NumberFormat('ru-RU',{maximumFractionDigits:1});
-const fmt=n=>number.format(n), pct=(n,d)=>d?fmt(100*n/d)+'%':'—';
-const mean=(sum,n)=>n?fmt(sum/n):'—', rate=(n,d)=>d?100*n/d:0;
-const num=v=>'<td class="num">'+escapeHTML(v)+'</td>';
-const cell=v=>'<td>'+escapeHTML(v)+'</td>';
-const empty=msg=>'<div class="empty">'+escapeHTML(msg||'В выбранных замерах нет данных.')+'</div>';
-const note=msg=>'<p class="hint">'+escapeHTML(msg)+'</p>';
-const panel=(title,description,body)=>'<section class="panel"><h2>'+escapeHTML(title)+'</h2>'+note(description)+body+'</section>';
-function table(headers,rows){
-  if(!rows.length)return empty();
-  return '<div class="scroll"><table><thead><tr>'+headers.map(h=>'<th scope="col">'+escapeHTML(h)+'</th>').join('')+'</tr></thead><tbody>'+
-    rows.map(r=>'<tr>'+r.join('')+'</tr>').join('')+'</tbody></table></div>';
-}
-function options(values,active=''){
-  return values.map(([val,label])=>'<option value="'+escapeHTML(val)+'"'+(val===active?' selected':'')+'>'+escapeHTML(label)+'</option>').join('');
-}
-const brandBtn=b=>'<button class="brandlink" data-brand="'+escapeHTML(b.k)+'" title="Посмотреть запросы с этим брендом">'+escapeHTML(b.name)+'</button>';
-function topMap(map){return [...map].sort((a,b)=>b[1]-a[1]||collator.compare(a[0],b[0]));}
-const namesOfKinds={recommendation:'Рекомендация',mention:'Упоминание',negative:'Отрицательный контекст',review:'Требует проверки',candidate:'Возможный бренд',unknown:'Тип не указан'};
-let data={records:[],schema:{}}, activeTab='families', mode='rec',sortBy='reach',brandSearch='',drill='',cover='all',trendBrand='',sourceKind='',sourceName='',generation=0;
-let chartLimit='10',matrixOrder='',scopedProduct='';
-const modeTitle=()=>mode==='all'?'Записи о брендах Алисы':'Рекомендации Алисы';
-function filtered(){
-  const term=norm($('query').value),eng=$('engine').value;
-  const category=$('category').value,subgroup=$('subgroup').value;
-  return data.records.filter(r=>matchesCategory(categoryOf(r),category)&&(!subgroup||groupOf(r)===subgroup)&&(!term||norm(r.query).includes(term))&&(!eng||r.engine===eng));
-}
-function modeControl(){
-  return '<label><small>Как считать Алису</small><select id="mode">'+options([...(data.schema.kind?[['rec','Только рекомендации']]:[]),['all','Все записи о брендах']],mode)+'</select></label>';
-}
-function modeFoot(){
-  return mode==='all'?'Все записи включают рекомендации, нейтральные и отрицательные упоминания, кандидатов и записи без типа.':'У Алисы учтены только записи с типом recommendation.';
-}
-function rankBrands(S){
-  const score=b=>sortBy==='search'?b.p:sortBy==='alice'?b.a:brandReach(b);
-  return [...S.stats.values()].filter(b=>b.p||b.a).sort((a,b)=>score(b)-score(a)||b.a+b.p-a.a-a.p||collator.compare(a.name,b.name));
-}
-function card(label,value,detail){return '<div class="kpi"><span class="name">'+escapeHTML(label)+'</span><b>'+escapeHTML(value)+'</b><span>'+escapeHTML(detail)+'</span></div>';}
-function kpis(rows,S){
-  return card('Замеры',fmt(rows.length),fmt(new Set(rows.map(r=>norm(r.query))).size)+' уникальных формулировок')+
-    card('Выдачи с товарами',fmt(S.pBase),pct(S.pBase,S.success)+' успешных замеров · '+fmt(S.cards)+' карточек')+
-    card('Ответы Алисы',fmt(S.aBase),pct(S.aBase,S.success)+' успешных замеров')+
-    card(mode==='all'?'Ответы с брендом':'Ответы с рекомендацией',mode==='rec'&&!data.schema.kind?'—':fmt(S.anyAlice),mode==='rec'&&!data.schema.kind?'В источнике отсутствует поле kind':pct(S.anyAlice,S.aBase)+' ответов Алисы');
-}
-function overview(rows,S){
-  const ranked=rankBrands(S);
-  const shown=chartLimit==='all'?ranked:ranked.slice(0,Number(chartLimit));
-  const maxPct=Math.max(0,...shown.map(b=>rate(Math.max(b.p,b.a),S.success)));
-  const axisMax=Math.max(10,Math.min(100,Math.ceil(maxPct/10)*10));
-  const knownAlice=mode!=='rec'||data.schema.kind;
-  function bar(n,color){
-    return '<div class="track"><div class="bar '+color+'" style="width:'+(100*rate(n,S.success)/axisMax)+'%"></div></div>';
-  }
-  const bars=shown.map(b=>'<div class="chartrow"><div>'+brandBtn(b)+'<div class="caption">Охват '+fmt(brandReach(b))+'</div></div><div class="tracks">'+bar(b.p,'s')+bar(b.a,'a')+'</div><div class="values"><b class="sc">'+b.p+' · '+pct(b.p,S.success)+'</b><b class="ac">'+(knownAlice?b.a+' · '+pct(b.a,S.success):'—')+'</b></div></div>').join('');
-  const controls='<div class="controls">'+modeControl()+'<label><small>Сортировка</small><select id="sortBy">'+options([['reach','Общий охват'],['search','Товары в поиске'],['alice','Алиса']],sortBy)+'</select></label><label><small>Брендов</small><select id="chartLimit">'+options([['10','10'],['all','Все']],chartLimit)+'</select></label></div>';
-  const chart='<section class="panel bargraph"><div class="panelhead"><div><h2>Охват брендов по каналам</h2>'+note('Обе доли рассчитаны от '+fmt(S.success)+' успешных замеров. Один бренд учитывается один раз в каждом замере и канале.')+'</div></div>'+controls+'<div class="legend"><span><i class="dot green"></i>Товары в поиске</span><span><i class="dot purple"></i>'+escapeHTML(modeTitle())+'</span></div><div class="axis"><span>0%</span><span>'+fmt(axisMax/2)+'%</span><span>'+fmt(axisMax)+'%</span></div>'+(bars||empty())+'</section>';
-  function leader(label,field,base,unit){
-    const winners=bestEntries(ranked,b=>b[field]);
-    return '<div class="leader"><small>'+label+'</small><b>'+(winners.length?winners.map(brandBtn).join(' / '):'—')+'</b><em>'+(winners.length?winners[0][field]+' из '+base+' '+unit+' · '+pct(winners[0][field],base):'Нет наблюдений')+'</em></div>';
-  }
-  const side='<aside class="panel side"><h2>Лидеры выборки</h2>'+leader('В товарных карточках','p',S.pBase,'выдач с товарами')+leader('На первом месте в товарах','top',S.pBase,'выдач с товарами')+leader(modeTitle(),'a',S.aBase,'ответов Алисы')+'<p class="hint">Нажмите на бренд, чтобы открыть запросы с его появлениями.</p></aside>';
-  const p=[...S.products.values()].sort((a,b)=>b.runs-a.runs||b.n-a.n||collator.compare(a.name,b.name)).slice(0,5);
-  const hot=panel('Товары с наибольшим охватом','По числу замеров с карточкой данного товара.',table(['Товар','Замеры','На 1-м месте¹'],p.map(x=>['<td><button class="brandlink" data-product="'+escapeHTML(norm(x.name))+'">'+escapeHTML(x.name)+'</button></td>',num(x.runs),num(x.top)])));
-  const counts=[['Обнаружены оба блока',fmt(S.pair)],['Один и тот же бренд в обоих блоках',knownAlice?fmt(S.comatch)+' из '+fmt(S.pair):'—'],['Карточки с распознанным брендом',fmt(S.cards-S.unknown)+' из '+fmt(S.cards)],['Ответы Алисы с выбранным типом записи',knownAlice?fmt(S.anyAlice)+' из '+fmt(S.aBase):'—']];
-  return '<div class="layout">'+chart+side+'</div><div class="pair">'+hot+panel('Совпадения и покрытие',modeFoot(),table(['Показатель','Замеры или карточки'],counts.map(([k,v])=>[cell(k),num(v)])))+'</div>'+note('¹ Число карточек, занявших первое место внутри товарного блока.');
-}
-function brandTable(rows,S){
-  const ranked=rankBrands(S).filter(b=>brandKey(b.name).includes(brandKey(brandSearch)));
-  const qty=b=>mode==='rec'&&!data.schema.kind?'—':b;
-  const head='<div class="panelhead"><div><h2>Частота и позиции брендов</h2>'+note('Один бренд учитывается в охвате один раз за замер. Клик по названию открывает исходные запросы.')+'</div><div class="controls">'+modeControl()+'<label><small>Сортировка</small><select id="sortBy">'+options([['reach','Общий охват'],['search','Поиск'],['alice','Алиса']],sortBy)+'</select></label><label><small>Найти бренд</small><input id="brandSearch" type="search" value="'+escapeHTML(brandSearch)+'" placeholder="Название"></label></div></div>';
-  return '<section class="panel">'+head+table(['Бренд','Хотя бы один канал','Доля всех успешных','Поиск · замеры','Доля выдач с товарами','Доля всех проверок товаров','Карточки','Топ-1 · замеры','Сред. лучшая позиция','Алиса · ответы','Доля ответов','Доля всех проверок Алисы','Первым в списке · ответы','Сред. порядок в ответе','Оба канала · замеры'],ranked.map(b=>['<td>'+brandBtn(b)+'</td>',num(brandReach(b)),num(pct(brandReach(b),S.success)),num(b.p),num(pct(b.p,S.pBase)),num(pct(b.p,S.pMeasured)),num(b.cards),num(b.top),num(mean(b.bestSum,b.p)),num(qty(b.a)),num(qty(pct(b.a,S.aBase))),num(qty(pct(b.a,S.aMeasured))),num(qty(b.aFirst)),num(qty(mean(b.aSum,b.a))),num(qty(b.both))]))+note('Доля всех проверок включает успешные замеры со статусами observed и not_detected для соответствующего блока. Для поиска позиция берётся внутри группы карточек. Для Алисы порядок соответствует индексу записи в alice_brands. Он не измеряет силу рекомендации.')+'</section>'+positionsPanel(rows);
-}
-function productView(rows,S){
-  const items=[...S.products.values()].sort((a,b)=>b.runs-a.runs||b.n-a.n||collator.compare(a.name,b.name));
-  const sorted=prices=>{if(!prices.length)return '—';const v=[...prices].sort((a,b)=>a-b),mid=Math.floor(v.length/2);return fmt(v.length%2?v[mid]:(v[mid-1]+v[mid])/2)+' ₽';};
-  return panel('Товарные карточки','Товары сгруппированы по полному названию после выравнивания регистра и пробелов. Разные объёмы упаковки сохраняются.',table(['Товар','Бренды','Замеры','Доля выдач с товарами','Показы','Показы на 1-м месте','Сред. место','Медиана цены'],items.map(p=>['<td><button class="brandlink" data-product="'+escapeHTML(norm(p.name))+'">'+escapeHTML(p.name)+'</button></td>',cell([...p.brands].join(', ')||'Не определён'),num(p.runs),num(pct(p.runs,S.pBase)),num(p.n),num(p.top),num(mean(p.sum,p.n)),num(sorted(p.prices))])))+
-    panel('Продавцы и промо','Число товарных карточек по продавцу. Промо учитывается только при явно заполненном признаке.',note('Промо-сигнал зафиксирован у '+fmt(S.promo)+' из '+fmt(S.knownPromo)+' карточек с известным признаком ('+pct(S.promo,S.knownPromo)+'). Карточек без распознанного бренда — '+fmt(S.unknown)+'.')+(data.schema.seller?table(['Продавец','Карточки','Доля всех карточек'],topMap(S.sellers).map(([seller,n])=>[cell(seller),num(n),num(pct(n,S.cards))])):empty('Поле продавца отсутствует в этом наборе колонок.')));
-}
-function queryView(rows,S){
-  const brandOptions=[...S.stats.values()].sort((a,b)=>collator.compare(a.name,b.name)).map(b=>[b.k,b.name]);
-  if(drill&&!S.stats.has(drill))drill='';
-  const selected=rows.filter(r=>(!scopedProduct||(prodOK(r)&&r.products.some(p=>norm(p.title)===scopedProduct)))&&(!drill||(prodOK(r)&&r.products.some(p=>p.brands.some(b=>brandKey(b)===drill)))||(aliceOK(r)&&selectedAlice(r,mode).some(a=>brandKey(a.brand)===drill)))&&(
-    cover==='all'||cover==='products'&&prodOK(r)||cover==='alice'&&aliceOK(r)||cover==='missing'&&(!prodOK(r)||!aliceOK(r))||cover==='error'&&!ok(r)));
-  const filters='<div class="controls">'+(scopedProduct?'<button data-clear-product>Снять фильтр товара</button>':'')+modeControl()+'<label><small>Бренд в одном из каналов</small><select id="drill">'+options([['','Все бренды'],...brandOptions],drill)+'</select></label><label><small>Наличие данных</small><select id="cover">'+options([['all','Все замеры'],['products','Есть товары'],['alice','Есть ответ Алисы'],['missing','Отсутствует хотя бы один блок'],['error','Ошибка замера']],cover)+'</select></label></div>';
-  return '<section class="panel"><div class="panelhead"><div><h2>Исходные запросы <span class="caption">· '+fmt(selected.length)+'</span></h2>'+note(scopedProduct?'Выбранный товар · '+scopedProduct:'В каждой строке видны товар на первом месте и бренды из рекомендаций. Раскройте замер для цитат и позиций.')+'</div>'+filters+'</div>'+
-    (selected.map(r=>'<details class="query"><summary>'+escapeHTML(r.query)+' <small>· № '+escapeHTML(r.number||r.id+1)+' · '+escapeHTML(r.engine)+' · '+escapeHTML(r.date||'дата неизвестна')+'</small>'+querySummary(r)+'</summary><div class="detail" data-row="'+r.id+'"></div></details>').join('')||empty())+'</section>';
-}
-function queryDetail(r){
-  const list=(items,fn)=>items.length?'<ul>'+items.map(x=>'<li>'+fn(x)+'</li>').join('')+'</ul>':note('Данных в выгрузке нет.');
-  return note([categoryOf(r),groupOf(r),'Статус '+r.status,'товары '+r.ps,'Алиса '+r.as,r.ts,r.region?'регион '+r.region:''].filter(Boolean).join(' · '))+
-    '<div class="detailgrid"><div><h3>Товары</h3>'+list(r.products,p=>'<b>№ '+p.rank+'</b> '+escapeHTML(p.title)+'<br><span class="tag searchtag">'+escapeHTML(p.brands.join(', ')||'Бренд не определён')+'</span> '+escapeHTML([p.seller,p.price,productFormat(p),p.group?'Группа '+p.group:''].filter(Boolean).join(' · ')))+'</div><div><h3>Бренды в ответе Алисы</h3>'+
-    list(r.alice,a=>'<b>'+a.pos+'. '+escapeHTML(a.brand)+'</b> <span class="tag '+(a.kind==='recommendation'?'rec':'')+'">'+escapeHTML(namesOfKinds[a.kind]||a.kind)+'</span> '+escapeHTML(a.section)+'<div class="evidence">'+escapeHTML(a.evidence)+'</div>')+'</div></div><div class="detailgrid"><div><h3>Результаты поиска</h3>'+
-    list(r.web,w=>'<b>'+w.rank+'.</b> '+escapeHTML(w.title)+' '+escapeHTML(w.site))+'</div><div><h3>Источники Алисы</h3>'+list([...new Set(r.sources)],escapeHTML)+'</div></div>'+
-    (data.original?'<details class="raw-record"><summary>Все поля исходной записи JSON</summary><pre class="original">'+escapeHTML(JSON.stringify(data.original[r.id],null,2))+'</pre></details>':'');
-}
-function sourceView(rows,S){
-  const sites=topMap(S.sites);
-  const positions=new Map();
-  for(const row of rows.filter(ok)){
-    const best=new Map();
-    for(const w of row.web){
-      if(!w.site||/^yabs\.yandex\./.test(w.site))continue;
-      if(!positions.has(w.site))positions.set(w.site,{hits:0,runs:0,first:0,bestSum:0});
-      positions.get(w.site).hits++;
-      best.set(w.site,Math.min(w.rank,best.get(w.site)??Infinity));
-    }
-    for(const [site,rank] of best){
-      const v=positions.get(site);v.runs++;v.bestSum+=rank;if(rank===1)v.first++;
-    }
-  }
-  const domains=[...positions].sort((a,b)=>b[1].runs-a[1].runs||b[1].hits-a[1].hits||collator.compare(a[0],b[0]));
-  const counts=table(['Домен','Замеры','Показы','На 1-м месте','Сред. лучшая позиция'],domains.map(([name,v])=>[cell(name),num(v.runs),num(v.hits),num(v.first),num(mean(v.bestSum,v.runs))]));
-  const redirects=sites.filter(([name])=>/^yabs\.yandex\./.test(name)).reduce((n,entry)=>n+entry[1],0);
-  const product=panel('Домены в поисковой выдаче','По списку web_results. Домен считается один раз за замер, в среднем месте учитывается его лучшая позиция.',data.schema.webDomain?counts+note('Рекламные переходы yabs.yandex с неизвестным конечным доменом: '+fmt(redirects)+'.'):empty('В этих колонках доступны только заголовки страниц.'));
-  const sources=panel('Источники ответов Алисы','Один домен учитывается один раз за ответ, даже если Алиса сослалась на него несколько раз.',table(['Домен','Ответы','Доля ответов Алисы'],topMap(S.sources).map(([k,n])=>[cell(k),num(n),num(pct(n,S.aBase))])));
-  return '<div class="pair">'+product+sources+'</div>'+panel('Заголовки результатов поиска','Число появлений заголовка среди сохранённых результатов успешных замеров.',table(['Заголовок','Показы'],topMap(S.titles).map(([k,n])=>[cell(k),num(n)])));
-}
-function quality(rows,S){
-  const days=new Map(), statuses=new Map(),kinds=new Map();
-  for(const r of rows){const d=r.date||'Дата неизвестна'; if(!days.has(d))days.set(d,[]);days.get(d).push(r);
-    for(const [type,s] of [['Замер',r.status],['Товары',r.ps],['Алиса',r.as]])increment(statuses,type+' · '+s);
-    if(aliceOK(r))for(const a of r.alice)increment(kinds,a.kind);}
-  const bb=[...S.stats.values()].sort((a,b)=>collator.compare(a.name,b.name));if(trendBrand&&!S.stats.has(trendBrand))trendBrand='';
-  const pick='<label><small>Бренд для динамики</small><select id="trendBrand">'+options([['','Любой бренд'],...bb.map(x=>[x.k,x.name])],trendBrand)+'</select></label>';
-  const trend=[...days].sort((a,b)=>a[0].localeCompare(b[0])).map(([d,rs])=>{
-    const t=review(rs,mode),brand=t.stats.get(trendBrand);
-    const p=trendBrand?(brand?.p||0):rs.filter(r=>prodOK(r)&&r.products.some(p=>p.brands.length)).length;
-    const a=trendBrand?(brand?.a||0):t.anyAlice;
-    return [cell(d),num(rs.length),num(t.success),num(t.pBase),num(t.aBase),num(p+' / '+t.pBase+' · '+pct(p,t.pBase)),num(mode==='rec'&&!data.schema.kind?'—':a+' / '+t.aBase+' · '+pct(a,t.aBase))];});
-  return coveragePanel(rows)+'<section class="panel"><div class="panelhead"><div><h2>Динамика по дням</h2>'+note('Дни по UTC. Доли рассчитаны отдельно для каждого дня и канала.')+'</div><div class="controls">'+modeControl()+pick+'</div></div>'+table(['Дата','Замеры','Успешные','С товарами','С Алисой','Поиск · замеры с брендом','Алиса · ответы с брендом'],trend)+stabilityPanel(rows,trendBrand)+'</section><div class="pair">'+
-    panel('Статусы сбора','Все строки, в том числе ошибки и запросы без блока.',table(['Блок и статус','Замеры'],topMap(statuses).map(([k,v])=>[cell(k),num(v)])))+
-    panel('Типы записей Алисы','Считаются все записи с названием бренда в обнаруженных ответах.',table(['Тип','Записи'],topMap(kinds).map(([k,v])=>[cell(namesOfKinds[k]||k),num(v)])))+'</div>'+
-    panel('Как читать показатели','Охват зависит от глубины сбора и словаря брендов.', '<ul class="method"><li>На главном графике у обоих каналов одна база — все успешные замеры выбранного среза. В таблице брендов показатель «Доля выдач с товарами» использует только успешные замеры с product_status = observed. Для Алисы это успешные замеры с alice_status = observed, в том числе ответы без брендов. Знак «—» означает, что показатель недоступен.</li><li>Повторные карточки одного бренда увеличивают показы. В охвате бренда и в совпадениях между каналами один замер даёт максимум единицу. В среднюю лучшую позицию входит минимальный rank бренда в каждом замере, где он появился.</li><li>Названия сопоставляются по регистру, пробелам, конечной пунктуации и словарю вариантов написания. Если в файле есть поля brands, пустая ячейка сохраняет статус «бренд не определён». При полном отсутствии колонок brands применяется словарь к названию товара.</li><li>Число строк измеряет частоту в собранной выборке. Все замеры имеют одинаковый вес. Частотность Wordstat, клики, продажи и доля рынка в расчётах не используются.</li></ul>');
-}
-
-</script>
-<script>
-function querySummary(row){
-  const first=prodOK(row)?row.products.filter(p=>p.rank===1):[];
-  const names=first.map(p=>(p.brands.join(' / ')||'Бренд не определён')+' · '+p.title);
-  const recs=aliceOK(row)?[...new Set(selectedAlice(row,'rec').map(a=>a.brand))]:[];
-  let answer='Ответ не обнаружен';
-  if(!ok(row)||row.as==='not_measured')answer='Нет измерения';
-  else if(aliceOK(row))answer=recs.join(', ')||(row.alice.some(a=>a.kind==='unknown')?'Тип записи не указан':'Рекомендация не зафиксирована');
-  let firstText=names.join(' / ')||(prodOK(row)?'Нет карточки с позицией 1':'Блок не обнаружен');
-  if(!ok(row)||row.ps==='not_measured')firstText='Нет измерения';
-  return '<span class="summarylist"><span><strong>Товар № 1</strong> · '+escapeHTML(firstText)+'</span><span><strong>Алиса рекомендует</strong> · '+escapeHTML(answer)+'</span></span>';
-}
-function formatView(rows){
-  const {columns,brands}=formatStats(rows);
-  const standard=['Быстрый ответ','Купить','Алиса · рекомендации','Алиса · упоминания','Веб · заголовки'];
-  const labels=[...new Set([...standard.slice(0,2),...[...columns.keys()].filter(l=>!standard.includes(l)),...standard.slice(2)])];
-  if(!labels.includes(matrixOrder))matrixOrder='';
-  const score=b=>matrixOrder?(b.counts.get(matrixOrder)||0):Math.max(0,...b.counts.values());
-  const ordered=[...brands.values()].sort((a,b)=>score(b)-score(a)||collator.compare(a.name,b.name));
-  const caption='Каждая ячейка показывает число замеров с брендом и долю среди замеров с данным форматом. Для двух столбцов Алисы база — все обнаруженные ответы.';
-  const choose='<label><small>Сортировать по формату</small><select id="matrixOrder">'+options([['','Максимум замеров'],...labels.map(x=>[x,x])],matrixOrder)+'</select></label>';
-  function countCell(brand,label){
-    const total=columns.get(label)||0,n=brand.counts.get(label)||0;
-    if(!total||(label.startsWith('Алиса')&&!data.schema.kind))return num('—');
-    const shade=0.04+0.38*n/total;
-    return '<td class="num"'+(n?' style="background:rgba(93,149,225,'+shade+')"':'')+'>'+n+' · '+pct(n,total)+'</td>';
-  }
-  const matrix=table(['Бренд',...labels.map(l=>l+' ('+(columns.get(l)||0)+')')],ordered.map(b=>[cell(b.name),...labels.map(l=>countCell(b,l))]));
-  const short=[...columns].filter(([,n])=>n===1).map(([label])=>label);
-  const notes=note('Обычная веб-выдача учитывает совпадения со словарём в заголовках. Домен магазина и ссылка в ответе Алисы учитываются отдельно в разделе «Сайты и источники».');
-  return '<section class="panel"><div class="panelhead"><div><h2>В каких форматах появляются бренды</h2>'+note(caption)+'</div>'+choose+'</div>'+matrix+notes+(short.length?note('Только один замер в форматах: '+short.join(', ')+'.'):'')+'</section>';
-}
-function catalogueScope(){
-  const category=$('category').value,group=$('subgroup').value,term=norm($('query').value);
-  return [...byQuestion.values()].filter(meta=>matchesCategory(meta.category,category)&&(!group||meta.subgroup===group)&&(!term||norm(meta.query).includes(term)));
-}
-function coveragePanel(rows){
-  const planned=catalogueScope(),seen=new Set(rows.filter(ok).map(r=>norm(r.query)));
-  const missing=planned.filter(m=>!seen.has(norm(m.query)));
-  const outside=new Set(rows.filter(r=>!byQuestion.has(norm(r.query))).map(r=>norm(r.query)));
-  const summary='<div class="tilegroup"><span>Проверено по плану <b>'+fmt(planned.length-missing.length)+' / '+fmt(planned.length)+'</b></span><span>Без успешного замера <b>'+fmt(missing.length)+'</b></span><span>Вне справочника <b>'+fmt(outside.size)+'</b></span></div>';
-  const detail=missing.length?'<details class="methodbox"><summary>Показать пропущенные формулировки ('+missing.length+')</summary><ul class="missinglist">'+missing.map(m=>'<li>'+escapeHTML(m.query)+'</li>').join('')+'</ul></details>':'';
-  return panel('Полнота плана мониторинга','Уникальные формулировки из вашей таблицы категорий. Учитываются успешные замеры с действующими фильтрами.',summary+detail);
-}
-function categoriesView(rows){
-  const sections=[],selected=$('category').value;
-  const candidates=[...planGroups.map(g=>g.name)];
-  if(data.records.some(r=>categoryOf(r)===unassigned))candidates.push(unassigned);
-  const catalog=catalogueScope();
-  for(const name of candidates){
-    if(!matchesCategory(name,selected))continue;
-    const part=rows.filter(r=>categoryOf(r)===name);
-    const subs=[...new Set(catalog.filter(meta=>meta.category===name).map(m=>m.subgroup).filter(Boolean))];
-    const breakdown=[['',part],...subs.map(s=>[s,part.filter(r=>groupOf(r)===s)])];
-    for(const [sub,segment] of breakdown){
-      const actual=review(segment,'rec'),bs=[...actual.stats.values()];
-      const leaders=field=>bestEntries(bs,b=>b[field]).map(b=>b.name+' ('+b[field]+')').join(', ')||'—';
-      const planned=catalog.filter(m=>m.category===name&&(!sub||m.subgroup===sub));
-      const counted=new Set(segment.filter(ok).map(r=>norm(r.query)));
-      const present=planned.filter(m=>counted.has(norm(m.query))).length;
-      const nameCell=sub?'<td>↳ '+escapeHTML(sub)+'</td>':'<td><button class="brandlink catlink" data-category="'+escapeHTML(name)+'">'+escapeHTML(name)+'</button></td>';
-      sections.push([nameCell,num(planned.length?present+' / '+planned.length:'—'),num(segment.length),num(actual.pBase),num(actual.aBase),num(data.schema.kind?actual.anyAlice:'—'),cell(leaders('p')),cell(data.schema.kind?leaders('a'):'—')]);
-    }
-  }
-  return panel('Категории и подгруппы','Названия и распределение взяты из вашей скорректированной таблицы. В скобках рядом с лидером указано число замеров. Нажмите на категорию, чтобы применить её ко всем разделам.',table(['Категория','Проверено / план','Замеры','С товарами','С Алисой','С рекомендацией','Лидеры поиска','Лидеры рекомендаций'],sections))+coveragePanel(rows);
-}
-function syncCategory(makeList=false){
-  const cat=$('category'),sub=$('subgroup');
-  if(makeList){
-    const names=planGroups.map(g=>g.name);
-    if(data.records.some(r=>categoryOf(r)===unassigned))names.push(unassigned);
-    cat.innerHTML=options([['','Все категории'],...names.map(v=>[v,v])]);cat.value='';
-  }
-  const current=cat.value;
-  const subs=[...new Set([...byQuestion.values()].filter(meta=>meta.category===current&&meta.subgroup).map(meta=>meta.subgroup))];
-  sub.innerHTML=options([['','Все подгруппы'],...subs.map(v=>[v,v])]);sub.value='';
-  $('subWrap').hidden=!subs.length;
-}
-function stabilityPanel(rows,focus){
-  const recurring=seriesByQuery(rows).filter(s=>s.measurements.filter(ok).length>=2);
-  if(!recurring.length)return note('Для оценки повторяемости нужны минимум два успешных замера одной формулировки. В этом срезе таких серий нет.');
-  function leaderNames(counter){
-    const winners=bestEntries(counter,entry=>entry[1]);
-    return winners.map(([label,n])=>label+' ('+n+')').join(' / ')||'—';
-  }
-  const entries=recurring.map(series=>{
-    const sample=series.measurements,counts=review(sample,'rec'),byBrand=counts.stats.get(focus);
-    const names=new Map([...series.recommended].map(([key,n])=>[counts.stats.get(key)?.name||key,n]));
-    const common=[cell(sample[0].query),num(counts.success),cell(leaderNames(series.firstProducts)),cell(leaderNames(names))];
-    if(focus)common.push(num((byBrand?.top||0)+' / '+counts.pBase),num(data.schema.kind?(byBrand?.a||0)+' / '+counts.aBase:'—'));
-    return common;
-  });
-  const extra=focus?['Выбранный бренд № 1 / выдачи с товарами','Рекомендован / ответы Алисы']:[];
-  return '<h3>Повторяемость по формулировкам</h3>'+note('Число успешных замеров с товаром на первом месте или с рекомендацией бренда. При равенстве показаны все лидеры.')+table(['Запрос','Успешные замеры','Товары № 1','Бренды в рекомендациях',...extra],entries);
-}
-
-function positionsPanel(rows){
-  const ranks=new Set(),byBrand=new Map();
-  let unidentified=0;
-  for(const row of rows.filter(prodOK)){
-    for(const p of row.products){
-      ranks.add(p.rank);
-      if(!p.brands.length)unidentified++;
-      const names=new Map(p.brands.map(name=>[brandKey(name),name]));
-      if(!names.size)names.set('','Бренд не определён');
-      for(const [key,name] of names){
-        if(!byBrand.has(key))byBrand.set(key,{name,counts:new Map(),cards:0,promo:0,knownPromo:0});
-        const b=byBrand.get(key);b.cards++;increment(b.counts,p.rank);
-        if(p.promo!==null){b.knownPromo++;if(p.promo)b.promo++;}
-      }
-    }
-  }
-  const order=[...ranks].sort((a,b)=>a-b);
-  const list=[...byBrand.values()].filter(b=>brandKey(b.name).includes(brandKey(brandSearch))).sort((a,b)=>b.cards-a.cards||collator.compare(a.name,b.name));
-  return panel('На каких местах показывают бренд','Количество товарных карточек по сохранённой позиции внутри блока. Карточка с двумя брендами попадает в обе строки.',
-    table(['Бренд','Всего карточек',...order.map(n=>'Место '+n),'Промо / с известным признаком'],
-      list.map(b=>[cell(b.name),num(b.cards),...order.map(rank=>num(b.counts.get(rank)||0)),num(b.knownPromo?b.promo+' / '+b.knownPromo:'—')]))+
-    note('Карточек с пустым полем бренда: '+fmt(unidentified)+'.'));
-}
-
-function matchesCategory(name,selected){
-  return !selected||selected===name;
-}
-
-</script>
-<script>
 // Направления продукции. Правила применяются к тексту каждого результата отдельно.
 const familyList=[
   {id:'paste',label:'Чистящая паста',rule:'Паста для бытовой уборки, кухни, сантехники или других поверхностей. Средства для рук, зубов, волос и полировки исключены.'},
@@ -648,396 +88,286 @@ function classifyFamilies(value){
   return result;
 }
 
-const classifiedMeasurements=new WeakMap();
-function familyEvidence(row){
-  if(classifiedMeasurements.has(row))return classifiedMeasurements.get(row);
-  const evidence=new Map(familyList.map(f=>[f.id,{direct:false,products:[],alice:[],web:[]}]));
-  for(const id of classifyFamilies(row.query))evidence.get(id).direct=true;
-  let unmatchedCards=0,unmatchedAlice=0;
-  if(prodOK(row)){
-    for(const product of row.products){
-      const ids=classifyFamilies(product.title);
-      if(!ids.length)unmatchedCards++;
-      for(const id of ids)evidence.get(id).products.push(product);
-    }
-  }
-  if(aliceOK(row)){
-    for(const item of row.alice.filter(a=>a.kind==='recommendation')){
-      // Поле query не участвует в атрибуции товара. В заголовке раздела может быть указан его вид.
-      const ids=classifyFamilies([item.section,item.evidence].filter(Boolean).join(' '));
-      if(!ids.length)unmatchedAlice++;
-      for(const id of ids)evidence.get(id).alice.push(item);
-    }
-  }
-  if(ok(row)){
-    for(const page of row.web)for(const id of classifyFamilies(page.title))evidence.get(id).web.push(page);
-  }
-  const classified={evidence,unmatchedCards,unmatchedAlice};
-  classifiedMeasurements.set(row,classified);
-  return classified;
-}
 
-function familyReport(rows){
-  const entries=familyList.map(f=>({...f,hits:[],reach:0,search:0,ai:0,web:0,cards:0,first:0,direct:0,directHit:0,
-    directMeasured:0,directMiss:0,directPartial:0}));
-  let unmatchedCards=0,unmatchedAlice=0,aiEntries=0,success=0,measuredAny=0,searchMeasured=0,aliceMeasured=0,webBase=0;
-  for(const row of rows){
-    const classified=familyEvidence(row);
-    unmatchedCards+=classified.unmatchedCards;
-    unmatchedAlice+=classified.unmatchedAlice;
-    if(ok(row))success++;
-
-    if(aliceOK(row)){
-
-      aiEntries+=row.alice.filter(a=>a.kind==='recommendation').length;
-    }
-    if(ok(row)&&row.web.length)webBase++;
-    const measuredP=ok(row)&&['observed','not_detected'].includes(row.ps);
-    const hasBrandField=Array.isArray(data.original?.[row.id]?.alice_brands);
-    const typedAnswer=row.alice.length?row.alice.every(a=>a.kind!=='unknown'):(hasBrandField||data.schema.kind);
-    const measuredA=ok(row)&&(row.as==='not_detected'||(row.as==='observed'&&typedAnswer));
-    if(measuredP)searchMeasured++;
-    if(measuredA||row.alice.some(a=>aliceOK(row)&&a.kind==='recommendation'))aliceMeasured++;
-    if(measuredP||measuredA||(aliceOK(row)&&row.alice.some(a=>a.kind==='recommendation')))measuredAny++;
-    for(const f of entries){
-      const hit=classified.evidence.get(f.id);
-      const product=hit.products.length>0,ai=hit.alice.length>0,appeared=product||ai;
-      if(product)f.search++;
-      if(ai)f.ai++;
-      if(appeared)f.reach++;
-      if(hit.web.length)f.web++;
-      if(hit.products.some(p=>p.rank===1))f.first++;
-      f.cards+=hit.products.length;
-      if(hit.direct){
-        f.direct++;
-        if(measuredP&&measuredA){
-          f.directMeasured++;
-          if(appeared)f.directHit++;else f.directMiss++;
-        }else f.directPartial++;
-      }
-      if(hit.direct||appeared||hit.web.length)f.hits.push({row,...hit,measuredP,measuredA});
-    }
+const channelLabels={search:'Карточки Яндекса',alice:'Алиса',giga:'GigaChat'};
+const scopes={all:['search','alice','giga'],yandex:['search','alice'],assistants:['alice','giga'],giga:['giga'],search:['search'],alice:['alice']};
+const skipped=new Set(JSON.parse(document.getElementById('excluded').textContent).map(norm));
+const localeSort=new Intl.Collator('ru',{sensitivity:'base',numeric:true});
+function productBrands(item){
+  let names=Array.isArray(item.brands)?item.brands:typeof item.brands==='string'?[item.brands]:[];
+  names=names.filter(x=>typeof x==='string'&&x.trim());
+  if(!names.length)names=titleBrands(item.title);
+  const clean=new Map(names.map(b=>[brandKey(brandName(b)),brandName(b)]));
+  if(clean.has('brandfree')&&wordForm(item.title).includes('я твое средство для всего'))clean.delete('я твое средство');
+  return [...clean.values()];
+}
+function aiGroups(item,opening){
+  const text=[item.section,item.evidence].filter(Boolean).join(' ');
+  const ids=classifyFamilies(text);
+  // В выгрузке есть ответ на «энзимный карандаш» об осветлении зубов.
+  const dental=/зубн|зубов|д[её]сен|полости рта|зубной эмали/i;
+  if(dental.test(text)||dental.test(opening)&&!/пятн|одежд|ткан|бель[ея]/i.test(text)){
+    return ids.filter(id=>id!=='oxygenPen'&&id!=='enzymePen'&&id!=='paste'&&id!=='oxygen'&&id!=='kids');
   }
-  return {entries,unmatchedCards,unmatchedAlice,aiEntries,success,measuredAny,searchMeasured,aliceMeasured,webBase};
+  return ids;
 }
-
-let currentFamily='paste',familySort='reach',familyScope='all';
-const familyCellValue=(n,available)=>available?fmt(n):'—';
-function familyQueryStatus(hit){
-  if(hit.products.length&&hit.alice.length)return 'Товар и рекомендация';
-  if(hit.products.length)return 'Показана карточка';
-  if(hit.alice.length)return 'Рекомендация Алисы';
-  if(hit.measuredP&&hit.measuredA)return 'Совпадений в двух каналах нет';
-  return 'Данные по каналам неполны';
+function fileType(row){
+  if(!row||typeof row!=='object'||Array.isArray(row))return '';
+  if('llm_brands' in row||norm(row.engine)==='gigachat')return 'giga';
+  if('products' in row||'alice_brands' in row||norm(row.engine)==='yandex')return 'yandex';
+  return '';
 }
-function familyRankTable(families,summary,ranks){
-  const fields={reach:'Хотя бы один канал',search:'Поиск',ai:'Алиса',first:'Место № 1',directMiss:'Пропуски по прямым запросам'};
-  const sorted=[...families].sort((a,b)=>b[familySort]-a[familySort]||b.reach-a.reach||collator.compare(a.label,b.label));
-  const controls='<label><small>Рейтинг по показателю</small><select id="familySort">'+options(Object.entries(fields),familySort)+'</select></label>';
-  const seen=summary.measuredAny>0;
-  const rows=sorted.map(f=>{
-    const active=currentFamily===f.id;
-    const rank=ranks.get(f.id);
-    const leaders=rank.ordered.filter(b=>b.place===1).map(b=>b.name);
-    const leader=leaders.length?leaders.join(' / '):f.cards===0?(summary.searchMeasured?'Нет карточек':'Нет замеров'):(rank.unknown===f.cards?'Бренд не определён':'Нет первых мест');
-    const reachValue=fmt(f.reach)+' · '+pct(f.reach,summary.success);
-    return ['<td><button class="family-button" aria-pressed="'+active+'" data-family="'+f.id+'">'+escapeHTML(f.label)+'</button></td>',cell(leader),
-      '<td class="family-reach"><b>'+ (seen?reachValue:'—')+'</b><span aria-hidden="true"><i style="width:'+rate(f.reach,summary.success)+'%"></i></span></td>',
-      num(familyCellValue(f.search,summary.searchMeasured)),num(familyCellValue(f.ai,summary.aliceMeasured)),num(familyCellValue(f.cards,summary.searchMeasured)),
-      num(familyCellValue(f.first,summary.searchMeasured)),num(familyCellValue(f.web,summary.webBase)),num(f.directMeasured?f.directHit+' / '+f.directMeasured:'—')];
-  });
-  return '<section class="panel"><div class="panelhead"><div><h2>Какие направления появляются в выдаче</h2>'+note('Охват — число успешных замеров с подходящей карточкой или рекомендацией Алисы. При совпадении в обоих каналах замер учитывается один раз.')+'</div>'+controls+'</div>'+
-    table(['Направление','Лидер поиска','Охват / доля всех успешных','Поиск · замеры','Алиса · ответы','Карточки','№ 1 · замеры','Веб-заголовки · замеры','По прямым запросам¹'],rows)+
-    note('¹ Попадания хотя бы в одном канале / прямые замеры с известным состоянием обоих каналов. Веб-заголовки считаются отдельно. Ноль означает отсутствие распознанного совпадения, прочерк — отсутствие базы для показателя.')+'</section>';
+function arrayField(row,key){
+  if(row[key]==null)return [];
+  if(!Array.isArray(row[key]))throw Error('Поле '+key+' должно содержать список.');
+  return row[key];
 }
-let rankMetric='reach',rankLimit=5,rankSource='title';
-function resetBrandRanking(){
-  rankMetric='reach';rankLimit=5;rankSource='title';
-}
-
-// Дополнительные марки, явно написанные в названиях карточек этой товарной выборки.
-const additionalCardNames=['House Lux','BLITZ','PRO LINE','LAIMA','VENWELL','ATAS','G-POWER'];
-const titleMatchesCache=new WeakMap();
-function rankingBrands(product){
-  let names=product.brands;
-  let fromTitle=!data.schema.pBrand;
-  if(fromTitle&&rankSource==='field')return {names:[],fromTitle:false};
-  if(!names.length&&rankSource==='title'){
-    if(!titleMatchesCache.has(product)){
-      const words=' '+wordForm(product.title)+' ';
-      const known=additionalCardNames.filter(b=>words.includes(' '+wordForm(b)+' '));
-      titleMatchesCache.set(product,[...new Set([...known,...titleBrands(product.title)])]);
-    }
-    names=titleMatchesCache.get(product);fromTitle=names.length>0;
-  }
-  const byKey=new Map(names.filter(Boolean).map(name=>[brandKey(name),name]));
-  // В карточке BRANDFREE с названием линейки одна упаковка не образует две компании.
-  if(byKey.has('brandfree')&&wordForm(product.title).includes('я твое средство для всего'))byKey.delete('я твое средство');
-  return {names:[...byKey.values()],fromTitle};
-}
-
-function rankFamilyBrands(family){
-  const brands=new Map(),items=new Map();
-  let unknown=0,inferred=0;
-  function brandFor(name){
-    const key=brandKey(name);
-    if(!brands.has(key))brands.set(key,{key,name,reach:0,first:0,cards:0,bestSum:0,ai:0,inferred:0});
-    return brands.get(key);
-  }
-  for(const hit of family.hits){
-    const bestInMeasurement=new Map(),seenProducts=new Set(),seenAlice=new Set();
-    for(const p of hit.products){
-      const k=norm(p.title);
-      if(!items.has(k))items.set(k,{name:p.title,brands:new Set(),cards:0,first:0,runs:0});
-      const item=items.get(k);item.cards++;
-      if(p.rank===1)item.first++;
-      if(!seenProducts.has(k)){item.runs++;seenProducts.add(k);}
-      const assigned=rankingBrands(p);
-      if(!assigned.names.length)unknown++;
-      if(assigned.fromTitle&&assigned.names.length)inferred++;
-      for(const name of assigned.names){
-        const brand=brandFor(name);
-        item.brands.add(brand.name);brand.cards++;
-        if(assigned.fromTitle)brand.inferred++;
-        bestInMeasurement.set(brand,Math.min(bestInMeasurement.get(brand)??Infinity,p.rank));
+function prepare(raw,source){
+  if(!Array.isArray(raw))throw Error('Ожидается массив JSON с замерами.');
+  const set={records:[],total:raw.length,excluded:0,failed:0};
+  for(const [index,row] of raw.entries()){
+    if(fileType(row)!==source||typeof row.query!=='string'||!row.query.trim())throw Error('Проверьте формат записи № '+(index+1)+' и назначение файла.');
+    if(skipped.has(norm(row.query))||arrayField(row,'query_brands').length){set.excluded++;continue;}
+    if(norm(row.status)!=='ok'){set.failed++;continue;}
+    const record={query:row.query.trim(),channels:[],events:[]};
+    if(source==='yandex'&&['observed','not_detected'].includes(norm(row.product_status))){
+      record.channels.push('search');
+      if(norm(row.product_status)==='observed'){
+        for(const item of arrayField(row,'products')){
+          if(!item||typeof item!=='object')continue;
+          const title=String(item.title||''),groups=classifyFamilies(title),names=productBrands(item);
+          const pos=Number(item.rank);
+          for(const brand of names.length?names:['']){
+            record.events.push({channel:'search',kind:'card',brand,groups,pos:Number.isInteger(pos)&&pos>0?pos:0,text:title});
+          }
+        }
       }
     }
-    for(const [brand,best] of bestInMeasurement){
-      brand.reach++;brand.bestSum+=best;
-      if(best===1)brand.first++;
+    const ai=source==='yandex'?'alice':'giga';
+    const aiStatus=source==='giga'?'observed':norm(row.alice_status);
+    if(['observed','not_detected'].includes(aiStatus)){
+      record.channels.push(ai);
+      if(aiStatus==='observed'){
+        const opening=String(row.answer_text||'').split(/\n\s*\n/)[0];
+        for(const item of arrayField(row,source==='giga'?'llm_brands':'alice_brands')){
+          if(!item||typeof item.brand!=='string'||!item.brand.trim())continue;
+          const kind=norm(item.kind);
+          if(kind!=='recommendation'&&kind!=='mention')continue;
+          record.events.push({channel:ai,kind,brand:brandName(item.brand),groups:aiGroups(item,opening),pos:0,text:String(item.evidence||item.section||'')});
+        }
+      }
     }
-    for(const a of hit.alice){
-      const brand=brandFor(a.brand);
-      if(!seenAlice.has(brand)){brand.ai++;seenAlice.add(brand);}
+    set.records.push(record);
+  }
+  return set;
+}
+function emptyGroup(){
+  return {queries:new Set(),withBrand:new Set(),brands:new Map()};
+}
+function addEvent(group,record,key,event){
+  group.queries.add(key);
+  if(!event.brand)return;
+  group.withBrand.add(key);
+  const id=brandKey(event.brand);
+  if(!group.brands.has(id))group.brands.set(id,{id,name:event.brand,queries:new Set(),sources:{search:new Set(),alice:new Set(),giga:new Set()},first:new Set(),examples:new Map()});
+  const b=group.brands.get(id);
+  b.queries.add(key);b.sources[event.channel].add(key);
+  if(event.channel==='search'&&event.pos===1)b.first.add(key);
+  const exampleKey=JSON.stringify([key,event.channel,event.kind,event.text,event.pos]);
+  if(!b.examples.has(exampleKey))b.examples.set(exampleKey,{query:record.query,...event});
+}
+function commonQueries(datasets){
+  if(!datasets.yandex||!datasets.giga)return new Set();
+  const measured=file=>new Set(file.records.filter(r=>r.channels.length).map(r=>norm(r.query)));
+  const yandex=measured(datasets.yandex),giga=measured(datasets.giga);
+  return new Set([...yandex].filter(q=>giga.has(q)));
+}
+function summarize(datasets,scope,includeMentions,onlyQueries=null){
+  const selected=scopes[scope],global=emptyGroup(),groups=new Map(familyList.map(f=>[f.id,emptyGroup()]));
+  const measured=new Set(),channels={};
+  for(const key of selected)channels[key]={base:new Set(),visible:new Set(),mentions:0,recs:0};
+  let runs=0;
+  for(const file of Object.values(datasets)){
+    for(const r of file.records){
+      const key=norm(r.query),active=r.channels.filter(id=>selected.includes(id));
+      if(!active.length||(onlyQueries&&!onlyQueries.has(key)))continue;
+      runs++;measured.add(key);
+      for(const id of active)channels[id].base.add(key);
+      for(const e of r.events){
+        if(!active.includes(e.channel))continue;
+        const ch=channels[e.channel];
+        if(e.kind==='mention')ch.mentions++;
+        if(e.kind==='recommendation')ch.recs++;
+        if(!includeMentions&&e.kind==='mention')continue;
+        if(e.brand)ch.visible.add(key);
+        addEvent(global,r,key,e);
+        for(const id of e.groups)addEvent(groups.get(id),r,key,e);
+      }
     }
   }
-
-  function compare(a,b){
-    const coverage=b.reach-a.reach,first=b.first-a.first;
-    const position=a.bestSum*b.reach-b.bestSum*a.reach;
-    return (rankMetric==='first'?first||coverage:coverage||first)||position;
-  }
-  const ordered=[...brands.values()].filter(b=>b.reach>0&&b[rankMetric]>0)
-    .sort((a,b)=>compare(a,b)||collator.compare(a.name,b.name));
+  return {selected,global,groups,measured,channels,runs};
+}
+function ranked(group){
+  const brands=[...group.brands.values()].sort((a,b)=>b.queries.size-a.queries.size||localeSort.compare(a.name,b.name));
   let place=0;
-  ordered.forEach((brand,i)=>{
-    if(!i||compare(brand,ordered[i-1])!==0)place=i+1;
-    brand.place=place;
+  return brands.map((brand,i)=>{
+    if(i===0||brand.queries.size!==brands[i-1].queries.size)place=i+1;
+    return {brand,place};
   });
-  return {ordered,brands,items,unknown,inferred};
+}
+const sourceOrder=['search','alice','giga'],kindOrder=['card','recommendation','mention'];
+function decodeSnapshot(packed){
+  const dict=packed.strings;
+  return Object.fromEntries(Object.entries(packed.files).map(([id,file])=>[id,{...file,records:file.records.map(([q,c,items])=>({
+    query:dict[q],channels:sourceOrder.filter((_,i)=>c&(1<<i)),
+    events:items.map(([ch,k,b,g,pos,t])=>({channel:sourceOrder[ch],kind:kindOrder[k],brand:dict[b],groups:familyList.filter((_,i)=>g&(1<<i)).map(f=>f.id),pos,text:dict[t]}))
+  }))}]));
 }
 
-function rankingsBoard(report,ranks){
-  const criterion=rankMetric==='first'?'замеры на позиции № 1':'замеры с брендом';
-  const controls='<div class="controls rank-controls"><label><small>Ранжирование</small><select id="rankMetric">'+options([['reach','По охвату выдач'],['first','По числу первых мест']],rankMetric)+'</select></label>'+
-    '<label><small>Сколько брендов</small><select id="rankLimit">'+options([['3','Топ-3'],['5','Топ-5']],String(rankLimit))+'</select></label>'+
-    '<label><small>Источник бренда в карточке</small><select id="rankSource">'+options([['title','Поле brands и название'],['field','Только поле brands']],rankSource)+'</select></label></div>';
-  const grids=report.entries.map(f=>{
-    const r=ranks.get(f.id),list=r.ordered.slice(0,rankLimit);
-    let missing=report.searchMeasured?'В сохранённых выдачах нет карточек направления.':'Нет замеров с известным состоянием товарного блока.';
-    if(f.cards)missing=r.unknown===f.cards?'Бренд не определён ни в одной карточке.':'Распознанные бренды не занимали первое место.';
-    const ranking=list.length?'<ol>'+list.map(b=>'<li class="rank-item" data-first="'+(b.place===1)+'"><span class="rank-num">'+b.place+'</span><strong>'+escapeHTML(b.name)+'</strong><span class="rank-val" title="'+criterion+'">'+b[rankMetric]+'</span></li>').join('')+'</ol>':'<div class="rank-empty">'+missing+'</div>';
-    const tied=list.length&&r.ordered.length>rankLimit&&list[list.length-1].place===r.ordered[rankLimit].place;
-    const meta='Выдач с товаром: '+f.search+' · Карточек без бренда: '+r.unknown+(r.inferred?' · По названию: '+r.inferred:'')+(tied?' · Есть равенство на границе топа.':'');
-    return '<article class="rank-card"><h3><button data-family="'+f.id+'" title="Открыть товары и замеры">'+escapeHTML(f.label)+'</button></h3>'+ranking+'<div class="rank-meta">'+meta+'</div></article>';
+const $=id=>document.getElementById(id);
+const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nfmt=new Intl.NumberFormat('ru-RU',{maximumFractionDigits:1});
+const fmt=n=>nfmt.format(n),share=(n,d)=>d?fmt(n*100/d)+'%':'—';
+const embedded=decodeSnapshot(JSON.parse($('snapshot').textContent));
+const hosted=['http:','https:'].includes(location.protocol);
+let files={},origins={},source='all',wide=false,limit=5,generation=0,report=null;
+const short={search:'Поиск',alice:'Алиса',giga:'GigaChat'};
+const fileNames={yandex:'combined.json',giga:'combined_giga_api.json'};
+function notice(message){$('notice').hidden=!message;$('notice').textContent=message;}
+function keepSnapshot(){
+  files={...embedded};origins={yandex:'встроенная копия',giga:'встроенная копия'};
+}
+function miniBar(count,base){
+  const width=base?Math.min(100,100*count/base):0;
+  return '<span class="mini-track" aria-hidden="true"><i style="width:'+width+'%"></i></span>';
+}
+function emptyText(group=null){
+  if(!report.measured.size)return 'В выбранном источнике нет проверенных запросов.';
+  if(source==='giga'&&!wide&&report.channels.giga.recs===0&&report.channels.giga.mentions>0)return 'Явных рекомендаций в разметке GigaChat нет.';
+  if(group?.queries.size)return 'Товар встречается, но бренд не распознан.';
+  return group?'В этом режиме для направления нет совпадений.':'В этом режиме бренды не обнаружены.';
+}
+function brandTable(group,allRows=false){
+  const rankedBrands=ranked(group),rows=allRows?rankedBrands:rankedBrands.slice(0,limit);
+  if(!rows.length)return '<p class="empty">'+emptyText(group)+'</p>';
+  const max=rankedBrands[0].brand.queries.size;
+  const split=report.selected.length>1?report.selected:[];
+  return '<div class="table-wrap"><table><thead><tr><th scope="col">Место · бренд</th><th scope="col">Запросы</th>'+
+    split.map(ch=>'<th scope="col">'+short[ch]+'</th>').join('')+(allRows&&report.selected.includes('search')?'<th scope="col">На № 1 в поиске</th>':'')+'</tr></thead><tbody>'+
+    rows.map(({place,brand:b})=>'<tr><td><div class="brand-cell"><span class="place">'+place+'</span><span class="brand">'+esc(b.name)+'</span></div></td><td class="count">'+b.queries.size+miniBar(b.queries.size,max)+'</td>'+
+      split.map(ch=>'<td>'+(report.channels[ch].base.size?b.sources[ch].size:'—')+'</td>').join('')+(allRows&&report.selected.includes('search')?'<td>'+(report.channels.search.base.size?b.first.size:'—')+'</td>':'')+'</tr>').join('')+'</tbody></table></div>';
+}
+function coverage(){
+  const channels=report.selected.map(ch=>{
+    const s=report.channels[ch],base=s.base.size,count=s.visible.size;
+    return '<div class="channel"><div class="channel-row"><b>'+channelLabels[ch]+'</b><em>'+(base?count+' / '+base:'—')+'</em></div>'+miniBar(count,base)+'</div>';
   }).join('');
-  const rule=rankMetric==='first'?'Лидер чаще других занимал место № 1. При равенстве учитывается охват, затем средняя лучшая позиция.':'Лидер встречается в наибольшем числе выдач с товаром этого направления. При равенстве учитываются первые места, затем средняя лучшая позиция.';
-  return '<section class="panel brand-board"><div class="panelhead"><div><h2>Лидеры брендов по товарам</h2>'+note(rule+' Повторные карточки бренда в одном замере дают один зачёт.')+'</div></div>'+controls+
-    '<p class="hint">Место в рейтинге указано слева, '+criterion+' — справа. Нажмите на направление для разбора позиций и исходных карточек.</p>'+
-    '<div class="rank-grid">'+grids+'</div><details class="methodbox"><summary>Как учитываются бренды</summary>'+
-    note('Позиция берётся из поля rank внутри товарного блока. Если позиция отсутствует, используется порядок карточек в выгрузке. Доля бренда в подробной таблице считается от всех выдач с товаром направления, включая выдачи с нераспознанными брендами. Учитывается лучшая позиция бренда в каждом замере. При равных показателях марки делят место и перечисляются по алфавиту.')+
-    note('Если поле brands пусто, в режиме «Поле brands и название» проверяется словарь точных названий и вариантов написания. Название продавца не участвует в расчёте. У карточки BRANDFREE «Я твоё средство для всего» название линейки относится к BRANDFREE. Рейтинги сравнивают торговые марки, указанные в карточках.')+'</details></section>';
+  const g=report.channels.giga;
+  const msg=g&&g.base.size&&g.mentions&&g.recs===0?'<div class="info">GigaChat: '+g.mentions+' записей о брендах с меткой «упоминание», явных рекомендаций — 0.'+
+      (wide?'':' <button data-mode="wide">Показать упоминания</button>')+'</div>':'';
+  return '<aside class="panel"><h2>Охват по источникам</h2><p class="sub">Запросы с брендом / проверенные запросы</p>'+channels+msg+'</aside>';
 }
-
-function familyBrandAndProduct(f,r){
-  const ranked=r.ordered;
-  const tableRows=ranked.map(b=>[num(b.place),cell(b.name),num(b.reach),num(pct(b.reach,f.search)),num(b.first),num(b.cards),num(mean(b.bestSum,b.reach)),num(b.inferred)]);
-  const top=table(['Место','Бренд','Выдачи с брендом','Доля из '+f.search+' выдач','На № 1 · замеры','Карточки','Сред. лучшая позиция','Из названий · карточки'],tableRows);
-  const products=[...r.items.values()].sort((a,b)=>b.runs-a.runs||b.first-a.first||collator.compare(a.name,b.name));
-  const itemTable=products.length?table(['Товар','Бренд','Замеры','Показы','№ 1'],products.map(p=>[cell(p.name),cell([...p.brands].join(', ')||'Не указан'),num(p.runs),num(p.cards),num(p.first)])):empty('Совпавших товарных карточек в выбранной выборке нет.');
-  const aliceSorted=[...r.brands.values()].filter(b=>b.ai>0).sort((a,b)=>b.ai-a.ai||collator.compare(a.name,b.name));
-  const alice=aliceSorted.length?table(['Бренд','Ответы Алисы','Доля из '+f.ai+' ответов направления'],aliceSorted.map(b=>[cell(b.name),num(b.ai),num(pct(b.ai,f.ai))])):empty('Нет распознанных рекомендаций Алисы по этому направлению.');
-  return panel('Все бренды поиска · '+f.label,'Учитываются карточки выбранного направления. Карточек без распознанного бренда: '+r.unknown+'.',top)+
-    '<div class="pair">'+panel('Конкретные товары','Названия и позиции совпавших карточек.',itemTable)+panel('Какие бренды рекомендует Алиса','Каждый бренд учитывается один раз за ответ.',alice)+'</div>';
+function productCard(f){
+  const g=report.groups.get(f.id),rows=ranked(g).slice(0,limit);
+  const list=rows.length?'<ol>'+rows.map(({brand:b,place})=>'<li data-leader="'+(place===1)+'"><span class="place">'+place+'</span><span>'+esc(b.name)+'</span><b>'+b.queries.size+'</b></li>').join('')+'</ol>':'<p class="empty">'+emptyText(g)+'</p>';
+  return '<article class="product"><h3>'+esc(f.label)+'</h3>'+list+'<div class="product-foot"><small>Запросов с товаром: '+g.queries.size+'</small>'+(g.queries.size?'<button class="link" data-detail="'+f.id+'" aria-label="Подробно: '+esc(f.label)+'">Подробнее</button>':'')+'</div></article>';
 }
-function familyTrace(hit){
-  const r=hit.row;
-  const lines=(items,build,fallback)=>items.length?'<ul>'+items.map(v=>'<li>'+build(v)+'</li>').join('')+'</ul>':note(fallback);
-  const products=lines(hit.products,p=>{const b=rankingBrands(p);return '<b>№ '+escapeHTML(p.rank)+'</b> · '+escapeHTML(p.title)+'<div class="hint">'+escapeHTML([b.names.join(', ')||'Бренд не определён',b.fromTitle?'по названию':'',p.price,p.seller].filter(Boolean).join(' · '))+'</div>';},'Подходящая карточка не распознана.');
-  const alice=lines(hit.alice,a=>'<b>'+escapeHTML(a.brand)+'</b> '+escapeHTML(a.section)+'<div class="evidence">'+escapeHTML(a.evidence)+'</div>','Для направления нет распознанной рекомендации.');
-  const web=lines(hit.web,w=>'№ '+escapeHTML(w.rank)+' · '+escapeHTML(w.title),'Совпадений в сохранённых заголовках нет.');
-  const detail='<div class="detailgrid"><div><h3>Карточки направления</h3>'+products+'</div><div><h3>Рекомендации Алисы</h3>'+alice+'</div></div>'+
-    (hit.web.length?'<h3>Совпадения в веб-выдаче</h3>'+web:'')+
-    '<details class="query"><summary>Весь исходный замер</summary><div class="detail" data-row="'+r.id+'"></div></details>';
-  return '<details class="family-trace"><summary><strong>'+escapeHTML(r.query)+'</strong> <small>· № '+escapeHTML(r.number||r.id+1)+' · '+escapeHTML(r.date)+' · '+(hit.direct?'прямой запрос':'другой запрос')+'</small><span>'+escapeHTML(familyQueryStatus(hit))+'</span></summary>'+detail+'</details>';
+function updateFiles(){
+  $('sourceFiles').innerHTML=Object.entries(FILES).map(([id,path])=>{
+    const d=files[id];
+    return '<div class="data-row"><div><b>'+esc(fileNames[id])+'</b><br><small class="fine">'+esc(origins[id]||'файл недоступен')+'</small></div><span>'+(d?'Записей: '+d.total+(d.excluded?' · Брендовых исключено: '+d.excluded:'')+(d.failed?' · Неуспешных: '+d.failed:''):'—')+'</span></div>';
+  }).join('');
+  $('refresh').hidden=!hosted;
 }
-function familyView(rows){
-  const report=familyReport(rows),f=report.entries.find(x=>x.id===currentFamily);
-  const relevant=f.hits.filter(h=>familyScope==='all'||(familyScope==='direct'&&h.direct)||(familyScope==='miss'&&h.direct&&h.measuredP&&h.measuredA&&!h.products.length&&!h.alice.length)||(familyScope==='other'&&!h.direct));
-  const only=report.entries.filter(x=>x.reach===0).map(x=>x.label);
-  const noHits=report.measuredAny&&only.length?note('Без распознанных появлений в карточках и рекомендациях: '+only.join(', ')+'.'):'';
-  const select='<label><small>Подробный разбор</small><select id="currentFamily">'+options(familyList.map(x=>[x.id,x.label]),currentFamily)+'</select></label>';
-  const scopes=[['all','Все связанные замеры'],['direct','Прямые запросы'],['miss','Прямые запросы без попадания'],['other','Другие запросы']];
-  const summary='<div class="tilegroup"><span>Прямые замеры <b>'+f.direct+'</b></span><span>Прямые с совпадением¹ <b>'+f.directHit+'</b></span><span>Прямые без совпадения <b>'+f.directMiss+'</b></span><span>Прямые с неполными данными <b>'+f.directPartial+'</b></span></div>';
-  const detail='<section class="panel" id="familyDetail"><div class="panelhead"><div><h2>'+escapeHTML(f.label)+'</h2>'+note(f.rule)+'</div>'+select+'</div>'+summary+'</section>';
-  const trace='<section class="panel"><div class="panelhead"><div><h2>Запросы и подтверждения</h2>'+note('Всего в выбранном списке: '+relevant.length+'. Раскройте замер, чтобы проверить точный текст.')+'</div><label><small>Показать замеры</small><select id="familyScope">'+options(scopes,familyScope)+'</select></label></div>'+(relevant.length?relevant.map(familyTrace).join(''):empty('Замеров для этого списка нет.'))+'</section>';
-  const missing=note('Вне восьми направлений или без достаточных признаков: '+report.unmatchedCards+' товарных карточек, '+report.unmatchedAlice+' записей Алисы с типом recommendation из '+report.aiEntries+'.');
-  const method='<details class="methodbox"><summary>Как определяются направления</summary><p class="hint">Названия сопоставляются по форме, составу и назначению. Для Алисы используются заголовок раздела и цитата записи с типом recommendation. Текст запроса определяет только признак «прямой запрос». Общий «карандаш от пятен» не указывает состав. Кислородный отбеливатель для детского белья может попасть в две строки. Пропуск относится к сохранённым результатам этого замера.</p></details>';
-  const ranks=new Map(report.entries.map(family=>[family.id,rankFamilyBrands(family)]));
-  return rankingsBoard(report,ranks)+familyRankTable(report.entries,report,ranks)+noHits+detail+familyBrandAndProduct(f,ranks.get(f.id))+trace+panel('Полнота классификации','В рейтинге участвуют совпадения по тексту. Общие названия и записи без точного назначения могут остаться без направления.',missing+method);
-}
-
-</script>
-<script>
-const tabs={overview,families:familyView,brands:brandTable,formats:formatView,segments:categoriesView,products:productView,queries:queryView,sources:sourceView,quality};
 function render(){
-  document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.tab===activeTab)));
-  if(!sourceKind){
-    $('kpis').innerHTML='';
-    $('view').innerHTML=panel('Загрузите данные мониторинга','Сайт открывает соседний combined.json автоматически. Для просмотра с компьютера выберите файл кнопкой вверху.','');
-    return;
-  }
-  const rows=filtered(),stats=review(rows,mode);
-  $('kpis').innerHTML=kpis(rows,stats);
-  $('view').innerHTML=tabs[activeTab](rows,stats);
-
+  const common=commonQueries(files);
+  $('common').disabled=!files.yandex||!files.giga;
+  if($('common').disabled)$('common').checked=false;
+  $('commonLabel').textContent='Только общие запросы'+($('common').disabled?'':' ('+common.size+')');
+  report=summarize(files,source,wide,$('common').checked?common:null);
+  const global=report.global,base=report.measured.size,found=global.withBrand.size;
+  for(const b of document.querySelectorAll('.filters [data-mode]'))b.setAttribute('aria-pressed',String((b.dataset.mode==='wide')===wide));
+  const part=source==='all'&&Object.keys(files).length===1?' · загружен один файл':'';
+  const kpi=(n,label)=>'<div class="stat"><b>'+n+'</b><span>'+esc(label)+'</span></div>';
+  $('report').innerHTML='<div class="stats">'+kpi(base,'разных запросов в выборке'+part)+kpi(found,'запросов с брендами')+kpi(global.brands.size,'разных брендов')+'</div>'+
+    '<div class="overall"><section class="panel"><h2>Общий топ брендов</h2><p class="sub">Число разных запросов, в которых появляется бренд</p>'+brandTable(global)+
+    (global.brands.size?'<button class="link" data-detail="overall">Все бренды и примеры</button>':'')+'</section>'+coverage()+'</div>'+
+    '<section><div class="section-head"><div><h2>Лидеры по товарам</h2><p class="sub">Справа от бренда — число запросов с этим товаром и брендом.</p></div><div class="seg" role="group" aria-label="Размер обоих рейтингов"><button data-limit="3" aria-pressed="'+(limit===3)+'">Топ-3</button><button data-limit="5" aria-pressed="'+(limit===5)+'">Топ-5</button></div></div><div class="product-grid">'+familyList.map(productCard).join('')+'</div></section>';
+  updateFiles();
 }
-function install(dataset,kind,name){
-  const kept=dataset.records.filter(r=>!excludedQueries.has(norm(r.query)));
-  const removed=dataset.records.length-kept.length;
-  if(removed){
-    const original=dataset.original?kept.map(r=>dataset.original[r.id]):undefined;
-    dataset={...dataset,original,records:kept.map((r,id)=>({...r,id}))};
-  }
-  data=dataset;sourceKind=kind;sourceName=name;mode=data.schema.kind?'rec':'all';
-  drill='';trendBrand='';brandSearch='';sortBy='reach';cover='all';scopedProduct='';matrixOrder='';chartLimit='10';currentFamily='paste';familySort='reach';familyScope='all';resetBrandRanking();syncCategory(true);
-  const engines=[...new Set(data.records.map(r=>r.engine))].sort(collator.compare);
-  $('engine').innerHTML=options([['','Все'],...engines.map(e=>[e,e])]);
-  $('query').value='';
-  const prefix={file:'Локальный файл',remote:'Файл по ссылке',snapshot:'Сохранённый снимок'}[kind];
-  $('origin').innerHTML='<strong>'+escapeHTML(prefix)+'</strong> · '+escapeHTML(name)+' · '+fmt(data.records.length)+' замеров';
-  const dates=[...new Set(data.records.map(r=>r.date).filter(Boolean))].sort();
-  $('period').textContent=dates.length?'Период наблюдений · '+[dates[0],...(dates.length>1?[dates[dates.length-1]]:[])].map(d=>new Intl.DateTimeFormat('ru-RU',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(d+'T00:00:00Z'))).join(' — '):'';
-  const notices=[];
-  if(removed)notices.push('Из расчёта исключены брендовые запросы прежнего плана. Замеров: '+removed+'.');
-  if(!data.schema.kind)notices.push('Тип записи Алисы отсутствует. Показаны все записи о брендах; выделить подтверждённые рекомендации по этим данным нельзя.');
-  if(!data.schema.pBrand)notices.push('Бренды товаров определены по словарю в названиях.');
-  $('notice').textContent=notices.join(' ');$('notice').hidden=!notices.length;
-  $('save').hidden=false; render();
+const kindLabels={card:'карточка',mention:'упоминание',recommendation:'рекомендация'};
+function showDetail(id){
+  const overall=id==='overall',f=familyList.find(x=>x.id===id),g=overall?report.global:report.groups.get(id);
+  if(!g)return;
+  $('detailTitle').textContent=overall?'Общий рейтинг':f.label;
+  const examples=ranked(g).map(({brand:b})=>{
+    const rows=[...b.examples.values()];
+    const list=rows.map(ev=>'<li><b>'+esc(ev.query)+'</b><small>'+channelLabels[ev.channel]+' · '+kindLabels[ev.kind]+(ev.pos?' · позиция '+ev.pos:'')+'</small>'+(ev.text?'<span>'+esc(ev.text)+'</span>':'')+'</li>').join('');
+    return '<details class="evidence"><summary>'+esc(b.name)+' · запросов: '+b.queries.size+'</summary><ul>'+list+'</ul></details>';
+  }).join('');
+  $('detailBody').innerHTML='<p class="fine">'+(overall?'Разных проверенных запросов: '+report.measured.size+'.':'Запросов с этим товаром: '+g.queries.size+'. '+esc(f.rule))+'</p>'+brandTable(g,true)+
+    (examples?'<h3 style="margin:16px 0 7px">В каких запросах встречается бренд</h3>'+examples:'');
+  $('productDialog').showModal();
 }
-function readURL(raw){
-  const u=new URL(raw,document.baseURI);
-  if(!['https:','http:'].includes(u.protocol))throw Error('Нужна ссылка HTTP или HTTPS.');
-  if(u.hostname==='drive.google.com'){
-    const id=u.pathname.match(/^\/file\/d\/([\w-]+)/)?.[1]||u.searchParams.get('id');
-    if(id){const v=new URL('/uc',u.origin);v.searchParams.set('export','download');v.searchParams.set('id',id);
-      if(u.searchParams.has('resourcekey'))v.searchParams.set('resourcekey',u.searchParams.get('resourcekey'));
-      return v.href;}
-  }
-  if(u.hostname==='docs.google.com'&&/^\/spreadsheets\/d\/[\w-]+\/(?:edit|view)/.test(u.pathname)){
-    const v=new URL(u.pathname.replace(/\/(?:edit|view).*$/,'/export'),u.origin);
-    v.searchParams.set('format','csv');const gid=u.searchParams.get('gid')||new URLSearchParams(u.hash.slice(1)).get('gid');
-    if(gid)v.searchParams.set('gid',gid);return v.href;
-  }
-  return u.href;
+function applyMode(val){
+  wide=val==='wide';render();
 }
-function initLink(){
-  try{const u=new URL(DATA_URL,document.baseURI);if(!['http:','https:'].includes(u.protocol))throw Error();
-    $('sourceLink').href=u.href;
-  }catch{$('sourceLink').hidden=true;}
-}
-let controller;
-async function reload(){
-  const token=++generation;
-  if(controller)controller.abort();controller=new AbortController();
-  const own=controller,timeout=setTimeout(()=>own.abort(),10000);
-  $('refresh').disabled=true;$('message').textContent='Загружаю данные…';
+$('common').addEventListener('change',render);
+$('scope').addEventListener('change',e=>{source=e.target.value;render();});
+document.addEventListener('click',e=>{
+  const btn=e.target.closest('button');if(!btn)return;
+  if(btn.dataset.mode){applyMode(btn.dataset.mode);if(!btn.isConnected)document.querySelector('.filters [data-mode="wide"]').focus();}
+  else if(btn.dataset.limit){limit=Number(btn.dataset.limit);render();document.querySelector('[data-limit="'+limit+'"]').focus();}
+  else if(btn.dataset.detail)showDetail(btn.dataset.detail);
+  else if(btn.dataset.close)$(btn.dataset.close).close();
+});
+$('dataOpen').addEventListener('click',()=>$('dataDialog').showModal());
+$('choose').addEventListener('click',()=>$('files').click());
+$('files').addEventListener('change',async e=>{
+  const list=[...e.target.files];if(!list.length)return;
+  const ticket=++generation;
   try{
-    const response=await fetch(readURL(DATA_URL),{signal:own.signal,credentials:'omit',cache:'no-store',referrerPolicy:'no-referrer'});
-    if(!response.ok)throw Error('HTTP '+response.status);
-    const dataset=readReport(await response.text());
-    if(token!==generation)return;
-    install(dataset,'remote',new URL(DATA_URL,document.baseURI).pathname.split('/').pop()||'файл данных');
-    $('message').textContent='Прочитано записей: '+dataset.records.length+'.';
-  }catch(e){
-    if(token===generation)$('message').textContent='Автозагрузка не удалась. Выберите файл кнопкой «Открыть JSON или CSV». '+(e.name==='AbortError'?'Истекло время ожидания.':e.message);
-  }finally{clearTimeout(timeout);if(token===generation)$('refresh').disabled=false;}
-}
-function safeJSON(value){return JSON.stringify(value).replace(/</g,'\\u003c').replace(/&/g,'\\u0026');}
-function saveSnapshot(){
-  const root=document.documentElement.cloneNode(true);
-  const snapshot=data.sourceText!==undefined?{jsonText:data.sourceText}:{dataset:data};
-  root.querySelector('#embedded').textContent=safeJSON({kind:'snapshot',url:DATA_URL,name:sourceName,...snapshot});
-  for(const id of ['view','kpis','notice','origin','message','engine'])root.querySelector('#'+id).replaceChildren();
-  root.querySelector('#refresh').removeAttribute('disabled');
-  const blob=new Blob(['<!doctype html>\n',root.outerHTML],{type:'text/html;charset=utf-8'});
-  const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='index.html';
-  link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);
-}
-$('file').addEventListener('change',async e=>{
-  const f=e.target.files[0];if(!f)return;
-  const token=++generation;if(controller)controller.abort();$('refresh').disabled=false;
-  try{const dataset=readReport(await f.text(),f.name);if(token!==generation)return;
-    install(dataset,'file',f.name);$('message').textContent='Прочитано записей: '+dataset.records.length+'.';
-  }catch(err){if(token===generation)$('message').textContent='Не удалось открыть файл. '+err.message;}
+    const picked={};
+    for(const f of list){
+      const raw=JSON.parse((await f.text()).replace(/^\uFEFF/,''));
+      const id=Array.isArray(raw)&&raw.length?fileType(raw[0]):Object.keys(fileNames).find(k=>fileNames[k]===f.name);
+      if(!id)throw Error('Формат файла '+f.name+' не распознан.');
+      if(picked[id])throw Error('Выберите по одному файлу каждого источника.');
+      picked[id]={data:prepare(raw,id),name:f.name};
+    }
+    if(ticket!==generation)return;
+    for(const [id,p] of Object.entries(picked)){files[id]=p.data;origins[id]='выбран файл '+p.name;}
+    $('loadmsg').textContent='Файлы прочитаны. Рейтинги пересчитаны.';
+    const mixed=Object.values(origins).includes('встроенная копия');
+    notice(mixed?'Для второго источника используется встроенная копия. Вы можете заменить её в разделе «Данные».':Object.keys(files).length<2?'Загружен один источник. Второй JSON можно добавить в разделе «Данные».':'');
+    render();
+  }catch(err){if(ticket===generation)$('loadmsg').textContent='Не удалось загрузить данные. '+err.message;}
   finally{e.target.value='';}
 });
-$('refresh').addEventListener('click',reload);$('save').addEventListener('click',saveSnapshot);
-$('reset').addEventListener('click',()=>{
-  for(const id of ['engine','query'])$(id).value='';
-  drill='';trendBrand='';brandSearch='';cover='all';sortBy='reach';chartLimit='10';matrixOrder='';scopedProduct='';currentFamily='paste';familySort='reach';familyScope='all';resetBrandRanking();syncCategory(true);mode=data.schema.kind?'rec':'all';render();
-});
-$('category').addEventListener('change',()=>{syncCategory();render();});
-for(const id of ['engine','subgroup'])$(id).addEventListener('change',render);
-$('query').addEventListener('input',render);
-document.addEventListener('click',e=>{
-  const tab=e.target.closest('[data-tab]'),brand=e.target.closest('[data-brand]');
-  const family=e.target.closest('[data-family]');
-  if(family){
-    currentFamily=family.dataset.family;familyScope='all';render();
-    $('familyDetail').scrollIntoView({block:'start'});
+async function refresh(){
+  const ticket=++generation;
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
+  $('loadmsg').textContent='Загружаются оба файла…';
+  const settled=await Promise.allSettled(Object.entries(FILES).map(async([id,path])=>{
+    const r=await fetch(path,{cache:'no-store',signal:controller.signal});if(!r.ok)throw Error('HTTP '+r.status);
+    return [id,prepare(JSON.parse((await r.text()).replace(/^\uFEFF/,'')),id)];
+  }));
+  clearTimeout(timer);if(ticket!==generation)return;
+  const good=settled.filter(s=>s.status==='fulfilled').map(s=>s.value);
+  const missing=Object.keys(FILES).filter(id=>!good.some(([key])=>key===id)).map(k=>fileNames[k]);
+  if(good.length){
+    files=Object.fromEntries(good);origins=Object.fromEntries(good.map(([k])=>[k,'файл сайта']));
+    notice(missing.length?'Неполный отчёт. Не загрузился '+missing.join(', ')+'. В расчёте только доступный файл.':'');
+  }else{
+    if(!Object.keys(files).length)keepSnapshot();
+    const snapshot=Object.values(origins).every(v=>v==='встроенная копия');
+    notice('Не удалось загрузить JSON с сайта. '+(snapshot?'Показана встроенная копия исследования.':'Сохранены ранее открытые данные.')+' Свежие файлы можно выбрать в разделе «Данные».');
   }
-  if(tab){activeTab=tab.dataset.tab;render();}
-  const product=e.target.closest('[data-product]'),category=e.target.closest('[data-category]');
-  if(product){scopedProduct=product.dataset.product;drill='';cover='all';activeTab='queries';render();document.querySelector('nav').scrollIntoView({block:'start'});}
-  if(e.target.closest('[data-clear-product]')){scopedProduct='';render();}
-  if(category){$('category').value=category.dataset.category;syncCategory();render();}
-  if(brand){scopedProduct='';drill=brand.dataset.brand;cover='all';activeTab='queries';render();document.querySelector('nav').scrollIntoView({block:'start'});}
-});
-$('view').addEventListener('change',e=>{
-  const id=e.target.id,val=e.target.value;
-  if(id==='mode')mode=val;else if(id==='sortBy')sortBy=val;else if(id==='drill')drill=val;
-  else if(id==='cover')cover=val;else if(id==='trendBrand')trendBrand=val;else if(id==='chartLimit')chartLimit=val;else if(id==='matrixOrder')matrixOrder=val;
-  else if(id==='familySort')familySort=val;
-  else if(id==='familyScope')familyScope=val;
-  else if(id==='rankLimit')rankLimit=Number(val);
-  else if(id==='rankMetric')rankMetric=val;
-  else if(id==='rankSource')rankSource=val;
-  else if(id==='currentFamily'){currentFamily=val;familyScope='all';}
-  else return;
+  $('loadmsg').textContent=missing.length?'Недоступны: '+missing.join(', ')+'.':'Оба файла загружены с сайта.';
   render();
-});
-$('view').addEventListener('input',e=>{
-  if(e.target.id!=='brandSearch')return;
-  const pos=e.target.selectionStart;brandSearch=e.target.value;render();
-  const field=$('brandSearch');field.focus();field.setSelectionRange(pos,pos);
-});
-$('view').addEventListener('toggle',e=>{
-  if(!e.target.matches('details.query')||!e.target.open)return;
-  const target=e.target.querySelector('.detail');
-  if(!target.childElementCount)target.innerHTML=queryDetail(data.records[Number(target.dataset.row)]);
-},true);
-initLink();
-const embed=JSON.parse($('embedded').textContent);
-const linked = !$('sourceLink').hidden;
-$('refresh').hidden=!linked;
-if(embed?.kind==='snapshot'&&embed.url===DATA_URL){
-  install(embed.jsonText!==undefined?parseMonitorJSON(embed.jsonText):embed.dataset,'snapshot',embed.name);
-}else{
-  $('origin').textContent='Откройте combined.json, чтобы увидеть статистику.';
-  $('engine').innerHTML=options([['','Все']]); render();
-  if(linked)reload();
 }
+$('refresh').addEventListener('click',refresh);
+if(hosted){notice('Загружаются данные исследования…');updateFiles();refresh();}
+else{keepSnapshot();$('loadmsg').textContent='При открытии с компьютера используются данные, включённые в HTML. Вы можете выбрать свежие JSON.';render();}
 
-</script>
-</body></html>
+</script></body></html>
