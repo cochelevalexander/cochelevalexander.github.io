@@ -3,102 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Бренды в ответах LLM — дашборд</title>
+<title>BRANDFREE — мониторинг рекомендаций</title>
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAhUlEQVR42mNkwAJUk1//Z6ABuD1XlBFdjJEeFuNzCBO9LUe3i4nelqM7golhgAHjQPgeGQx4CLBQ28Bbc0QwxNRS3gzeEBh1wNBMhKQmtNEoGHUAWYmQmgltNApGHTDqgEHtgNE2IRO27hK9wO25ooyDIxEORCjA7GTC13OlR+eUcaC75wA2ry1CUug3eQAAAABJRU5ErkJggg==">
 <style>
   :root {
-    --bg: #f6f7f9;
-    --card: #ffffff;
-    --text: #1f2328;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --accent: #2563eb;
-    --accent-soft: #dbeafe;
-    --good: #16a34a;
-    --bad: #dc2626;
-    --warn: #f59e0b;
+    --bg: #f6f7f9; --card: #fff; --text: #1f2328; --muted: #6b7280;
+    --border: #e5e7eb; --accent: #2563eb; --accent-soft: #dbeafe;
+    --good: #16a34a; --bad: #dc2626; --warn: #f59e0b;
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0; padding: 24px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: var(--bg); color: var(--text);
-    font-size: 14px; line-height: 1.5;
-  }
+  body { margin: 0; padding: 24px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.5; }
   h1 { font-size: 22px; margin: 0 0 4px; }
   h2 { font-size: 16px; margin: 0 0 12px; }
   .sub { color: var(--muted); margin-bottom: 24px; }
   .grid { display: grid; gap: 16px; }
   .grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
   .grid-2 { grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); }
-  .card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 10px; padding: 16px;
-  }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
   .kpi { display: flex; flex-direction: column; gap: 4px; }
   .kpi .v { font-size: 26px; font-weight: 600; }
   .kpi .l { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
-  .controls {
-    display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 10px; padding: 12px 16px; margin-bottom: 16px;
-  }
+  .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+              background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+              padding: 12px 16px; margin-bottom: 16px; }
   .controls label { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; }
-  select, input[type="text"] {
-    padding: 6px 10px; border: 1px solid var(--border);
-    border-radius: 6px; background: #fff; font-size: 13px; min-width: 160px;
-  }
-  input[type="text"] { min-width: 220px; }
-  .drop {
-    border: 2px dashed var(--border); border-radius: 10px;
-    padding: 32px; text-align: center; color: var(--muted);
-    background: var(--card); cursor: pointer; margin-bottom: 16px;
-    transition: border-color .15s, background .15s;
-  }
-  .drop.hover { border-color: var(--accent); background: var(--accent-soft); }
-  .drop input { display: none; }
+  select, input[type="text"] { padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px;
+                               background: #fff; font-size: 13px; min-width: 150px; }
+  input[type="text"] { min-width: 200px; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
   th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
   tr:hover td { background: #fafafa; }
   .bar { height: 8px; border-radius: 4px; background: var(--accent); }
-  .bar-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+  .bar-row { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
   .bar-row .name { width: 140px; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .bar-row .track { flex: 1; background: #eef2ff; border-radius: 4px; overflow: hidden; height: 8px; }
   .bar-row .track .bar { height: 100%; }
-  .bar-row .num { width: 60px; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .bar-row .num { width: 160px; text-align: left; color: var(--text); font-variant-numeric: tabular-nums; }
   .heat { display: grid; gap: 2px; font-size: 12px; }
   .heat .cell { padding: 4px 6px; border-radius: 3px; text-align: center; }
   .heat .head { font-weight: 600; color: var(--muted); background: transparent; }
-  .badge {
-    display: inline-block; padding: 1px 8px; border-radius: 999px;
-    font-size: 11px; font-weight: 600;
-  }
+  .badge { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; }
   .badge.good { background: #dcfce7; color: var(--good); }
   .badge.bad { background: #fee2e2; color: var(--bad); }
   .badge.warn { background: #fef3c7; color: var(--warn); }
   .badge.neutral { background: #f3f4f6; color: var(--muted); }
   .muted { color: var(--muted); }
   .empty { color: var(--muted); padding: 24px; text-align: center; }
-  details summary { cursor: pointer; color: var(--accent); }
   .tag { display: inline-block; background: #f3f4f6; border-radius: 4px; padding: 1px 6px; font-size: 11px; margin-right: 4px; }
 </style>
 </head>
 <body>
 
-<h1>Бренды в ответах LLM — дашборд</h1>
-<div class="sub">Загрузите один или несколько <code>*_normalized.json</code> (массив записей). Всё считается локально, в браузере.</div>
+<h1>Мониторинг рекомендаций брендов</h1>
+<div class="sub">Видимость BRANDFREE в поиске и ответах ИИ по популярным и AI-адаптированным запросам.</div>
 
-<label class="drop" id="drop">
-  <input type="file" id="fileInput" accept=".json,application/json" multiple>
-  <div><strong>Перетащите JSON сюда</strong> или нажмите, чтобы выбрать файлы</div>
-  <div class="muted" style="margin-top:6px;font-size:12px">Поддерживается несколько файлов сразу — они объединяются</div>
-</label>
+<div class="card" id="statusCard" style="margin-bottom: 16px;">
+  <div id="statusText" class="muted">Загрузка manifest.json…</div>
+  <label id="localFiles" hidden style="display:none;margin-top:8px">Открыть JSON <input id="files" type="file" accept=".json,application/json" multiple></label>
+  <div style="height:6px;background:#eef2ff;border-radius:3px;margin-top:8px;overflow:hidden">
+    <div id="statusFill" style="height:100%;width:0%;background:var(--accent);transition:width .3s"></div>
+  </div>
+</div>
 
+<!-- Фильтры -->
 <div class="controls" id="controls" style="display:none">
-  <label>Движок: <select id="fEngine"><option value="">все</option></select></label>
-  <label>Бренд: <select id="fBrand"><option value="">все</option></select></label>
+  <label>Канал/Модель: <select id="fEngine"><option value="">все</option></select></label>
+  <label>Тип запроса: <select id="fQueryType"><option value="">все</option></select></label>
   <label>Поиск: <input type="text" id="fQuery" placeholder="подстрока в запросе"></label>
-  <label><input type="checkbox" id="fOurOnly"> только с нашим брендом</label>
   <button id="reset" style="margin-left:auto;padding:6px 12px;border:1px solid var(--border);border-radius:6px;background:#fff;cursor:pointer">Сбросить</button>
 </div>
 
@@ -107,521 +80,541 @@
   <!-- KPI -->
   <div class="grid grid-4" style="margin-bottom:16px">
     <div class="card kpi"><div class="v" id="kRecords">0</div><div class="l">Записей</div></div>
-    <div class="card kpi"><div class="v" id="kEngines">0</div><div class="l">Движков</div></div>
     <div class="card kpi"><div class="v" id="kBrands">0</div><div class="l">Уникальных брендов</div></div>
-    <div class="card kpi"><div class="v" id="kOur">0</div><div class="l">Записей с нашим брендом</div></div>
-    <div class="card kpi"><div class="v" id="kOurPos">—</div><div class="l">Средняя позиция нашего бренда</div></div>
-    <div class="card kpi"><div class="v" id="kLinks">0%</div><div class="l">Доля записей со ссылкой на наш сайт</div></div>
-    <div class="card kpi"><div class="v" id="kProducts">0</div><div class="l">Товаров в спецподборках</div></div>
-    <div class="card kpi"><div class="v" id="kSources">0</div><div class="l">Источников</div></div>
+    <div class="card kpi"><div class="v" id="kOur">0</div><div class="l">Записей с BRANDFREE в тексте или карточке</div></div>
+    <div class="card kpi"><div class="v" id="kOurPos">—</div><div class="l">Среднее место BRANDFREE в тексте</div></div>
+    <div class="card kpi"><div class="v" id="kSources">0</div><div class="l">Уникальных URL в ответах ИИ</div></div>
+    <div class="card kpi"><div class="v" id="kProducts">0</div><div class="l">Карточек BRANDFREE в спецподборках</div></div>
   </div>
 
-  <!-- Позиции брендов -->
-  <div class="card" style="margin-bottom:16px">
-    <h2>Позиция бренда среди альтернатив (first_mention_order)</h2>
-    <div class="muted" style="margin-bottom:12px">Средняя позиция по каждому бренду. Чем меньше — тем выше бренд в рекомендациях.</div>
-    <div id="brandPositions"></div>
-  </div>
-
-  <!-- ТОП брендов -->
+  <!-- Позиции и Топ -->
   <div class="grid grid-2" style="margin-bottom:16px">
     <div class="card">
-      <h2>ТОП брендов по числу упоминаний</h2>
-      <div id="topBrands"></div>
+      <h2>Позиция брендов среди альтернатив</h2>
+      <div class="muted" style="margin-bottom:8px"><span title="В полном ответе порядок определяется по первому появлению названий из словаря брендов. Для фрагмента берётся сохранённый first_mention_order.">Среднее место первого упоминания в тексте.</span> Показаны 15 брендов с наибольшим числом ответов с известной позицией.</div>
+      <div id="brandPositions"></div>
+      <div id="positionNote" class="muted" style="margin-top:8px"></div>
     </div>
     <div class="card">
-      <h2>Тепловая карта: бренд × движок</h2>
-      <div class="muted" style="margin-bottom:8px">Сколько раз бренд встречается в ответах каждого движка.</div>
-      <div id="brandEngineHeat"></div>
+      <h2>ТОП брендов по числу записей</h2>
+      <div class="muted" style="margin-bottom:8px">Число записей с брендом в ответе или товарной карточке. В пределах одной записи бренд учитывается один раз.</div>
+      <div id="topBrands"></div>
     </div>
   </div>
 
-  <!-- Конкуренты -->
+  <!-- Тепловая карта -->
   <div class="card" style="margin-bottom:16px">
-    <h2>Конкуренты: совместные упоминания</h2>
-    <div class="muted" style="margin-bottom:12px">Пары брендов, которые LLM упоминает в одном ответе. Помогает увидеть «связки» конкурентов.</div>
-    <div id="cooccurrence"></div>
+    <h2>Бренд × Канал</h2>
+    <div class="muted" style="margin-bottom:12px">Доля записей с брендом среди записей канала с доступным текстом, разметкой брендов или карточками. В заголовке — записей с данными / всего в канале. Поиск и Алиса могут относиться к одной записи.</div>
+    <div id="brandEngineHeat" style="overflow:auto"></div>
   </div>
 
   <!-- Наш бренд -->
   <div class="card" style="margin-bottom:16px">
     <h2>Наш бренд в разрезе запросов</h2>
-    <div class="muted" style="margin-bottom:12px">Где и на какой позиции упоминается наш бренд, есть ли ссылка на наш сайт, попадает ли в спецподборку.</div>
-    <div id="ourBrandTable"></div>
+    <div id="ourNote" class="muted" style="margin-bottom:8px"></div>
+    <div id="ourBrandTable" style="overflow:auto"></div>
   </div>
 
   <!-- Источники -->
   <div class="card" style="margin-bottom:16px">
-    <h2>Источники, которые использует ИИ</h2>
+    <h2>Источники в ответах ИИ</h2>
+    <div class="muted" style="margin-bottom:8px">Ссылки из ответов Алисы и LLM. Одна ссылка каждого типа учитывается один раз в ответе. Раскройте домен, чтобы увидеть страницы.</div>
     <div class="grid grid-2">
-      <div>
-        <div class="muted" style="margin-bottom:8px">По типу источника</div>
-        <div id="sourceTypes"></div>
-      </div>
-      <div>
-        <div class="muted" style="margin-bottom:8px">ТОП доменов</div>
-        <div id="sourceDomains"></div>
-      </div>
+      <div><div class="muted" style="margin-bottom:8px">По типу</div><div id="sourceTypes"></div></div>
+      <div><div class="muted" style="margin-bottom:8px">ТОП доменов</div><div id="sourceDomains"></div></div>
     </div>
-  </div>
-
-  <!-- Качество -->
-  <div class="card" style="margin-bottom:16px">
-    <h2>Качество описания и полнота</h2>
-    <div class="grid grid-4" style="margin-bottom:12px">
-      <div class="kpi"><div class="v" id="kAvgLen">0</div><div class="l">Средняя длина ответа, символов</div></div>
-      <div class="kpi"><div class="v" id="kAvgBrands">0</div><div class="l">Среднее число брендов на ответ</div></div>
-      <div class="kpi"><div class="v" id="kEmpty">0</div><div class="l">Пустых ответов</div></div>
-      <div class="kpi"><div class="v" id="kOurInProd">0</div><div class="l">Наш бренд в товарах</div></div>
-    </div>
-    <div id="qualityTable"></div>
-  </div>
-
-  <!-- Спецподборки -->
-  <div class="card" style="margin-bottom:16px">
-    <h2>Специальные товарные подборки</h2>
-    <div class="muted" style="margin-bottom:12px">Товары с <code>is_special_selection=true</code>. Показаны позиции и бренды.</div>
-    <div id="specialProducts"></div>
-  </div>
-
-  <!-- Все записи -->
-  <div class="card">
-    <h2>Все записи</h2>
-    <div id="allRecords"></div>
   </div>
 
 </div>
 
 <script>
-// ============================================================
-// 0. Утилиты
-// ============================================================
-const $ = (sel) => document.querySelector(sel);
-const $$ = (sel) => document.querySelectorAll(sel);
-const fmt = (n, d = 1) => (n === null || n === undefined || isNaN(n)) ? '—' : Number(n).toFixed(d);
-const pct = (a, b) => b ? Math.round(a / b * 100) : 0;
-const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+(function () {
+'use strict';
+// Data stays in the project's JSON exports. Optional manifest entry:
+// {"path":"data/run.json","source_kind":"llm","query_type":"ai_adapted","model":"..."}
+const HOME='BRANDFREE';
+const FILES=['edge-search-headless-small','edge-search-headless-small-ai',...['alice','deepseek','Gigachat','Perplexity'].flatMap(n=>['llm_'+n,'llm_'+n+'_ai'])].map(n=>n+'_normalized.json');
+const REPORT={all:'Все источники',web:'Поисковая выдача',alice:'Алиса в поиске',llm:'Ответы LLM',unknown:'Без атрибуции'};
+const SET={all:'Все запросы',popular:'Популярные',ai_adapted:'AI-адаптированные',unknown:'Не установлен'};
+const TYPES={web_result:'Поисковая ссылка',alice_source:'Источник Алисы',citation:'Источник LLM',inline:'Ссылка в тексте',card:'Карточка выдачи'};
+const REL={official:'Официальный сайт',product:'Карточка товара',other:'Другой материал'};
+const J={direct:'Прямой совет',option:'Вариант в подборке',shop:'Где купить',mention:'Упоминание',review:'Обзор',marked:'Рекомендация в разметке',pending:'Без оценки'};
+const REVIEW={"2761-5fc3c0e9":["option","4"],"2636-bb21527d":["option","7"],"1773-fdf02723":["shop","4"],"3131-4f50e72f":["option","18"],"5808-31730a2d":["option","15"],"1857-4a6bdbff":["option","5"],"3084-dd1ece85":["option","9"],"1379-8d7f9fdc":["option","2"],"2139-dc9585ac":["option","5"],"2005-e0f0e6f0":["direct","0"],"3474-5bdb9410":["option","17"],"4988-629a4cfc":["option","8"],"4767-6a2f8728":["option","2"],"10529-1759028a":["option","76"],"4335-9e8cb84":["mention","9"],"4170-f1278e67":["mention","21"],"1526-68343f4a":["mention","4"],"1270-ecafee76":["shop","6"],"1071-f27bec87":["mention","6"],"1344-20ca98ea":["shop","4"],"5227-72e27b07":["mention","24"],"4831-b2cb4eae":["mention","13"],"1533-b691bf1d":["mention","12"],"796-618ca98d":["shop","3"],"6804-99d42b42":["option","34"],"2503-ce78df":["option","6"],"1475-2e6dec49":["shop","7"],"4192-868c2a7a":["option","17"],"5285-1306932c":["mention","19"],"6012-f2850f9f":["direct","8:11"],"2334-f752bfd9":["option","5"],"2205-b908e964":["option","5"],"4513-bc1da2db":["mention","4"],"2005-1586cc1d":["option","11"],"9547-5ee47353":["direct","67"],"7087-36a26ae5":["mention","54"],"1661-a77ce151":["shop","3"],"1302-6c2e88e2":["shop","2"],"1819-e87ec9c1":["direct","10"],"1909-f0b44450":["option","6"],"2034-d1308917":["option","5"],"2855-a430ce91":["option","22"],"1208-5f7725f6":["mention","0"],"1642-fc3c2275":["mention","0"]}; // Answer fingerprint → review category and line range
+const FRAGMENTS={"774-c424e83":"option","575-805ca176":"option","893-7902ee3b":"option","1439-cc2cff2c":"option","897-2b393a62":"option","597-eca88643":"option","401-40ff98bf":"option","252-533f8293":"mention","374-cbd9d49a":"mention","356-a531e7e7":"mention"}; // Query, section and evidence fingerprint → reviewed category
+const CHECKED={"5808-31730a2d":["bfWipes",15],"3084-dd1ece85":["bfOxy",9],"2005-e0f0e6f0":["bfPen",0],"10529-1759028a":["bfTest",70],"5227-72e27b07":["bfWipes",24],"5285-1306932c":["bfWeight",19],"1909-f0b44450":["bfRank",6],"272-889b2754":["oxygen",-1],"697-1dcfcfb1":["stickTime",-1],"430-8a9acc30":["foamSurface",-1],"1315-4d0147d3":["enzymes",-1],"418-aa6e5fe7":["pasteTime",-1],"233-c66399bb":["foamSurface",-1],"378-b9dfec2c":["oxygen",-1],"164-d39f95e3":["spray",-1]}; // Evidence fingerprint → checked claim and source line
+const site='https://brandfree.ru/';
+const references={
+ pasteTime:['ok','Время действия пасты','Производитель указывает 5–10 минут для сильных загрязнений.',site],
+ foamSurface:['ok','Назначение пенного очистителя','В каталоге указаны стёкла и пластик. Сверено назначение средства.','https://pena.brandfree.ru/'],
+ stickTime:['ok','Применение кислородного карандаша','Температура 50–60 °C и время 10–15 минут совпадают с инструкцией.',site],
+ oxygen:['ok','Состав кислородного средства','В карточке кислородного порошка производитель отдельно указывает отсутствие хлора, фосфатов и отдушек.',site],
+ spray:['ok','Назначение спрея','Спрей для удаления пятен ягод и вина есть в каталоге. Проверены только эти два вида пятен.',site],
+ enzymes:['ok','Энзимы в составе карандаша','В составе энзимного стика указаны энзимы. Производитель описывает локальную обработку органических пятен.',site],
+ bfPen:['ok','Форма и состав карандаша','В каталоге указан энзимный стик для органических загрязнений.',site],
+ bfWipes:['ok','Пятновыводящие салфетки','Производитель описывает салфетки для экспресс-удаления свежих пятен.',site],
+ bfOxy:['ok','Кислородный карандаш','Производитель указывает отдельный кислородный стик.',site],
+ bfTest:['ok','Сравнение в тесте','В опубликованном тесте BRANDFREE в отдельных случаях подействовал быстрее Meine Liebe.','https://t-j.ru/oxygen-bleach-sticks-test/'],
+ bfRank:['issue','Место в двух рейтингах','В источнике № 19 бренд первый, в источнике № 6 — третий. Утверждение о первом месте требует уточнения.','https://dtf.ru/toprating/2965843-top-7-luchshih-otbelivatelei-dlya-belya-reiting-2026'],
+ bfWeight:['issue','Масса энзимного карандаша','Ответ перечисляет 25, 36 и 47 г. В каталоге бренда для этой модели указано 30 г. Другие фасовки по этому источнику не подтверждены.',site]
+};
+const $=id=>document.getElementById(id);
+const arr=v=>Array.isArray(v)?v:[];
+const uniq=a=>[...new Set(a)];
+const sortNames=a=>uniq(a).sort((x,y)=>x.localeCompare(y,'ru'));
+const nfmt=(n,d=0)=>Number.isFinite(n)?n.toLocaleString('ru-RU',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=s=>String(s??'').normalize('NFKC').toLowerCase().replaceAll('ё','е').replace(/\s+/g,' ').trim();
+const count=(xs,f=x=>x)=>{const m=new Map();for(const x of xs){const k=f(x);m.set(k,(m.get(k)||0)+1)}return m};
+const rankByCount=m=>[...m].sort((a,b)=>b[1]-a[1]||String(a[0]).localeCompare(String(b[0]),'ru'));
+const number=x=>Number.isInteger(+x)&&+x>0?+x:null;
+const mean=xs=>xs.length?xs.reduce((s,x)=>s+x,0)/xs.length:null;
+function sig(t){const b=new TextEncoder().encode(t.trim());let h=2166136261;for(const c of b)h=Math.imul(h^c,16777619);return b.length+'-'+(h>>>0).toString(16)}
+const regexEscape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+const bound=p=>'(?<![\\p{L}\\p{N}])(?:'+p+')(?![\\p{L}\\p{N}])';
+const bfSource='(?:brand[\\s_‐‑–—-]*free|бр[еэа]нд[\\s_‐‑–—-]*фри|brend[\\s_‐‑–—-]*(?:free|fri))';
+const bf=new RegExp(bound(bfSource),'iu');
+const alt={Amway:['Амвей','Эмвей','Амвэй'],Vanish:['Ваниш'],Domestos:['Доместос'],Cif:['Сиф'],GRASS:['Грасс'],SYNERGETIC:['Синергетик'],'Dr. Beckmann':['Доктор Бекманн','Доктор Бекман','Dr.Beckmann'],Elizar:['Елизар'],Urgent:['Урджент'],'The Pink Stuff':['Pink Stuff'],Astonish:[],KENAZ:[],HEITMANN:[],Karcher:[],Avon:[],TianDe:['Тианде'],ION:[],'House Lux':[],Kix:[],Reflect:[],NAMZA:[],Laima:[],'Amore Care':[],GEALFIS:[],Timer:[],Blitz:['Magnit Blitz'],'Green Mama Home':['Green Mama'],'BioTrim Mystik':[],Sanros:[],'ЧИСТОЛЮБ':[],'Master Fresh':[],'Eco Londix':[],BabyGo:[],'Наша Мама':[],LELEA:[],'Salton CleanTech':['Salton'],'БОС':['Bos'],HG:[],Chirton:[],Cotico:[],Denkmit:[],'Der Waschkonig':[],Domal:[],ARAVIA:[],BABOR:[],CoMune:[],Leiff:[],Lion:[],Molecola:[],Refine:[],Resolve:[],Selena:[],SUPRIM:[],WALNUT:[],ВкусВилл:[],'Meine Liebe':['MEINE LIEBE'],BioMio:['Биомио'],Faberlic:['Фаберлик']};
+const aliasMap=new Map(Object.entries(alt).flatMap(([name,vs])=>[name,...vs].map(v=>[norm(v),name])));
+const canon=s=>bf.test(s||'')?HOME:aliasMap.get(norm(s))||String(s||'').trim();
+function dictionary(groups){
+ const names=new Map(aliasMap);
+ for(const g of groups)for(const r of g.data)for(const s of [...arr(r.brands).filter(Boolean).map(b=>b.brand_canonical||b.brand_raw),...arr(r.products).filter(Boolean).flatMap(p=>arr(p.brands))]){
+  const n=canon(s);if(n&&n!==HOME&&!names.has(norm(n)))names.set(norm(n),n);
+ }
+ const rx=new RegExp(bound([bfSource,...[...names.keys()].sort((a,b)=>b.length-a.length).map(s=>regexEscape(s).replaceAll('е','[её]').replace(/ +/g,'\\s+'))].join('|')),'giu');
+ const matchNames=t=>{const m=new Map();for(const match of String(t||'').matchAll(rx)){const name=bf.test(match[0])?HOME:names.get(norm(match[0]));if(name&&!m.has(name))m.set(name,{at:match.index,raw:match[0]})}return m};
+ matchNames.canonical=s=>names.get(norm(s))||canon(s);
+ return matchNames;
+}
+function urlinfo(s){try{const u=new URL(s);if(!['http:','https:'].includes(u.protocol))throw Error();let p=u.pathname;try{p=decodeURIComponent(p)}catch{}return {url:u.href,host:u.hostname.toLowerCase().replace(/^www\./,''),path:p}}catch{return {url:'',host:'',path:''}}}
+const anchor=(u,t)=>{const {url}=urlinfo(u);return url?'<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(t)+' ↗</a>':esc(t)};
+function cleanFile(s){return String(s).replace(/\s*\(\d+\)(?=\.json$)/i,'')}
+const leaf=s=>String(s||'').split(/[\\/]/).pop();
+function classification(file,r,meta){
+ const name=cleanFile(leaf(file)).toLowerCase(),edge=name.startsWith('edge-search'),llm=name.startsWith('llm_');
+ const src=s=>({yandex_search:'web',search:'web',web:'web',llm:'llm',alice_search:'alice',alice_in_search:'alice',search_alice:'alice',alice:'alice'})[norm(s)];
+ const hasSearchSource=arr(r.sources).some(s=>['web_result','alice_source'].includes(s?.type));
+ const kind=src(meta.source_kind)||src(r.source_kind)||(edge?'web':llm?'llm':hasSearchSource||['yandex','yandex_search'].includes(norm(r.engine))?'web':r.model||r.model_requested?'llm':'unknown');
+ const explicit=kind==='alice'||['alice_in_search','alice_search','alice'].includes(norm(r.answer_origin))||Boolean(String(r.alice_answer_text||'').trim());
+ const family=kind==='web'||kind==='alice'?'search':kind;
+ const ai=/(?:_|-)ai(?:[-_]normalized)?\.json$/.test(name),recognized=FILES.some(f=>f.toLowerCase()===name);
+ const set=meta.query_type|| (ai?'ai_adapted':recognized?'popular':r.query_type||'unknown');
+ const model=String(meta.model||r.model||r.model_requested||r.engine||'Модель не указана');
+ const hint=norm(model+' '+name+' '+(r.engine||''));
+ const engine=family==='search'?'Яндекс Поиск':hint.includes('deepseek')?'DeepSeek':hint.includes('gigachat')?'GigaChat':hint.includes('perplexity')?'Perplexity':hint.includes('alice')?'Алиса LLM':r.engine||'Другая модель';
+ return {set,family,explicit,engine,model};
+}
+function buildRecord(group,raw,id,match,queries){
+ const info=classification(group.name,raw,group.meta);const isSearch=info.family==='search';
+ const allText=String(raw.alice_answer_text||raw.answer_text||'').trim();
+ const text=raw.status==='ok'||!raw.status?allText:'';
+ const sources=arr(raw.sources).filter(Boolean).map(s=>{const u=urlinfo(s.url);return {...s,...u,names:[...match([s.title,u.host,u.path.replace(/[_.\/-]/g,' ')].join(' ')).keys()]}});
+ const hasAlice=info.explicit||sources.some(s=>s.type==='alice_source');
+ const products=arr(raw.products).filter(Boolean).map(p=>({...p,...urlinfo(p.url),names:uniq([...arr(p.brands).map(match.canonical),...match(p.title).keys()].filter(Boolean))}));
+ const map=new Map();
+ if(text)for(const [name,m] of match(text.replace(/https?:\/\/[^\s)\]]+/gi,url=>' '.repeat(url.length))))map.set(name,{name,at:m.at,raw:m.raw,order:map.size+1,fileRank:null,list:null,kind:'mention',evidence:text.slice(text.lastIndexOf('\n',m.at)+1,text.indexOf('\n',m.at)<0?text.length:text.indexOf('\n',m.at)).trim()});
+ for(const b of arr(raw.brands).filter(Boolean)){
+  const name=match.canonical(b.brand_canonical||b.brand_raw);if(!name)continue;
+  if(name===HOME&&b.brand_raw&&!bf.test(b.brand_raw||'')&&!bf.test(b.evidence||'')&&!bf.test(text))continue;
+  if(!isSearch&&text&&!map.has(name))continue;
+  const old=map.get(name);const n=number(b.first_mention_order);
+  const positions=uniq([...(old?.listRanks||[]),number(b.list_position)].filter(Boolean));
+  if(old?.fileRank&&(!n||old.fileRank<=n)){old.listRanks=positions;continue}
+  map.set(name,{...(old||{}),name,raw:b.brand_raw||old?.raw||name,order:old?.order||null,fileRank:n,listRanks:positions,kind:b.kind||'mention',section:b.section||'',evidence:(isSearch?b.evidence:old?.evidence)||b.evidence||''});
+ }
+ if(!text)for(const b of map.values())b.order=b.fileRank;
+ if(text)for(const line of text.split('\n')){
+  const item=line.replace(/[*_`]/g,'').match(/^\s*(?:#{1,6}\s*)?(\d{1,2})[.)]\s*[«"“]?(.+)/u);if(!item||!number(item[1]))continue;
+  const names=[...match(item[2])];let last=0;
+  for(const [name,m] of names){const gap=item[2].slice(last,m.at);if(last===0?m.at!==0:!/^\s*\/\s*$/.test(gap))break;
+   const brand=map.get(name);if(brand)brand.listRanks=uniq([...(brand.listRanks||[]),number(item[1])]);last=m.at+m.raw.length}
+ }
+ if(text&&sources.some(s=>s.type==='citation')){
+  const citations=new Map(sources.filter(s=>s.type==='citation'&&number(s.rank)).map(s=>[number(s.rank),s]));
+  for(const line of text.split('\n')){const marks=[...line.matchAll(/\[([\d,\s]+)\]/g)];if(!marks.length)continue;
+   const names=[...match(line).keys()];if(!names.length)continue;
+   for(const mark of marks)for(const n of mark[1].split(',').map(Number)){const source=citations.get(n);if(source)source.nearNames=uniq([...(source.nearNames||[]),...names])}
+  }
+ }
+ const answerSurface=isSearch?(hasAlice?'alice':'unknown'):info.family;
+ const surfaces=new Set();if(isSearch){if(!info.explicit||sources.some(s=>s.type==='web_result')||products.length)surfaces.add('web');if(hasAlice)surfaces.add('alice');if(!hasAlice&&(map.size||text))surfaces.add('unknown')}else surfaces.add(info.family);
+ const key=String(raw.source_file||'').match(/-([a-f0-9]{16})\.json$/i)?.[1],query=raw.query||queries.get(key)||'';
+ const fingerprint=text?sig(text):'';
+ const recordsig=REVIEW[fingerprint];
+ const facts=[];
+ if(text&&map.has(HOME)&&CHECKED[fingerprint]){const [key,line]=CHECKED[fingerprint];facts.push({key,quote:text.split('\n')[line]?.trim()})}
+ for(const b of map.values())if(b.name===HOME&&b.evidence&&isSearch){const f=CHECKED[sig(b.evidence)];if(f)facts.push({key:f[0],quote:b.evidence})}
+ return {id,group,raw,info,query,recovered:!raw.query&&!!query,text,answerSurface,surfaces,map,products,sources,facts,review:recordsig,time:raw.timestamp_utc||''};
+}
+const official={BRANDFREE:['brandfree.ru'],Amway:['amway.com','amway.ru','amway.kz','amway.mn','amway-latvia.com','amway-europe.com'],Vanish:['vanish.co.uk']};
+const officialHost=(host,brand)=>(official[brand]||[]).some(h=>host===h||host.endsWith('.'+h));
+function productPage(s){
+ if(!s.url||/^(reviews\.|irecommend\.|otzovik\.)/.test(s.host)||/\/reviews?(?:\/|$)/.test(s.path))return false;
+ return /\/(?:products?\/|product--|card\/|sku\/|p\/[^/]+)|\/catalog\/\d+\/detail/i.test(s.path)
+ ||['r-ulybka.ru','officemag.ru'].includes(s.host)&&/^\/catalog\/goods\/[^/]+\/?$/.test(s.path)
+ ||s.host==='goldapple.ru'&&/^\/\d{7,}-/.test(s.path)||s.host==='flip.kz'&&/[?&]prod=\d+/.test(s.url)
+ ||['maxidom.ru','revansh.info'].includes(s.host)&&/\/catalog\/.+\/\d+\/?$/.test(s.path)
+ ||s.host==='kuper.ru'&&/^\/[^/]+\/.+-[a-f0-9]{6,}\/?$/.test(s.path);
+}
+function decision(r,b){
+ if(r.info.family==='llm'&&r.review&&b.name===HOME){const [c,range]=r.review;const [a,end]=range.split(':').map(Number);return {c,quote:r.text.split('\n').slice(a,end??a+1).join('\n').trim(),by:'Разбор полного ответа'}}
+ if(b.kind==='recommendation')return {c:'marked',quote:b.evidence,by:'brands[].kind = recommendation'};
+ const fragment=b.name===HOME&&r.info.family==='search'&&FRAGMENTS[sig([r.query,b.section,b.evidence].join('\n'))];
+ if(fragment)return {c:fragment,quote:b.evidence,by:'Разбор запроса и фрагмента · метка JSON: '+b.kind};
+ if(b.kind==='review')return {c:'review',quote:b.evidence,by:'Метка review в JSON'};
+ return {c:'pending',quote:b.evidence,by:'Смысл упоминания не оценён'};
+}
+function version(name){return Number(String(name).match(/\((\d+)\)(?=\.json$)/i)?.[1]||0)}
+function latest(gs){const m=new Map();for(const g of gs){const k=cleanFile(g.name);if(!m.has(k)||version(m.get(k).name)<=version(g.name))m.set(k,g)}return [...m.values()]}
+const PAGE_SIZE = 15;
+const empty = message => '<div class="empty">'+esc(message)+'</div>';
+const ordered = (a,b) => a.localeCompare(b,'ru');
+const qty = (s,n) => s+' '+nfmt(n);
+const rankTone = n => n == null ? 'neutral' : n <= 2 ? 'good' : n <= 4 ? 'warn' : 'bad';
+const tag = (s, tone='neutral') => '<span class="badge '+tone+'">'+esc(s)+'</span>';
+const acceptsAdvice = kind => ['direct','option','marked'].includes(kind);
+const channelOf = r => r.answerSurface === 'llm' ? r.info.engine : REPORT[r.answerSurface];
+const productChannel = r => r.info.family === 'search' ? REPORT.web : channelOf(r);
+const sourceChannel = (r,s) => s.type === 'web_result' ? REPORT.web : s.type === 'alice_source' ? REPORT.alice : channelOf(r);
+const allChannels = r => uniq([...r.surfaces].map(s=>s==='llm'?r.info.engine:REPORT[s]));
+let records = [], datasets = [], selected = [], metrics, limit = PAGE_SIZE, generation = 0;
 
-const OUR_BRAND = "Amway"; // при необходимости поменяйте — или берите из данных
-
-let ALL = [];          // все записи
-let FILTERED = [];     // после фильтров
-
-// ============================================================
-// 1. Загрузка файлов
-// ============================================================
-const drop = $('#drop');
-const fileInput = $('#fileInput');
-
-drop.addEventListener('click', () => fileInput.click());
-drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('hover'); });
-drop.addEventListener('dragleave', () => drop.classList.remove('hover'));
-drop.addEventListener('drop', e => {
-  e.preventDefault(); drop.classList.remove('hover');
-  handleFiles(e.dataTransfer.files);
-});
-fileInput.addEventListener('change', e => handleFiles(e.target.files));
-
-async function handleFiles(files) {
-  const list = [];
-  for (const f of files) {
-    try {
-      const text = await f.text();
-      const data = JSON.parse(text);
-      if (Array.isArray(data)) list.push(...data);
-      else if (data && typeof data === 'object') list.push(data);
-    } catch (e) {
-      console.warn('Не удалось прочитать', f.name, e);
+async function prepare(groups){
+  const match = dictionary(groups), queries = new Map();
+  const phrases = new Set(groups.flatMap(g=>g.data.map(r=>r.query).filter(v=>typeof v==='string'&&v)));
+  if(globalThis.crypto?.subtle){
+    await Promise.all([...phrases].map(async q=>{
+      const bytes = new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(q)));
+      const key = [...bytes.slice(0,8)].map(n=>n.toString(16).padStart(2,'0')).join('');
+      queries.set(key,queries.has(key)&&queries.get(key)!==q?'':q);
+    }));
+  }
+  const result=[], seen = new Set(), namesByURL = new Map();
+  for(const g of groups)for(const raw of g.data){
+    // Capture names and timestamps differ across runs that can share the same record_id.
+    const key = JSON.stringify([cleanFile(g.name),raw]);
+    if(seen.has(key))continue;
+    seen.add(key);
+    const r=buildRecord(g,raw,result.length,match,queries);
+    result.push(r);
+    for(const entry of [...r.sources,...r.products]){
+      if(!entry.url||!entry.names.length)continue;
+      if(!namesByURL.has(entry.url))namesByURL.set(entry.url,new Set());
+      for(const name of entry.names)namesByURL.get(entry.url).add(name);
     }
   }
-  if (!list.length) { alert('В файлах не найдено JSON-массивов с записями'); return; }
-  ALL = list;
-  initFilters();
-  renderAll();
-  $('#controls').style.display = 'flex';
-  $('#dashboard').style.display = 'block';
+  for(const r of result)for(const s of r.sources)
+    s.names=uniq([...s.names,...(namesByURL.get(s.url)||[])]);
+  return result;
 }
-
-// ============================================================
-// 2. Фильтры
-// ============================================================
-function initFilters() {
-  const engines = [...new Set(ALL.map(r => r.engine).filter(Boolean))].sort();
-  const brands = new Set();
-  ALL.forEach(r => (r.brands || []).forEach(b => brands.add(b.brand_canonical)));
-  (ALL.forEach(r => (r.products || []).forEach(p => (p.brands || []).forEach(b => brands.add(b)))));
-
-  $('#fEngine').innerHTML = '<option value="">все</option>' +
-    engines.map(e => `<option value="${esc(e)}">${esc(e)}</option>`).join('');
-  $('#fBrand').innerHTML = '<option value="">все</option>' +
-    [...brands].sort().map(b => `<option value="${esc(b)}">${esc(b)}</option>`).join('');
-
-  ['fEngine','fBrand','fQuery','fOurOnly'].forEach(id => {
-    $('#'+id).addEventListener('input', applyFilters);
-  });
-  $('#reset').addEventListener('click', () => {
-    $('#fEngine').value = ''; $('#fBrand').value = '';
-    $('#fQuery').value = ''; $('#fOurOnly').checked = false;
-    applyFilters();
-  });
+function readRecords(json){
+  const data=Array.isArray(json)?json:[json];
+  if(!data.every(r=>r&&typeof r==='object'&&(r.record_id||r.source_file||r.query||r.answer_text)&&
+    ['brands','products','sources'].every(k=>r[k]==null||Array.isArray(r[k]))))throw Error('Формат записей не распознан');
+  return data;
 }
-
-function applyFilters() {
-  const eng = $('#fEngine').value;
-  const brand = $('#fBrand').value;
-  const q = $('#fQuery').value.trim().toLowerCase();
-  const ourOnly = $('#fOurOnly').checked;
-
-  FILTERED = ALL.filter(r => {
-    if (eng && r.engine !== eng) return false;
-    if (q && !(r.query || '').toLowerCase().includes(q)) return false;
-    if (ourOnly && !r.quality?.has_our_brand) return false;
-    if (brand) {
-      const inBrands = (r.brands || []).some(b => b.brand_canonical === brand);
-      const inProducts = (r.products || []).some(p => (p.brands || []).includes(brand));
-      if (!inBrands && !inProducts) return false;
-    }
-    return true;
-  });
-  renderAll();
+function option(key,label){return '<option value="'+esc(key)+'">'+esc(label)+'</option>'}
+function configureFilters(){
+  const channels=new Set(records.flatMap(allChannels)), llms=sortNames(records.filter(r=>r.info.family==='llm').map(r=>r.info.engine));
+  let choices=option('','Все каналы');
+  for(const name of [REPORT.web,REPORT.alice,REPORT.unknown])if(channels.has(name))choices+=option('channel|'+name,name);
+  if(llms.length)choices+=option('llm','Все LLM');
+  for(const name of llms){
+    choices+=option('channel|'+name,name);
+    const versions=sortNames(records.filter(r=>r.info.family==='llm'&&r.info.engine===name).map(r=>r.info.model));
+    if(versions.length>1)for(const version of versions)choices+=option('model|'+version,'  '+version);
+  }
+  $('fEngine').innerHTML=choices;
+  $('fQueryType').innerHTML=option('','Все типы')+sortNames(records.map(r=>r.info.set)).map(k=>option(k,SET[k]||k)).join('');
 }
-
-// ============================================================
-// 3. Рендер
-// ============================================================
-function renderAll() {
-  renderKPI();
-  renderBrandPositions();
-  renderTopBrands();
-  renderBrandEngineHeat();
-  renderCooccurrence();
-  renderOurBrandTable();
-  renderSources();
-  renderQuality();
-  renderSpecialProducts();
-  renderAllRecords();
+function localPicker(show){
+  $('localFiles').hidden=!show;
+  $('localFiles').style.display=show?'block':'none';
 }
-
-function renderKPI() {
-  const recs = FILTERED;
-  const engines = new Set(recs.map(r => r.engine).filter(Boolean));
-  const brands = new Set();
-  recs.forEach(r => (r.brands || []).forEach(b => brands.add(b.brand_canonical)));
-  const ourRecs = recs.filter(r => r.quality?.has_our_brand);
-  const ourPos = ourRecs.map(r => r.quality?.our_brand_position).filter(v => v != null);
-  const avgPos = ourPos.length ? ourPos.reduce((a,b)=>a+b,0)/ourPos.length : null;
-  const withLink = recs.filter(r => r.quality?.link_to_our_site).length;
-  const products = recs.reduce((acc, r) => acc + (r.products || []).filter(p => p.is_special_selection).length, 0);
-  const sources = recs.reduce((acc, r) => acc + (r.sources || []).length, 0);
-
-  $('#kRecords').textContent = recs.length;
-  $('#kEngines').textContent = engines.size;
-  $('#kBrands').textContent = brands.size;
-  $('#kOur').textContent = ourRecs.length;
-  $('#kOurPos').textContent = avgPos == null ? '—' : fmt(avgPos, 1);
-  $('#kLinks').textContent = pct(withLink, recs.length) + '%';
-  $('#kProducts').textContent = products;
-  $('#kSources').textContent = sources;
+async function loadGroups(groups,label,errors,token){
+  const loaded=await prepare(groups);
+  if(token!==generation)return;
+  datasets=groups;records=loaded;
+  const warning=errors.length?' · Ошибки загрузки: '+errors.join(', '):'';
+  $('statusText').textContent=label+' · Файлов: '+groups.length+' · Записей: '+records.length+warning;
+  $('statusFill').style.width=groups.length?'100%':'0%';
+  localPicker(!groups.length||errors.length>0||location.protocol==='file:');
+  $('controls').style.display=groups.length?'flex':'none';
+  $('dashboard').style.display=groups.length?'block':'none';
+  configureFilters();applyFilters();
 }
-
-function renderBrandPositions() {
-  const map = new Map(); // brand -> {sum, n, min, max}
-  FILTERED.forEach(r => (r.brands || []).forEach(b => {
-    if (b.first_mention_order == null) return;
-    if (!map.has(b.brand_canonical)) map.set(b.brand_canonical, { sum:0, n:0, min:Infinity, max:0 });
-    const m = map.get(b.brand_canonical);
-    m.sum += b.first_mention_order; m.n += 1;
-    m.min = Math.min(m.min, b.first_mention_order);
-    m.max = Math.max(m.max, b.first_mention_order);
-  }));
-
-  const rows = [...map.entries()]
-    .map(([brand, m]) => ({ brand, avg: m.sum/m.n, n: m.n, min: m.min, max: m.max }))
-    .sort((a,b) => a.avg - b.avg)
-    .slice(0, 25);
-
-  if (!rows.length) { $('#brandPositions').innerHTML = '<div class="empty">Нет данных</div>'; return; }
-
-  const maxAvg = Math.max(...rows.map(r => r.avg));
-  $('#brandPositions').innerHTML = rows.map(r => `
-    <div class="bar-row" title="мин: ${r.min}, макс: ${r.max}, упоминаний: ${r.n}">
-      <div class="name">${esc(r.brand)}</div>
-      <div class="track"><div class="bar" style="width:${maxAvg ? (r.avg/maxAvg*100) : 0}%;background:${r.avg <= 2 ? 'var(--good)' : r.avg <= 4 ? 'var(--warn)' : 'var(--bad)'}"></div></div>
-      <div class="num">${fmt(r.avg, 1)} · n=${r.n}</div>
-    </div>
-  `).join('');
-}
-
-function renderTopBrands() {
-  const map = new Map();
-  FILTERED.forEach(r => (r.brands || []).forEach(b => {
-    map.set(b.brand_canonical, (map.get(b.brand_canonical) || 0) + (b.count || 1));
-  }));
-  const rows = [...map.entries()].sort((a,b) => b[1]-a[1]).slice(0, 20);
-  if (!rows.length) { $('#topBrands').innerHTML = '<div class="empty">Нет данных</div>'; return; }
-  const max = rows[0][1];
-  $('#topBrands').innerHTML = rows.map(([brand, n]) => `
-    <div class="bar-row">
-      <div class="name">${esc(brand)}</div>
-      <div class="track"><div class="bar" style="width:${n/max*100}%"></div></div>
-      <div class="num">${n}</div>
-    </div>
-  `).join('');
-}
-
-function renderBrandEngineHeat() {
-  const engines = [...new Set(FILTERED.map(r => r.engine).filter(Boolean))].sort();
-  const brands = new Map();
-  FILTERED.forEach(r => (r.brands || []).forEach(b => {
-    brands.set(b.brand_canonical, (brands.get(b.brand_canonical) || 0) + 1);
-  }));
-  const top = [...brands.entries()].sort((a,b)=>b[1]-a[1]).slice(0,12).map(x=>x[0]);
-  if (!engines.length || !top.length) { $('#brandEngineHeat').innerHTML = '<div class="empty">Нет данных</div>'; return; }
-
-  const matrix = {};
-  top.forEach(b => { matrix[b] = {}; engines.forEach(e => matrix[b][e] = 0); });
-  FILTERED.forEach(r => (r.brands || []).forEach(b => {
-    if (matrix[b.brand_canonical] && matrix[b.brand_canonical][r.engine] !== undefined) {
-      matrix[b.brand_canonical][r.engine] += 1;
-    }
-  }));
-
-  let maxCell = 1;
-  top.forEach(b => engines.forEach(e => { maxCell = Math.max(maxCell, matrix[b][e]); }));
-
-  const head = `<div class="heat" style="grid-template-columns: 160px repeat(${engines.length}, 1fr)">` +
-    `<div class="cell head">бренд</div>` +
-    engines.map(e => `<div class="cell head">${esc(e)}</div>`).join('') + `</div>`;
-
-  const body = top.map(b => {
-    const cells = engines.map(e => {
-      const v = matrix[b][e];
-      const a = v / maxCell;
-      const bg = v ? `rgba(37,99,235,${0.08 + a*0.7})` : 'transparent';
-      return `<div class="cell" style="background:${bg}">${v || ''}</div>`;
-    }).join('');
-    return `<div class="heat" style="grid-template-columns: 160px repeat(${engines.length}, 1fr)">` +
-      `<div class="cell head">${esc(b)}</div>${cells}</div>`;
-  }).join('');
-
-  $('#brandEngineHeat').innerHTML = head + body;
-}
-
-function renderCooccurrence() {
-  const pairs = new Map();
-  FILTERED.forEach(r => {
-    const bs = [...new Set((r.brands || []).map(b => b.brand_canonical))].sort();
-    for (let i = 0; i < bs.length; i++)
-      for (let j = i+1; j < bs.length; j++) {
-        const key = bs[i] + ' · ' + bs[j];
-        pairs.set(key, (pairs.get(key) || 0) + 1);
+async function loadManifest(){
+  if(location.protocol==='file:'){
+    $('statusText').textContent='Выберите файлы JSON для локального отчёта.';localPicker(true);return;
+  }
+  const token=++generation;
+  $('statusText').textContent='Чтение manifest.json…';
+  try{
+    const response=await fetch('manifest.json',{cache:'no-store'});
+    if(!response.ok)throw Error('HTTP '+response.status);
+    const manifest=await response.json();
+    if(!Array.isArray(manifest.files)||!manifest.files.length)throw Error('В manifest.json отсутствует список files');
+    const entries=latest(manifest.files.map(entry=>{
+      const name=typeof entry==='string'?entry:entry?.path||entry?.file||entry?.url;
+      if(typeof name!=='string'||!name)throw Error('Не указан путь к JSON');
+      return {name,meta:typeof entry==='object'?entry:{}};
+    }));
+    let done=0;
+    $('statusText').textContent='Загрузка JSON · 0 из '+entries.length;
+    const results=await Promise.all(entries.map(async g=>{
+      try{
+        const response=await fetch(g.name,{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);
+        return {...g,data:readRecords(await response.json())};
+      }catch(e){return {error:g.name+' ('+e.message+')'}}
+      finally{
+        if(token===generation){
+          done++;
+          $('statusFill').style.width=(100*done/entries.length)+'%';
+          $('statusText').textContent=done===entries.length?'Обработка загруженных записей…':'Загрузка JSON · '+done+' из '+entries.length;
+        }
       }
-  });
-  const rows = [...pairs.entries()].sort((a,b)=>b[1]-a[1]).slice(0,15);
-  if (!rows.length) { $('#cooccurrence').innerHTML = '<div class="empty">Нет пар</div>'; return; }
-  const max = rows[0][1];
-  $('#cooccurrence').innerHTML = rows.map(([k, n]) => `
-    <div class="bar-row">
-      <div class="name" title="${esc(k)}">${esc(k)}</div>
-      <div class="track"><div class="bar" style="width:${n/max*100}%;background:#8b5cf6"></div></div>
-      <div class="num">${n}</div>
-    </div>
-  `).join('');
+    }));
+    await loadGroups(results.filter(r=>!r.error),'По манифесту',results.filter(r=>r.error).map(r=>r.error),token);
+  }catch(e){if(token===generation){$('statusText').textContent='Не удалось открыть манифест. '+e.message;localPicker(true)}}
 }
-
-function renderOurBrandTable() {
-  const rows = FILTERED.filter(r => r.quality?.has_our_brand);
-  if (!rows.length) { $('#ourBrandTable').innerHTML = '<div class="empty">Наш бренд не найден в отфильтрованных записях</div>'; return; }
-  rows.sort((a,b) => (a.quality.our_brand_position||99) - (b.quality.our_brand_position||99));
-  const html = `
-    <table>
-      <thead><tr>
-        <th>Движок</th><th>Запрос</th><th>Позиция</th><th>Брендов в ответе</th>
-        <th>В товарах</th><th>В спецподборке</th><th>Ссылка на наш сайт</th>
-      </tr></thead>
-      <tbody>
-        ${rows.map(r => `
-          <tr>
-            <td>${esc(r.engine || '')}</td>
-            <td title="${esc(r.query)}">${esc((r.query||'').slice(0,60))}</td>
-            <td><span class="badge ${r.quality.our_brand_position<=2?'good':r.quality.our_brand_position<=4?'warn':'bad'}">${r.quality.our_brand_position ?? '—'}</span></td>
-            <td>${r.quality.brand_count ?? 0}</td>
-            <td>${r.quality.our_brand_in_products ? '<span class="badge good">да</span>' : '<span class="badge neutral">нет</span>'}</td>
-            <td>${r.quality.our_brand_in_special_selection ? '<span class="badge good">да</span>' : '<span class="badge neutral">нет</span>'}</td>
-            <td>${r.quality.link_to_our_site ? '<span class="badge good">да</span>' : '<span class="badge bad">нет</span>'}</td>
-          </tr>
-        `).join('')}
-      </tbody>
-    </table>
-  `;
-  $('#ourBrandTable').innerHTML = html;
+async function importFiles(files){
+  if(!files.length)return;
+  const token=++generation;
+  try{
+    const added=latest(await Promise.all(files.map(async f=>({name:f.name,meta:{},data:readRecords(JSON.parse(await f.text()))}))));
+    const names=new Set(added.map(g=>cleanFile(leaf(g.name))));
+    const keep=datasets.filter(g=>!names.has(cleanFile(leaf(g.name))));
+    await loadGroups([...keep,...added],'Загруженные JSON',[],token);
+  }catch(e){if(token===generation)$('statusText').textContent='Не удалось прочитать выбранные JSON. '+e.message}
+  finally{$('files').value=''}
 }
-
-function renderSources() {
-  const byType = new Map();
-  const byDomain = new Map();
-  FILTERED.forEach(r => (r.sources || []).forEach(s => {
-    byType.set(s.type, (byType.get(s.type)||0)+1);
-    try {
-      const host = new URL(s.url).hostname.replace(/^www\./,'');
-      byDomain.set(host, (byDomain.get(host)||0)+1);
-    } catch {}
-  }));
-
-  const typeRows = [...byType.entries()].sort((a,b)=>b[1]-a[1]);
-  const domainRows = [...byDomain.entries()].sort((a,b)=>b[1]-a[1]).slice(0,15);
-
-  if (!typeRows.length) { $('#sourceTypes').innerHTML = '<div class="empty">Нет источников</div>'; }
-  else {
-    const max = typeRows[0][1];
-    $('#sourceTypes').innerHTML = typeRows.map(([t,n]) => `
-      <div class="bar-row">
-        <div class="name">${esc(t)}</div>
-        <div class="track"><div class="bar" style="width:${n/max*100}%"></div></div>
-        <div class="num">${n}</div>
-      </div>
-    `).join('');
+function sliceRecord(r,allowed){
+  const answer=allowed(channelOf(r));
+  const brands=answer?r.map:new Map();
+  const cards=allowed(productChannel(r))?r.products:[];
+  const sources=r.sources.filter(s=>allowed(sourceChannel(r,s)));
+  const coverage=new Set([...brands.keys(),...cards.flatMap(p=>p.names)]);
+  const cardsBF=cards.filter(p=>p.names.includes(HOME));
+  const links=sources.filter(s=>s.url&&(officialHost(s.host,HOME)||s.names.includes(HOME)));
+  const brand=brands.get(HOME);
+  return {r,answer,brands,cards,sources,coverage,cardsBF,links,brand,
+    measurable:Boolean(answer&&(r.text||r.map.size)||cards.length),
+    advice:brand?decision(r,brand):null};
+}
+function applyFilters(){
+  const engine=$('fEngine').value, kind=$('fQueryType').value, query=norm($('fQuery').value);
+  const channel=engine.startsWith('channel|')?engine.slice(8):'';
+  const model=engine.startsWith('model|')?engine.slice(6):'';
+  selected=[];
+  for(const r of records){
+    if(kind&&r.info.set!==kind||query&&!norm(r.query).includes(query))continue;
+    if(engine==='llm'&&r.info.family!=='llm'||model&&(r.info.family!=='llm'||r.info.model!==model))continue;
+    if(channel&&!allChannels(r).includes(channel))continue;
+    selected.push(sliceRecord(r,c=>!channel||c===channel));
   }
-
-  if (!domainRows.length) { $('#sourceDomains').innerHTML = '<div class="empty">Нет доменов</div>'; }
-  else {
-    const max = domainRows[0][1];
-    $('#sourceDomains').innerHTML = domainRows.map(([d,n]) => `
-      <div class="bar-row">
-        <div class="name" title="${esc(d)}">${esc(d)}</div>
-        <div class="track"><div class="bar" style="width:${n/max*100}%;background:#0ea5e9"></div></div>
-        <div class="num">${n}</div>
-      </div>
-    `).join('');
+  limit=PAGE_SIZE;
+  metrics=aggregate(selected,channel);
+  renderAll();
+}
+function aggregate(views,channel){
+  const frequency=new Map(),ranks=new Map(),matrix=new Map(),domains=new Map(),types=new Map(),urls=new Set();
+  const ownRows=[],confirmed=[],cards=[];
+  let measured=0,ownCount=0,measuredAnswers=0,answerHits=0,pending=0,checked=0,issues=0,anyProductData=false;
+  for(const v of views){
+    const {r,brand,coverage}=v;
+    if(v.measurable)measured++;
+    if(v.answer&&(r.text||r.map.size))measuredAnswers++;
+    if(coverage.has(HOME))ownCount++;
+    if(v.cards.length)anyProductData=true;
+    for(const name of coverage)frequency.set(name,(frequency.get(name)||0)+1);
+    for(const b of v.brands.values())if(b.order){
+      if(!ranks.has(b.name))ranks.set(b.name,[]);
+      ranks.get(b.name).push(b.order);
+    }
+    if(brand){
+      answerHits++;
+      if(acceptsAdvice(v.advice.c))confirmed.push(v);
+      if(v.advice.c==='pending')pending++;
+      checked+=r.facts.length;
+      issues+=r.facts.filter(f=>references[f.key]?.[0]==='issue').length;
+    }
+    if(coverage.has(HOME)||v.links.length)ownRows.push(v);
+    cards.push(...v.cardsBF);
+    for(const ch of allChannels(r)){
+      if(channel&&channel!==ch)continue;
+      if(!matrix.has(ch))matrix.set(ch,{n:0,total:0,hits:new Map()});
+      const part=sliceRecord(r,c=>c===ch),col=matrix.get(ch);
+      col.total++;
+      if(!part.measurable)continue;
+      col.n++;
+      for(const name of part.coverage)col.hits.set(name,(col.hits.get(name)||0)+1);
+    }
+    const seen=new Set();
+    for(const s of v.sources){
+      if(!s.url||!(s.type==='alice_source'||r.info.family==='llm'&&['citation','inline'].includes(s.type)))continue;
+      const k=s.type+'|'+s.url;
+      if(seen.has(k))continue;
+      seen.add(k);urls.add(s.url);
+      types.set(s.type,(types.get(s.type)||0)+1);
+      if(!domains.has(s.host))domains.set(s.host,{n:0,pages:new Map()});
+      const d=domains.get(s.host);d.n++;
+      if(!d.pages.has(s.url))d.pages.set(s.url,{title:s.title||s.url,n:0});
+      d.pages.get(s.url).n++;
+    }
   }
+  return {frequency,ranks,matrix,domains,types,urls,ownRows,confirmed,cards,measured,ownCount,measuredAnswers,answerHits,pending,checked,issues,anyProductData};
 }
-
-function renderQuality() {
-  const n = FILTERED.length;
-  const avgLen = n ? FILTERED.reduce((a,r)=>a+(r.quality?.answer_length||0),0)/n : 0;
-  const avgBrands = n ? FILTERED.reduce((a,r)=>a+(r.quality?.brand_count||0),0)/n : 0;
-  const empty = FILTERED.filter(r => !(r.answer_text||'').trim()).length;
-  const ourInProd = FILTERED.filter(r => r.quality?.our_brand_in_products).length;
-
-  $('#kAvgLen').textContent = fmt(avgLen, 0);
-  $('#kAvgBrands').textContent = fmt(avgBrands, 1);
-  $('#kEmpty').textContent = empty;
-  $('#kOurInProd').textContent = ourInProd;
-
-  // Таблица: по движкам
-  const engines = [...new Set(FILTERED.map(r=>r.engine).filter(Boolean))].sort();
-  const rows = engines.map(e => {
-    const recs = FILTERED.filter(r => r.engine === e);
-    const ne = recs.filter(r => !(r.answer_text||'').trim()).length;
-    const ol = recs.filter(r => r.quality?.link_to_our_site).length;
-    return {
-      engine: e,
-      n: recs.length,
-      avgLen: recs.length ? recs.reduce((a,r)=>a+(r.quality?.answer_length||0),0)/recs.length : 0,
-      avgBrands: recs.length ? recs.reduce((a,r)=>a+(r.quality?.brand_count||0),0)/recs.length : 0,
-      empty: ne,
-      links: ol,
-    };
-  });
-
-  if (!rows.length) { $('#qualityTable').innerHTML = '<div class="empty">Нет данных</div>'; return; }
-  $('#qualityTable').innerHTML = `
-    <table>
-      <thead><tr>
-        <th>Движок</th><th>Записей</th><th>Ср. длина</th><th>Ср. брендов</th><th>Пустых</th><th>Со ссылкой на наш сайт</th>
-      </tr></thead>
-      <tbody>
-        ${rows.map(r => `
-          <tr>
-            <td>${esc(r.engine)}</td>
-            <td>${r.n}</td>
-            <td>${fmt(r.avgLen,0)}</td>
-            <td>${fmt(r.avgBrands,1)}</td>
-            <td>${r.empty ? `<span class="badge warn">${r.empty}</span>` : '0'}</td>
-            <td>${r.links ? `<span class="badge good">${r.links}</span>` : '0'}</td>
-          </tr>
-        `).join('')}
-      </tbody>
-    </table>
-  `;
+function value(id,n,note=''){
+  const el=$(id);el.textContent=n;el.parentElement.title=note;
 }
-
-function renderSpecialProducts() {
-  const items = [];
-  FILTERED.forEach(r => (r.products || []).forEach(p => {
-    if (p.is_special_selection) items.push({ rec: r, p });
-  }));
-  if (!items.length) { $('#specialProducts').innerHTML = '<div class="empty">Нет товаров в спецподборках</div>'; return; }
-
-  // группируем по бренду
-  const byBrand = new Map();
-  items.forEach(({rec, p}) => {
-    const brands = (p.brands && p.brands.length) ? p.brands : ['(без бренда)'];
-    brands.forEach(b => {
-      if (!byBrand.has(b)) byBrand.set(b, []);
-      byBrand.get(b).push({ rec, p });
-    });
-  });
-
-  const sorted = [...byBrand.entries()].sort((a,b)=>b[1].length - a[1].length);
-
-  $('#specialProducts').innerHTML = `
-    <table>
-      <thead><tr>
-        <th>Бренд</th><th>Товаров</th><th>Примеры</th>
-      </tr></thead>
-      <tbody>
-        ${sorted.slice(0,20).map(([brand, arr]) => `
-          <tr>
-            <td><strong>${esc(brand)}</strong></td>
-            <td>${arr.length}</td>
-            <td>
-              ${arr.slice(0,3).map(({rec, p}) => `
-                <div class="muted" style="font-size:12px;margin:2px 0">
-                  <span class="tag">${esc(rec.engine||'')}</span>
-                  ${esc((p.title||'').slice(0,90))}
-                  ${p.price ? ` — ${p.price} ₽` : ''}
-                </div>
-              `).join('')}
-            </td>
-          </tr>
-        `).join('')}
-      </tbody>
-    </table>
-  `;
+function renderKPI(){
+  const m=metrics, own=m.ranks.get(HOME)||[];
+  value('kRecords',nfmt(selected.length),qty('С доступным текстом, разметкой или карточками:',m.measured));
+  value('kBrands',m.measured?nfmt(m.frequency.size):'—','Разные бренды в ответах и карточках.');
+  value('kOur',m.measured?nfmt(m.ownCount):'—',qty('Записей с доступными данными:',m.measured));
+  value('kOurPos',nfmt(mean(own),2),qty('Ответов с известной позицией:',own.length));
+  value('kSources',nfmt(m.urls.size),'Различные адреса в сохранённых источниках Алисы и LLM.');
+  const special=m.cards.filter(p=>p.is_special_selection===true).length;
+  const unknown=m.cards.filter(p=>typeof p.is_special_selection!=='boolean').length;
+  value('kProducts',!m.anyProductData?'—':unknown?(special?'≥ '+nfmt(special):'—'):nfmt(special),
+    qty('Всего карточек BRANDFREE:',m.cards.length)+' · '+qty('Тип подборки не установлен:',unknown));
 }
-
-function renderAllRecords() {
-  if (!FILTERED.length) { $('#allRecords').innerHTML = '<div class="empty">Нет записей</div>'; return; }
-  const rows = FILTERED.slice(0, 200);
-  $('#allRecords').innerHTML = `
-    <div class="muted" style="margin-bottom:8px">Показаны первые ${rows.length} из ${FILTERED.length}</div>
-    <table>
-      <thead><tr>
-        <th>Движок</th><th>Запрос</th><th>Бренды (позиция)</th><th>Наш бренд</th><th>Источников</th><th>Товаров</th>
-      </tr></thead>
-      <tbody>
-        ${rows.map(r => {
-          const brands = (r.brands || []).map(b =>
-            `<span class="tag" title="позиция ${b.first_mention_order}">${esc(b.brand_canonical)} <strong>${b.first_mention_order ?? '—'}</strong></span>`
-          ).join('');
-          return `
-            <tr>
-              <td>${esc(r.engine || '')}</td>
-              <td title="${esc(r.query)}">${esc((r.query||'').slice(0,50))}</td>
-              <td>${brands || '<span class="muted">—</span>'}</td>
-              <td>${r.quality?.has_our_brand
-                ? `<span class="badge good">${r.quality.our_brand_position ?? '?'}</span>`
-                : '<span class="badge neutral">нет</span>'}</td>
-              <td>${(r.sources||[]).length}</td>
-              <td>${(r.products||[]).length}</td>
-            </tr>
-          `;
-        }).join('')}
-      </tbody>
-    </table>
-  `;
+function bar(name,width,value,tip,color='var(--accent)',wide=false){
+  return '<div class="bar-row" title="'+esc(tip)+'"><div class="name">'+esc(name)+'</div><div class="track"><div class="bar" style="width:'+width+'%;background:'+color+'"></div></div><div class="num"'+(wide?'':' style="width:55px;text-align:right"')+'>'+value+'</div></div>';
 }
+function distribution(values){
+  return [...count(values)].sort((a,b)=>a[0]-b[0]).map(([pos,n])=>pos+'-е × '+n).join(' · ');
+}
+function renderBrandPositions(){
+  const rows=[...metrics.ranks].map(([name,values])=>({name,values,avg:mean(values)}))
+    .sort((a,b)=>b.values.length-a.values.length||ordered(a.name,b.name)).slice(0,15)
+    .sort((a,b)=>a.avg-b.avg||b.values.length-a.values.length||ordered(a.name,b.name));
+  const max=Math.max(1,...rows.map(r=>r.avg));
+  $('brandPositions').innerHTML=rows.map(r=>bar(r.name,100*(max+1-r.avg)/max,
+    '<strong>'+nfmt(r.avg,2)+'</strong><br><span class="muted" style="font-size:11px">Ответов: '+r.values.length+'</span>',
+    'Места и число ответов · '+distribution(r.values),r.avg<=2?'var(--good)':r.avg<=4?'var(--warn)':'var(--bad)',true)).join('')||
+    empty('В выборке нет ответов с известным порядком упоминания.');
+  const own=metrics.ranks.get(HOME)||[];
+  $('positionNote').textContent=own.length?'BRANDFREE по местам · '+distribution(own):'';
+}
+function renderTopBrands(){
+  const rows=rankByCount(metrics.frequency).slice(0,15),max=rows[0]?.[1]||1;
+  $('topBrands').innerHTML=rows.map(([name,n])=>bar(name,100*n/max,nfmt(n),n+' из '+metrics.measured+' записей с доступными данными')).join('')||
+    empty(metrics.measured?'В текстах и карточках бренды не найдены.':'Нет текста, разметки или карточек для подсчёта.');
+}
+function renderHeat(){
+  const m=metrics;
+  const channels=sortNames([...m.matrix.keys()]);
+  const names=rankByCount(m.frequency).slice(0,10).map(([b])=>b);
+  if(m.frequency.has(HOME)&&!names.includes(HOME))names.push(HOME);
+  if(!channels.length||!names.length){$('brandEngineHeat').innerHTML=empty('Нет данных для сравнения каналов.');return}
+  const row=content=>'<div class="heat" style="grid-template-columns:150px repeat('+channels.length+',minmax(76px,1fr))">'+content+'</div>';
+  const header=row('<div class="cell head">Бренд</div>'+channels.map(ch=>'<div class="cell head">'+esc(ch)+'<br>'+m.matrix.get(ch).n+' / '+m.matrix.get(ch).total+'</div>').join(''));
+  $('brandEngineHeat').innerHTML=header+names.map(name=>row('<div class="cell head">'+esc(name)+'</div>'+channels.map(ch=>{
+    const col=m.matrix.get(ch),n=col.hits.get(name)||0,share=col.n?n/col.n:0;
+    return '<div class="cell" title="'+esc(name+' · '+ch+' · '+n+' из '+col.n)+'" style="background:'+(n?'rgba(37,99,235,'+(0.08+share*0.7)+')':'transparent')+'">'+(col.n?nfmt(share*100,1)+' %':'—')+'</div>';
+  }).join(''))).join('');
+}
+function linkLabel(s){
+  if(officialHost(s.host,HOME))return 'Официальный сайт';
+  return productPage(s)?'Карточка товара':'Материал о бренде';
+}
+function rowDetails(v){
+  const {r,brand}=v,parts=[];
+  if(v.advice){
+    parts.push('<p>'+tag(J[v.advice.c],acceptsAdvice(v.advice.c)?'good':'neutral')+' '+esc(v.advice.by)+'</p>');
+    if(brand.section)parts.push('<p>'+esc(brand.section)+'</p>');
+    if(v.advice.quote)parts.push('<p>'+esc(v.advice.quote)+'</p>');
+    if(brand.listRanks?.length)parts.push('<p>Явно пронумерованные пункты списка · '+esc(brand.listRanks.join(', '))+'</p>');
+    const others=[...v.brands.values()].filter(b=>b.name!==HOME).sort((a,b)=>(a.order??Infinity)-(b.order??Infinity));
+    if(others.length)parts.push('<p>Другие бренды в ответе · '+others.map(b=>esc(b.name)+' ('+(b.order??'—')+')').join(', ')+'</p>');
+    for(const f of r.facts){
+      const [status,name,note,url]=references[f.key];
+      parts.push('<p>'+tag(status==='ok'?'Подтверждено':'Расхождение',status==='ok'?'good':'warn')+' <strong>'+esc(name)+'</strong><br>'+esc(f.quote)+'<br>'+esc(note)+' '+anchor(url,'Источник сверки')+(f.key==='bfRank'?' · '+anchor(r.sources.find(s=>s.rank===19)?.url,'Сравниваемый рейтинг'):'')+'</p>');
+    }
+    if(!r.facts.length)parts.push('<p class="muted">Сверка характеристик товара для этого ответа отсутствует.</p>');
+  }
+  if(v.cardsBF.length)parts.push('<p><strong>Карточки BRANDFREE</strong></p>'+v.cardsBF.map(p=>{
+    const kind=p.is_special_selection===true?'спецподборка':p.is_special_selection===false?'обычная карточка':'тип подборки не указан';
+    return '<div>'+tag('Место '+(number(p.rank)??'—'))+' '+anchor(p.url,p.title||'Товар')+' · '+esc(kind)+(p.group_title?' · '+esc(p.group_title):'')+'</div>';
+  }).join(''));
+  if(v.cardsBF.length){
+    const group=p=>JSON.stringify([p.group??'',p.group_title??'']);
+    const same=new Set(v.cardsBF.map(group));
+    const peers=v.cards.filter(p=>same.has(group(p))&&p.names.some(n=>n!==HOME));
+    if(peers.length)parts.push('<details><summary style="cursor:pointer">Другие карточки в той же товарной группе ('+peers.length+')</summary>'+peers.map(p=>'<div>'+esc(p.group_title||'Товарная группа')+' · '+esc(p.names.join(', '))+' · место '+(number(p.rank)??'—')+'</div>').join('')+'</details>');
+  }
+  if(v.links.length)parts.push('<p><strong>Ссылки о BRANDFREE</strong></p>'+v.links.map(s=>'<div>'+esc(linkLabel(s))+' · '+esc(TYPES[s.type]||s.type)+' '+(s.type==='web_result'&&number(s.rank)?'№ '+number(s.rank)+' · ':'')+anchor(s.url,s.title||s.host)+'</div>').join(''));
+  if(v.brand){
+    const cited=v.sources.filter(s=>s.type==='citation'&&s.url&&s.nearNames?.includes(HOME));
+    if(cited.length)parts.push('<details><summary style="cursor:pointer">Ссылки в строках с BRANDFREE ('+cited.length+')</summary>'+cited.map(s=>'<div>['+number(s.rank)+'] '+anchor(s.url,s.title||s.host)+'</div>').join('')+'</details>');
+  }
+  const origin=r.info.family==='search'&&v.answer&&r.answerSurface==='alice'&&!r.info.explicit?' · Атрибуция фрагмента Алисе по alice_source в этой записи':'';
+  parts.push('<p class="muted">'+esc(r.group.name)+' · '+esc(r.raw.source_file||r.raw.record_id||'')+(r.recovered?' · Формулировка запроса восстановлена по SHA-256':'')+esc(origin)+'</p>');
+  return parts.join('');
+}
+function renderOurBrandTable(){
+  const m=metrics;
+  const note=[];
+  if(m.measured)note.push(qty('Записей с BRANDFREE в тексте или карточках:',m.ownCount));
+  if(m.measuredAnswers){
+    note.push(qty('Ответов с брендом:',m.answerHits));
+    const adviceTotal=m.pending?(m.confirmed.length?'не менее '+m.confirmed.length:'требуют оценки'):nfmt(m.confirmed.length);
+    note.push('Рекомендации по тексту или разметке: '+adviceTotal+(m.pending?' (без оценки: '+m.pending+')':''));
+    if(m.checked)note.push(qty('Сверено утверждений:',m.checked)+' (расхождений: '+m.issues+')');
+  }
+  const linkOnly=m.ownRows.length-m.ownCount;
+  if(linkOnly)note.push(qty('Записей только со ссылкой:',linkOnly));
+  $('ourNote').textContent=m.ownRows.length?note.join(' · '):'';
+  if(!m.ownRows.length){$('ourBrandTable').innerHTML=empty('В доступных данных выборки BRANDFREE не найден.');return}
+  const sorted=[...m.ownRows].sort((a,b)=>Number(Boolean(b.brand))-Number(Boolean(a.brand))||Number(Boolean(b.cardsBF.length))-Number(Boolean(a.cardsBF.length))||a.r.id-b.r.id);
+  const header='<thead><tr><th>Канал</th><th>Тип запроса</th><th>Запрос и основание</th><th>Место в тексте</th><th>Места карточек</th></tr></thead>';
+  const body=sorted.slice(0,limit).map(v=>{
+    const r=v.r;
+    const channels=uniq([...(v.brand?[channelOf(r)]:[]),...(v.cardsBF.length?[productChannel(r)]:[]),...v.links.map(s=>sourceChannel(r,s))]);
+    const badge=v.brand?tag(v.brand.order??'—',rankTone(v.brand.order)):'—';
+    const cardRanks=v.cardsBF.map(p=>number(p.rank)??'—');
+    return '<tr><td>'+esc(channels.join(' · '))+'</td><td><span class="tag">'+esc(SET[r.info.set]||r.info.set)+'</span></td>'+
+      '<td><details data-record="'+r.id+'"><summary style="cursor:pointer">'+esc(r.query||'Запрос не сохранён')+'</summary><div></div></details></td><td>'+badge+'</td>'+
+      '<td>'+(cardRanks.length?esc(cardRanks.join(', ')):'—')+'</td></tr>';
+  }).join('');
+  $('ourBrandTable').innerHTML='<table>'+header+'<tbody>'+body+'</tbody></table>'+
+    (sorted.length>limit?'<button id="moreRows" style="margin-top:8px">Показать ещё '+Math.min(PAGE_SIZE,sorted.length-limit)+' из '+(sorted.length-limit)+'</button>':'');
+  if(sorted.length>limit)$('moreRows').onclick=()=>{limit+=PAGE_SIZE;renderOurBrandTable()};
+}
+function renderSources(){
+  const types=rankByCount(metrics.types);
+  $('sourceTypes').innerHTML=types.map(([type,n])=>bar(TYPES[type]||type,100*n/types[0][1],nfmt(n),'Сохранённые ссылки по типу')).join('')||empty('Источники ИИ в этой выборке не сохранены.');
+  const domains=[...metrics.domains].sort((a,b)=>b[1].n-a[1].n||ordered(a[0],b[0]));
+  const display=([host,info])=>'<details data-domain="'+esc(host)+'"><summary style="cursor:pointer;list-style:none">'+
+    bar(host,100*info.n/domains[0][1].n,nfmt(info.n),qty('Разных страниц:',info.pages.size),'#0ea5e9')+'</summary><div></div></details>';
+  $('sourceDomains').innerHTML=domains.length?domains.slice(0,15).map(display).join('')+
+    (domains.length>15?'<details><summary style="cursor:pointer">Другие домены ('+(domains.length-15)+')</summary>'+domains.slice(15).map(display).join('')+'</details>':''):empty('Нет адресов источников ИИ.');
+}
+document.addEventListener('toggle',event=>{
+  const el=event.target;
+  if(!el.open||!el.dataset||el.dataset.ready)return;
+  let content='';
+  if(el.dataset.record!==undefined){
+    const view=metrics.ownRows.find(v=>v.r.id===Number(el.dataset.record));
+    if(view)content=rowDetails(view);
+  }else if(el.dataset.domain){
+    const d=metrics.domains.get(el.dataset.domain);
+    if(d)content=[...d.pages].sort((a,b)=>b[1].n-a[1].n||ordered(a[0],b[0])).map(([url,p])=>'<p>'+anchor(url,p.title)+' <span class="muted">× '+p.n+'</span></p>').join('');
+  }
+  if(content){el.lastElementChild.innerHTML=content;el.dataset.ready='1'}
+},true);
+function renderAll(){
+  renderKPI();renderBrandPositions();renderTopBrands();renderHeat();renderOurBrandTable();renderSources();
+}
+for(const id of ['fEngine','fQueryType'])$(id).onchange=applyFilters;
+$('fQuery').oninput=applyFilters;
+$('reset').onclick=()=>{for(const id of ['fEngine','fQueryType','fQuery'])$(id).value='';applyFilters()};
+$('files').onchange=e=>importFiles([...e.target.files]);
+loadManifest();
+
+})();
 </script>
 </body>
 </html>
