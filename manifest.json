@@ -1,0 +1,14 @@
+{
+  "files": [
+    "data/edge-search-headless-small_normalized.json",
+    "data/edge-search-headless-small-ai_normalized.json",
+    "data/llm_alice_ai_normalized.json",
+    "data/llm_alice_normalized.json",
+    "data/llm_deepseek_ai_normalized.json",
+    "data/llm_deepseek_normalized.json",
+    "data/llm_Gigachat_ai_normalized.json",
+    "data/llm_Gigachat_normalized.json",
+    "data/llm_Perplexity_ai_normalized.json",
+    "data/llm_Perplexity_normalized.json"
+  ]
+}
