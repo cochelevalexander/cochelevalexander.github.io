@@ -214,7 +214,7 @@ function buildRecord(group,raw,id,match,queries){
  if(text)for(const [name,m] of match(text.replace(/https?:\/\/[^\s)\]]+/gi,url=>' '.repeat(url.length))))map.set(name,{name,at:m.at,raw:m.raw,order:map.size+1,fileRank:null,list:null,kind:'mention',evidence:text.slice(text.lastIndexOf('\n',m.at)+1,text.indexOf('\n',m.at)<0?text.length:text.indexOf('\n',m.at)).trim()});
  for(const b of arr(raw.brands).filter(Boolean)){
   const name=match.canonical(b.brand_canonical||b.brand_raw);if(!name)continue;
-  if(name===HOME&&b.brand_raw&&!bf.test(b.brand_raw||'')&&!bf.test(b.evidence||'')&&!bf.test(text))continue;
+  if(name === HOME && b.brand_canonical !== HOME && !bf.test(b.brand_raw || '') && !bf.test(b.evidence || '') && !bf.test(text)) continue;
   if(!isSearch&&text&&!map.has(name))continue;
   const old=map.get(name);const n=number(b.first_mention_order);
   const positions=uniq([...(old?.listRanks||[]),number(b.list_position)].filter(Boolean));
