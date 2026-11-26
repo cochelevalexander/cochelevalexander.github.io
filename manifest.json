@@ -11,6 +11,8 @@
     "data/llm_Perplexity_ai_normalized.json",
     "data/llm_Perplexity_normalized.json",
     "data/llm_gpt_normalized.json",
-    "data/llm_gpt_ai_normalized.json"
+    "data/llm_gpt_ai_normalized.json",
+    "data/llm_gpt_ai_vi_normalized.json",
+    "data/llm_deepseek_ai_vi_normalized.json"
   ]
 }
