@@ -17,15 +17,15 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
+        "brand_raw": "Елизар",
+        "brand_canonical": "Елизар",
         "kind": "mention",
-        "first_mention_order": 4,
+        "first_mention_order": 2,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
-        "section": "### 2. Для детских вещей и чувствительной кожи",
-        "evidence": "Тут важнее мягкость состава:\n\n- **«Ушастый нянь» отбеливатель для детского белья** — один из лидеров в",
+        "section": "### 1. Универсальный вариант «на каждый день»",
+        "evidence": "абочий базовый вариант** для белого белья.[9][12][19]  \n- **Елизар кислородный многофункциональный** — в свежих топах 2025–202",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -60,40 +60,6 @@
         "mentioned_in_query": false,
         "section": "### 3. Если нужно отбелить именно «уставшее» белое (серость, желтизна)",
         "evidence": "Когда белое бельё потускнело:\n\n- **Dr. Beckmann «Супер отбеливатель»** — часто в рейтингах как один из лучш",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
-        "kind": "mention",
-        "first_mention_order": 12,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 4. Что важно учитывать при выборе",
-        "evidence": "- **Тип ткани и цвет**  \n  - Кислородные отбеливатели подходят боль",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 14,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 4. Что важно учитывать при выборе",
-        "evidence": "ются» при 40–60 °C; часть полноценно работает только от 60 °C.[3][8]  \n  - Если стираешь в холодной воде, ищи на упаковке",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -271,7 +237,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 3,
       "source_count": 20,
       "answer_length": 2776
     },
@@ -509,25 +475,7 @@
     "raw_format": "raw",
     "answer_text": "Чтобы **понять, какой пятновыводитель вам подойдёт**, сначала смотрят на **ткань**, потом на **цвет вещи**, затем на **тип пятна** и уже после — на **формат средства**. Это самый практичный способ, потому что разные составы работают по-разному и могут повредить деликатные ткани или испортить цвет[5][11][15].\n\n**Быстрый выбор по ситуации:**\n- Для **белых вещей** обычно выбирают кислородные или более сильные средства; хлорные отбеливатели используют осторожно, потому что они могут разрушать волокна и не подходят для цветных тканей[2][15][17].\n- Для **цветных вещей** лучше брать средства, заявленные как подходящие для цветного белья; кислородные составы часто позиционируются как более безопасные для цвета, а хлорные — нет[2][17].\n- Для **детского белья** часто рекомендуют кислородные составы или средства с мягким составом, а лучше — маркированные как детские[10].\n- Для **деликатных тканей** важно проверять состав и тестировать средство на незаметном участке, потому что агрессивные компоненты могут повредить волокна[9][15].\n- Для **мембранной одежды** лучше искать средство **без энзимов**, так как энзимы могут повредить мембрану[11].\n\n**Как подобрать по типу пятна:**\n- **Жир, масло, соусы** — чаще нужны средства, работающие с жировыми загрязнениями; для таких пятен обычно смотрят на состав и форму нанесения[12][14].\n- **Кровь, пот, другие белковые пятна** — часто лучше работают средства на основе **энзимов**[12][17].\n- **Кофе, чай, вино, томат, карри** — нередко используют кислородные или универсальные пятновыводители, но эффективность зависит от конкретного состава и свежести пятна[6][13].\n- **Старые пятна** — обычно требуют замачивания и более длительного воздействия; порошковые кислородные средства здесь часто удобнее[2][13].\n\n**Какой формат выбрать:**\n- **Спрей или гель** — для одного конкретного пятна, когда нужно точечно обработать ткань[4].\n- **Порошок** — если нужно отстирать много вещей сразу, убрать общую серость или работать с замачиванием[4].\n- **Карандаш, мыло, салфетки** — удобны для быстрого точечного применения в дороге или вне дома[3][9].\n\n**На что ещё смотреть при покупке:**\n- **Состав**: кислородные, энзимные, растворяющие, хлорные — у каждого свой сценарий применения[12][17].\n- **Совместимость с тканью и цветом**: это важнее бренда и рекламы[1][8].\n- **Температура воды**: часть кислородных средств работает лучше в горячей воде, а часть заявлена как работающая и в холодной[2].\n- **Цена за грамм или миллилитр**: известный бренд не всегда означает лучший состав; часто платят за рекламу[1][8].\n\nЕсли хотите, я могу помочь **выбрать пятновыводитель под вашу конкретную задачу** — например, для **белых вещей**, **цветного белья**, **детской одежды**, **крови**, **жира** или **старых пятен**.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "На",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 11,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "строго точечного применения в дороге или вне дома[3][9].\n\n**На что ещё смотреть при покупке:**\n- **Состав**: кислородные,",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [
       {
         "url": "https://star-tex.ru/article/notes/vybiraem_pravilnyj_pyatnovyvoditel/",
@@ -673,7 +621,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 17,
       "answer_length": 2748
     },
@@ -1005,6 +953,23 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "Елизар",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 3,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "ретно из массово доступных сейчас хорошо себя показывают **«Елизар»**, **Vanish Oxi Action / Gold**, **Synergetic** или **«Бол",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Vanish Oxi Action",
         "brand_canonical": "Vanish",
         "kind": "mention",
@@ -1031,23 +996,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "бя показывают **«Елизар»**, **Vanish Oxi Action / Gold**, **Synergetic** или **«Большая стирка» для белого белья**.[1][2][7][11][1",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 1. Сначала определитесь: что и как вы стираете",
-        "evidence": "«для детей», без хлора и агрессивных добавок.[2][10]\n\n2. **Тип загрязнения**  \n   - Серость, желтизна, общий «усталый» вид",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -1686,25 +1634,7 @@
     "raw_format": "raw",
     "answer_text": "Отбеливатель для белья можно купить в **Ozon**, **Мегамаркете**, **Яндекс Маркете**, **Максидоме**, **Детском мире** и **Магните**; у этих магазинов есть отдельные категории или карточки с отбеливателями для белья.[1][2][7][4][13][15]\n\nЕсли нужен выбор онлайн, у **Мегамаркета** указано более **3273 позиций** отбеливателей для белья.[2] На **Ozon** также есть несколько отдельных разделов: для белого белья, деликатных тканей и жидких отбеливателей.[1][3][9][11]\n\nЕсли хотите, я могу сразу подобрать **лучшие варианты по цене**, **для белого белья** или **без хлора**.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "На",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 8,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "указано более **3273 позиций** отбеливателей для белья.[2] На **Ozon** также есть несколько отдельных разделов: для белог",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [
       {
         "url": "https://www.ozon.ru/category/otbelivateli-dlya-belogo-belya/",
@@ -1874,7 +1804,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 20,
       "answer_length": 569
     },
@@ -1974,23 +1904,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "*KENAZ**, **The Pink Stuff**, **BRANDFREE**, **DUTYBOX**, **Zontex**, **Sanros**, **ЧИСТОЛЮБ**, а также **Magnit Blitz** и **A",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "ЧИСТОЛЮБ",
-        "brand_canonical": "Чистолюбивец",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 4,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ff**, **BRANDFREE**, **DUTYBOX**, **Zontex**, **Sanros**, **ЧИСТОЛЮБ**, а также **Magnit Blitz** и **Astonish**.[1][4][7][15][17",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -2177,7 +2090,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 5,
       "source_count": 19,
       "answer_length": 1667
     },
@@ -5422,49 +5335,15 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Liebe",
+        "brand_raw": "Meine Liebe",
         "brand_canonical": "MEINE LIEBE",
         "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "### Какие салфетки имеет смысл рассмотреть",
-        "evidence": "быстро протереть только что поставленное пятно.\n\n**2. Meine Liebe – салфетки пятновыводящие для всех типов тканей**  \n- Идут",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "CleanTech",
-        "brand_canonical": "Salton CleanTech",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Какие салфетки имеет смысл рассмотреть",
-        "evidence": ": недорогой «дежурный» вариант на каждый день.\n\n**4. Salton CleanTech (влажные салфетки для экспресс‑удаления пятен)**  \n- Плюс:",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
-        "kind": "mention",
-        "first_mention_order": 8,
+        "first_mention_order": 7,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "### На что смотреть при выборе",
-        "evidence": "ожи* — Meine Liebe, гипоаллергенные салфетки.[4][6][10]\n- **Тип пятен**: жир, соус, кофе, косметика чаще всего указаны в оп",
+        "evidence": "1]  \n  - для *домашнего применения и чувствительной кожи* — Meine Liebe, гипоаллергенные салфетки.[4][6][10]\n- **Тип пятен**: жир,",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -5634,7 +5513,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 1,
       "source_count": 19,
       "answer_length": 3383
     },
@@ -7232,6 +7111,23 @@
         }
       },
       {
+        "brand_raw": "Stain Remover Spray",
+        "brand_canonical": "Remover",
+        "kind": "mention",
+        "first_mention_order": 4,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "орые подходят под ваш запрос:\n\n- **Vanish Oxi Action Fabric Stain Remover Spray** — распылить прямо на пятно, оставить максимум на 5 минут[",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "SYNERGETIC",
         "brand_canonical": "SYNERGETIC",
         "kind": "mention",
@@ -7411,7 +7307,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 5,
       "source_count": 17,
       "answer_length": 1191
     },
@@ -8501,23 +8397,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "создают плёнку, ухудшающую обзор.\n\nКоротко по выбору:\n\n1. **Тип средства**  \n   Нужен именно **«пенный очиститель стёкол» /",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Liqui Moly",
         "brand_canonical": "Liqui Moly",
         "kind": "mention",
@@ -8527,23 +8406,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "ктной мойки» (та больше заточена под кузов и ЛКП).  \n   - У Liqui Moly есть специальная **пена для очистки стекол Scheiben-Reinige",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "На",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 9,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ешних, и для внутренних стеклянных поверхностей.[2]  \n\n2. **На что смотреть на баллоне/флаконе**  \n   Выбирайте средство,",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -8738,7 +8600,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 2,
       "source_count": 20,
       "answer_length": 2493
     },
@@ -9735,7 +9597,7 @@
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
-        "count": 6,
+        "count": 5,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "Для одежды я бы **посоветовал BRANDFREE энзимный карандаш-пятновыводитель**: он заявлен как средств",
@@ -11235,25 +11097,7 @@
     "raw_format": "raw",
     "answer_text": "Для матового стекла сложные загрязнения (жир, накипь от жёсткой воды, застарелые пятна, клей и т.п.) лучше всего удалять *по типу пятна*, используя мягкие составы (сода, уксус, спирт/ацетон, меловая кашица) и только мягкие салфетки без абразивов.[2][5][8][13]\n\nНиже — пошаговая схема, как действовать безопасно.\n\n---\n\n### Общие правила, чтобы не испортить матовое стекло\n\n- Используйте **только мягкие материалы**: микрофибра, хлопок, мягкая губка, замша; без жёстких сторон.[4][6]  \n- Не применяйте **абразивные порошки, металлические губки, ножи, скребки** — они полируют/царапают матовую поверхность, и появятся «протёртые» блестящие пятна.[2][10]  \n- Не берите средства с сильными кислотами или щёлочами (туалетные гели, сантехнические кислоты) — они могут «съесть» фактуру.[4][19]  \n- Всегда **смывайте средство водой и вытирайте насухо**, чтобы не было разводов и подтёков.[4][7][11]\n\nПеред основной чисткой снимите пыль и лёгкие загрязнения (просто тёплая вода + немного средства для посуды и микрофибра), а уже потом работайте по сложным пятнам.[15][18]\n\n---\n\n### 1. Универсальный состав для «застарелой грязи»\n\nПодходит, если стекло давно не мыли, есть общий налёт, пятна неизвестного происхождения.\n\n**Рецепт:**\n\n- 1 столовая ложка **пищевой соды**  \n- 1 стакан воды  \n- 1 чайная ложка **средства для мытья посуды или уксуса**[2][8]\n\n**Как использовать:**\n\n1. Хорошо размешайте до растворения соды.[2][8]  \n2. Нанесите раствор на стекло **мягкой губкой или безворсовым полотенцем** по всей поверхности.[2][8]  \n3. Оставьте на 5 минут, чтобы состав «размочил» грязь.[2][8]  \n4. Протрите поверхность **бумажными полотенцами**.[2][8]  \n5. Удалите остатки раствора **влажной тряпкой**, затем **отполируйте сухой** микрофиброй.[2][8]  \n\nЭтот способ хорошо работает по жиру, застаревшей пыли, налёту и не царапает стекло.\n\n---\n\n### 2. Жёсткая вода, известковый и мыльный налёт\n\nБелые пятна, разводы от воды, душевые кабины, окна рядом с поливом и т.п.\n\n**Варианты растворов уксуса:**\n\n- 1:1 — уксус и вода, нанести на 10–15 минут для сильных пятен от жёсткой воды.[5][13]  \n- 4 ст. л. уксуса на 1 л тёплой воды — для регулярной чистки налёта и мыла.[13]  \n- Мягкий вариант: 9% уксус 1:10 с водой, раствор слегка подогреть до 40–50 °C.[7]\n\n**Как использовать:**\n\n1. Смочите загрязнённые участки раствором уксуса (можно из пульверизатора или губкой).[5][7][13]  \n2. Оставьте на 10–15 минут при сильном известковом налёте.[5]  \n3. Аккуратно потрите **микрофиброй** или мягкой губкой.[5][7]  \n4. Тщательно смойте чистой водой и **насухо вытрите** мягкой салфеткой.[5][7][11]  \n\nУксус хорошо растворяет минеральные отложения, не повреждая матовую фактуру при правильном разведении.\n\n---\n\n### 3. Жирные пятна, отпечатки пальцев, кухонный налёт\n\n**Мягкий вариант (бытовой):**\n\n- Тёплая вода + немного **средства для посуды**.[10][13][20]\n\n**Как делать:**\n\n1. Сначала поработайте **по самому пятну**, а не по всей поверхности.[10]  \n2. Нанесите мыльный раствор на жирный участок, немного подождите.[10][13]  \n3. Потрите микрофиброй круговыми движениями.[6][18]  \n4. Смойте чистой водой и насухо вытрите.[10][13]\n\n**Сложные/застарелые жирные пятна:**\n\n- **Ацетон** или жидкость для снятия лака (без ацетона на чувствительных покрытиях рядом).[5][9][11]\n\nКак использовать:\n\n1. Нанесите немного ацетона/жидкости на **ватный диск или мягкую ткань**.[5][9]  \n2. Точечно протрите пятно (клей, старый жир, кофе, канцелярский клей).[5][9]  \n3. После растворителя обязательно промойте поверхность водой и вытерите насухо.[5][9][11]\n\n---\n\n### 4. Клей, маркер, косметика, бытовые «трудные» следы\n\n- **Клей, следы от наклеек:** сначала спирт, при необходимости немного ацетона.[9][13]  \n- **Маркер, косметика:** протереть спиртом, затем вымыть стекло как обычно.[13]  \n- **Застарелые пятна кофе, чая, клея:** также поддаются спирту или ацетону, с последующей промывкой водой.[9]\n\nВсегда проверяйте растворитель на **незаметном участке**, чтобы исключить риск повреждения соседних лакокрасочных или пластиковых деталей.\n\n---\n\n### 5. Застарелые, засохшие и непонятные по происхождению пятна\n\n**Вариант 1: меловая кашица (мягкий «псевдо-абразив»)**\n\n- 3 ст. л. измельчённого в крошку **мела** на стакан воды — жидкий раствор[3][11]  \n  или  \n- Мел + немного воды до **густой кашицы**.[13]\n\nКак делать:\n\n1. Нанесите раствор/кашицу на проблемные участки или всю поверхность.[3][11][13]  \n2. Дайте высохнуть (для жидкого раствора) или слегка потрите мягкой тканью (для кашицы).[3][11][13]  \n3. Смойте водой и отполируйте сухой мягкой тканью.[3][11][13]\n\nМел мягкий, поэтому при аккуратном использовании не царапает матовое стекло, но работает чуть активнее, чем просто вода и мыло.\n\n**Вариант 2: пар и замачивание**\n\n- **Пароочиститель** хорошо снимает засохшие пятна разного происхождения.[9][19]  \n- Если пароочистителя нет, можно **приложить ткань, смоченную тёплой водой**, на 10–15 минут к засохшему загрязнению, затем оттереть.[9][19]\n\n---\n\n### 6. Когда лучше вызвать профессионалов\n\nЕсли:\n\n- стекло дорогое (душевые перегородки, большие витрины, дизайнерские двери);  \n- есть многолетний налёт, который не берут бытовые средства;  \n- пятна химического происхождения, вы не уверены, чем они оставлены;\n\nимеет смысл заказать **профессиональную чистку** с использованием специализированных составов для матированного стекла.[12][17]\n\n---\n\n### Кратко: безопасный алгоритм для дома\n\n1. Снять пыль (сухая микрофибра).  \n2. Промыть стекло тёплой водой с небольшим количеством средства для посуды.  \n3. По типу пятна:\n   - белый налёт от воды/мыла — уксусный раствор;  \n   - жир и отпечатки — средство для посуды, при застарелых — немного ацетона/спирта точечно;  \n   - клей/маркер/косметика — сначала спирт, при необходимости ацетон;  \n   - старый общий налёт — раствор соды с водой и средством для посуды или уксусом.  \n4. Всегда смывать чистой водой и **насухо вытирать микрофиброй**.[4][6][11]\n\nЕсли опишете тип пятен (ванная, кухня, клей от наклейки, на двери и т.п.), могу подобрать конкретный, максимально щадящий рецепт под вашу ситуацию.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 2. Жёсткая вода, известковый и мыльный налёт",
-        "evidence": ": 9% уксус 1:10 с водой, раствор слегка подогреть до 40–50 °C.[7]\n\n**Как использовать:**\n\n1. Смочите загрязнённые участки",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [
       {
         "url": "https://www.fgdglass.com/blog/how-to-clean-matte-finish-glass-and-remove-hard-water-marks/",
@@ -11423,7 +11267,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 20,
       "answer_length": 6023
     },
@@ -19863,40 +19707,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "е отбеливатели этого класса.[13][17][18]\n\nПочему так:\n\n1. **Тип, а не только марка важнее всего**  \n   Эксперты Роскачества",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "То",
-        "brand_canonical": "Бытовкин",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "у, но гораздо мягче хлора и меньше портят волокна.[13]  \n   То есть в первую очередь смотреть надо на *состав* (перкарбона",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Dr. Beckmann",
         "brand_canonical": "Dr. Beckmann",
         "kind": "mention",
@@ -19906,23 +19716,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "**Сравнение с другими популярными отбеливателями**  \n   - **Dr. Beckmann «Супер отбеливатель»** часто ставят лучшим против серости и",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Но",
-        "brand_canonical": "Аистёнок",
-        "kind": "mention",
-        "first_mention_order": 11,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "и желтизны, особенно для белых и деликатных вещей.[1][7][8] Но он дороже и обычно используется точечно, а не как «рабочая",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -19948,23 +19741,6 @@
         }
       },
       {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 14,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ые отбеливатели с пометкой «для детского белья» (например, «Ушастый нянь», «Умка», Mepsi).[7]  \n   - Для **деликатного нижнего",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Mepsi",
         "brand_canonical": "MEPSI",
         "kind": "mention",
@@ -19974,6 +19750,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "кой «для детского белья» (например, «Ушастый нянь», «Умка», Mepsi).[7]  \n   - Для **деликатного нижнего белья и кружева** час",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "LION",
+        "brand_canonical": "Lion",
+        "kind": "mention",
+        "first_mention_order": 18,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "рекомендуют специализированные мягкие формулы Dr. Beckmann, LION, Frau Schmidt, Heitmann.[1][7]  \n   Поэтому правильно так:",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -20160,7 +19953,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 5,
       "source_count": 19,
       "answer_length": 2937
     },
@@ -20443,23 +20236,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Oxy",
-        "brand_canonical": "OXYGEN",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 1. На что смотреть в составе",
-        "evidence": "н на повседневной одежде:**\n\n- **Кислородные (перкарбонат, «Oxy»)**  \n  Хорошо берут пищу, напитки, траву, кровь, косметику",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Vanish Oxi Action",
         "brand_canonical": "Vanish",
         "kind": "mention",
@@ -20554,23 +20330,6 @@
         "mentioned_in_query": false,
         "section": "### 1. На что смотреть в составе",
         "evidence": ".[4][9]  \n- В обзорах как хорошие для цвета упоминают линии BAGI для цветных, специальные Color‑версии Vanish и др.[4][14]",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Eco",
-        "brand_canonical": "ECOchister",
-        "kind": "mention",
-        "first_mention_order": 31,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "### 1. На что смотреть в составе",
-        "evidence": "19]  \n- В рейтингах детских — Mepsi, Meine Liebe, некоторые Eco‑линейки.[4][16]",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -20748,7 +20507,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 6,
       "source_count": 20,
       "answer_length": 4917
     },
@@ -20787,6 +20546,23 @@
     "answer_text": "Если нужен **один универсальный кислородный отбеливатель**, чаще всего в рейтингах и обзорах выделяют **Елизар**: его ставят на 1-е место по популярности и оценкам, а также отдельно отмечают как вариант с хорошим соотношением объёма и цены[1][16].  \n\nЕсли важнее **максимально “рабочая” формула для пятен**, часто рекомендуют **перкарбонат натрия** как безопасный и эффективный кислородный отбеливатель, особенно для хлопка и синтетики[5][11][16].  \n\nЕсли нужен **готовый брендовый продукт из массовых рейтингов**, то среди лидеров часто встречаются **Vanish OXI Action** и **Der Waschkonig**, а в экспертных подборках также фигурируют **LAMM**, **Бос плюс Maximum**, **Jundo BRILLIANT WHITE** и **SODASAN**[1][7][14].  \n\nКоротко по выбору:\n- **Для универсального использования** — **Елизар**[1][16]  \n- **Для сильных пятен и активной стирки** — **перкарбонат натрия**[8][11][16]  \n- **Для покупки “из известных” брендов** — **Vanish OXI Action**[1][7]  \n- **Если стираете часто и важна экономичность** — смотрите на **цена/объём**, здесь Елизар часто называют удачным вариантом[1][16]  \n\nЕсли хотите, я могу **подобрать лучший кислородный отбеливатель именно под вашу задачу**: для белого белья, цветного, детских вещей, сильных пятен или для стирки в холодной воде.",
     "answer_language": "ru",
     "brands": [
+      {
+        "brand_raw": "Елизар",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 3,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "отбеливатель**, чаще всего в рейтингах и обзорах выделяют **Елизар**: его ставят на 1-е место по популярности и оценкам, а так",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
       {
         "brand_raw": "Vanish OXI Action",
         "brand_canonical": "Vanish",
@@ -21034,7 +20810,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 6,
       "source_count": 19,
       "answer_length": 1267
     },
@@ -21117,6 +20893,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "ессивного запаха; подходит для кухни, ванны и плит[16].\n- **Pinky Clean** — пользователи отмечают, что хорошо справляется с известк",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Елизар",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 11,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "м налетом и легким жиром и не портит поверхности[7][8].\n- **Елизар** — в отзывах есть хорошие оценки за ванную и сантехнику, н",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -21294,7 +21087,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 20,
       "answer_length": 2045
     },
@@ -21436,23 +21229,6 @@
         }
       },
       {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 9,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Марки, на которые точно стоит обратить внимание",
-        "evidence": "ах лучших спреев-пятновыводителей.[3][11][17]  \n- **Grass G‑Oxi universal** – порошковый универсальный пятновыводитель, зан",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Frosch",
         "brand_canonical": "Frosch",
         "kind": "mention",
@@ -21504,6 +21280,23 @@
         }
       },
       {
+        "brand_raw": "Елизар",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 15,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### Марки, на которые точно стоит обратить внимание",
+        "evidence": "8]  \n\n**Российские марки с хорошими отзывами и ценой**\n\n- **Елизар** – кислородный порошковый пятновыводитель, часто попадает",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Salton CleanTech",
         "brand_canonical": "Salton CleanTech",
         "kind": "mention",
@@ -21522,31 +21315,14 @@
       },
       {
         "brand_raw": "Bos",
-        "brand_canonical": "Bostik",
+        "brand_canonical": "БОС",
         "kind": "mention",
         "first_mention_order": 17,
         "list_position": null,
-        "count": 1,
+        "count": 3,
         "mentioned_in_query": false,
         "section": "### Марки, на которые точно стоит обратить внимание",
         "evidence": "числе в обзорах дорожных/экспресс-средств.[7][13][16]  \n- **Bos / БОС** (в т.ч. «БОС-жидкий») – бюджетные, но довольно рабо",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "БОС",
-        "brand_canonical": "БОС",
-        "kind": "mention",
-        "first_mention_order": 18,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "### Марки, на которые точно стоит обратить внимание",
-        "evidence": "в обзорах дорожных/экспресс-средств.[7][13][16]  \n- **Bos / БОС** (в т.ч. «БОС-жидкий») – бюджетные, но довольно рабочие ср",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -21809,7 +21585,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 18,
+      "brand_count": 17,
       "source_count": 20,
       "answer_length": 2972
     },
@@ -22200,7 +21976,7 @@
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
-        "count": 8,
+        "count": 5,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "его лучше всего справляются с пятнами следующие средства: **Salton CleanTech**, **Jundo Eco Oxy (Ultra)**, **Brandfree**, **Faberlic Ext",
@@ -22280,40 +22056,6 @@
         }
       },
       {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 4,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "rlic Extra Oxy** и профессиональные порошки вроде **GRASS G‑Oxi**.[1][2][6][11][15][17]\n\nНи один кислородный пятновыводител",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Oxy",
-        "brand_canonical": "OXYGEN",
-        "kind": "mention",
-        "first_mention_order": 12,
-        "list_position": null,
-        "count": 3,
-        "mentioned_in_query": false,
-        "section": "### 1. Самые сильные универсальные кислородные порошки",
-        "evidence": "самых удачных кислородных средств.[10]\n\n- **GRASS G‑Oxi / G‑Oxy (порошок или спрей)**\n  - В рейтинге для дома **G‑Oxi unive",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Synergetic",
         "brand_canonical": "SYNERGETIC",
         "kind": "mention",
@@ -22365,15 +22107,15 @@
         }
       },
       {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
+        "brand_raw": "Lion",
+        "brand_canonical": "Lion",
         "kind": "mention",
-        "first_mention_order": 47,
+        "first_mention_order": 32,
         "list_position": null,
-        "count": 2,
+        "count": 1,
         "mentioned_in_query": false,
-        "section": "### 5. Как выбрать «лучший» именно для вас",
-        "evidence": "Ориентируйтесь на:\n\n1. **Тип тканей**\n   - Хлопок/синтетика: почти любые кислородные пор",
+        "section": "### 3. Для белого и «сложных» загрязнений",
+        "evidence": "изированные отбеливатели на активном кислороде (Clean Home, Lion и др.)**\n  - В рейтингах отбеливателей указывают, что средс",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -22391,6 +22133,23 @@
         "mentioned_in_query": false,
         "section": "### 5. Как выбрать «лучший» именно для вас",
         "evidence": "(у ряда жидких средств и мягких порошков, напр. Synergetic, БОС‑жидкий).[4][6]\n\n2. **Тип пятен**\n   - Еда, жир, кофе, вино:",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Елизар",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 59,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 5. Как выбрать «лучший» именно для вас",
+        "evidence": "тва, которые прямо отмечены для детской одежды (Synergetic, Елизар, некоторые GRASS и Nordland).[6][7][11][17]\n\n3. **Формат**",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -22560,7 +22319,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 12,
+      "brand_count": 11,
       "source_count": 19,
       "answer_length": 6377
     },
@@ -22599,6 +22358,23 @@
     "answer_text": "Для **цветных вещей** лучше брать **кислородный пятновыводитель без хлора** — он обычно безопаснее для окраски и меньше риск, что вещь полиняет.[9][16][19]\n\nЕсли нужен самый практичный выбор по отзывам и рейтингам, чаще всего рекомендуют:\n- **Lion Beat Pre-treating** — его прямо называют средством, созданным для цветных тканей; он удаляет пятна, но не размывает оттенки.[3][12]\n- **BAGI** — отмечают как пятновыводитель для цветной одежды и текстиля.[2]\n- **Vanish Oxi Action для цветных тканей** — универсальный вариант для цветного белья, часто входит в рейтинги лучших.[5][13][14]\n\nЧтобы **не полиняло**, смотрите на такие признаки на упаковке:\n- **“для цветного белья”**\n- **“без хлора”**\n- **“активный кислород” / “oxygen”**[1][9][16][18]\n\nПеред первой обработкой лучше сделать **пробу на незаметном участке**: даже средства для цветных тканей рекомендуют сначала тестировать на изнанке или другом скрытом месте.[15]\n\nЕсли хотите, я могу сразу подобрать **3 конкретных варианта под ваш бюджет**: до 500 ₽, до 1000 ₽ или под **сильные пятна**.",
     "answer_language": "ru",
     "brands": [
+      {
+        "brand_raw": "Lion Beat Pre-treating",
+        "brand_canonical": "LION BEAT",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "й выбор по отзывам и рейтингам, чаще всего рекомендуют:\n- **Lion Beat Pre-treating** — его прямо называют средством, созданным для цветных тка",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
       {
         "brand_raw": "BAGI",
         "brand_canonical": "Bagi",
@@ -22803,7 +22579,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 3,
       "source_count": 20,
       "answer_length": 1049
     },
@@ -22841,42 +22617,7 @@
     "raw_format": "raw",
     "answer_text": "Для одной бутылки/банки «на все случаи» лучше всего брать **кислородный отбеливатель‑пятновыводитель (без хлора)** – он и отбеливает, и выводит большинство бытовых пятен, подходит для белого и чаще всего для цветного белья.\n\nКратко по выбору:\n\n- Ищите надписи типа **«кислородный отбеливатель‑пятновыводитель», «Oxi», «перкарбонат натрия»**.[9][13]  \n- Такие средства:\n  - отбеливают и возвращают белизну (убирают серость, желтизну)[6][11][13]  \n  - выводят сложные и застарелые пятна органического происхождения: еда, пот, трава, косметика и т.п.[1][5][11]  \n  - обычно **подходят и для белого, и для цветного белья**, включая детское 0+ (проверяйте на упаковке).[1][5][8][9]  \n\nПримеры форматов (не привязано к марке, чтобы было понятно, что искать):\n\n- Порошок/гранулы для стирки и замачивания – часто указано: «многофункциональный кислородный отбеливатель‑пятновыводитель для тканей и поверхностей».[6][9][11][13]  \n- Жидкие кислородные отбеливатели‑пятновыводители – могут позиционироваться как «для белого» или «для цветного»; берите **универсальный** или отдельно под ваши задачи.[10][14][16][18]  \n\nНа что обратить внимание:\n\n- **Состав:** перкарбонат натрия / активный кислород – это то, что вам нужно.[9][11][13]  \n- **Тип ткани:** большинство нельзя для шерсти, шёлка, кожи, мембран – это обычно прямо написано.[8]  \n- **Режим использования:**  \n  - добавлять в основную стирку как усилитель;  \n  - или замачивать для отбеливания: чаще всего 1–2 мерные ложки на 1 л горячей воды 70–90 °C, 30–60 минут, затем обычная стирка.[6][9][11]  \n\nЕсли напишете, у вас в основном белое или ещё и цветное, плюс есть ли детские/деликатные вещи, подскажу конкретнее: какой именно вид и как лучше использовать (только в порошок, для замачивания или и то, и другое).",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "надписи типа **«кислородный отбеливатель‑пятновыводитель», «Oxi», «перкарбонат натрия»**.[9][13]  \n- Такие средства:\n  - от",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "активный кислород – это то, что вам нужно.[9][11][13]  \n- **Тип ткани:** большинство нельзя для шерсти, шёлка, кожи, мембра",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [
       {
         "url": "https://synergetic.ru/catalog/otbelivatel-belja/ochistitel-dlya-tkanej-i-poverhnostej-synergetic-paket-900g/",
@@ -23030,7 +22771,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 0,
       "source_count": 18,
       "answer_length": 1761
     },
@@ -23069,6 +22810,23 @@
     "answer_text": "Если вещь **уже стирали**, лучше всего обычно берёт **кислородный пятновыводитель в порошке или геле для замачивания**, а не спрей «на бегу»[4][14][17][19]. Для старых и въевшихся пятен несколько обзоров отдельно отмечают, что лучше работают именно **кислородные формулы** и **замачивание**, а не быстрое локальное нанесение[4][17][19].\n\nЕсли нужен **самый вероятный удачный выбор из популярных средств**, в подборках чаще всего хорошо оценивают **Елизар**, **Vanish Oxi Action** и **Ace Oxi Magic**; все они заявлены как средства против застарелых пятен, но в обзорах чаще всего акцент делается на кислородную формулу и возможность замачивания[1][5][15]. При этом в некоторых рейтингах отдельно отмечают, что даже хорошие средства могут лишь **осветлить** старое пятно, а не убрать его полностью с первого раза[2][9][12].\n\nПрактически это выглядит так:\n- **Для белой одежды** — кислородный порошок с замачиванием[17][19].\n- **Для цветной одежды** — средство **без хлора**, чтобы не повредить ткань[4][17].\n- **Если пятно очень старое** — лучше сначала **замочить** и только потом стирать, иногда с повторной обработкой[4][12][17].\n\nЕсли хотите, я могу сразу дать **конкретный короткий список из 3–5 средств** под ваш тип ткани: белая, цветная, детская, деликатная или джинса.",
     "answer_language": "ru",
     "brands": [
+      {
+        "brand_raw": "Елизар",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "лярных средств**, в подборках чаще всего хорошо оценивают **Елизар**, **Vanish Oxi Action** и **Ace Oxi Magic**; все они заявл",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
       {
         "brand_raw": "Vanish Oxi Action",
         "brand_canonical": "Vanish",
@@ -23265,7 +23023,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 3,
       "source_count": 19,
       "answer_length": 1276
     },
@@ -23304,23 +23062,6 @@
     "answer_text": "Для **детских вещей** я бы выбрал **кислородный пятновыводитель без хлора и отдушек**, а не универсальный агрессивный спрей: он чаще всего подходит для белых и цветных тканей, а в подборках для детского белья именно такие средства чаще всего рекомендуют как более щадящие.[13][16][18]\n\nЕсли нужен один конкретный вариант, то по вашим результатам я бы смотрел в сторону **«Ушастый нянь»** или **Synergetic/аналогичного гипоаллергенного кислородного средства**: они регулярно фигурируют в рейтингах именно для детских вещей, а у «Ушастого няня» прямо отмечают назначение для детского белья.[3][9][15][19]\n\nПочему именно такой тип:\n- **Мягче к ткани и коже**: в списках для детской одежды акцент делают на гипоаллергенности и отсутствии хлора.[13][18]\n- **Подходит для типичных детских пятен**: кислородные и энзимные средства лучше работают с органическими загрязнениями, которые часто бывают на детских вещах.[17][10]\n- **Универсальнее для стирки**: такие средства обычно можно добавлять и в стирку, и использовать для предварительной обработки пятна.[13][16]\n\nЕсли коротко: **для повседневного выбора я бы взял кислородный гипоаллергенный пятновыводитель без хлора**, а если нужен самый понятный массовый вариант из ваших результатов — **«Ушастый нянь»**.[3][9][19]",
     "answer_language": "ru",
     "brands": [
-      {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "вариант, то по вашим результатам я бы смотрел в сторону **«Ушастый нянь»** или **Synergetic/аналогичного гипоаллергенного кисл",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
       {
         "brand_raw": "Synergetic",
         "brand_canonical": "SYNERGETIC",
@@ -23508,7 +23249,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 1,
       "source_count": 20,
       "answer_length": 1265
     },

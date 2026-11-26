@@ -296,6 +296,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Применение:",
+        "evidence": "- Persil",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -306,7 +323,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1560
     },
@@ -685,6 +702,23 @@
         }
       },
       {
+        "brand_raw": "Момент",
+        "brand_canonical": "Момент",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Преимущества использования:",
+        "evidence": "На российском рынке популярны отечественные марки пен («Макрофлекс», «Момент», «Penosil», «Soudal») и зарубежные бренды («Tytan», «Bostik», «KUDO»). Выбор зависит от условий эксплуатации, бюджета и личных предпочтений.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Penosil",
         "brand_canonical": "Penosil",
         "kind": "mention",
@@ -778,7 +812,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 7,
       "source_count": 0,
       "answer_length": 1506
     },
@@ -912,6 +946,23 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "Karcher",
+        "brand_canonical": "Kärcher",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "🛒 Где приобрести?",
+        "evidence": "Там обычно представлены товары известных брендов, таких как Karcher, Cillit Bang, Mellerud, Clean Home и др.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Cillit Bang",
         "brand_canonical": "Cillit Bang",
         "kind": "mention",
@@ -988,7 +1039,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1228
     },
@@ -1261,6 +1312,23 @@
         }
       },
       {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "2. Отбеливатели с активным кислородом (пероксомонофосфат натрия NaO₃P)",
+        "evidence": "- Примеры: Vanish Oxi Action, Amway Oxy Plus, Persil Oxygen.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "OXYGEN",
         "brand_canonical": "OXYGEN",
         "kind": "mention",
@@ -1286,7 +1354,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1349
     },
@@ -1312,42 +1380,7 @@
     "raw_format": "normalized",
     "answer_text": "Чистящая паста — это густая кремообразная смесь, предназначенная для эффективного удаления загрязнений, жирных пятен, грязи и трудносмываемых пятен с поверхностей мебели, бытовой техники, сантехники, кафеля, стекла и пластика.\n\n### Состав типичной чистящей пасты:\n- Абразивные частицы (мелкий песок, абразивный порошок, измельченные минералы);\n- Моющие вещества (сода, карбонат натрия, сульфаты щелочных металлов);\n- Поверхностно-активные вещества (ПАВ), обеспечивающие удаление жира и грязи;\n- Отдушки и ароматизаторы для приятного запаха;\n- Консерванты и загустители для сохранения формы и консистенции.\n\n### Преимущества чистящих паст:\n- Эффективно очищает загрязнения любой сложности;\n- Легко наносится и удаляется водой;\n- Не оставляет разводов и следов;\n- Удобна в применении благодаря густой форме;\n- Экономична в расходовании.\n\n### Примеры популярных марок чистящих паст:\n- Comet;\n- Cillit Bang;\n- Сан Клинк;\n- Domestos Cleaner;\n- Sanita.\n\nИспользовать такую пасту легко: нанесите небольшое количество на губку или тряпочку, аккуратно протрите загрязненную поверхность, смойте теплой водой и вытрите насухо. Подходит для ежедневного ухода за домом и офисом.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Bang",
-        "brand_canonical": "Cillit Bang",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "Примеры популярных марок чистящих паст:",
-        "evidence": "- Cillit Bang;",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Cleaner",
-        "brand_canonical": "CLEANER O2",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "Примеры популярных марок чистящих паст:",
-        "evidence": "- Domestos Cleaner;",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -1356,7 +1389,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 1165
     },
@@ -1700,6 +1733,40 @@
         }
       },
       {
+        "brand_raw": "ЛАСКА",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "1. Средства на основе кислородного отбеливателя:",
+        "evidence": "- «Ласка» («Lacoste»)",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "БИОЛАН",
+        "brand_canonical": "БИОЛАН",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "1. Средства на основе кислородного отбеливателя:",
+        "evidence": "- «Биолан Экстра свежесть»",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "BioMio",
         "brand_canonical": "BioMio",
         "kind": "mention",
@@ -1725,7 +1792,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1271
     },
@@ -2138,6 +2205,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Как правильно пользоваться:",
+        "evidence": "- Persil",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -2148,7 +2232,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1167
     },
@@ -2226,6 +2310,40 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "БИОЛАН",
+        "brand_canonical": "БИОЛАН",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "3. Специальные энзимные средства:",
+        "evidence": "- Энзимные порошки и гели («Биолан», «Ласка», «Амвей») эффективно удаляют загрязнения белкового происхождения (молоко, кровь, фрукты).",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "ЛАСКА",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "3. Специальные энзимные средства:",
+        "evidence": "- Энзимные порошки и гели («Биолан», «Ласка», «Амвей») эффективно удаляют загрязнения белкового происхождения (молоко, кровь, фрукты).",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -2236,7 +2354,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 2274
     },
@@ -2769,15 +2887,15 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Чистолюби",
-        "brand_canonical": "Чистолюбивец",
+        "brand_raw": "Капля",
+        "brand_canonical": "Капля",
         "kind": "mention",
-        "first_mention_order": 3,
+        "first_mention_order": 5,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "🖋️ Карандаши-пятновыводители российского производства:",
-        "evidence": "- **«Чистолюби́вец» Пятновыводитель карандаш**",
+        "evidence": "- **«Капля» Пятновыводитель карандаш**",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -2787,7 +2905,7 @@
       },
       {
         "brand_raw": "Vanish Spot Remover Pen",
-        "brand_canonical": "Vanish",
+        "brand_canonical": "Remover",
         "kind": "mention",
         "first_mention_order": 7,
         "list_position": null,
@@ -2803,15 +2921,15 @@
         }
       },
       {
-        "brand_raw": "Zoffoli Spot Remover Pen",
-        "brand_canonical": "Zoffoli",
+        "brand_raw": "Vanish",
+        "brand_canonical": "Vanish",
         "kind": "mention",
-        "first_mention_order": 9,
+        "first_mention_order": 8,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "🌍 Импортные карандаши-пятновыводители:",
-        "evidence": "- **Zoffoli Spot Remover Pen**",
+        "evidence": "Известный бренд Vanish выпускает удобный роликовый карандаш, эффективно устраняющий свежие и старые пятна.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -4222,23 +4340,6 @@
         }
       },
       {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "🧹 2. Подберите подходящее средство:",
-        "evidence": "- Специальные пятновыводители для детских вещей («Vanish Baby», «Ушастый нянь», «Babyline»).",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Babyline",
         "brand_canonical": "Babyline",
         "kind": "mention",
@@ -4264,7 +4365,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1821
     },
@@ -4465,6 +4566,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "ЛАСКА",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "🔥 3. Отбеливание:",
+        "evidence": "- **Безхлорные кислородные отбеливатели** («БОС», «Амвей», «Ласка») бережно удаляют загрязнения и сохраняют цвет ткани.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -4475,7 +4593,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1828
     },
@@ -4713,15 +4831,15 @@
         }
       },
       {
-        "brand_raw": "Доместос",
-        "brand_canonical": "Доместос",
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
         "kind": "mention",
-        "first_mention_order": 3,
+        "first_mention_order": 2,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "🛁 Способ №3: Специальные чистящие средства",
-        "evidence": "- Средства на основе хлора («Доместос», «Белизна») отлично очищают, но требуют осторожности и проветривания помещения.",
+        "evidence": "- Абразивные пасты («Comet», «Санокс») хорошо справляются с сильными пятнами и налетом.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -4730,10 +4848,10 @@
         }
       },
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
+        "brand_raw": "Доместос",
+        "brand_canonical": "Доместос",
         "kind": "mention",
-        "first_mention_order": 4,
+        "first_mention_order": 3,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
@@ -5117,6 +5235,23 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "2. Выбор средства",
+        "evidence": "- Специальные чистящие гели или пасты («Санокс», «Доместос», «Cillit Bang»).",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Доместос",
         "brand_canonical": "Доместос",
         "kind": "mention",
@@ -5159,7 +5294,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1430
     },
@@ -5397,6 +5532,23 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "🧽 3. Средства бытовой химии",
+        "evidence": "- Абразивные пасты («Санокс», «Comet») — аккуратно используйте, чтобы не повредить эмаль.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Comet",
         "brand_canonical": "Comet",
         "kind": "mention",
@@ -5420,23 +5572,6 @@
         "first_mention_order": 3,
         "list_position": null,
         "count": 1,
-        "mentioned_in_query": false,
-        "section": "🧽 3. Средства бытовой химии",
-        "evidence": "- Щелочные гели и спреи («Доместос», «Санитарный гель», «Cillit Bang») — эффективны против известкового налета.",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Санитарный",
-        "brand_canonical": "Санитарный Утёнок",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 2,
         "mentioned_in_query": false,
         "section": "🧽 3. Средства бытовой химии",
         "evidence": "- Щелочные гели и спреи («Доместос», «Санитарный гель», «Cillit Bang») — эффективны против известкового налета.",
@@ -5499,7 +5634,25 @@
     "raw_format": "normalized",
     "answer_text": "Отбелить вещи можно разными способами, в зависимости от материала ткани, степени загрязнения и желаемого результата. Вот несколько проверенных методов:\n\n## 🧼 Домашние средства для отбеливания белых вещей:\n\n### 1. Хозяйственное мыло и соль:\n- Замочите вещь в теплой воде с добавлением хозяйственного мыла (примерно 1 ст.л.) и соли (½ ч.л.). Оставьте минимум на час.\n- Затем постирайте обычным способом вручную или в стиральной машине.\n\n### 2. Уксус:\n- Растворите уксус (около 100 мл уксуса на литр воды).\n- Замочите ткань на 30 минут, затем прополощите.\n\n### 3. Лимонная кислота или сок лимона:\n- Разведите лимонную кислоту или выдавите сок половины лимона в теплую воду (примерно 1 л воды на 1 ст.л. кислоты или сока).\n- Замочите одежду на ночь, утром постирайте обычным образом.\n\n### 4. Перекись водорода:\n- Смешайте перекись водорода (3%) с водой в равных пропорциях.\n- Замочите белые вещи на полчаса, затем аккуратно потрите пятна и постирайте.\n\n### 5. Нашатырный спирт:\n- Растворите нашатырь (1 ст.л.) в литре горячей воды.\n- Замочите изделие на пару часов, затем постирайте.\n\n---\n\n## 🧽 Профессиональные средства:\n\n- **Белизна** (хлорсодержащий отбеливатель): подходит для хлопковых и льняных тканей. Следуйте инструкции на упаковке.\n- **Доместос**, «АСЕ», «БОС»: жидкие хлорсодержащие отбеливатели, эффективны против сильных загрязнений.\n- **Ласка Оптик», Vanish Active White**: кислородные отбеливатели, подходят для цветных и деликатных тканей.\n\n---\n\n## 📌 Советы по отбеливанию:\n\n- Предварительно проверьте действие выбранного средства на незаметном участке одежды.\n- Не используйте агрессивные химикаты для шелка, шерсти, синтетики и деликатных тканей.\n- Для сильно загрязненных пятен предварительно замочите вещь в растворе соды или соли.\n- Регулярно проветривайте белье на солнце — солнечные лучи отлично помогают отбеливать ткани естественным путем.\n\nВыбирайте подходящий метод в зависимости от типа ткани и характера загрязнения.",
     "answer_language": "ru",
-    "brands": [],
+    "brands": [
+      {
+        "brand_raw": "ЛАСКА",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "🧽 Профессиональные средства:",
+        "evidence": "- **Ласка Оптик», Vanish Active White**: кислородные отбеливатели, подходят для цветных и деликатных тканей.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      }
+    ],
     "sources": [],
     "products": [],
     "quality": {
@@ -5508,7 +5661,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 0,
+      "brand_count": 1,
       "source_count": 0,
       "answer_length": 1941
     },
@@ -6449,10 +6602,10 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Доместос",
-        "brand_canonical": "Доместос",
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
         "kind": "mention",
-        "first_mention_order": 3,
+        "first_mention_order": 2,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
@@ -6466,10 +6619,10 @@
         }
       },
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
+        "brand_raw": "Доместос",
+        "brand_canonical": "Доместос",
         "kind": "mention",
-        "first_mention_order": 4,
+        "first_mention_order": 3,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
@@ -6866,7 +7019,25 @@
     "raw_format": "normalized",
     "answer_text": "Выбор лучшего отбеливателя зависит от типа ткани, степени загрязнения и личных предпочтений. Вот несколько популярных вариантов, каждый из которых эффективен в своей области:\n\n## 🧺 Отбеливатели общего назначения:\n- **Белизна**  \n  Эффективно удаляет пятна, обладает сильным действием против бактерий и плесени. Подходит для белых тканей, но требует осторожности при стирке цветных вещей.\n\n- **Доместос отбеливающий**  \n  Универсальное средство, подходит для стирки одежды, постельного белья, полотенец и кухонных принадлежностей. Хорошо справляется с пятнами и дезинфекцией.\n\n## 🧹 Для деликатных тканей и детских вещей:\n- **Ушастый нянь**  \n  Безопасен даже для детского белья и пеленок, мягко очищает и сохраняет яркость цвета.\n\n- **Ласка Оптик Клинер**  \n  Специально разработан для ухода за детскими вещами, эффективно устраняет загрязнения и бережно относится к тканям.\n\n## 🌿 Натуральные средства:\n- **Гидроперит (пероксид водорода)**  \n  Доступное и эффективное средство для удаления пятен и отбеливания светлых тканей. Не повреждает ткань и экологично.\n\n- **Уксус столовый (уксусная кислота)**  \n  Используется для устранения серости и желтизны белого белья, освежает цвет и придает мягкость ткани.\n\n---\n\n### Советы по выбору отбеливателя:\n- Всегда предварительно проверяйте действие выбранного отбеливателя на незаметном участке ткани.\n- Используйте отбеливатель строго по инструкции производителя.\n- Для сохранения белоснежности используйте щадящие режимы стирки и регулярно проветривайте бельё на солнце.\n\nВыбирайте тот вариант, который лучше всего соответствует вашим потребностям и типу ткани.",
     "answer_language": "ru",
-    "brands": [],
+    "brands": [
+      {
+        "brand_raw": "ЛАСКА",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "🧹 Для деликатных тканей и детских вещей:",
+        "evidence": "- **Ласка Оптик Клинер**",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      }
+    ],
     "sources": [],
     "products": [],
     "quality": {
@@ -6875,7 +7046,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 0,
+      "brand_count": 1,
       "source_count": 0,
       "answer_length": 1604
     },
@@ -6956,6 +7127,23 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "ЛАСКА",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "🧺 Для ручной стирки:",
+        "evidence": "- **Средства на мыльной основе** («Ласка», «Ушастый нянь», «Аист») — отлично подходят для деликатных тканей, детских вещей и шерсти.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Amway",
         "brand_canonical": "Amway",
         "kind": "mention",
@@ -6965,6 +7153,23 @@
         "mentioned_in_query": false,
         "section": "🧺 Для ручной стирки:",
         "evidence": "- **Гель-концентрат** («Био-Мастер», «Амвей», экологичные средства вроде Dr.Bronner’s) — экономичны, эффективно удаляют пятна и загрязнения.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "💧 Для машинной стирки:",
+        "evidence": "- **Капсулы и таблетки** («Tide», «Ariel», «Persil Go») — удобны в применении, быстро растворяются, обеспечивают отличную эффективность даже при низких температурах воды.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -7015,7 +7220,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1366
     },
@@ -7181,6 +7386,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "4. Persil Proffessional Oxi Action",
+        "evidence": "### 4. Persil Proffessional Oxi Action",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -7191,7 +7413,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1762
     },
@@ -7288,7 +7510,7 @@
       },
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 7,
         "list_position": null,
@@ -7461,6 +7683,40 @@
         }
       },
       {
+        "brand_raw": "БИОЛАН",
+        "brand_canonical": "БИОЛАН",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Российские марки:",
+        "evidence": "- «Биолан»",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 4,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "Зарубежные бренды:",
+        "evidence": "- «Persil» (Персил)",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Faberlic",
         "brand_canonical": "Faberlic",
         "kind": "mention",
@@ -7486,7 +7742,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 785
     },
@@ -8358,6 +8614,23 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "ЛАСКА",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "🧺 Отбеливатели отечественного производства:",
+        "evidence": "- **Ласка**",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Amway",
         "brand_canonical": "Amway",
         "kind": "mention",
@@ -8367,6 +8640,23 @@
         "mentioned_in_query": false,
         "section": "🌍 Импортные средства:",
         "evidence": "- **Amway SA8**",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "🌍 Импортные средства:",
+        "evidence": "- **Persil Bio Oxi Action**",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -8383,7 +8673,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1262
     },
@@ -8533,6 +8823,23 @@
         }
       },
       {
+        "brand_raw": "Karcher Car Care Shampoo",
+        "brand_canonical": "Kärcher",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "🛠️ Профессиональные средства:",
+        "evidence": "- **Karcher Car Care Shampoo**",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Liqui Moly Salonenglanz Spray",
         "brand_canonical": "Liqui Moly",
         "kind": "mention",
@@ -8575,7 +8882,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1644
     },
@@ -8601,7 +8908,25 @@
     "raw_format": "normalized",
     "answer_text": "Вот подборка популярных российских брендов бытовой химии, известных высоким качеством и доступной ценой:\n\n### Средства для уборки и очистки поверхностей:\n- **Clean Home**  \n  Популярный бренд российского производства, продукция которого представлена средствами для мытья полов, зеркал, окон, сантехники.\n- **Доместос Россия**  \n  Российский производитель чистящих средств, выпускающих продукцию высокого качества, известную эффективностью и надежностью.\n- **Санокс**  \n  Российское средство для дезинфекции и чистки санузлов, эффективно борется с загрязнениями и неприятными запахами.\n\n### Моющие средства и стиральные порошки:\n- **Ариэль**  \n  Один из наиболее узнаваемых российских брендов, производимый компанией Procter & Gamble в России. Эффективно отстирывает даже сильные загрязнения.\n- **Тайд**  \n  Классический российский бренд, известный своей надежностью и проверенной временем формулой стирки.\n- **Ушастый нянь**  \n  Безопасный детский порошок отечественного производства, гипоаллергенный и безопасный для детской одежды.\n\n### Средства для ухода за домом и мебелью:\n- **Сифо**  \n  Российский бренд, специализирующийся на средствах для ухода за мебелью, полами и тканями.\n- **Фея**  \n  Широко известная марка моющих средств и товаров для дома, выпускаемая российским производителем ООО «Нэфис Косметикс».\n\n### Средства личной гигиены и уход за телом:\n- **Ласка**  \n  Российский бренд, выпускающий жидкое мыло, гели для душа и шампуни, отличающиеся приятным ароматом и мягким воздействием.\n- **Бархатные ручки**  \n  Популярная линейка российских средств для рук, увлажняющих кремов и лосьонов.\n\nЭти российские марки давно завоевали доверие покупателей благодаря качеству продукции и доступности цен.",
     "answer_language": "ru",
-    "brands": [],
+    "brands": [
+      {
+        "brand_raw": "ЛАСКА",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Средства личной гигиены и уход за телом:",
+        "evidence": "- **Ласка**",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      }
+    ],
     "sources": [],
     "products": [],
     "quality": {
@@ -8610,7 +8935,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 0,
+      "brand_count": 1,
       "source_count": 0,
       "answer_length": 1709
     },
@@ -8776,6 +9101,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "🧴 4. Persil ProClean Oxi White",
+        "evidence": "### 🧴 4. Persil ProClean Oxi White",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -8786,7 +9128,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1249
     },
@@ -8969,6 +9311,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "БИОЛАН",
+        "brand_canonical": "БИОЛАН",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Основные виды отбеливателей:",
+        "evidence": "Применяются преимущественно для натуральных волокон (хлопок, лен, шерсть). Энзимы расщепляют органические загрязнения, делая вещи идеально чистыми и свежими. Например, «Асе», «Биолан».",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -8979,7 +9338,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1776
     },
@@ -9057,23 +9416,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Beckmann",
-        "brand_canonical": "Dr. Beckmann",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "Советы по применению пятновыводителя:",
-        "evidence": "- Dr.Beckmann",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -9084,7 +9426,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 1,
       "source_count": 0,
       "answer_length": 1558
     },
@@ -9129,6 +9471,23 @@
         }
       },
       {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Основные виды отбеливателей:",
+        "evidence": "Примеры: Vanish Oxi Action, Amway AOX, Persil Active Oxygen.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "OXYGEN",
         "brand_canonical": "OXYGEN",
         "kind": "mention",
@@ -9154,7 +9513,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1859
     },
@@ -9268,7 +9627,42 @@
     "raw_format": "normalized",
     "answer_text": "Отбеливатели бывают разными по составу и назначению:\n\n### По типу:\n- **Хлорсодержащие** (например, Белизна): эффективно удаляют пятна, дезинфицируют поверхность, но имеют резкий запах и токсичны.\n- **Безхлорные** (например, Доместос, БОС): менее агрессивны, подходят для ежедневного ухода, не содержат хлора, но хуже справляются с сильными загрязнениями.\n- **Для ткани** (например, Vanish, Персил): специально предназначены для стирки белья и одежды, устраняют пятна и сохраняют яркость цвета.\n- **Для дома и сантехники** (например, Cillit Bang, Comet): отлично очищают поверхности, удаляя известковый налет, ржавчину и грязь.\n\n### Советы по выбору:\n- Для уборки кухни и ванной лучше всего подойдут хлорсодержащие средства или безхлорные универсальные очистители.\n- Для стирки белья и детской одежды выбирайте гипоаллергенные средства без хлора и фосфатов.\n- Если вы хотите экологичный вариант, обратите внимание на биоразлагаемые средства («Эковер», «Биолан»).\n\nВыбирайте средство в зависимости от ваших потребностей и условий использования.",
     "answer_language": "ru",
-    "brands": [],
+    "brands": [
+      {
+        "brand_raw": "персил",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "По типу:",
+        "evidence": "- **Для ткани** (например, Vanish, Персил): специально предназначены для стирки белья и одежды, устраняют пятна и сохраняют яркость цвета.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "БИОЛАН",
+        "brand_canonical": "БИОЛАН",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Советы по выбору:",
+        "evidence": "- Если вы хотите экологичный вариант, обратите внимание на биоразлагаемые средства («Эковер», «Биолан»).",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      }
+    ],
     "sources": [],
     "products": [],
     "quality": {
@@ -9277,7 +9671,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 0,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1042
     },
@@ -9358,6 +9752,23 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "ЛАСКА",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Популярные марки кислородных отбеливателей:",
+        "evidence": "2. **Ласка**",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Amway",
         "brand_canonical": "Amway",
         "kind": "mention",
@@ -9367,6 +9778,23 @@
         "mentioned_in_query": false,
         "section": "Популярные марки кислородных отбеливателей:",
         "evidence": "3. **Амвей (Amway)**",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "БИОЛАН",
+        "brand_canonical": "БИОЛАН",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Популярные марки кислородных отбеливателей:",
+        "evidence": "4. **Биолан**",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -9383,7 +9811,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1370
     },

@@ -3118,7 +3118,7 @@
     "brands": [
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
@@ -3126,23 +3126,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "рности и соотношению «эффект/цена» можно назвать так:\n\n1. **Domestos** — мощный хлорный отбеливатель/гель, хорошо для сантехники",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "и и белых хлопковых тканей, но резкий и агрессивный.  \n2. **Белизна** — классический хлорный отбеливатель, дешёвый и эффективны",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3186,7 +3169,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 5,
         "list_position": null,
@@ -3194,6 +3177,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "ели/отбеливатели, удобны для белых и цветных тканей.  \n5. **Persil / Ласка** — за счёт кислородных компонентов в составе хорош",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Ласка",
+        "brand_canonical": "ЛАСКА",
+        "kind": "mention",
+        "first_mention_order": 6,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "иватели, удобны для белых и цветных тканей.  \n5. **Persil / Ласка** — за счёт кислородных компонентов в составе хорошо работа",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3250,7 +3250,7 @@
         "kind": "mention",
         "first_mention_order": 3,
         "list_position": null,
-        "count": 2,
+        "count": 3,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "Ф/СНГ — по доступности, эффективности и ассортименту:\n\n1. **Vanish (Oxi Action)** — самый известный и доступный, много формато",
@@ -3284,27 +3284,10 @@
         "kind": "mention",
         "first_mention_order": 6,
         "list_position": null,
-        "count": 2,
+        "count": 3,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "мачивания; минус — цена/наличие могут варьироваться.  \n3. **БОС (BOS)** — бюджетный российский вариант; хорошо освежает бел",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "BOS",
-        "brand_canonical": "Bostik",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ания; минус — цена/наличие могут варьироваться.  \n3. **БОС (BOS)** — бюджетный российский вариант; хорошо освежает белое, у",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3355,7 +3338,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1010
     },
@@ -3448,25 +3431,7 @@
     "raw_format": "raw",
     "answer_text": "Честно: категория «энзимные карандаши» не очень стандартизирована, и объективного топ-5 именно «карандашей» нет. Если речь о косметических энзимных средствах для очищения/отшелушивания (чаще это стики или пудры, а не карандаши), я бы в первую очередь смотрел на бренды:\n\n1. **Kanebo Suisai** — эталонные энзимные пудры для умывания.  \n2. **By Wishtrend** — известные энзимные пудры/очищающие средства.  \n3. **Dermalogica** — Daily Microfoliant и линейка энзимного отшелушивания.  \n4. **Tatcha** — rice polish / энзимное мягкое отшелушивание.  \n5. **Amorepacific** — Treatment Enzyme Peel и премиальные энзимные средства.\n\nНо если вы имели в виду **пятновыводители-карандаши с энзимами для одежды**, то там список будет другой — уточните, и я подберу именно по этой категории.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Amorepacific",
-        "brand_canonical": "Cif",
-        "kind": "mention",
-        "first_mention_order": 6,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "cha** — rice polish / энзимное мягкое отшелушивание.  \n5. **Amorepacific** — Treatment Enzyme Peel и премиальные энзимные средства.",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -3475,7 +3440,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 775
     },
@@ -3511,7 +3476,7 @@
     "brands": [
       {
         "brand_raw": "Sodasan Oxygen Bleach",
-        "brand_canonical": "OXYGEN",
+        "brand_canonical": "Sodasan",
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
@@ -3545,7 +3510,7 @@
       },
       {
         "brand_raw": "BOS",
-        "brand_canonical": "Bostik",
+        "brand_canonical": "БОС",
         "kind": "mention",
         "first_mention_order": 10,
         "list_position": null,
@@ -3553,23 +3518,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "отбеливатель без хлора. Неплох по доступности и цене.\n\n5. **BOS plus или «Ушастый нянь» кислородный**  \n   Бюджетные и эффе",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 11,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ез хлора. Неплох по доступности и цене.\n\n5. **BOS plus или «Ушастый нянь» кислородный**  \n   Бюджетные и эффективные варианты.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3586,7 +3534,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1461
     },
@@ -3672,23 +3620,6 @@
         }
       },
       {
-        "brand_raw": "Go",
-        "brand_canonical": "GoSpottyGo",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "от еды/напитков; важно проверять ярлык ткани.\n3. **Tide to Go** — известный экспресс-формат для пятен «на ходу»; чаще вст",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Amway Home",
         "brand_canonical": "Amway",
         "kind": "mention",
@@ -3731,7 +3662,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1003
     },
@@ -3767,7 +3698,7 @@
     "brands": [
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
@@ -3801,7 +3732,7 @@
       },
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 3,
         "list_position": null,
@@ -3832,6 +3763,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Пемолюкс",
+        "brand_canonical": "Пемолюкс",
+        "kind": "mention",
+        "first_mention_order": 5,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "ти и стойких загрязнений, но не для всех материалов.  \n5. **Пемолюкс** — бюджетный и мощный абразивный вариант; не подходит для",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -3842,7 +3790,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 968
     },
@@ -3894,12 +3842,29 @@
         }
       },
       {
+        "brand_raw": "Stain Remover",
+        "brand_canonical": "Remover",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 3,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "и чаще всего хвалят:\n\n1. **Dr. Beckmann**  \n   — особенно **Stain Remover / Spray Stain Remover**. Силён в жирных, пищевых пятнах, во",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Vanish",
         "brand_canonical": "Vanish",
         "kind": "mention",
         "first_mention_order": 5,
         "list_position": null,
-        "count": 2,
+        "count": 3,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "то считается эталоном среди бытовых пятновыводителей.\n\n2. **Vanish**  \n   — линейка **Oxi Action**. Массовый, доступный, хорош",
@@ -3970,7 +3935,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 1339
     },

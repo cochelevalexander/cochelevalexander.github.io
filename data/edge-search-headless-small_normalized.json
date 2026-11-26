@@ -463,10 +463,44 @@
         }
       },
       {
+        "brand_raw": "ЕЛИЗАР",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Популярные средства",
+        "evidence": "«Елизар» — концентрированный пятновыводитель, подходит для белого и цветного белья.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "BRANDFREE",
         "brand_canonical": "BRANDFREE",
         "kind": "mention",
         "first_mention_order": 4,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Популярные средства",
+        "evidence": "BRANDFREE «Я твоё средство для всего» — универсальный отбеливатель-пятновыводитель.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "я твое средство",
+        "brand_canonical": "я твое средство",
+        "kind": "mention",
+        "first_mention_order": 5,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
@@ -569,6 +603,7 @@
         "rank": 1,
         "title": "Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 496.0,
@@ -598,7 +633,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «кислородный отбеливатель для белья»",
         "rank": 3,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -613,7 +650,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 5,
       "source_count": 10,
       "answer_length": 0
     },
@@ -1244,7 +1281,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «средство от пятен на одежде»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -1721,7 +1760,7 @@
         "rank": 1,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -2404,6 +2443,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "я твое средство",
+        "brand_canonical": "я твое средство",
+        "kind": "recommendation",
+        "first_mention_order": 4,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Примеры хороших кислородных отбеливателей",
+        "evidence": "BRANDFREE «Я твоё средство для всего». Универсальный кислородный концентрат. Подходит не только для белого, но и для цветного белья, а также для очистки других поверхностей. Не содержит хлора, фосфатов и отдушек.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [
@@ -2486,7 +2542,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «хороший отбеливатель для белого белья»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -2515,6 +2573,7 @@
         "rank": 3,
         "title": "Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 496.0,
@@ -2531,7 +2590,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 9,
       "answer_length": 0
     },
@@ -2673,6 +2732,7 @@
         "rank": 3,
         "title": "Универсальная чистящая чудо-паста для уборки твёрдых поверхностей « Я твое средство для всего» BRANDFREE, 500 г",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 486.0,
@@ -3722,7 +3782,7 @@
         "rank": 2,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -3951,7 +4011,7 @@
         "rank": 1,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -4606,7 +4666,7 @@
         "rank": 2,
         "title": "Клин Средство для мытья окон и стекол, с ароматом Лимона, 500 мл",
         "brands": [
-          "Сан Клинк"
+          "Клин"
         ],
         "price": 179.0,
         "currency": "RUB",
@@ -4735,7 +4795,7 @@
         "rank": 3,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -4865,6 +4925,7 @@
         "rank": 1,
         "title": "Универсальная чистящая чудо-паста для уборки твёрдых поверхностей « Я твое средство для всего» BRANDFREE, 500 г",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 486.0,
@@ -5889,7 +5950,25 @@
     "raw_format": "raw",
     "answer_text": "",
     "answer_language": "en",
-    "brands": [],
+    "brands": [
+      {
+        "brand_raw": "Момент",
+        "brand_canonical": "Момент",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Подготовка к стирке",
+        "evidence": "Сортировка — ключевой момент. Белые вещи стирайте отдельно от цветных и тёмных, чтобы избежать линьки. Также разделите их по типу ткани: хлопок и лён можно кипятить, а синтетику и деликатные материалы (шёлк, шерсть) кипятить нельзя — для них нужны щадящие методы.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      }
+    ],
     "sources": [
       {
         "url": "https://yabs.yandex.ru/count/Wt8ejI_zOoVX2Lbg0oKR04FnloUUFIYWAkveZuff3mhSzjaW01AEClIIBOW4SXvrbxe8NRxQaO0vWIhUC06zESRQyeU0roEWbm122tq-bpjxjj-vyuOxNx_ZzOOxt1Oz3_HGyFDYHOeM4Q2W2XLPXse06JcVjnIQD2E4D8WAdI046wbdnGH1rXdH3IgO_WnbWC483z1mPc0NtL2oIoXHJP20GgFI7FgqdxMH3ACXAr0jL1l9C2fIijP8KggfDuQgjGmQjLqhKP6KYgn9IaL6DEeXgvAGKfBGZ22ZUiYgHAqXD6G5KZAgXwnAGbMZ6ZTg61KfKMySrJTk55MDa8o6aeHer4XK7493rY8Z74PvEs3A9bKvrSUZAtq3Z5Dx1Wymw3YQC2iB8DyPWFYZW2Pq0U4FZXJ03O4CM80s13AJ0hGXaFyAq8P0zYj06m9PN80s1FAI0hGXaFiAq8O0TwG0RGXmU0LeGu0pKe0s1BYx0hGXm1KfG1i2t5tErm6br0qDI4YqvdJflofTYqMFJoq2ZQGZeYEWA90L1r4q24Yepd5edakdTdHwHw7sRJzpQFt4ftZ-T49pt0c5JgNs50UBWuVQkK-GY5qM2YygMC4dSpxVCDbuQsnsxmHm0pZ31gw87ur9fcoTDAffDUnD9tzrMWrRBm3NwrWd3blYXiHTyR6Z1mtNqspRS1W-a5P3GW1V8S3T1R1rGAllNnZ29imL19UmzGbUC6VmvhWZZQk4QxQmDK7bCKo4dnLO5dRGOHNADrV05CnD7c4AsnWe7Gjcqh5xZDZ7w3IC6OHo0qYEiZJ02DFDW2WimHIQ5oCqzMgQt9hcxdzZ05ZQVbY5a1uVNAC4xtzdf1ZvtXafHZuN0nNmto-04lArqQsHdurkZJ3DBioOPHTcpF6kwxfEcvbMvlOc5H3flG8YlVM4lkotGeZqUV8NGZXMvyUq1oVms2IAq7-zKnUsozPlQLrdSkh2TjbwxPyiOZX5pMUzrtqF9v3W7LVe5XkFQ6QkL2gLD3xFdnsZOs26eFm_w09W880khmO17_p3-rnx5XaKpoIuEXz-8IveAjH4sU3Flzkv8xSEV3MN1NIHBL8yKUw7xiNcKkWh64Qn50SB4kDTeCsPLDGvu3k-kIYXekcdTnE9xpg4wPGNGD8VUAKtitCM9HHXvPxZa040~2?etext=2202.MK6fXJnA6fLml0bNw7iEz13zQ1ASMVv4_hNXTjnEMiNqBQX-Dr181UR4vKEY_CfDV6EiEFxZiJdePx-UoYA_hXVvbXpqZGttdmdtb21scXc.e3751cf4317a50829f7e2cdc3b5f5ba01c9b5d20&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D0%BA%D0%B0%D0%BA+%D0%BE%D1%82%D1%81%D1%82%D0%B8%D1%80%D0%B0%D1%82%D1%8C+%D0%B1%D0%B5%D0%BB%D1%8B%D0%B5+%D0%B2%D0%B5%D1%89%D0%B8",
@@ -5971,7 +6050,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 0,
+      "brand_count": 1,
       "source_count": 9,
       "answer_length": 0
     },
@@ -8144,6 +8223,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "ЕЛИЗАР",
+        "brand_canonical": "Елизар",
+        "kind": "recommendation",
+        "first_mention_order": 4,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Промышленные средства",
+        "evidence": "Примеры средств: Vanish Oxi Action, Salton CleanTech, Synergetic, «Елизар».",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [
@@ -8227,7 +8323,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 9,
       "answer_length": 0
     },
@@ -9049,6 +9145,23 @@
         }
       },
       {
+        "brand_raw": "ЕЛИЗАР",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 5,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Бытовая химия",
+        "evidence": "Кислородные отбеливатели («Персоль», Oxygen от ECO-Way, «Елизар») работают мягче хлора, подходят и для белых, и для цветных поверхностей. Разведите порошок до консистенции кашицы, нанесите на увлажнённые швы на 2–3 часа, затем смойте.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Mellerud",
         "brand_canonical": "Mellerud",
         "kind": "mention",
@@ -9156,7 +9269,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 7,
       "source_count": 8,
       "answer_length": 0
     },
@@ -9223,6 +9336,23 @@
         "mentioned_in_query": false,
         "section": "Специальные средства",
         "evidence": "Cif Ultra White, «Мистер Чистер» (отбеливатели для сантехники);",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
+        "kind": "mention",
+        "first_mention_order": 4,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Специальные средства",
+        "evidence": "«Чистая ванна» от Санокс.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -9320,7 +9450,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 10,
       "answer_length": 0
     },
@@ -9888,6 +10018,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "ЕЛИЗАР",
+        "brand_canonical": "Елизар",
+        "kind": "recommendation",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "Если у вас цветное бельё, вы хотите освежить оттенки, не испортив вещь — однозначно берите кислородный отбеливатель. В его основе — активный кислород (часто перкарбонат натрия), который расщепляет загрязнения, не разрушая волокна ткани. Такие средства подходят и для белого, и для цветного белья, часто безопасны для аллергиков и детской одежды. Многие из них ещё и работают как пятновыводители благодаря дополнительным компонентам (энзимам). Примеры: Vanish Oxi Action, Synergetic, «Елизар», LION BEAT O2.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [
@@ -9970,7 +10117,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «лучший отбеливатель»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -9999,6 +10148,7 @@
         "rank": 3,
         "title": "Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 496.0,
@@ -10015,7 +10165,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 3,
       "source_count": 9,
       "answer_length": 0
     },
@@ -10086,7 +10236,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «лучший пятновыводитель»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -10164,6 +10316,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "Vanish Oxi Action (жидкий). Часто рекомендуют как универсальный и надёжный вариант. Его основа — активный кислород, при этом в составе нет хлора, что позволяет использовать его и на деликатных тканях (шёлк, шерсть, синтетика). Хорошо справляется со свежими пятнами от еды, жира, травы, крови, вина. Можно точечно нанести на загрязнение или добавить прямо в отсек стиральной машины. Единственный нюанс: если добавлять при машинной стирке, эффект может быть слабее, чем при прямом нанесении на пятно.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "ЕЛИЗАР",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "«Елизар» (порошок). Сильный кислородный вариант, который хорошо берёт сложные органические загрязнения: въевшуюся краску, чернила, йод. Но важно помнить: его нельзя применять на шёлке, шерсти, коже, а также на вещах с металлической фурнитурой.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -10262,7 +10431,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «лучший пятновыводитель для одежды»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -10291,7 +10462,7 @@
         "rank": 3,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -10307,7 +10478,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 6,
       "answer_length": 0
     },
@@ -10378,7 +10549,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «лучший кислородный отбеливатель»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -10392,6 +10565,7 @@
         "rank": 2,
         "title": "Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 496.0,
@@ -10406,7 +10580,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «лучший кислородный отбеливатель»",
         "rank": 3,
         "title": "Отбеливатель Персоль, Extra, 200 г, порошок, кислородный, ЧС-09",
-        "brands": [],
+        "brands": [
+          "Персоль"
+        ],
         "price": 35.0,
         "currency": "RUB",
         "old_price": null,
@@ -10686,6 +10862,23 @@
         }
       },
       {
+        "brand_raw": "я твое средство",
+        "brand_canonical": "я твое средство",
+        "kind": "mention",
+        "first_mention_order": 6,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Популярные бренды",
+        "evidence": "Brandfree («Я твое средство для всего») Кислородный очиститель, который позиционируется как универсальное средство для борьбы с различными загрязнениями.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "GRASS",
         "brand_canonical": "GRASS",
         "kind": "mention",
@@ -10809,7 +11002,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «бренды пятновыводителей»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -10854,7 +11049,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 9,
       "source_count": 8,
       "answer_length": 0
     },
@@ -10925,7 +11120,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «рейтинг пятновыводителей»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -10993,6 +11190,23 @@
     "answer_text": "",
     "answer_language": "en",
     "brands": [
+      {
+        "brand_raw": "ЕЛИЗАР",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "«Елизар» (концентрат). Часто хвалят как многофункциональный вариант: хорошо справляется с органическими загрязнениями — от пота, жира, фруктов, зелёнки, йода. Подходит для белого и цветного белья, работает при замачивании, усиливает действие стирального порошка. Но есть нюансы: не подходит для шерсти, шёлка, кожи, алюминия и предметов с металлической фурнитурой. Также он бессилен против неорганических пятен (ржавчина, некоторые виды чернил). Для активации обычно нужен кипяток.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
       {
         "brand_raw": "Salton CleanTech",
         "brand_canonical": "Salton CleanTech",
@@ -11109,7 +11323,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «лучший кислородный пятновыводитель»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -11154,7 +11370,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 7,
       "answer_length": 0
     },
@@ -11301,7 +11517,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «лучший пятновыводитель для цветного»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -11315,7 +11533,7 @@
         "rank": 2,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -11396,6 +11614,23 @@
         "mentioned_in_query": false,
         "section": "Для цветного и деликатного белья",
         "evidence": "Synergetic — биоразлагаемый кислородный отбеливатель-пятновыводитель, подходит и для белого, и для цветного белья, в том числе для детской одежды.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "ЕЛИЗАР",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Для цветного и деликатного белья",
+        "evidence": "«Елизар» — многофункциональный кислородный отбеливатель, в составе нет хлора и фосфатов, работает в горячей воде.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -11518,7 +11753,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «лучший отбеливатель и пятновыводитель»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 368.0,
         "currency": "RUB",
         "old_price": 650.0,
@@ -11563,7 +11800,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 5,
       "source_count": 9,
       "answer_length": 0
     },
@@ -11596,6 +11833,23 @@
         "mentioned_in_query": false,
         "section": "Варианты средств",
         "evidence": "Vanish Oxi Action. Кислородный пятновыводитель в жидком виде. Работает даже в прохладной воде (от +30 °C), подходит для разных тканей: хлопка, синтетики, шёлка и шерсти. Хорошо справляется с пятнами от еды, жира, крови, травы и уличной грязи. Можно нанести прямо на пятно или добавить в отсек стиральной машины. Важно: не оставляйте средство на ткани дольше 10 минут, иначе могут остаться разводы после высыхания. Также избегайте попадания на металлические пуговицы и молнии.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "ЕЛИЗАР",
+        "brand_canonical": "Елизар",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Варианты средств",
+        "evidence": "«Елизар». Кислородный пятновыводитель в форме порошка. Считается одним из самых сильных для сложных органических загрязнений: въевшаяся краска, чернила, йод, пятна от кофе, вина, фруктовых соков. Однако его нельзя использовать на шёлке и шерсти.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -11718,7 +11972,7 @@
         "rank": 2,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -11747,7 +12001,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 7,
       "answer_length": 0
     },
@@ -11927,7 +12181,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «лучший пятновыводитель для детской одежды»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -11941,7 +12197,7 @@
         "rank": 2,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -12083,7 +12339,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «отбеливатель»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -12097,6 +12355,7 @@
         "rank": 2,
         "title": "Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 496.0,
@@ -12111,7 +12370,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «отбеливатель»",
         "rank": 3,
         "title": "Отбеливатель Персоль, Extra, 200 г, порошок, кислородный, ЧС-09",
-        "brands": [],
+        "brands": [
+          "Персоль"
+        ],
         "price": 35.0,
         "currency": "RUB",
         "old_price": null,
@@ -12171,6 +12432,23 @@
         "brand_canonical": "Cillit Bang",
         "kind": "recommendation",
         "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Примеры средств",
+        "evidence": "Для сантехники: «Cillit Bang Антиналёт», «Санокс Classic».",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
+        "kind": "recommendation",
+        "first_mention_order": 3,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
@@ -12282,7 +12560,7 @@
         "rank": 1,
         "title": "Чистящее средство для унитаза Доместос Свежесть Атлантики универсальное средство для уборки, гель 500 мл",
         "brands": [
-          "Domestos"
+          "Доместос"
         ],
         "price": 152.0,
         "currency": "RUB",
@@ -12309,7 +12587,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «чистящее средство»",
         "rank": 3,
         "title": "Средство для удаления ржавчины и известкового налета 750 г, санокс",
-        "brands": [],
+        "brands": [
+          "Санокс"
+        ],
         "price": 114.0,
         "currency": "RUB",
         "old_price": 159.0,
@@ -12324,7 +12604,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 9,
       "answer_length": 0
     },
@@ -12395,7 +12675,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «пятновыводитель»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -12511,7 +12793,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «отбеливатель для белья»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -12525,6 +12809,7 @@
         "rank": 2,
         "title": "Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 496.0,
@@ -12539,7 +12824,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «отбеливатель для белья»",
         "rank": 3,
         "title": "Отбеливатель Персоль, Extra, 200 г, порошок, кислородный, ЧС-09",
-        "brands": [],
+        "brands": [
+          "Персоль"
+        ],
         "price": 35.0,
         "currency": "RUB",
         "old_price": null,
@@ -12641,7 +12928,7 @@
         "rank": 2,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -12744,6 +13031,7 @@
         "rank": 1,
         "title": "Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 496.0,
@@ -12758,7 +13046,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «купить отбеливатель»",
         "rank": 2,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -12771,7 +13061,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «купить отбеливатель»",
         "rank": 3,
         "title": "Отбеливатель Персоль, Extra, 200 г, порошок, кислородный, ЧС-09",
-        "brands": [],
+        "brands": [
+          "Персоль"
+        ],
         "price": 35.0,
         "currency": "RUB",
         "old_price": null,
@@ -12873,7 +13165,7 @@
         "rank": 2,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -12976,6 +13268,7 @@
         "rank": 1,
         "title": "Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 496.0,
@@ -12990,7 +13283,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «кислородный отбеливатель купить»",
         "rank": 2,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -13003,7 +13298,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «кислородный отбеливатель купить»",
         "rank": 3,
         "title": "Отбеливатель Персоль, Extra, 200 г, порошок, кислородный, ЧС-09",
-        "brands": [],
+        "brands": [
+          "Персоль"
+        ],
         "price": 35.0,
         "currency": "RUB",
         "old_price": null,
@@ -13172,7 +13469,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «пятновыводитель лучший рейтинг»",
         "rank": 2,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -13370,7 +13669,7 @@
         "rank": 1,
         "title": "Сиф Пятновыводитель Универсальное чистящее средство, спрей от пятен на одежде, 100 мл, спреи",
         "brands": [
-          "Cif"
+          "Сиф"
         ],
         "price": 105.0,
         "currency": "RUB",
@@ -13674,6 +13973,23 @@
         }
       },
       {
+        "brand_raw": "ЕЛИЗАР",
+        "brand_canonical": "Елизар",
+        "kind": "recommendation",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "Примеры средств",
+        "evidence": "«Елизар» (кислородный, концентрат). Многофункциональное средство: подходит для цветного и белого белья, помогает убрать неприятные запахи. Есть мерная ложка для удобной дозировки.",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Lamm",
         "brand_canonical": "Lamm",
         "kind": "recommendation",
@@ -13763,7 +14079,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «какой хороший отбеливатель»",
         "rank": 1,
         "title": "Елизар, кислородный пятновыводитель, отбеливатель, очиститель, концентрат 1 кг, для цветного и белого",
-        "brands": [],
+        "brands": [
+          "Елизар"
+        ],
         "price": 331.0,
         "currency": "RUB",
         "old_price": 368.0,
@@ -13777,6 +14095,7 @@
         "rank": 2,
         "title": "Кислородный очиститель « Я твое средство для всего» BRANDFREE, отбеливатель-пятновыводитель универсальный, 1 кг",
         "brands": [
+          "я твое средство",
           "BRANDFREE"
         ],
         "price": 496.0,
@@ -13791,7 +14110,9 @@
         "group_title": "Быстрый ответ: Популярные товары по запросу «какой хороший отбеливатель»",
         "rank": 3,
         "title": "Отбеливатель Персоль, Extra, 200 г, порошок, кислородный, ЧС-09",
-        "brands": [],
+        "brands": [
+          "Персоль"
+        ],
         "price": 35.0,
         "currency": "RUB",
         "old_price": null,
@@ -13806,7 +14127,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 8,
       "answer_length": 0
     },

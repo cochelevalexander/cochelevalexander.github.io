@@ -35,7 +35,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 6,
         "list_position": null,
@@ -68,25 +68,8 @@
         }
       },
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 13,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "### 2. Хлорные отбеливатели (Гипохлорит натрия)",
-        "evidence": "тетику, убивает цвет, резкий запах.\n\n**Что советую:**\n*   **Белизна**. Классика. Для стирки использовать только в крайних случа",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 14,
         "list_position": null,
@@ -161,7 +144,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 7,
       "source_count": 0,
       "answer_length": 2895
     },
@@ -195,6 +178,23 @@
     "answer_text": "Для обычной уборки дома не обязательно покупать много specialised средств. Обычно достаточно 3–4 базовых:\n\n1. **Универсальное чистящее средство**  \n   Подойдёт для кухонных поверхностей, столов, плитки, дверей, подоконников. Лучше брать спрей или концентрат с нейтральным pH, без хлора и резкого запаха. Примеры: Mr. Proper, Grass, Synergetic, BioMio.\n\n2. **Средство для мытья полов**  \n   Можно использовать тот же универсальный концентрат, разведённый по инструкции, или специальное средство для полов. Для ламината и паркета — с пометкой «для дерева», для плитки — любое.\n\n3. **Средство для сантехники**  \n   Для ванной и туалета нужно отдельное: от известкового налёта, ржавчины и мыльного камня. Обычно это гель или спрей с кислотой (например, Cilit Bang, Domestos, Sanita). Не используйте его на мраморе и эмали с повреждениями.\n\n4. **Средство для стёкол и зеркал**  \n   Спрей на основе спирта или готовые салфетки. Можно заменить раствором воды с уксусом (1:1).\n\n**Если хотите минимализм:**  \n- Универсальный спрей для поверхностей.  \n- Концентрат для полов.  \n- Гель для сантехники.  \n- Микрофибра (2–3 тряпки разных цветов).  \n\n**Экологичный вариант:**  \nSynergetic, BioMio, Ecover, Sodasan — безопасны для детей и животных, но могут хуже справляться с застарелым жиром.\n\n**Бюджетный набор:**  \n«Фейри» для посуды, «Пемолюкс» для сантехники, «Мистер Пропер» для полов, уксус и сода для пятен.\n\nУточните, какие поверхности вас интересуют (кухня, ванная, ламинат, стекло), и есть ли аллергия у домочадцев — тогда подскажу конкретнее.",
     "answer_language": "ru",
     "brands": [
+      {
+        "brand_raw": "Mr. Proper",
+        "brand_canonical": "Мистер Пропер",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "трат с нейтральным pH, без хлора и резкого запаха. Примеры: Mr. Proper, Grass, Synergetic, BioMio.\n\n2. **Средство для мытья полов*",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
       {
         "brand_raw": "Grass",
         "brand_canonical": "GRASS",
@@ -248,7 +248,7 @@
       },
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 12,
         "list_position": null,
@@ -315,15 +315,15 @@
         }
       },
       {
-        "brand_raw": "Мистер Пропер",
-        "brand_canonical": "Мистер Пропер",
+        "brand_raw": "Пемолюкс",
+        "brand_canonical": "Пемолюкс",
         "kind": "mention",
-        "first_mention_order": 24,
+        "first_mention_order": 23,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "набор:**  \n«Фейри» для посуды, «Пемолюкс» для сантехники, «Мистер Пропер» для полов, уксус и сода для пятен.\n\nУточните, какие поверх",
+        "evidence": "тарелым жиром.\n\n**Бюджетный набор:**  \n«Фейри» для посуды, «Пемолюкс» для сантехники, «Мистер Пропер» для полов, уксус и сода дл",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -340,7 +340,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 9,
       "source_count": 0,
       "answer_length": 1540
     },
@@ -418,7 +418,7 @@
     "brands": [
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
@@ -443,6 +443,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "налёт, подходит для эмали, нержавейки, плитки, акрила.\n- **Sanita** — крем-паста с антибактериальным эффектом. Удобна для рак",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Пемолюкс",
+        "brand_canonical": "Пемолюкс",
+        "kind": "mention",
+        "first_mention_order": 4,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": ". Абразивные пасты/порошки (для сильных загрязнений):**\n- **Пемолюкс** — классика. Справляется с нагаром, ржавчиной, известковым",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -486,7 +503,7 @@
       },
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 9,
         "list_position": null,
@@ -561,7 +578,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 9,
       "source_count": 0,
       "answer_length": 1657
     },
@@ -595,40 +612,6 @@
     "answer_text": "Коротко: **универсальный и безопасный выбор — кислородный отбеливатель** (на основе перкарбоната натрия). **Хлорный** — только для белого хлопка/льна и дезинфекции, и то нечасто.\n\n### Что выбрать под задачу\n\n| Тип | Для чего | Ограничения |\n|---|---|---|\n| **Кислородный** | Белые и цветные ткани, пятна, освежение, машинная стирка | Лучше работает при 40–60 °C; не для шерсти/шёлка |\n| **Хлорный** («Белизна» и аналоги) | Белый хлопок/лён, кухонные полотенца, дезинфекция | Портить цветное, шерсть, шёлк, эластан; резкий запах; опасен при смешивании |\n| **Оптический** (в порошках) | Визуальная белизна | Не удаляет пятна и не дезинфицирует |\n\n### Практические рекомендации\n\n1. **Для обычной стирки белого и цветного**  \n   Берите **кислородный отбеливатель-пятновыводитель**. Для цветных вещей — с пометкой **Color / для цветного**.  \n   Примеры: Vanish Oxi Action, Oxi Clean, Dr. Beckmann, Ace Oxi, бюджетно — «Персоль».\n\n2. **Для белого хлопка, полотенец, носков**  \n   Кислородный отбеливатель + замачивание на 1–6 часов при 50–60 °C. Если нужно продезинфицировать — изредка можно хлорный, но только для белого х/б.\n\n3. **Для детского белья и аллергиков**  \n   Кислородный без хлора и лишних отдушек + дополнительное полоскание.\n\n4. **Для шерсти, шёлка, мембранных тканей**  \n   Отбеливатель не нужен. Только специальное деликатное средство.\n\n### Как использовать\n- Дозируйте по инструкции, лучше предварительно растворить в воде.\n- Кислородный отбеливатель активируется при **40–60 °C**. Если стираете при 30 °C, ищите активированный или гелевый вариант.\n- Не смешивайте хлорный отбеливатель с кислотами, аммиаком, перекисью и другими средствами.\n- Проверьте на незаметном участке ткани.\n\n**Если не хотите разбираться:** возьмите кислородный отбеливатель для своего типа белья — White или Color. Это оптимальный домашний вариант. Хлорный держите отдельно для белого хлопка и дезинфекции.",
     "answer_language": "ru",
     "brands": [
-      {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Что выбрать под задачу",
-        "evidence": "| Тип | Для чего | Ограничения |\n|---|---|---|\n| **Кислородный**",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 9,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Что выбрать под задачу",
-        "evidence": "аботает при 40–60 °C; не для шерсти/шёлка |\n| **Хлорный** («Белизна» и аналоги) | Белый хлопок/лён, кухонные полотенца, дезинфе",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
       {
         "brand_raw": "Vanish Oxi Action",
         "brand_canonical": "Vanish",
@@ -681,32 +664,15 @@
         }
       },
       {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
+        "brand_raw": "Персоль",
+        "brand_canonical": "Персоль",
         "kind": "mention",
-        "first_mention_order": 26,
+        "first_mention_order": 23,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "### Практические рекомендации",
-        "evidence": "лородный отбеливатель + замачивание на 1–6 часов при 50–60 °C. Если нужно продезинфицировать — изредка можно хлорный, но т",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "White",
-        "brand_canonical": "White Glo",
-        "kind": "mention",
-        "first_mention_order": 32,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Как использовать",
-        "evidence": "* возьмите кислородный отбеливатель для своего типа белья — White или Color. Это оптимальный домашний вариант. Хлорный держит",
+        "evidence": "h Oxi Action, Oxi Clean, Dr. Beckmann, Ace Oxi, бюджетно — «Персоль».\n\n2. **Для белого хлопка, полотенец, носков**  \n   Кислоро",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -723,7 +689,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1893
     },
@@ -858,23 +824,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Мой",
-        "brand_canonical": "МОЙ, РЭББИТ!",
-        "kind": "mention",
-        "first_mention_order": 23,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "и без энзимов, лучше спецсредства для деликатных тканей.\n\n**Мой топ-3:**\n1. **Vanish Oxi Action** — универсально и доступно",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -885,7 +834,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 1784
     },
@@ -955,7 +904,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 22,
         "list_position": null,
@@ -1022,25 +971,8 @@
         }
       },
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 28,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ss.\n- **Хлорный отбеливатель** — для белого и дезинфекции: «Белизна», Domestos и аналоги. Не подходит для шерсти, шёлка, цветны",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 29,
         "list_position": null,
@@ -1064,7 +996,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 7,
       "source_count": 0,
       "answer_length": 1048
     },
@@ -1116,42 +1048,8 @@
         }
       },
       {
-        "brand_raw": "Mio",
-        "brand_canonical": "BioMio",
-        "kind": "mention",
-        "first_mention_order": 9,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "икатных поверхностях.\n\n**3. Мягкие/эко-пасты и кремы**\n- BioMio\n- Synergetic\n- Grass\n- Frosch\n- Ecover\n- Sodasan\n\nДля ежедн",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Clean",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 11,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "4. Специализированные варианты**\n- **Стеклокерамика:** Cera Clean, Luxus, Top House, Topperr, HG — только неабразивные.\n- **Н",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Cif.",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 20,
         "list_position": null,
@@ -1209,7 +1107,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1605
     },
@@ -1499,7 +1397,7 @@
       },
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
@@ -1507,6 +1405,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "нель, смесители — но аккуратно.\n\nПримеры: **The Pink Stuff, Cif, Пемолюкс, Sanita, Comet, Astonish** и аналоги.\n\nНо важно:",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Пемолюкс",
+        "brand_canonical": "Пемолюкс",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "смесители — но аккуратно.\n\nПримеры: **The Pink Stuff, Cif, Пемолюкс, Sanita, Comet, Astonish** и аналоги.\n\nНо важно: «универсал",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -1574,7 +1489,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 860
     },
@@ -1644,7 +1559,7 @@
       },
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 10,
         "list_position": null,
@@ -1652,6 +1567,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "рные пасты: **The Pink Stuff, Astonish, Barkeeper’s Friend, Cif, Пемолюкс, Sanita, HG**.\n- **Строительные/хозяйственные онл",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Пемолюкс",
+        "brand_canonical": "Пемолюкс",
+        "kind": "mention",
+        "first_mention_order": 11,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "пасты: **The Pink Stuff, Astonish, Barkeeper’s Friend, Cif, Пемолюкс, Sanita, HG**.\n- **Строительные/хозяйственные онлайн-магази",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -1685,7 +1617,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 926
     },
@@ -1729,23 +1661,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "Маркет, Megamarket.  \n  Поиск: `кислородный отбеливатель`, `Vanish Oxi Action`, `перкарбонат натрия`.\n- **Офлайн-магазины:** Лемана ПРО,",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "ПРО",
-        "brand_canonical": "Просто блеск!",
-        "kind": "mention",
-        "first_mention_order": 8,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ction`, `перкарбонат натрия`.\n- **Офлайн-магазины:** Лемана ПРО, Fix Price, Ашан, Перекрёсток, Магнит, Пятёрочка, магазины",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -1806,7 +1721,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 23,
         "list_position": null,
@@ -1880,7 +1795,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 6,
       "source_count": 4,
       "answer_length": 1169
     },
@@ -1966,23 +1881,6 @@
         }
       },
       {
-        "brand_raw": "Go",
-        "brand_canonical": "GoSpottyGo",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "### Что можно посоветовать для одежды",
-        "evidence": "пользовать на шёлке, шерсти и коже без теста.\n\n3. **Tide to Go**  \n   Один из самых известных «карманных» карандашей. Отли",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Amway Home LOC",
         "brand_canonical": "Amway",
         "kind": "mention",
@@ -2042,7 +1940,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 1988
     },
@@ -2092,6 +1990,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Персоль",
+        "brand_canonical": "Персоль",
+        "kind": "mention",
+        "first_mention_order": 5,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### Чем обработать перед стиркой",
+        "evidence": "оды, кофе, чай, сок**: кислородный пятновыводитель (Vanish, Персоль и аналоги), раствор лимонной кислоты или уксуса. Для хлопка",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -2102,7 +2017,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1709
     },
@@ -2137,15 +2052,15 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Clin",
-        "brand_canonical": "Clinx Biobotanica",
+        "brand_raw": "Unicum",
+        "brand_canonical": "Unicum",
         "kind": "mention",
-        "first_mention_order": 2,
+        "first_mention_order": 4,
         "list_position": null,
         "count": 2,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "я.\n\n**Для дома/окон/зеркал** я бы взял пенные средства:\n- **Clin «Оконный»** — хорошо убирает разводы, удобная пена.\n- **Uni",
+        "evidence": "lin «Оконный»** — хорошо убирает разводы, удобная пена.\n- **Unicum «Стекло и зеркала»** — доступно и эффективно.\n- **Grass «Ст",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -2478,23 +2393,6 @@
         }
       },
       {
-        "brand_raw": "Go",
-        "brand_canonical": "GoSpottyGo",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "е» нет — зависит от типа пятна.\n\nЧто подойдёт:\n\n- **Tide to Go** — самый популярный для свежих пятен: кофе, сок, вино, соу",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Dr. Beckmann Stain Devil",
         "brand_canonical": "Dr. Beckmann",
         "kind": "mention",
@@ -2571,7 +2469,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1203
     },
@@ -2623,23 +2521,6 @@
         }
       },
       {
-        "brand_raw": "Go",
-        "brand_canonical": "GoSpottyGo",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "етки** или **карандаш-пятновыводитель** — например, Tide to Go, Dr. Beckmann, Vanish и аналоги. Они лучше всего работают,",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Dr. Beckmann",
         "brand_canonical": "Dr. Beckmann",
         "kind": "mention",
@@ -2682,7 +2563,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1109
     },
@@ -2818,23 +2699,6 @@
         }
       },
       {
-        "brand_raw": "Wipes",
-        "brand_canonical": "MAGIC WIPES",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "посоветовал такие варианты:\n\n- **Dr. Beckmann Stain Remover Wipes** — одни из лучших универсальных: кофе, жир, косметика, соу",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "ACE",
         "brand_canonical": "ACE",
         "kind": "mention",
@@ -2937,23 +2801,6 @@
         }
       },
       {
-        "brand_raw": "Salton.",
-        "brand_canonical": "Salton CleanTech",
-        "kind": "mention",
-        "first_mention_order": 16,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ач:\n- **Кожаная обувь/сумки/мебель** — Salamander, Tarrago, Salton.\n- **Автосалон/обивка** — Grass, Sonax, Liqui Moly, AutoDoct",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Sonax",
         "brand_canonical": "Sonax",
         "kind": "mention",
@@ -2996,7 +2843,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 11,
+      "brand_count": 9,
       "source_count": 0,
       "answer_length": 1426
     },
@@ -3031,23 +2878,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Мой",
-        "brand_canonical": "МОЙ, РЭББИТ!",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "гда нужно реально продезинфицировать или убрать плесень.\n\n**Мой топ-выбор:**\n\n1. **Кислородный отбеливатель — универсальный",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Vanish Oxi Action White",
         "brand_canonical": "Vanish",
         "kind": "mention",
@@ -3057,6 +2887,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "к агрессивен, как хлор, не желтит синтетику.  \n   Бренды: **Vanish Oxi Action White**, **Персоль**, **БОС Кислородный отбеливатель**, **Synerge",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Персоль",
+        "brand_canonical": "Персоль",
+        "kind": "mention",
+        "first_mention_order": 6,
+        "list_position": null,
+        "count": 3,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "лтит синтетику.  \n   Бренды: **Vanish Oxi Action White**, **Персоль**, **БОС Кислородный отбеливатель**, **Synergetic**, **Gras",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3116,40 +2963,6 @@
         }
       },
       {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 11,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ь. В машинке — сыпать в барабан или отсек, лучше при 40–60 °C. При 30 °C кислородный отбеливатель почти не работает.\n\n2. *",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 15,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "а**: полотенца, постельное, кухонные тряпки.  \n   Бренды: **Белизна**, **Sanfor**.  \n   Нельзя: шерсть, шёлк, синтетика, эласта",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Ariel White",
         "brand_canonical": "Ariel",
         "kind": "mention",
@@ -3168,7 +2981,7 @@
       },
       {
         "brand_raw": "Persil Premium White",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 22,
         "list_position": null,
@@ -3226,7 +3039,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 11,
+      "brand_count": 9,
       "source_count": 0,
       "answer_length": 2165
     },
@@ -3262,7 +3075,7 @@
     "brands": [
       {
         "brand_raw": "Cif Cream",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
@@ -3270,6 +3083,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "но меньше царапает поверхности.\n\nОптимальные варианты:\n\n- **Cif Cream** — самый удобный универсальный вариант: раковина, ванна, п",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Пемолюкс Крем",
+        "brand_canonical": "Пемолюкс",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "вается, почти не царапает при нормальном использовании.\n- **Пемолюкс Крем** — бюджетный аналог, хорошо для кухни и сантехники, но чут",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3388,7 +3218,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 8,
       "source_count": 0,
       "answer_length": 1060
     },
@@ -3428,10 +3258,27 @@
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
-        "count": 4,
+        "count": 5,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "составе. На него и надо смотреть.\n\nЧто я бы подобрал:\n\n1. **Vanish Oxi Action Stain Remover Pen / Vanish Oxi Action карандаш-пятновыводитель**",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Remover Pen",
+        "brand_canonical": "Remover",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "смотреть.\n\nЧто я бы подобрал:\n\n1. **Vanish Oxi Action Stain Remover Pen / Vanish Oxi Action карандаш-пятновыводитель**  \n   Самый п",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3449,40 +3296,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "росу: *«Vanish Oxi Action карандаш-пятновыводитель»*.\n\n2. **OxiClean On-The-Go Stain Remover Pen**  \n   Бренд OxiClean как раз про кислородные пятновыво",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Pen",
-        "brand_canonical": "Penosil",
-        "kind": "mention",
-        "first_mention_order": 10,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ш-пятновыводитель»*.\n\n2. **OxiClean On-The-Go Stain Remover Pen**  \n   Бренд OxiClean как раз про кислородные пятновыводите",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Бренд",
-        "brand_canonical": "брендфри",
-        "kind": "mention",
-        "first_mention_order": 11,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "дитель»*.\n\n2. **OxiClean On-The-Go Stain Remover Pen**  \n   Бренд OxiClean как раз про кислородные пятновыводители. В формате",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3567,7 +3380,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 7,
       "source_count": 0,
       "answer_length": 1528
     },
@@ -3611,23 +3424,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "тновыводитель салфетки»\n- «stain remover wipes»\n- бренды: **Tide to Go, Shout Wipes, Dr. Beckmann, Astonish, HG, Domol**\n\n**",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Go",
-        "brand_canonical": "GoSpottyGo",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "итель салфетки»\n- «stain remover wipes»\n- бренды: **Tide to Go, Shout Wipes, Dr. Beckmann, Astonish, HG, Domol**\n\n**Офлайн",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3695,7 +3491,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1029
     },
@@ -3729,23 +3525,6 @@
     "answer_text": "Да, можно — если это специальная пена/средство **«для стёкол и зеркал»**. Зеркало — это то же стекло, только с отражающим слоем, поэтому один и тот же очиститель обычно подходит и туда, и туда.\n\nЧто брать:\n- Ищите на этикетке: **«для стекол и зеркал»**, **«без абразивов»**, **«не оставляет разводов»**.\n- Из доступных вариантов: **Clin, Bagi, Grass, Luxus Professional, Chirton, Prosept** — у многих есть пена для мытья окон и зеркал.\n- Также подойдут обычные спреи: **Mr. Muscle, Unicum, Help** и т.п. Пена просто удобнее на вертикальных поверхностях — меньше стекает.\n\nЕсли это про автомобиль:\n- Снаружи стёкла и боковые зеркала можно мыть **pH-нейтральной автошампунь-пеной** — например, Koch Chemie Gentle Snow Foam, Sonax ActiFoam, Grass Active Foam.\n- Внутренние зеркала/стёкла лучше отдельным средством для стёкол. Если есть тонировка — без аммиака.\n\nКак мыть без разводов:\n1. Не лейте пену прямо на зеркало у рамы/края — наносите на микрофибру.\n2. Протрите поверхность.\n3. Отполируйте насухо второй чистой микрофиброй.\n\nНе используйте абразивы, меламиновую губку и жёсткие щётки — можно оставить царапины.",
     "answer_language": "ru",
     "brands": [
-      {
-        "brand_raw": "Clin",
-        "brand_canonical": "Clinx Biobotanica",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "*, **«не оставляет разводов»**.\n- Из доступных вариантов: **Clin, Bagi, Grass, Luxus Professional, Chirton, Prosept** — у мн",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
       {
         "brand_raw": "Bagi",
         "brand_canonical": "Bagi",
@@ -3807,6 +3586,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "для мытья окон и зеркал.\n- Также подойдут обычные спреи: **Mr. Muscle, Unicum, Help** и т.п. Пена просто удобнее на вертикальных",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Unicum",
+        "brand_canonical": "Unicum",
+        "kind": "mention",
+        "first_mention_order": 8,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "кон и зеркал.\n- Также подойдут обычные спреи: **Mr. Muscle, Unicum, Help** и т.п. Пена просто удобнее на вертикальных поверхно",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3922,7 +3718,7 @@
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
-        "count": 1,
+        "count": 3,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "орые можно найти в магазинах:\n\n**Универсальные спреи:**\n- **Vanish Oxi Action** (спрей) — подходит для цветных и белых тканей, хорошо раб",
@@ -4148,7 +3944,7 @@
     "brands": [
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
@@ -4173,6 +3969,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "*  \nМожно взять мягкоабразивную чистящую пасту/крем: **Cif, Sanita, Пемолюкс, Sarma**.  \nДля налёта и извести — **Cillit Bang,",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Пемолюкс",
+        "brand_canonical": "Пемолюкс",
+        "kind": "mention",
+        "first_mention_order": 4,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "о взять мягкоабразивную чистящую пасту/крем: **Cif, Sanita, Пемолюкс, Sarma**.  \nДля налёта и извести — **Cillit Bang, Sanox, Ан",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -4216,7 +4029,7 @@
       },
       {
         "brand_raw": "Sanox",
-        "brand_canonical": "Sano",
+        "brand_canonical": "Санокс",
         "kind": "mention",
         "first_mention_order": 7,
         "list_position": null,
@@ -4240,7 +4053,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 683
     },
@@ -4284,23 +4097,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "дит для цветных и белых тканей, удобно замачивать. Примеры: Vanish Oxi Action, «Ушастый нянь» кислородный, Sodasan, Ecover, BabyLine, AQA",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "лых тканей, удобно замачивать. Примеры: Vanish Oxi Action, «Ушастый нянь» кислородный, Sodasan, Ecover, BabyLine, AQA baby, Mei",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -4392,23 +4188,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 15,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "выполоскать.\n\n**Чего лучше избегать:**\n- Хлорных средств («Белизна» и аналоги) — раздражают кожу и дыхание, портят ткань.\n- Ра",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -4419,7 +4198,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 1757
     },
@@ -4665,6 +4444,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Unicum",
+        "brand_canonical": "Unicum",
+        "kind": "mention",
+        "first_mention_order": 11,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "Пена для стёкол и зеркал** — приятный вариант.\n- **Grass / Unicum** — бюджетные пенные очистители, если есть в магазине.\n\n**К",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -4675,7 +4471,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1155
     },
@@ -4793,6 +4589,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Bug Remover",
+        "brand_canonical": "Remover",
+        "kind": "mention",
+        "first_mention_order": 10,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "** — ищи на этикетке «очиститель стёкол», «Glass Cleaner», «Bug Remover», «пена для стёкол».\n- Если берёшь активную пену с автомойк",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -4803,7 +4616,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 1064
     },
@@ -4872,23 +4685,6 @@
         }
       },
       {
-        "brand_raw": "Go",
-        "brand_canonical": "GoSpottyGo",
-        "kind": "mention",
-        "first_mention_order": 10,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "Популярные варианты: **Dr. Beckmann Stain Pen**, **Tide to Go**, **Vanish Oxi Action карандаш**, **Sarma**, **Grass**, **",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Vanish Oxi Action",
         "brand_canonical": "Vanish",
         "kind": "mention",
@@ -4948,7 +4744,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1132
     },
@@ -5188,7 +4984,7 @@
     "brands": [
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
@@ -5221,15 +5017,32 @@
         }
       },
       {
-        "brand_raw": "Блеск",
-        "brand_canonical": "Просто блеск!",
+        "brand_raw": "Unicum",
+        "brand_canonical": "Unicum",
         "kind": "mention",
-        "first_mention_order": 4,
+        "first_mention_order": 6,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "таллических поверхностей.\n- Специальные средства: **Sanita «Блеск для нержавеющей стали»**, **HG для нержавейки**, **Unicum**",
+        "evidence": "a «Блеск для нержавеющей стали»**, **HG для нержавейки**, **Unicum**, **Top House**, **Griffin**.\n- Наносить мягкой губкой/тря",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Пемолюкс",
+        "brand_canonical": "Пемолюкс",
+        "kind": "mention",
+        "first_mention_order": 10,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "*Если грубый металл, чугун, неокрашенная сталь:**\n- Можно **Пемолюкс**, **Sanita крем-паста**, **Comet** — но они более абразивн",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -5263,7 +5076,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1188
     },
@@ -5315,23 +5128,6 @@
         }
       },
       {
-        "brand_raw": "Pen",
-        "brand_canonical": "Penosil",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "оветовал в первую очередь:\n\n1. **Dr. Beckmann Stain Remover Pen**  \n   Продаётся в РФ как «карандаш-пятновыводитель Dr. Bec",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Tide",
         "brand_canonical": "Tide",
         "kind": "mention",
@@ -5341,6 +5137,23 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "кровь, жир. Удобный аппликатор, можно носить с собой.\n\n2. **Tide to Go Instant Stain Remover Pen**  \n   Тоже ферментный кара",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Go Instant Stain Remover",
+        "brand_canonical": "Remover",
+        "kind": "mention",
+        "first_mention_order": 7,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "ир. Удобный аппликатор, можно носить с собой.\n\n2. **Tide to Go Instant Stain Remover Pen**  \n   Тоже ферментный карандаш, очень эффективен на св",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -5466,23 +5279,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 17,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Чего нельзя",
-        "evidence": "- Хлорный отбеливатель («Белизна» и т.п.);\n- горячая вода и кипячение;\n- сушильная машина;\n-",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -5493,7 +5289,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 1,
       "source_count": 0,
       "answer_length": 1723
     },
@@ -5526,25 +5322,7 @@
     "raw_format": "raw",
     "answer_text": "Главное правило: **только холодная вода**, пока пятно не исчезнет. Горячая вода, утюг и сушилка «заваривают» белок в крови, и пятно закрепляется.\n\n**Свежее пятно:**\n1. Промокните салфеткой, не растирайте.\n2. Промойте с изнанки под холодной водой — так кровь выталкивается наружу.\n3. Намыльте хозяйственным мылом или гелем для посуды, оставьте на 10–15 минут, аккуратно потрите и сполосните.\n\n**Если осталось:**\n- Нанесите **3% перекись водорода** на пятно. Она начнёт шипеть. Через 5–10 минут промокните и промойте холодной водой.  \n- Хорошо подходит для белого хлопка/льна. Для шёлка, шерсти и цветных тканей сначала проверьте на незаметном участке.\n\n**Засохшее пятно:**\n1. Замочите рубашку в холодной воде с **ферментным порошком/гелем** (с пометкой Bio) на 1–2 часа или на ночь.\n2. Для белой ткани можно добавить **кислородный отбеливатель** по инструкции.\n3. Постирайте при температуре по ярлыку, но без горячей воды, пока пятно не уйдёт.\n\n**Важно:**\n- Не гладьте и не сушите в машинке, если пятно ещё видно — потом будет сложнее.\n- Хлорный отбеливатель лучше не использовать как первое средство; для белого хлопка — только в крайнем случае и если разрешено ярлыком.\n- Если ткань деликатная, используйте только холодную воду и мягкое мыло/ферментный пятновыводитель.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Bio",
-        "brand_canonical": "BIORICA",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "в холодной воде с **ферментным порошком/гелем** (с пометкой Bio) на 1–2 часа или на ночь.\n2. Для белой ткани можно добавить",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -5553,7 +5331,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 1270
     },
@@ -5662,23 +5440,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "тавьте на 15–20 минут. Смойте тёплой водой — не выше 30–40 °C.\n4. **Если пятно осталось — растворитель.** Лучше всего очищ",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -5689,7 +5450,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 2093
     },
@@ -5848,42 +5609,7 @@
     "raw_format": "raw",
     "answer_text": "Главное правило: **сначала смотрите ярлык на вещи** — там указаны допустимая температура, отжим и можно ли отбеливать. Белые вещи бывают из хлопка, льна, синтетики, шерсти и шёлка, и для них правила разные.\n\n**1. Сортируйте**\n- Белое стирайте только с белым. Не кладите к белому цветное, даже светло-голубое или серое, если оно может линять.\n- Отдельно стирайте сильно загрязнённое, кухонные полотенца, носки, нижнее бельё.\n- Новые цветные вещи первые 2–3 стирки стирайте отдельно.\n\n**2. Подготовьте вещи**\n- Проверьте карманы, застегните молнии и пуговицы, выверните вещи наизнанку.\n- Пятна лучше обработать до стирки: кровь, молоко, яйцо — только холодной водой и ферментным средством; жир — средством для посуды; пот и желтизну — кислородным отбеливателем.\n- Не гладьте и не сушите пятно горячим — оно закрепится.\n\n**3. Выберите средство**\n- Для белого хлопка и льна: порошок или гель для белых тканей + **кислородный отбеливатель**.\n- **Хлорный отбеливатель** («Белизна» и аналоги) — только для белого хлопка/льна, если разрешено ярлыком. Не для шерсти, шёлка, кожи, эластана и цветных принтов. Не лейте концентрат прямо на ткань.\n- Никогда не смешивайте хлорный отбеливатель с кислотой, аммиаком или другими средствами — могут выделяться опасные газы.\n- Для шерсти и шёлка: только специальное жидкое средство для деликатных тканей, без хлора и без обычного порошка.\n\n**4. Температура и режим**\n- Белый хлопок: обычно 40–60 °C, при сильных загрязнениях — до 90 °C, если разрешено ярлыком.\n- Синтетика: 30–40 °C.\n- Шерсть, шёлк, деликатные ткани: 30 °C или «ручная стирка», без интенсивного отжима.\n- Не перегружайте барабан: вещам нужно свободно двигаться, иначе они плохо выполаскиваются и сереют.\n- Полезно включить **дополнительное полоскание**.\n\n**5. Замачивание для белизны**\nЕсли вещи посерели или пожелтели:\n- Растворите кислородный отбеливатель в тёплой воде по инструкции.\n- Замочите белые вещи на 2–6 часов, затем постирайте.\n- Для пятен пота под мышками можно сделать кашицу из соды и перекиси водорода, нанести на 20–30 минут, потом постирать. Сначала проверьте на незаметном участке.\n\n**6. Сушка и глажка**\n- Хлопок и лён можно сушить на солнце — солнце помогает выбеливать.\n- Синтетику и деликатные ткани лучше сушить в тени.\n- Не сушите белое в машине при слишком высокой температуре — может появиться желтизна.\n- Гладьте по ярлыку; синтетику — на низкой температуре.\n\n**Частые ошибки**\n- Стирать белое вместе с цветным.\n- Использовать слишком много порошка — он оставляет серый налёт.\n- Применять хлорку на шерсти, шёлке и синтетике.\n- Заливать пятна крови горячей водой.\n- Перегружать стиральную машину.\n\nЕсли вещь дорогая или из необычной ткани, лучше сдать её в химчистку.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "**кислородный отбеливатель**.\n- **Хлорный отбеливатель** («Белизна» и аналоги) — только для белого хлопка/льна, если разрешено",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "иях — до 90 °C, если разрешено ярлыком.\n- Синтетика: 30–40 °C.\n- Шерсть, шёлк, деликатные ткани: 30 °C или «ручная стирка»",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -5892,7 +5618,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 2695
     },
@@ -5967,25 +5693,7 @@
     "raw_format": "raw",
     "answer_text": "Сначала посмотрите ярлык: если кружево шёлковое/шерстяное, лучше не экспериментировать — только деликатная ручная стирка спецсредством или химчистка. Если блузка из хлопка, полиэстера или смесовой ткани с синтетическим кружевом — можно действовать кислородным отбеливателем.\n\n**Основной способ**\n1. В 5 л тёплой воды (30–40 °C) растворите 2–3 ст. л. кислородного отбеливателя (на основе перкарбоната натрия) и 1 ст. л. жидкого средства для белого/деликатных тканей.\n2. Замочите блузку на 1–2 часа. При сильной желтизне — до 4–6 часов, но периодически проверяйте ткань.\n3. Аккуратно постирайте руками, кружево не трите. Можно положить в сетчатый мешок и постирать на деликатном режиме без отжима.\n4. Тщательно прополощите. Для свежести можно добавить немного кондиционера без хлора или очень слабо разведённую синьку.\n5. Сушите в расправленном виде, лучше в тени или на солнце недолго. Гладьте через марлю на низкой температуре.\n\n**Локальные пятна**\n- Подмышки, воротник: смешайте 1 ч. л. соды, 1 ст. л. 3% перекиси водорода и каплю средства для мытья посуды. Нанесите на 15–20 минут, аккуратно пройдитесь мягкой щёткой и смойте. Сначала проверьте на незаметном участке.\n- Если ткань посерела: поможет замачивание с кислородным отбеливателем и хозяйственным мылом.\n\n**Чего нельзя**\n- Хлорный отбеливатель («Белизна») — он желтит синтетику и разрушает кружево.\n- Кипятить.\n- Использовать воду горячее 40 °C для тонкого/синтетического кружева.\n- Тереть, выкручивать, сушить в машине.\n- Смешивать хлор с кислотой или аммиаком.\n\nЕсли после кислородного замачивания белизна не вернулась, повторите процедуру. Для сложного или шёлкового кружева лучше обратиться в химчистку. Если ткань пожелтела от старости или есть следы утюга, вернуть белизну полностью часто уже нельзя.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "яйственным мылом.\n\n**Чего нельзя**\n- Хлорный отбеливатель («Белизна») — он желтит синтетику и разрушает кружево.\n- Кипятить.\n-",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -5994,7 +5702,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 1766
     },
@@ -6070,23 +5778,6 @@
     "answer_text": "Пятно от травы на джинсах лучше выводить сразу, пока оно свежее. Горячую воду не используйте — она «закрепляет» пятно. Сначала проверьте средство на незаметном участке, особенно на цветных джинсах.\n\n**Что можно попробовать:**\n\n1. **Хозяйственное мыло или гель для посуды**  \n   Намыльте пятно, оставьте на 15–20 минут, аккуратно потрите мягкой щёткой и постирайте в холодной/тёплой воде при 30–40 °C.\n\n2. **Кислородный пятновыводитель**  \n   Vanish, OxiClean, Dr. Beckmann и аналоги. Растворите по инструкции в тёплой воде, замочите джинсы на 30–60 минут, затем стирайте. Это один из лучших вариантов для органических пятен.\n\n3. **Спирт или водка**  \n   Смочите ватный диск и промокните пятно, затем постирайте. Хорошо работает на свежих пятнах.\n\n4. **Сода + перекись водорода 3%**  \n   Смешайте до состояния кашицы, нанесите на пятно на 10–15 минут, смойте. Минус: на тёмных джинсах может осветлить ткань, поэтому только после теста.\n\n5. **Столовый уксус 9%**  \n   Нанесите на пятно на 10–15 минут, промокните, затем постирайте.\n\n6. **Нашатырный спирт**  \n   Для стойких пятен: 1 ст. ложка на 1 л холодной воды, нанести на 10–15 минут, хорошо прополоскать. Не смешивать с хлорным отбеливателем.\n\n7. **Специальные средства от пятен травы**  \n   Например, Dr. Beckmann «Пятна травы», Astonish, Vanish и др.\n\n**Важно:** после обработки постирайте джинсы как обычно, но **не сушите в машинке и не гладьте утюгом, пока пятно полностью не исчезло** — иначе оно может закрепиться. Для тёмных джинсов лучше выбирать ферментные и кислородные средства, а перекись, лимонный сок и хлор использовать осторожно.",
     "answer_language": "ru",
     "brands": [
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ягкой щёткой и постирайте в холодной/тёплой воде при 30–40 °C.\n\n2. **Кислородный пятновыводитель**  \n   Vanish, OxiClean,",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
       {
         "brand_raw": "Vanish",
         "brand_canonical": "Vanish",
@@ -6164,7 +5855,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1599
     },
@@ -6402,6 +6093,23 @@
         }
       },
       {
+        "brand_raw": "Persol",
+        "brand_canonical": "Персоль",
+        "kind": "mention",
+        "first_mention_order": 5,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### Что сделать по шагам",
+        "evidence": "- затем замочи вещь в **кислородном отбеливателе** (Vanish, Persol, БОС и т.п.) по инструкции, обычно на 1–2 часа;\n   - постир",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "БОС",
         "brand_canonical": "БОС",
         "kind": "mention",
@@ -6411,23 +6119,6 @@
         "mentioned_in_query": false,
         "section": "### Что сделать по шагам",
         "evidence": "замочи вещь в **кислородном отбеливателе** (Vanish, Persol, БОС и т.п.) по инструкции, обычно на 1–2 часа;\n   - постирай с",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Что сделать по шагам",
-        "evidence": "емпературе, разрешённой ярлыком. Если сомневаешься — 30–40 °C.\n4. Если пятно осталось — **не суши и не гладь**. Повтори ил",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -6582,7 +6273,7 @@
     "brands": [
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 4,
         "list_position": null,
@@ -6616,7 +6307,7 @@
       },
       {
         "brand_raw": "Sanox",
-        "brand_canonical": "Sano",
+        "brand_canonical": "Санокс",
         "kind": "mention",
         "first_mention_order": 12,
         "list_position": null,
@@ -6667,7 +6358,7 @@
       },
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 20,
         "list_position": null,
@@ -6683,32 +6374,15 @@
         }
       },
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
+        "brand_raw": "Mr. Proper",
+        "brand_canonical": "Мистер Пропер",
         "kind": "mention",
-        "first_mention_order": 29,
+        "first_mention_order": 47,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "е средство или с ЧАС/перекисью водорода. Примеры: Domestos, Белизна, специальные дезсредства.\n\n5. **Средство для стёкол и зерка",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Clin",
-        "brand_canonical": "Clinx Biobotanica",
-        "kind": "mention",
-        "first_mention_order": 34,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ется: «для стёкол и зеркал», «Glass cleaner».  \n   Примеры: Clin, Mr. Muscle, Лок.  \n   Можно взять спрей + микрофибру.\n\n6.",
+        "evidence": "Надписи: «для мытья полов», «для плитки».  \n   Примеры: Mr. Proper, Grass, универсальные средства.  \n   Можно использовать одн",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -6742,7 +6416,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 9,
+      "brand_count": 8,
       "source_count": 0,
       "answer_length": 2475
     },
@@ -6795,7 +6469,7 @@
       },
       {
         "brand_raw": "Persil Oxi",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
@@ -6843,23 +6517,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Чай",
-        "brand_canonical": "ВЫРУЧАЙ",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Чем выводить в зависимости от пятна",
-        "evidence": "энзимный пятновыводитель. Горячая вода закрепит белок.\n- **Чай, кофе, вино, сок, ягоды:** кислородный пятновыводитель, укс",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -6870,7 +6527,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 2099
     },
@@ -7126,7 +6783,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 3,
         "list_position": null,
@@ -7369,23 +7026,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Доместосом",
-        "brand_canonical": "Доместос",
-        "kind": "mention",
-        "first_mention_order": 20,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "айте перчатки.\n- **Не смешивайте кислоты с хлоркой/Белизной/Доместосом** — выделяется токсичный хлор.\n- Не оставляйте кислоту надо",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -7396,7 +7036,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 2074
     },
@@ -7466,7 +7106,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 4,
         "list_position": null,
@@ -7474,23 +7114,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "слородный отбеливатель** (перкарбонат натрия): Vanish, БОС, Persil, «Чистота» и т.п. Он безопаснее хлора и подходит для больши",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 8,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "### Для синтетики",
-        "evidence": "Только кислородный отбеливатель при 40–60 °C. Хлор часто желтит синтетику.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -7507,7 +7130,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 2017
     },
@@ -7600,25 +7223,7 @@
     "raw_format": "raw",
     "answer_text": "Кровь — белковое загрязнение, поэтому главное правило для синтетики (полиэстер, нейлон, акрил, эластан): **холодная вода, ферментные средства, кислородный отбеливатель**. Горячая вода и сушка/глажка до удаления пятна «заваривают» белок и закрепляют пятно.\n\n**Что использовать:**\n\n1. **Ферментный пятновыводитель / жидкое средство для стирки с протеазой**  \n   Нанести на пятно, оставить на 15–30 мин, затем аккуратно потереть и прополоскать в холодной воде. Можно замочить вещь на 30–60 мин в холодной воде с таким средством.\n\n2. **Кислородный отбеливатель**  \n   Подходит для цветных и белых синтетических тканей. Растворить по инструкции, замочить на 30–60 мин, при необходимости дольше. Не использовать хлорный отбеливатель — он может повредить нейлон/эластан и дать желтизну.\n\n3. **3% перекись водорода**  \n   Только для белых или очень стойких цветных тканей. Нанести на пятно на 5–10 мин, затем промыть холодной водой. Может осветлить ткань, поэтому сначала проверьте на незаметном участке.\n\n4. **Раствор нашатырного спирта**  \n   Для стойких пятен: 1 ст. л. нашатыря на 1 стакан холодной воды. Нанести на 10–15 мин, промыть. Только после теста на цветостойкость, в проветриваемом помещении. Не смешивать с хлорным отбеливателем.\n\n**Порядок действий:**\n- Промокнуть пятно, не растирать.\n- Промыть с изнанки холодной водой.\n- Нанести ферментное средство или замочить.\n- Если осталось — кислородный отбеливатель.\n- Постирать при 30 °C.\n- Не гладить и не сушить в машине, пока пятно полностью не исчезло.\n\nЕсли пятно старое, уже глаженое или ткань деликатная/цветная, лучше сначала проверить средство на внутреннем шве, а при сомнениях отдать в химчистку.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 10,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ли осталось — кислородный отбеливатель.\n- Постирать при 30 °C.\n- Не гладить и не сушить в машине, пока пятно полностью не",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -7627,7 +7232,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 1658
     },
@@ -7680,7 +7285,7 @@
       },
       {
         "brand_raw": "Persil Oxi",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
@@ -7688,23 +7293,6 @@
         "mentioned_in_query": false,
         "section": "### 1. Кислородный отбеливатель — основной способ",
         "evidence": "Растворите **2–3 ст. л. кислородного порошка** (Vanish Oxi, Persil Oxi, перкарбонат натрия) в **5 л воды**:\n- хлопок — можно 50–60",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 1. Кислородный отбеливатель — основной способ",
-        "evidence": "пок — можно 50–60 °C;\n- синтетика/с эластаном — не выше 40 °C.\n\nЗамочите на **2–6 часов, лучше на ночь**, затем постирайте",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -7721,7 +7309,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1921
     },
@@ -7754,25 +7342,7 @@
     "raw_format": "raw",
     "answer_text": "Главное правило: **не гладьте и не сушите горячим вещь, пока пятно не вывелось** — тепло закрепляет желтизну. Сначала проверьте средство на незаметном участке.\n\n### 1. Кислородный отбеливатель — основной способ\nПодходит для белого хлопка, льна и большинства синтетических тканей.\n- Растворите кислородный отбеливатель (перкарбонат натрия, Oxi и т.п.) по инструкции: обычно 1–2 мерные ложки на 5 л воды.\n- Вода — тёплая, около 40–50 °C, если это разрешено ярлыком.\n- Замочите на 1–2 часа, старые пятна — на ночь.\n- Затем постирайте как обычно.\n\n**Хлорный отбеливатель лучше не использовать** — на пятнах пота он часто усиливает желтизну.\n\n### 2. Паста от стойких жёлтых пятен\nДля белого хлопка/льна и плотной синтетики:\n- 1 ст. л. соды\n- 1 ст. л. перекиси водорода 3%\n- несколько капель средства для посуды\n\nСмешайте, нанесите на пятно, оставьте на 30–60 минут. Не давайте пасте полностью высохнуть. Потом постирайте. При необходимости повторите.\n\n### 3. Уксус против следов дезодоранта\nСледы антиперспиранта хорошо растворяются кислотой:\n- Смешайте белый уксус с водой 1:1.\n- Нанесите на пятна на 15–30 минут.\n- Затем постирайте с кислородным отбеливателем.\n\nИли замочите на 30 минут в растворе: 1 стакан уксуса на 5 л воды.\n\n### 4. Лимонный сок + солнце\nДля белого хлопка и льна:\n- Сбрызните пятно лимонным соком, посыпьте солью.\n- Оставьте на 30 минут на солнце.\n- Тщательно прополощите и постирайте.\n\nДля синтетики и деликатных тканей лучше не рисковать.\n\n### 5. Для шёлка и шерсти\nНе используйте перекись, соду, хлор, концентрированный уксус и горячую воду. Лучше:\n- мягкое ферментное средство для деликатных тканей;\n- ручная стирка в прохладной воде;\n- или химчистка, если вещь дорогая.\n\nПосле выведения пятен стирайте при максимальной разрешённой температуре, хорошо полощите. Если пятно осталось — не гладьте, а повторите обработку.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 1. Кислородный отбеливатель — основной способ",
-        "evidence": "- Растворите кислородный отбеливатель (перкарбонат натрия, Oxi и т.п.) по инструкции: обычно 1–2 мерные ложки на 5 л воды.",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -7781,7 +7351,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 1839
     },
@@ -7911,7 +7481,7 @@
     "brands": [
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 3,
         "list_position": null,
@@ -7919,23 +7489,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "*\n\n1. **Хлорные средства — самое надёжное от плесени**  \n   Domestos, Белизна, Cillit Bang против плесени, HG, Mellerud, Sanit.",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "орные средства — самое надёжное от плесени**  \n   Domestos, Белизна, Cillit Bang против плесени, HG, Mellerud, Sanit.  \n   Нане",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -7970,23 +7523,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "и**  \n   Domestos, Белизна, Cillit Bang против плесени, HG, Mellerud, Sanit.  \n   Нанесите на швы, оставьте на 15–30 минут, потр",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Sanit.",
-        "brand_canonical": "Sanita",
-        "kind": "mention",
-        "first_mention_order": 8,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "omestos, Белизна, Cillit Bang против плесени, HG, Mellerud, Sanit.  \n   Нанесите на швы, оставьте на 15–30 минут, потрите стар",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -8037,7 +7573,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1643
     },
@@ -8089,23 +7625,6 @@
         }
       },
       {
-        "brand_raw": "Sanoks",
-        "brand_canonical": "Sano",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 1. Если это ржавчина / жёлтые потёки от воды",
-        "evidence": "иальные средства от ржавчины** для сантехники: Cillit Bang, Sanoks, Mellerud и др.  \nЕсли не помогает — средство на основе **щ",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Mellerud",
         "brand_canonical": "Mellerud",
         "kind": "mention",
@@ -8131,7 +7650,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 2018
     },
@@ -8275,23 +7794,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ример, Vanish Oxi, персоль и т.п.) в 5 л тёплой воды 40–50 °C.\n- Замочите футболку на 1–2 часа, можно на ночь.\n- Затем пос",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -8302,7 +7804,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 1,
       "source_count": 0,
       "answer_length": 1000
     },
@@ -8335,25 +7837,7 @@
     "raw_format": "raw",
     "answer_text": "Смотря какое пятно, но есть универсальные средства и правила. Для детских вещей лучше выбирать максимально мягкие составы и обязательно хорошо выполаскивать.\n\n**Что держать под рукой:**\n- детский гель/порошок без хлора;\n- кислородный отбеливатель (перкарбонат натрия, «Oxi»);\n- хозяйственное мыло 72%;\n- сода;\n- перекись водорода 3%;\n- уксус 9%;\n- гель для посуды;\n- мягкая щётка.\n\n**Универсальный способ:**\n1. Убрать остатки пятна, не растирать.\n2. Проверить средство на незаметном участке.\n3. Намылить хозяйственным мылом, можно добавить немного соды, оставить на 20–30 минут.\n4. Постирать с детским порошком/гелем, лучше с дополнительным полосканием.\n5. Не сушить и не гладить, пока пятно не исчезло — иначе оно закрепится.\n\n**Чем выводить разные пятна:**\n\n- **Молоко, смесь, яйцо, слюни:** сначала только холодная вода, затем ферментный детский порошок и кислородный отбеливатель. Горячая вода «заваривает» белок.\n- **Кровь:** только холодная вода, хозяйственное мыло, ферментное средство. На белом можно перекись 3%, на цветном — осторожно, может осветлить.\n- **Моча, кал:** убрать, прополоскать холодной водой, замочить с кислородным отбеливателем и ферментным порошком. Для запаха — полоскание с уксусом (1 ст. л. на 1 л воды).\n- **Еда, пюре, соки:** хозяйственное мыло или гель для посуды, затем замачивание с кислородным отбеливателем.\n- **Ягоды, фрукты, сок:** лимонная кислота (1 ч. л. на стакан воды) или уксус, нанести на 10–15 минут, смыть, потом кислородный отбеливатель и солнце.\n- **Жир, масло, соус:** нанести гель для посуды прямо на пятно, оставить на 15 минут, стирать при допустимой температуре.\n- **Грязь, земля:** дать высохнуть, стряхнуть щёткой, потом мыло + кислородный отбеливатель.\n- **Трава:** спирт или уксус, затем обычная стирка.\n- **Шоколад, какао:** холодная вода, гель для посуды, кислородный отбеливатель.\n- **Краска, фломастер, ручка:** спирт/водка на ватный диск, промокнуть, затем стирка.\n- **Пластилин, воск, жевачка:** заморозить, соскоблить, остатки убрать гелем для посуды.\n\n**Важно:**\n- Не используйте хлор на детских цветных вещах и без крайней необходимости вообще.\n- Кислородный отбеливатель нельзя для шерсти и шёлка.\n- Не смешивайте разные химические средства, особенно хлор с аммиаком/кислотами.\n- Для новорождённых и детей с аллергией выбирайте средства без отдушек и красителей, с дополнительным полосканием.\n- Солнце — хороший помощник: после стирки вывешивайте вещи на свет.\n\nЕсли напишете, какое именно пятно, какая ткань и насколько давно оно поставлено, подскажу точнее.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "без хлора;\n- кислородный отбеливатель (перкарбонат натрия, «Oxi»);\n- хозяйственное мыло 72%;\n- сода;\n- перекись водорода 3%",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -8362,7 +7846,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 2528
     },
@@ -8456,32 +7940,15 @@
         }
       },
       {
-        "brand_raw": "Босфор",
-        "brand_canonical": "БОС",
+        "brand_raw": "Персоль",
+        "brand_canonical": "Персоль",
         "kind": "mention",
-        "first_mention_order": 4,
+        "first_mention_order": 3,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "- **кислородный пятновыводитель** (Vanish Oxi, Персоль, Босфор и т.п.) — если пюре морковное, тыквенное, ягодное или пятно",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "дополнительным полосканием. Обычно хлопок можно при 40–60 °C.\n5. **Не сушите в сушилке и не гладьте**, пока пятно полност",
+        "evidence": "ерсально;\n   - **кислородный пятновыводитель** (Vanish Oxi, Персоль, Босфор и т.п.) — если пюре морковное, тыквенное, ягодное и",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -8498,7 +7965,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1322
     },
@@ -8533,42 +8000,8 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "**кислородный отбеливатель на основе перкарбоната натрия** (Oxi-типа, часто с TAED и энзимами).\n\n**Почему он:**\n- хорошо уд",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "чше хлорный отбеливатель** — на основе гипохлорита натрия («Белизна», Domestos и аналоги:\n- для белого хлопка и льна;\n- для дез",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 6,
         "list_position": null,
@@ -8609,7 +8042,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1425
     },
@@ -8721,23 +8154,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ый пятновыводитель с энзимами** (кислородный отбеливатель / Oxi). Он безопаснее хлора, подходит для большинства цветных тка",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Vanish Oxi Action",
         "brand_canonical": "Vanish",
         "kind": "mention",
@@ -8848,7 +8264,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 1943
     },
@@ -8883,15 +8299,15 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
+        "brand_raw": "Oxi Action",
+        "brand_canonical": "Vanish",
         "kind": "mention",
-        "first_mention_order": 10,
+        "first_mention_order": 9,
         "list_position": null,
-        "count": 2,
+        "count": 3,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "хорошо работает и на цветном, и на белом, часто при 30–60 °C.\n2. **Для белого и экономно:** обычный порошок на основе пер",
+        "evidence": "**\n1. **Универсально, если не хочется разбираться:** Vanish Oxi Action — дороже, но хорошо работает и на цветном, и на белом, част",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -8969,7 +8385,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 20,
         "list_position": null,
@@ -9002,23 +8418,6 @@
         }
       },
       {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 22,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "°C:** Vanish Oxi Action Color, Dr. Beckmann, Persil/Ariel с Oxi — там есть активатор.\n4. **Эко/для детского:** Synergetic,",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Sodasan",
         "brand_canonical": "Sodasan",
         "kind": "mention",
@@ -9028,40 +8427,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "— там есть активатор.\n4. **Эко/для детского:** Synergetic, Sodasan, Klar, Bio-D. Мягче, но сложные пятна могут брать хуже.\n5.",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Мой",
-        "brand_canonical": "МОЙ, РЭББИТ!",
-        "kind": "mention",
-        "first_mention_order": 28,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "чистый перкарбонат натрия + обычный стиральный порошок.\n\n**Мой короткий выбор:**\n- если один на всё — **Vanish Oxi Action*",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Vanish Oxi Action",
-        "brand_canonical": "Vanish",
-        "kind": "mention",
-        "first_mention_order": 29,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ый порошок.\n\n**Мой короткий выбор:**\n- если один на всё — **Vanish Oxi Action**;\n- если для белого и подешевле — **перкарбонат/БОС/Chirto",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -9078,7 +8443,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 11,
+      "brand_count": 8,
       "source_count": 0,
       "answer_length": 1762
     },
@@ -9113,25 +8478,8 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Коротко по типам",
-        "evidence": "| Тип | Для чего | Плюсы | Минусы | Примеры |\n|---|---|---|---|--",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 10,
         "list_position": null,
@@ -9156,6 +8504,23 @@
         "mentioned_in_query": false,
         "section": "### Коротко по типам",
         "evidence": "ывается | Не берёт застарелую накипь и сильный нагар | Cif, Sanita крем, Пемолюкс крем, Frosch |\n| **Абразивная паста/порошок*",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Пемолюкс",
+        "brand_canonical": "Пемолюкс",
+        "kind": "mention",
+        "first_mention_order": 12,
+        "list_position": null,
+        "count": 3,
+        "mentioned_in_query": false,
+        "section": "### Коротко по типам",
+        "evidence": "берёт застарелую накипь и сильный нагар | Cif, Sanita крем, Пемолюкс крем, Frosch |\n| **Абразивная паста/порошок** | Пригоревшая",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -9233,7 +8598,7 @@
       },
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 28,
         "list_position": null,
@@ -9241,23 +8606,6 @@
         "mentioned_in_query": false,
         "section": "### Коротко по типам",
         "evidence": "ий; осторожно с эмалью | Sanita антинакипин, Cif от накипи, Domestos |\n| **Эко/нейтральные** | Дом с детьми/животными, деликатны",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Дом",
-        "brand_canonical": "Доместос",
-        "kind": "mention",
-        "first_mention_order": 30,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Коротко по типам",
-        "evidence": "инакипин, Cif от накипи, Domestos |\n| **Эко/нейтральные** | Дом с детьми/животными, деликатные поверхности | Безопаснее, ме",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -9325,7 +8673,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 12,
+      "brand_count": 11,
       "source_count": 0,
       "answer_length": 2346
     },
@@ -9429,11 +8777,11 @@
       },
       {
         "brand_raw": "Sodasan Oxygen Bleach",
-        "brand_canonical": "OXYGEN",
+        "brand_canonical": "Sodasan",
         "kind": "mention",
         "first_mention_order": 11,
         "list_position": null,
-        "count": 1,
+        "count": 6,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "Devils**\n- **Synergetic** — кислородный пятновыводитель\n- **Sodasan Oxygen Bleach**\n- **Denkmit** — бюджетный вариант из DM\n- **Persil / Arie",
@@ -9446,7 +8794,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 14,
         "list_position": null,
@@ -9488,23 +8836,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "**Denkmit** — бюджетный вариант из DM\n- **Persil / Ariel / Tide Oxi** — как кислородные порошки для замачивания\n\n**Эко и мягкие",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Sodasan",
-        "brand_canonical": "Sodasan",
-        "kind": "mention",
-        "first_mention_order": 18,
-        "list_position": null,
-        "count": 5,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "к кислородные порошки для замачивания\n\n**Эко и мягкие**\n- **Sodasan**\n- **Frosch**\n- **Ecover**\n- **Frau Schmidt**\n- **Synerget",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -9581,15 +8912,15 @@
         }
       },
       {
-        "brand_raw": "BOS",
-        "brand_canonical": "Bostik",
+        "brand_raw": "Antipyatin",
+        "brand_canonical": "Антипятин",
         "kind": "mention",
-        "first_mention_order": 30,
+        "first_mention_order": 26,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "- **Antipyatin**\n- **Chirton**\n- **Help**\n- **Denkmit**\n- **BOS**\n- **Ушастый нянь** — если для детских вещей\n\n**Для детей*",
+        "evidence": "- **Bio Mio**\n- **Grass**\n\n**Бюджетные / масс-маркет**\n- **Antipyatin**\n- **Chirton**\n- **Help**\n- **Denkmit**\n- **BOS**\n- **Ушас",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -9598,15 +8929,15 @@
         }
       },
       {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
+        "brand_raw": "BOS",
+        "brand_canonical": "БОС",
         "kind": "mention",
-        "first_mention_order": 31,
+        "first_mention_order": 30,
         "list_position": null,
-        "count": 2,
+        "count": 1,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "atin**\n- **Chirton**\n- **Help**\n- **Denkmit**\n- **BOS**\n- **Ушастый нянь** — если для детских вещей\n\n**Для детей**\n- **Ушастый",
+        "evidence": "- **Antipyatin**\n- **Chirton**\n- **Help**\n- **Denkmit**\n- **BOS**\n- **Ушастый нянь** — если для детских вещей\n\n**Для детей*",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -9647,23 +8978,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Белое",
-        "brand_canonical": "Белое Чудо",
-        "kind": "mention",
-        "first_mention_order": 62,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "n «Пот и дезодорант», Vanish, кислородный отбеливатель.\n- **Белое** — кислородные отбеливатели: Vanish, Persil Oxi, Ariel Oxi",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -9674,7 +8988,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 18,
+      "brand_count": 16,
       "source_count": 0,
       "answer_length": 2049
     },
@@ -9708,40 +9022,6 @@
     "answer_text": "Полностью объективного рейтинга нет: всё зависит от типа пятна, ткани, температуры воды и времени. Но если брать **универсальные бытовые пятновыводители** и оценивать по эффективности + безопасности + удобству, порядок примерно такой.\n\n| Место | Тип / примеры | Лучше всего для | Почему на этом месте |\n|---|---|---|---|\n| **1** | **Кислородные с энзимами**: Vanish Oxi Action, Dr. Beckmann Oxi, Persil Oxi, BOS | Пот, еда, вино, трава, кровь при замачивании, цветные ткани | Самые универсальные: работают и в стирке, и в замачивании, безопаснее хлора, не убивают цвет. Активируются тёплой водой. |\n| **2** | **Энзимные спреи-претреаты**: Dr. Beckmann Stain Devils, Amway SA8 Prewash, Synergetic, Help | Воротники, манжеты, жир, белок, локальные пятна | Точечно наносить удобно, энзимы расщепляют органику. Но часто нужно время, а застарелые пятна берут не всегда. |\n| **3** | **Кислородный бустер отдельно** — перкарбонат натрия + обычный порошок | Усиление стирки, замачивание | Дешевле и гибче, можно добавить к любому порошку. Но нужно растворять в тёплой воде, не всегда подходит для шерсти/шёлка. |\n| **4** | **Желчное/хозяйственное мыло, Sodasan, Frau Schmidt** | Жир, белковые загрязнения | Мягкие, доступные, неплохо работают на жире и органике. Но менее универсальны, могут оставлять разводы, часто нужна механическая обработка. |\n| **5** | **Хлорные отбеливатели**: Белизна, ACE, Domestos | Белое, плесень, чай/кофе | Очень сильные, но агрессивны к цвету и ткани, резкий запах, нельзя смешивать с кислотой/аммиаком. Для шерсти и шёлка — нет. |\n| **6** | **Специальные растворители**: для клея, лака, чернил, ржавчины | Узкие конкретные пятна | Эффективны точечно, но могут повредить ткань, пластик или принт. Обязателен тест на незаметном участке. |\n\n**Короткий вывод:**  \nЕсли нужно одно средство на большинство случаев — берите **кислородный пятновыводитель с энзимами**. Для локального пятна — **энзимный спрей**. Для белого и плесени — **хлор**, но осторожно. Для жира — **мыло/гель для посуды или желчное мыло**.\n\nВажно: не смешивайте хлор с кислотой или аммиаком; для крови и белка не используйте горячую воду; сначала проверяйте средство на незаметном участке. Если скажете, какие именно пятна и ткань, подберу точнее.",
     "answer_language": "ru",
     "brands": [
-      {
-        "brand_raw": "Место",
-        "brand_canonical": "Доместос",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ности + безопасности + удобству, порядок примерно такой.\n\n| Место | Тип / примеры | Лучше всего для | Почему на этом месте |",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Тип",
-        "brand_canonical": "Антипятин",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "безопасности + удобству, порядок примерно такой.\n\n| Место | Тип / примеры | Лучше всего для | Почему на этом месте |\n|---|-",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
       {
         "brand_raw": "Vanish Oxi Action",
         "brand_canonical": "Vanish",
@@ -9778,7 +9058,7 @@
       },
       {
         "brand_raw": "Persil Oxi",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 8,
         "list_position": null,
@@ -9795,7 +9075,7 @@
       },
       {
         "brand_raw": "BOS",
-        "brand_canonical": "Bostik",
+        "brand_canonical": "БОС",
         "kind": "mention",
         "first_mention_order": 9,
         "list_position": null,
@@ -9879,23 +9159,6 @@
         }
       },
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 28,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ханическая обработка. |\n| **5** | **Хлорные отбеливатели**: Белизна, ACE, Domestos | Белое, плесень, чай/кофе | Очень сильные,",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "ACE",
         "brand_canonical": "ACE",
         "kind": "mention",
@@ -9914,7 +9177,7 @@
       },
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 30,
         "list_position": null,
@@ -9922,23 +9185,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "аботка. |\n| **5** | **Хлорные отбеливатели**: Белизна, ACE, Domestos | Белое, плесень, чай/кофе | Очень сильные, но агрессивны к",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белое",
-        "brand_canonical": "Белое Чудо",
-        "kind": "mention",
-        "first_mention_order": 31,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "**5** | **Хлорные отбеливатели**: Белизна, ACE, Domestos | Белое, плесень, чай/кофе | Очень сильные, но агрессивны к цвету и",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -9955,7 +9201,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 14,
+      "brand_count": 10,
       "source_count": 0,
       "answer_length": 2236
     },
@@ -10042,7 +9288,7 @@
       },
       {
         "brand_raw": "Persil Oxi",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 6,
         "list_position": null,
@@ -10067,23 +9313,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "ельный пятновыводитель.\n\n**Эко-варианты:** Sodasan, Sonett, Ecover, Klar. Они мягче, но часто требуют более тёплой воды и длит",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "OS",
-        "brand_canonical": "GoSpottyGo",
-        "kind": "mention",
-        "first_mention_order": 12,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ее тёплой воды и длительного замачивания.  \n**Бюджетные:** BOS, Chirton, Synergetic — смотрите, чтобы перкарбонат натрия б",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -10127,7 +9356,7 @@
       },
       {
         "brand_raw": "BOS",
-        "brand_canonical": "Bostik",
+        "brand_canonical": "БОС",
         "kind": "mention",
         "first_mention_order": 22,
         "list_position": null,
@@ -10151,7 +9380,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 9,
+      "brand_count": 8,
       "source_count": 0,
       "answer_length": 1667
     },
@@ -10271,25 +9500,8 @@
         }
       },
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 12,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "**Что точно не брать для цветного:**\n- Хлорные средства: «Белизна», Domestos, любые с **sodium hypochlorite**.\n- Средства «дл",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 13,
         "list_position": null,
@@ -10305,15 +9517,15 @@
         }
       },
       {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
+        "brand_raw": "Персоль",
+        "brand_canonical": "Персоль",
         "kind": "mention",
-        "first_mention_order": 19,
+        "first_mention_order": 14,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "а внутреннем шве.\n- Не превышать температуру: обычно 30–40 °C.\n- Не оставлять пятновыводитель на цветной ткани на часы.\n-",
+        "evidence": "едства «для белого» с оптическими отбеливателями.\n- Обычную Персоль без пометки Color — может выесть цвет.\n\n**На что смотреть н",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -10330,7 +9542,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 8,
+      "brand_count": 7,
       "source_count": 0,
       "answer_length": 1626
     },
@@ -10365,15 +9577,15 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
+        "brand_raw": "Oxi Action White",
+        "brand_canonical": "Vanish",
         "kind": "mention",
-        "first_mention_order": 1,
+        "first_mention_order": 4,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "",
-        "evidence": "— **кислородный пятновыводитель-отбеливатель с энзимами** (Oxi-средства). Он и осветляет бельё, и выводит большинство быто",
+        "evidence": "ка **Color**.\n\nЧто брать:\n- **Для белого/светлого:** Vanish Oxi Action White, Persil Oxi White, Ariel Oxi, Bosch Oxi, Dr. Beckmann Oxi.",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -10383,7 +9595,7 @@
       },
       {
         "brand_raw": "Persil Oxi White",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 5,
         "list_position": null,
@@ -10431,40 +9643,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "White",
-        "brand_canonical": "White Glo",
-        "kind": "mention",
-        "first_mention_order": 11,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "e кислородный пятновыводитель. Белое он отбелит мягче, чем «White», но зато не испортит цвет.\n\nКак использовать, чтобы работа",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 12,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "/лён** и нужна дезинфекция + сильное отбеливание, подойдёт «Белизна» и аналоги.\n- Но хлор **нельзя** для цветного, шерсти, шёлк",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -10475,7 +9653,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1388
     },
@@ -10509,6 +9687,23 @@
     "answer_text": "Лучший «универсальный» вариант для застарелого пятна после стирки — **кислородный пятновыводитель на основе перкарбоната натрия** + **энзимный порошок/гель** и **длительное замачивание**. Но всё зависит от типа пятна: жир, кровь, ржавчина, чернила и вино выводятся по-разному.\n\n### Что брать\n- **Универсально:** Vanish Oxi Action, Dr. Beckmann Oxi, OxiClean, кислородные пятновыводители BOS, Synergetic, Chirton, Frau Schmidt.\n- **Усилить эффект:** добавить обычный порошок/гель с энзимами или средство типа Amway SA8 Prewash.\n- **Если пятно жирное:** сначала Fairy/средство для посуды или Dr. Beckmann «Жир и масло», потом кислородный.\n- **Если кровь, молоко, яйцо:** энзимный пятновыводитель, только холодная/тёплая вода, не горячая.\n- **Если ржавчина:** кислотный удалитель ржавчины, Dr. Beckmann «Ржавчина», лимонная кислота/уксус. Хлор не поможет.\n- **Если чернила/маркер:** спирт или Dr. Beckmann «Чернила».\n- **Если вино/чай/кофе/ягоды:** кислородный + замачивание, при необходимости потом слабый раствор уксуса.\n\n### Как выводить старое пятно\n1. Проверьте ткань и цвет на незаметном участке.\n2. Растворите кислородный пятновыводитель в **двойной/тройной дозе** в воде **40–60 °C** (для цветного/деликатного — 30–40 °C).\n3. Добавьте немного энзимного порошка.\n4. Замочите вещь на **2–6 часов**, лучше на ночь.\n5. Если пятно осталось — сделайте кашицу: кислородный пятновыводитель + немного тёплой воды + капля Fairy. Нанесите на пятно, накройте плёнкой, оставьте на 30–60 минут.\n6. Постирайте. **Не сушите в машинке и не гладьте**, пока пятно не ушло, иначе оно закрепится ещё сильнее.\n7. При необходимости повторите 2–3 раза.\n\n### Чего не делать\n- Не используйте хлор на цветном, шерсти, шёлке и белковых пятнах — может испортить вещь или закрепить пятно.\n- Не смешивайте хлор с кислотой, кислородными средствами и аммиаком.\n- Не гладьте и не сушите горячим, если пятно ещё видно.\n\nЕсли вещь уже стирали и сушили/гладили, шанс ниже, но кислородный + энзимный + длительное замачивание — самый рабочий домашний вариант. Если скажете, **какое именно пятно и какая ткань**, подскажу точнее.",
     "answer_language": "ru",
     "brands": [
+      {
+        "brand_raw": "Oxi Action",
+        "brand_canonical": "Vanish",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### Что брать",
+        "evidence": "- **Универсально:** Vanish Oxi Action, Dr. Beckmann Oxi, OxiClean, кислородные пятновыводители BO",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
       {
         "brand_raw": "Dr. Beckmann Oxi",
         "brand_canonical": "Dr. Beckmann",
@@ -10545,7 +9740,7 @@
       },
       {
         "brand_raw": "BOS",
-        "brand_canonical": "Bostik",
+        "brand_canonical": "БОС",
         "kind": "mention",
         "first_mention_order": 5,
         "list_position": null,
@@ -10637,7 +9832,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 8,
       "source_count": 0,
       "answer_length": 2094
     },
@@ -10772,23 +9967,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 8,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ают органические пятна, но не выделяют токсичный хлор, как «Белизна» и подобные.\n- **Энзимы** хорошо расщепляют молоко, смесь,",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -10799,7 +9977,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 1442
     },
@@ -10856,7 +10034,7 @@
         "kind": "mention",
         "first_mention_order": 3,
         "list_position": null,
-        "count": 7,
+        "count": 8,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "ersal** — очень хорош для разных пятен, часто выручает.\n- **Vanish Oxi Action** — универсальный кислородный, есть жидкость, спрей, порошо",
@@ -10869,11 +10047,11 @@
       },
       {
         "brand_raw": "BOS",
-        "brand_canonical": "Bostik",
+        "brand_canonical": "БОС",
         "kind": "mention",
         "first_mention_order": 4,
         "list_position": null,
-        "count": 2,
+        "count": 3,
         "mentioned_in_query": false,
         "section": "",
         "evidence": "й кислородный, есть жидкость, спрей, порошок.\n- Бюджетно: **BOS**, **Synergetic**, **Grass**.\n- Эко: **Synergetic**, **Ecov",
@@ -10971,7 +10149,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 24,
         "list_position": null,
@@ -11019,57 +10197,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Pen",
-        "brand_canonical": "Penosil",
-        "kind": "mention",
-        "first_mention_order": 42,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ный порошок |\n| Чернила, ручка, маркер | Dr. Beckmann Ink & Pen, спирт |\n| Пот, дезодорант, желтизна | Dr. Beckmann Sweat &",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Мой",
-        "brand_canonical": "МОЙ, РЭББИТ!",
-        "kind": "mention",
-        "first_mention_order": 52,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ликатные | Dr. Beckmann Delicate, Ecover, Frau Schmidt |\n\n**Мой топ на покупку:**\n1. **Одно универсальное:** Dr. Beckmann U",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "OS",
-        "brand_canonical": "GoSpottyGo",
-        "kind": "mention",
-        "first_mention_order": 57,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ckmann Universal или Vanish Oxi Action.  \n2. **Бюджетно:** BOS или Synergetic.  \n3. **Для белого:** Vanish Oxi Action Whit",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -11080,7 +10207,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 14,
+      "brand_count": 11,
       "source_count": 0,
       "answer_length": 2053
     },
@@ -11346,7 +10473,7 @@
       },
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 11,
         "list_position": null,
@@ -11354,23 +10481,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "налёт в швах** — это плесень. Нужны **хлорные средства**: **Domestos**, **Comet с хлором**, **Белизна/хлорный гель**. Нанести на",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 13,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ы **хлорные средства**: **Domestos**, **Comet с хлором**, **Белизна/хлорный гель**. Нанести на швы, оставить на 15–30 минут, по",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -11387,7 +10497,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1428
     },
@@ -11422,8 +10532,25 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "Персоль",
+        "brand_canonical": "Персоль",
+        "kind": "mention",
+        "first_mention_order": 4,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "ный отбеливатель** — универсальный вариант.  \n   Средства: «Персоль», BOS, Vanish Oxi Action, Persil Oxi, кислородные порошки/г",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "BOS",
-        "brand_canonical": "Bostik",
+        "brand_canonical": "БОС",
         "kind": "mention",
         "first_mention_order": 5,
         "list_position": null,
@@ -11457,7 +10584,7 @@
       },
       {
         "brand_raw": "Persil Oxi",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 7,
         "list_position": null,
@@ -11465,23 +10592,6 @@
         "mentioned_in_query": false,
         "section": "",
         "evidence": "вариант.  \n   Средства: «Персоль», BOS, Vanish Oxi Action, Persil Oxi, кислородные порошки/гели.  \n   Для белого хлопка и льна: р",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 12,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "о для **белого хлопка/льна**, без рисунков.  \n   Средства: «Белизна» и аналоги.  \n   Использовать редко: замочить на 15–30 мину",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],

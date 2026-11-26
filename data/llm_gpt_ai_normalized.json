@@ -109,25 +109,7 @@
     "raw_format": "raw",
     "answer_text": "Выбирайте пятновыводитель по **типу пятна и ткани**, а не только по надписи «для всего».\n\n### Быстрый ориентир\n\n- **Еда, кровь, пот, молочные продукты** — средство с энзимами. Для крови сначала промойте пятно **холодной** водой. Энзимные средства обычно не подходят шерсти и шёлку.\n- **Жир, масло, косметика** — гель или спрей для жирных пятен; иногда помогает средство для мытья посуды.\n- **Чай, кофе, вино, ягоды** — кислородный отбеливатель, если он разрешён для этой ткани. Для цветной одежды ищите маркировку «для цветного».\n- **Ржавчина, краска, чернила** — специальное средство именно для такого загрязнения: универсальный пятновыводитель может не справиться или повредить ткань.\n\n### Проверьте ткань и ярлык\n\n- Для **шерсти, шёлка и деликатных тканей** берите средство с пометкой о совместимости. Не используйте хлорный отбеливатель и обычно избегайте энзимов.\n- Для **цветных вещей** выбирайте средство для цветного и сначала проверьте его на незаметном участке.\n- **Хлорный отбеливатель** подходит лишь некоторым белым тканям — только если это разрешено на ярлыке; он может ослабить волокна и испортить оттенок.\n\nНаносите средство по инструкции и не сушите вещь горячим воздухом, пока пятно не исчезло: нагрев может закрепить его. Не смешивайте разные чистящие средства, особенно хлорсодержащие — с уксусом, кислотами или аммиаком.\n\nЕсли напишете, **что за пятно, на какой ткани и какого она цвета**, я подскажу точнее.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Чай",
-        "brand_canonical": "ВЫРУЧАЙ",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Быстрый ориентир",
-        "evidence": "ирных пятен; иногда помогает средство для мытья посуды.\n- **Чай, кофе, вино, ягоды** — кислородный отбеливатель, если он ра",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -136,7 +118,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 1429
     },
@@ -193,25 +175,8 @@
         }
       },
       {
-        "brand_raw": "Paste",
-        "brand_canonical": "PINK PASTE",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "а универсальная паста, попробуйте **The Pink Stuff Cleaning Paste**: она хорошо справляется с жиром и стойкими загрязнениями",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 3,
         "list_position": null,
@@ -235,7 +200,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 488
     },
@@ -526,42 +491,7 @@
     "raw_format": "raw",
     "answer_text": "Выбирайте кислородный отбеливатель по составу, температуре стирки и типу белья.\n\n**Что искать на упаковке**\n- **Перкарбонат натрия** — частый компонент порошковых средств: в воде выделяет активный кислород. Обычно эффективнее при тёплой или горячей стирке.\n- **Активатор TAED** помогает порошку работать при более низкой температуре. Ищите его в составе, если обычно стираете при 30–40 °C.\n- **Перекись водорода** часто входит в жидкие средства. Они удобны для предварительной обработки, но ориентируйтесь на инструкцию производителя.\n- Надпись **«для цветного белья»** или **«без хлора»** полезна, но не гарантирует безопасность для любой ткани и красителя: сначала проверьте средство на незаметном участке.\n\n**По задаче**\n- Для белого хлопка и льна подойдёт средство, на котором указано, что оно предназначено для белого.\n- Для цветных вещей берите вариант **для цветного белья** и не превышайте дозировку.\n- Для пятен удобнее средство, которое разрешено наносить непосредственно на ткань. Проверьте, сколько минут его можно оставлять.\n\nКислородный отбеливатель обычно **не заменяет стиральный порошок**: проверьте инструкцию, нужно ли добавлять его к основному средству.\n\n**На что обратить внимание**\n- Чем выше температура, тем активнее обычно работает порошок, но соблюдайте температурный режим на ярлыке вещи.\n- Шерсть, шёлк, кожу и вещи с деликатной отделкой обрабатывайте только если это прямо разрешено на этикетке средства.\n- Не смешивайте кислородный отбеливатель с хлорным отбеливателем, уксусом, кислотами, аммиаком или другими чистящими средствами.\n- Не храните раствор и не замачивайте вещи дольше, чем указано производителем; не используйте средство в закрытой ёмкости.\n- Если важна дезинфекция, проверьте, заявлен ли такой эффект и для какого режима: удаление пятен не означает гарантированного обеззараживания.\n\nДля обычной стирки цветных вещей разумный старт — средство без хлора с пометкой **«для цветного»**, а для стирки при 30–40 °C — порошок с **TAED**. Дозировку берите с упаковки, а для яркой или новой ткани сначала проведите пробу.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "атуре. Ищите его в составе, если обычно стираете при 30–40 °C.\n- **Перекись водорода** часто входит в жидкие средства. Они",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "На",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 8,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "инструкцию, нужно ли добавлять его к основному средству.\n\n**На что обратить внимание**\n- Чем выше температура, тем активне",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -570,7 +500,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 2059
     },
@@ -766,6 +696,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Stain Remover",
+        "brand_canonical": "Remover",
+        "kind": "mention",
+        "first_mention_order": 2,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "ки**. Для свежих пятен в дороге удобен **Tide To Go Instant Stain Remover**: его наносят прямо из наконечника. Он подходит для многих",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -776,7 +723,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 611
     },
@@ -1213,23 +1160,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Go",
-        "brand_canonical": "GoSpottyGo",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "Да. Для сумки я бы выбрал **Shout Wipe & Go** — это именно салфетки для удаления пятен с одежды, если н",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -1240,7 +1170,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 1,
       "source_count": 0,
       "answer_length": 556
     },
@@ -1346,7 +1276,7 @@
     "brands": [
       {
         "brand_raw": "Cif Cream",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
@@ -1682,7 +1612,7 @@
     "brands": [
       {
         "brand_raw": "Cif Cream",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
@@ -2189,7 +2119,7 @@
     "brands": [
       {
         "brand_raw": "Cif Cream",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
@@ -5194,23 +5124,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Мой",
-        "brand_canonical": "МОЙ, РЭББИТ!",
-        "kind": "mention",
-        "first_mention_order": 12,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ок для белого; для стойких пятен он часто удобнее геля |\n\n**Мой практичный выбор:** один кислородный гель для цветных вещей",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -5221,7 +5134,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1501
     },

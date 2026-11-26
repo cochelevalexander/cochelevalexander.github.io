@@ -760,6 +760,23 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Персоль",
+        "brand_canonical": "Персоль",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "",
+        "evidence": "Vanish Oxi Action для белого**, **Synergetic** или обычный «Персоль». Он обычно бережнее к ткани, чем хлорный, и подходит для з",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
@@ -770,7 +787,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 550
     },
@@ -2975,25 +2992,7 @@
     "raw_format": "raw",
     "answer_text": "Зависит от поверхности и вида налёта:\n\n- **Известковый налёт на плитке или эмали:** нанесите раствор лимонной кислоты — 1–2 ст. ложки на литр тёплой воды. Оставьте на 10–15 минут, протрите мягкой губкой и хорошо смойте. Подойдёт и готовое средство от известкового налёта.\n- **Мыльный налёт:** попробуйте средство для ванной или тёплую воду с небольшим количеством средства для посуды.\n- **На акриловой ванне:** используйте только средство с пометкой «для акрила» и мягкую губку. Не применяйте порошки, жёсткие щётки и кислоты — можно повредить поверхность.\n- **Ржавчина:** лучше взять специальное средство от ржавчины, подходящее для материала ванны.\n\nСначала проверьте средство на незаметном участке. Работайте в перчатках и проветривайте помещение. **Не смешивайте кислотные средства с хлоркой** — могут выделиться опасные пары.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "На",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "ёплую воду с небольшим количеством средства для посуды.\n- **На акриловой ванне:** используйте только средство с пометкой «",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -3002,7 +3001,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 830
     },
@@ -3878,7 +3877,7 @@
     "brands": [
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
@@ -4044,23 +4043,6 @@
         }
       },
       {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "- **Synergetic**\n- **Sarma**\n- **Бос**\n- **Антипятин**\n- **Ушастый нянь**\n- **Meine Liebe**\n- **Amway SA8**\n- **Ace**\n- **OxiC",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Meine Liebe",
         "brand_canonical": "MEINE LIEBE",
         "kind": "mention",
@@ -4137,7 +4119,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 11,
+      "brand_count": 10,
       "source_count": 0,
       "answer_length": 346
     },
@@ -4177,49 +4159,15 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Место",
-        "brand_canonical": "Доместос",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Практический рейтинг пятновыводителей",
-        "evidence": "тинг универсальных средств, а не лабораторное сравнение.\n\n| Место | Средство | Для чего подходит |\n|---|---|---|\n| **1. Vanis",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 9,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Практический рейтинг пятновыводителей",
-        "evidence": "обычно выбирают для стойких загрязнений |\n| **4. Synergetic Oxi** | Мягкий универсальный вариант для регулярного использова",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Vanish Oxi Action",
+        "brand_raw": "Oxi Action",
         "brand_canonical": "Vanish",
         "kind": "mention",
-        "first_mention_order": 14,
+        "first_mention_order": 4,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "### Практический рейтинг пятновыводителей",
-        "evidence": "и |\n\n**Что выбрать:**  \n- Для большинства бытовых пятен — **Vanish Oxi Action**.  \n- Для конкретного сложного пятна — **специализированны",
+        "evidence": "Средство | Для чего подходит |\n|---|---|---|\n| **1. Vanish Oxi Action** | Универсальный вариант для цветного и белого белья; удоб",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -4253,7 +4201,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1263
     },
@@ -5392,23 +5340,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "состав и назначение зависят от конкретного средства.\n5. **«Белизна»** — эффективна для белого хлопка, но хлор может испортить",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -5419,7 +5350,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 892
     },
@@ -5590,25 +5521,7 @@
     "raw_format": "raw",
     "answer_text": "Если вы имеете в виду **портативные кислородные баллончики** (их иногда называют «кислородными карандашами»), можно сравнить такие бренды:\n\n1. **Atmung**\n2. **OXYLAND**\n3. **Oxygenium**\n4. **«Я дышу»**\n5. **O2Life**\n\nЭто не медицинский рейтинг: у таких товаров важнее конкретная модель и продавец, а не название бренда. Проверьте объём, заявленную концентрацию кислорода, срок годности, наличие маски и документов. Баллончик не заменяет медицинскую кислородотерапию и не подходит для лечения одышки.\n\nЕсли вы имели в виду **ароматический ингалятор для носа**, уточните — это другой товар.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Oxygenium",
-        "brand_canonical": "OXYGEN",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "о сравнить такие бренды:\n\n1. **Atmung**\n2. **OXYLAND**\n3. **Oxygenium**\n4. **«Я дышу»**\n5. **O2Life**\n\nЭто не медицинский рейтинг",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -5617,7 +5530,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 588
     },
@@ -5704,23 +5617,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "е средства — без хлора. Из распространённых брендов:\n\n1. **«Ушастый нянь»** — линейка ориентирована на детское бельё; всё равно",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Meine Liebe",
         "brand_canonical": "MEINE LIEBE",
         "kind": "mention",
@@ -5772,23 +5668,6 @@
         }
       },
       {
-        "brand_raw": "Oxi",
-        "brand_canonical": "OxiClean",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "",
-        "evidence": "продукт бренда.\n4. **Frosch** — ищите средство с пометкой *Oxi* или «кислородный».\n5. **Ecover** — хороший вариант, если д",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Ecover",
         "brand_canonical": "Ecover",
         "kind": "mention",
@@ -5814,7 +5693,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 934
     },
@@ -6005,7 +5884,7 @@
       },
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 4,
         "list_position": null,

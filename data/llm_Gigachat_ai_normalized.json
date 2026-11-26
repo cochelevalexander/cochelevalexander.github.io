@@ -17,25 +17,8 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧺 Для стирки белья и одежды:",
-        "evidence": "- **Белизна**  \n  Классический отечественный продукт, отлично справляет",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 3,
         "list_position": null,
@@ -93,7 +76,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1265
     },
@@ -192,6 +175,23 @@
         }
       },
       {
+        "brand_raw": "Амвей",
+        "brand_canonical": "Amway",
+        "kind": "mention",
+        "first_mention_order": 7,
+        "list_position": null,
+        "count": 3,
+        "mentioned_in_query": false,
+        "section": "### 2. Вид пятна:",
+        "evidence": "д): энзимы (ферменты) или специализированные средства типа «Амвей», «Dr. Beckmann».\n- Пятна от вина, кофе, чая, крови: кислор",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Dr. Beckmann",
         "brand_canonical": "Dr. Beckmann",
         "kind": "mention",
@@ -201,23 +201,6 @@
         "mentioned_in_query": false,
         "section": "### 2. Вид пятна:",
         "evidence": "ы (ферменты) или специализированные средства типа «Амвей», «Dr. Beckmann».\n- Пятна от вина, кофе, чая, крови: кислородные отбеливате",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Amway Prewash",
-        "brand_canonical": "Amway",
-        "kind": "mention",
-        "first_mention_order": 10,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 2. Вид пятна:",
-        "evidence": "чая, крови: кислородные отбеливатели («Vanish Oxi Action», «Amway Prewash») или народные методы (сода, лимонный сок, уксус).\n- Чернил",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -247,7 +230,7 @@
     "products": [],
     "quality": {
       "has_our_brand": true,
-      "our_brand_position": 10,
+      "our_brand_position": 7,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
@@ -457,42 +440,8 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 15,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 4. Аптеки и специализированные точки продаж:",
-        "evidence": "именно для аптек и специализированных магазинов, например, «Белизна».\n\nВыбирайте проверенные бренды, ориентируйтесь на отзывы п",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Асе",
-        "brand_canonical": "Асефокс",
-        "kind": "mention",
-        "first_mention_order": 16,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 4. Аптеки и специализированные точки продаж:",
-        "evidence": "комых. Наиболее популярны среди россиян отбеливатели марок «Асе», «Тайд», «Persil», «Ecover», «Vanish», «Ушастый нянь».",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 18,
         "list_position": null,
@@ -540,23 +489,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 21,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 4. Аптеки и специализированные точки продаж:",
-        "evidence": "иватели марок «Асе», «Тайд», «Persil», «Ecover», «Vanish», «Ушастый нянь».",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -567,7 +499,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1099
     },
@@ -673,7 +605,7 @@
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "### 1. Состав и эффективность:",
         "evidence": "очтение проверенным брендам с хорошей репутацией, таким как Vanish, Amway, Persil, Sodasan, Ecover и др.",
@@ -703,7 +635,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 4,
         "list_position": null,
@@ -825,7 +757,7 @@
       },
       {
         "brand_raw": "Сан Клин",
-        "brand_canonical": "Сан Клинк",
+        "brand_canonical": "Клин",
         "kind": "mention",
         "first_mention_order": 8,
         "list_position": null,
@@ -932,7 +864,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 21,
         "list_position": null,
@@ -1230,40 +1162,6 @@
         }
       },
       {
-        "brand_raw": "Clean",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧴 Пятна от травы, вина, кофе, чая:",
-        "evidence": "- **Amway Natrоlа Clean + White**  \nХорошо справляется с пятнами растительного прои",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "White",
-        "brand_canonical": "White Glo",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧴 Пятна от травы, вина, кофе, чая:",
-        "evidence": "- **Amway Natrоlа Clean + White**  \nХорошо справляется с пятнами растительного происхождени",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Clean Home Professional Spot",
         "brand_canonical": "Clean Home",
         "kind": "mention",
@@ -1281,15 +1179,32 @@
         }
       },
       {
-        "brand_raw": "OFF",
-        "brand_canonical": "ProffExpert",
+        "brand_raw": "Remover",
+        "brand_canonical": "Remover",
         "kind": "mention",
-        "first_mention_order": 8,
+        "first_mention_order": 6,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 🧴 Жирные пятна, следы косметики:",
+        "evidence": "- **Clean Home Professional Spot Remover**  \nБыстро растворяет жир и косметику, подходит практически",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Dr.Beckmann",
+        "brand_canonical": "Dr. Beckmann",
+        "kind": "mention",
+        "first_mention_order": 7,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "### 🧴 Пятна от шоколада, фруктов, соков:",
-        "evidence": "- **Dr.Beckmann ПятноOFF**  \nУниверсальное средство, эффективно устраняет фруктово-я",
+        "evidence": "- **Dr.Beckmann ПятноOFF**  \nУниверсальное средство, эффективно устраняет ф",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -1323,7 +1238,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 6,
       "source_count": 0,
       "answer_length": 1096
     },
@@ -1549,6 +1464,40 @@
         }
       },
       {
+        "brand_raw": "Oxi Action",
+        "brand_canonical": "Vanish",
+        "kind": "mention",
+        "first_mention_order": 7,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 2. Бескислотный кислородный отбеливатель:",
+        "evidence": "- **Название:** Vanish Oxi Action, Персил Оптима, БОС, Амвей Nature’s Miracle\n- **Преимуществ",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Персил Оптима",
+        "brand_canonical": "персил",
+        "kind": "mention",
+        "first_mention_order": 8,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 2. Бескислотный кислородный отбеливатель:",
+        "evidence": "- **Название:** Vanish Oxi Action, Персил Оптима, БОС, Амвей Nature’s Miracle\n- **Преимущества:** Не содержи",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "БОС",
         "brand_canonical": "БОС",
         "kind": "mention",
@@ -1564,17 +1513,34 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Амвей",
+        "brand_canonical": "Amway",
+        "kind": "mention",
+        "first_mention_order": 10,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 2. Бескислотный кислородный отбеливатель:",
+        "evidence": "- **Название:** Vanish Oxi Action, Персил Оптима, БОС, Амвей Nature’s Miracle\n- **Преимущества:** Не содержит хлора, бер",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
     "products": [],
     "quality": {
-      "has_our_brand": false,
-      "our_brand_position": null,
+      "has_our_brand": true,
+      "our_brand_position": 10,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1355
     },
@@ -1644,27 +1610,10 @@
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "### 1. Ваниш (Vanish)",
         "evidence": "- **Название**: Vanish Oxi Action карандаш\n- **Особенности**: Эффективно удаляет пятна крови,",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Amway Oxi Action",
-        "brand_canonical": "Amway",
-        "kind": "mention",
-        "first_mention_order": 8,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 2. Amway (Доместос)",
-        "evidence": "- **Название**: Amway Oxi Action карандаш\n- **Особенности**: Удаляет даже старые и въевшиеся",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -1693,12 +1642,12 @@
     "sources": [],
     "products": [],
     "quality": {
-      "has_our_brand": true,
-      "our_brand_position": 8,
+      "has_our_brand": false,
+      "our_brand_position": null,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1453
     },
@@ -1725,25 +1674,7 @@
     "raw_format": "raw",
     "answer_text": "Салфетки, предназначенные специально для выведения пятен, продаются практически везде, где есть товары бытовой химии и ухода за одеждой. Вот несколько вариантов, где их легко найти:\n\n### Магазины бытовой химии и супермаркетов:\n- Гипермаркеты («Ашан», «Метро», «Лента», «Глобус», «Окей»).\n- Специализированные магазины бытовой химии («Чистые Руки», «Домовой», «Хозтовары»).\n- Интернет-магазины («Озон», «Яндекс Маркет», Wildberries, «Беру»).\n\n### Химчистки и специализированные отделы:\n- Отделы товаров для химчисток и прачечных («Химчистка №1», «Чистый город»).\n- Магазины профессиональной химии для химчисток и клининговых компаний.\n\n### Интернет-площадки:\n- Озон, Wildberries, Яндекс Маркет — здесь можно быстро сравнить цены и выбрать подходящие средства.\n\nПопулярные марки салфеток и спреев для удаления пятен:\n- Vanish,\n- Amway,\n- Frau Schmidt,\n- Dr. Beckmann,\n- Salton,\n- Syneron.\n\nВыбирайте средство, подходящее именно вашему типу пятна и ткани, внимательно изучайте инструкцию и тестируйте действие на незаметном участке изделия.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "Schmidt",
-        "brand_canonical": "Frau Schmidt",
-        "kind": "mention",
-        "first_mention_order": 17,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Интернет-площадки:",
-        "evidence": "еток и спреев для удаления пятен:\n- Vanish,\n- Amway,\n- Frau Schmidt,\n- Dr. Beckmann,\n- Salton,\n- Syneron.\n\nВыбирайте средство,",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -1752,7 +1683,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 1037
     },
@@ -1815,15 +1746,15 @@
         }
       },
       {
-        "brand_raw": "Мистер Пропер",
+        "brand_raw": "Mr. Proper",
         "brand_canonical": "Мистер Пропер",
         "kind": "mention",
-        "first_mention_order": 6,
+        "first_mention_order": 5,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "### 1. Универсальные спреи и жидкости:",
-        "evidence": "ния, разводов практически не оставляет.\n\n- **Mr. Proper** («Мистер Пропер»)  \nПопулярное российское средство, эффективно удаляет гряз",
+        "evidence": "чищает загрязнения, разводов практически не оставляет.\n\n- **Mr. Proper** («Мистер Пропер»)  \nПопулярное российское средство, эффек",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -1993,6 +1924,23 @@
         }
       },
       {
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
+        "kind": "mention",
+        "first_mention_order": 6,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 🛁 Лучшие марки паст и гелей для чистки ванн:",
+        "evidence": "ляется с известковым налетом и пятнами от жесткой воды.\n- **Санокс** (сода + кислота): эффективен против известкового налета и",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Cillit Bang",
         "brand_canonical": "Cillit Bang",
         "kind": "mention",
@@ -2018,7 +1966,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1323
     },
@@ -2046,40 +1994,6 @@
     "answer_text": "Для детской одежды лучше выбирать пятновыводители, которые бережно относятся к ткани и безопасны для здоровья ребёнка. Вот несколько рекомендаций:\n\n### 1. Натуральные средства:\n- **Уксус** (развести водой 1:1): отлично справляется с пятнами от фруктов, ягод, вина и чая.\n- **Пищевая сода**: подходит для свежих пятен от шоколада, кофе, крови. Нанести кашицу соды, оставить на полчаса и постирать вручную.\n- **Горчица**: эффективна против жирных пятен. Разведите горчичный порошок тёплой водой, нанесите смесь на пятно и оставьте на час.\n\n### 2. Специальные детские пятновыводители:\nЛучше всего подходят гипоаллергенные и специально предназначенные для детского белья средства:\n- **Baby Line**, «Мир детства», «Ушастый нянь» — российские марки, проверенные временем и имеющие сертификаты качества.\n- **Sano Baby», «Vanish Kids», «Amway Kids» — международные бренды, ориентированные именно на детскую одежду и кожу.\n\n### 3. Советы по выбору пятновыводителя:\n- Выбирайте жидкие или гелеобразные средства, поскольку они легче проникают внутрь волокон ткани.\n- Проверьте средство на незаметном участке одежды перед использованием.\n- Не используйте агрессивные хлорсодержащие отбеливатели и сильные химические составы, чтобы избежать раздражения кожи ребенка.\n\nТаким образом, оптимальным вариантом станет использование проверенных детских марок пятновыводителей либо натуральных домашних средств, подходящих для деликатного ухода за детской одеждой.",
     "answer_language": "ru",
     "brands": [
-      {
-        "brand_raw": "Мир",
-        "brand_canonical": "Мир детства",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 2. Специальные детские пятновыводители:",
-        "evidence": "дназначенные для детского белья средства:\n- **Baby Line**, «Мир детства», «Ушастый нянь» — российские марки, проверенные вр",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 6,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 2. Специальные детские пятновыводители:",
-        "evidence": "я детского белья средства:\n- **Baby Line**, «Мир детства», «Ушастый нянь» — российские марки, проверенные временем и имеющие се",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
       {
         "brand_raw": "Sano Baby",
         "brand_canonical": "Sano",
@@ -2140,7 +2054,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1443
     },
@@ -2168,6 +2082,23 @@
     "answer_text": "Перед стиркой пятна лучше всего обрабатывать специальными средствами, подходящими именно для типа загрязнения и ткани одежды. Вот несколько популярных вариантов эффективных спреев и растворов, которыми удобно пользоваться дома:\n\n### 🧴 Для свежих пятен:\n- **Спрей Ваниш**  \n  Универсальное средство, подходит практически для всех видов тканей и загрязнений. Эффективно удаляет свежие пятна крови, травы, вина, шоколада, кофе и др.\n\n- **Спрей Dr. Beckmann**  \n  Быстро справляется с пятнами от фруктов, ягод, соков, чая и кофе. Подходит даже для деликатных тканей.\n\n- **Спрей Amway PreWash**  \n  Хорошо растворяет жир, масло, шоколад, вино и кровь. Можно наносить прямо на ткань, не боясь повредить волокна.\n\n### 🧴 Для старых пятен:\n- **Спрей Vanish Oxi Action**  \n  Особенно эффективен против застарелых пятен жира, масла, вина, травы и пота. Благодаря мощному кислородному отбеливателю отлично работает даже на цветных тканях.\n\n- **Спрей Zama Spot Remover**  \n  Мощный пятновыводитель, предназначенный специально для сложных загрязнений (жир, засохшая грязь, следы косметики, чернила). Не повреждает ткань, хорошо подходит для стирки вручную или в стиральной машине.\n\n### 🧴 Советы по применению:\n- Наносите спрей непосредственно на загрязненное место и аккуратно распределяйте по всей площади пятна.\n- Оставьте средство действовать на 10–15 минут, затем постирайте вещь обычным способом.\n- Проверяйте действие средства на незаметном участке ткани, чтобы убедиться в отсутствии повреждений.\n\nВыбирайте подходящее средство в зависимости от характера пятна и материала изделия.",
     "answer_language": "ru",
     "brands": [
+      {
+        "brand_raw": "Спрей Ваниш",
+        "brand_canonical": "Vanish",
+        "kind": "mention",
+        "first_mention_order": 1,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "### 🧴 Для свежих пятен:",
+        "evidence": "- **Спрей Ваниш**  \n  Универсальное средство, подходит практически для всех",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
       {
         "brand_raw": "Dr. Beckmann",
         "brand_canonical": "Dr. Beckmann",
@@ -2203,15 +2134,15 @@
         }
       },
       {
-        "brand_raw": "Vanish Oxi Action",
-        "brand_canonical": "Vanish",
+        "brand_raw": "Zama Spot Remover",
+        "brand_canonical": "Remover",
         "kind": "mention",
-        "first_mention_order": 10,
+        "first_mention_order": 13,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "### 🧴 Для старых пятен:",
-        "evidence": "- **Спрей Vanish Oxi Action**  \n  Особенно эффективен против застарелых пятен жира, мас",
+        "evidence": "ивателю отлично работает даже на цветных тканях.\n\n- **Спрей Zama Spot Remover**  \n  Мощный пятновыводитель, предназначенный специально дл",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -2228,7 +2159,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1574
     },
@@ -2344,6 +2275,23 @@
         }
       },
       {
+        "brand_raw": "Karcher",
+        "brand_canonical": "Kärcher",
+        "kind": "mention",
+        "first_mention_order": 9,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### Какие средства подходят:",
+        "evidence": "er») известных брендов (например, Sonax, Liqui Moly, Grass, Karcher, Hi-Gear и др.). Они выпускаются в удобной форме аэрозолей",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Hi-Gear",
         "brand_canonical": "Hi-Gear",
         "kind": "mention",
@@ -2369,7 +2317,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1326
     },
@@ -2505,7 +2453,7 @@
       },
       {
         "brand_raw": "Prosepta Professional",
-        "brand_canonical": "Prosept",
+        "brand_canonical": "Prosepta",
         "kind": "mention",
         "first_mention_order": 5,
         "list_position": null,
@@ -2789,17 +2737,34 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Амвей",
+        "brand_canonical": "Amway",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "#### 3. Специальные пятновыводители:",
+        "evidence": "редства для выведения масляных пятен («Vanish Oxi Action», «Амвей», «Pro Planet»).\n- Следуйте инструкции производителя, предв",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
     "products": [],
     "quality": {
-      "has_our_brand": false,
-      "our_brand_position": null,
+      "has_our_brand": true,
+      "our_brand_position": 3,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1887
     },
@@ -2934,42 +2899,7 @@
     "raw_format": "raw",
     "answer_text": "Вот пошаговая инструкция, как правильно постирать белые вещи, чтобы вернуть им ослепительную чистоту и яркость:\n\n### 🧺 Подготовка белья\n- **Отделите цветные и темные изделия** от белых вещей.\n- **Удалите пятна**: свежие загрязнения лучше всего удалить влажной салфеткой или губкой с мыльным раствором прямо перед стиркой.\n\n### 🧹 Выбор режима стирки\n- Используйте программу для хлопковых изделий («Хлопок») или деликатный режим («Деликатная стирка»).\n- Температура воды обычно составляет около 60 °C, но для сильно загрязненных тканей допускается повышение температуры до 90 °C.\n\n### ✂️ Средства для стирки\n- Для белого белья подходят специализированные отбеливатели (хлорсодержащие или кислородосодержащие):\n  - Хлорный отбеливатель (например, Белизна): эффективно удаляет сильные загрязнения, но требует осторожности и соблюдения пропорций.\n  - Кислородный отбеливатель (пероксигидрат): мягко отбеливает ткань, подходит даже для деликатных материалов.\n- Можно применять жидкие концентраты для стирки с отбеливающим эффектом.\n\n### ⚠️ Советы по выбору моющих средств\n- Не смешивайте хлорный и кислородный отбеливатель вместе!\n- Для усиления эффекта добавьте немного соды или уксуса в отсек для кондиционера или непосредственно в барабан стиральной машины.\n\n### 🛁 Процесс стирки\n- Запустите стиральную машину, выбрав подходящий режим и температуру.\n- По окончании стирки убедитесь, что белье хорошо выполоскалось, иначе останутся разводы.\n\n### 🧼 Полоскание и сушка\n- Тщательно прополаскайте белье несколько раз, чтобы убрать остатки порошка или отбеливателя.\n- Высушите белье на свежем воздухе или в проветриваемом помещении, избегая попадания прямых солнечных лучей, чтобы избежать выгорания ткани.\n\nСоблюдая эти рекомендации, ваши белые вещи долго сохранят безупречную белизну и свежесть.",
     "answer_language": "ru",
-    "brands": [
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧹 Выбор режима стирки",
-        "evidence": "агрязненных тканей допускается повышение температуры до 90 °C.",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 6,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### ✂️ Средства для стирки",
-        "evidence": "и кислородосодержащие):\n  - Хлорный отбеливатель (например, Белизна): эффективно удаляет сильные загрязнения, но требует осторо",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      }
-    ],
+    "brands": [],
     "sources": [],
     "products": [],
     "quality": {
@@ -2978,7 +2908,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 2,
+      "brand_count": 0,
       "source_count": 0,
       "answer_length": 1788
     },
@@ -3094,15 +3024,15 @@
         }
       },
       {
-        "brand_raw": "АСЕ",
-        "brand_canonical": "Асефокс",
+        "brand_raw": "Биолан",
+        "brand_canonical": "БИОЛАН",
         "kind": "mention",
-        "first_mention_order": 5,
+        "first_mention_order": 4,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "### 2. Очистка белой ткани блузки:",
-        "evidence": "венное мыло или порошок с отбеливающим эффектом («Биолан», «АСЕ», «Астра»).\n- Замочите блузку в теплой воде с добавлением н",
+        "evidence": "те хозяйственное мыло или порошок с отбеливающим эффектом («Биолан», «АСЕ», «Астра»).\n- Замочите блузку в теплой воде с добавл",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3292,15 +3222,32 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "АСЕ",
-        "brand_canonical": "Асефокс",
+        "brand_raw": "Ваниш",
+        "brand_canonical": "Vanish",
         "kind": "mention",
-        "first_mention_order": 4,
+        "first_mention_order": 3,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "### 1. Пятновыводители и отбеливатели",
-        "evidence": "те повторно.\n- **Средства для выведения пятен** (« Ваниш», «АСЕ», «Амвей»): нанесите средство непосредственно на пятно, выд",
+        "evidence": "постирайте повторно.\n- **Средства для выведения пятен** (« Ваниш», «АСЕ», «Амвей»): нанесите средство непосредственно на пят",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Амвей",
+        "brand_canonical": "Amway",
+        "kind": "mention",
+        "first_mention_order": 5,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 1. Пятновыводители и отбеливатели",
+        "evidence": "орно.\n- **Средства для выведения пятен** (« Ваниш», «АСЕ», «Амвей»): нанесите средство непосредственно на пятно, выдержите ук",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3312,12 +3259,12 @@
     "sources": [],
     "products": [],
     "quality": {
-      "has_our_brand": false,
-      "our_brand_position": null,
+      "has_our_brand": true,
+      "our_brand_position": 5,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 2131
     },
@@ -3632,15 +3579,15 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Vanish Oxi Action.",
+        "brand_raw": "Ваниш",
         "brand_canonical": "Vanish",
         "kind": "mention",
-        "first_mention_order": 3,
+        "first_mention_order": 1,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "### 2. Используй пятновыводители и отбеливатели:",
-        "evidence": "- Возьми средство типа Ваниш, Антипятнин или Vanish Oxi Action.\n- Нанеси на загрязненное место, аккуратно потри щеточкой ил",
+        "evidence": "- Возьми средство типа Ваниш, Антипятнин или Vanish Oxi Action.\n- Нанеси на загрязненное",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3755,17 +3702,34 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Амвей",
+        "brand_canonical": "Amway",
+        "kind": "mention",
+        "first_mention_order": 4,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 2. Предварительная обработка пятновыводителем",
+        "evidence": "ыми пятнами.\n- **Средства для выведения пятен** («Vanish», «Амвей», «Антипятнин») помогут справиться с разными видами загрязн",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
     "products": [],
     "quality": {
-      "has_our_brand": false,
-      "our_brand_position": null,
+      "has_our_brand": true,
+      "our_brand_position": 4,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1360
     },
@@ -3794,23 +3758,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Bang",
-        "brand_canonical": "Cillit Bang",
-        "kind": "mention",
-        "first_mention_order": 2,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧽 1. Обычные средства бытовой химии:",
-        "evidence": "- **Средства для чистки сантехники:** Cillit Bang, Comet, Санокс и др. Наносите обильно на загрязненную повер",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Comet",
         "brand_canonical": "Comet",
         "kind": "mention",
@@ -3828,15 +3775,15 @@
         }
       },
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
         "kind": "mention",
-        "first_mention_order": 5,
+        "first_mention_order": 4,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "### 🧽 1. Обычные средства бытовой химии:",
-        "evidence": "на несколько минут, затем протирайте губкой или щеткой.\n- **Белизна или Доместос:** отлично удаляют известковый налет и грязь.",
+        "evidence": "- **Средства для чистки сантехники:** Cillit Bang, Comet, Санокс и др. Наносите обильно на загрязненную поверхность, оставьт",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -3863,7 +3810,7 @@
       },
       {
         "brand_raw": "Cif",
-        "brand_canonical": "Cif",
+        "brand_canonical": "Сиф",
         "kind": "mention",
         "first_mention_order": 10,
         "list_position": null,
@@ -3894,23 +3841,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "SanitaClean",
-        "brand_canonical": "Sanita",
-        "kind": "mention",
-        "first_mention_order": 14,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🛁 4. Средства против известкового налета:",
-        "evidence": "зированные средства, содержащие кислоту (например, Sanitol, SanitaClean). Их наносят на плитку, оставляют на некоторое время, затем",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -3921,7 +3851,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 7,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1746
     },
@@ -4027,7 +3957,7 @@
         "kind": "mention",
         "first_mention_order": 1,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "### 1. Пятно крови:",
         "evidence": "ьзуйте хозяйственное мыло или средство для выведения пятен (Vanish Gold, Amway, Dr. Beckmann).\n- Можно замочить изделие в растворе",
@@ -4145,7 +4075,7 @@
     "brands": [
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 8,
         "list_position": null,
@@ -4232,40 +4162,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧼 Способ №1: Классический рецепт с содой и уксусом",
-        "evidence": "е раствор в таз или ванну с водой температурой около 60–80 °C.  \n2. Замочите белье минимум на час-полтора.  \n3. Затем доба",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧼 Способ №2: Отбеливатель с хлором",
-        "evidence": "**Что понадобится:**  \n- хлорсодержащий отбеливатель («Белизна», «Доместос», «Асе») или кислородный отбеливатель («БОС», «",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Доместос",
         "brand_canonical": "Доместос",
         "kind": "mention",
@@ -4275,23 +4171,6 @@
         "mentioned_in_query": false,
         "section": "### 🧼 Способ №2: Отбеливатель с хлором",
         "evidence": "понадобится:**  \n- хлорсодержащий отбеливатель («Белизна», «Доместос», «Асе») или кислородный отбеливатель («БОС», «Амвей»).\n\n**",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Асе",
-        "brand_canonical": "Асефокс",
-        "kind": "mention",
-        "first_mention_order": 7,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧼 Способ №2: Отбеливатель с хлором",
-        "evidence": "**  \n- хлорсодержащий отбеливатель («Белизна», «Доместос», «Асе») или кислородный отбеливатель («БОС», «Амвей»).\n\n**Порядок",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -4315,17 +4194,34 @@
           "disadvantages": [],
           "claims": []
         }
+      },
+      {
+        "brand_raw": "Амвей",
+        "brand_canonical": "Amway",
+        "kind": "mention",
+        "first_mention_order": 9,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 🧼 Способ №2: Отбеливатель с хлором",
+        "evidence": "», «Доместос», «Асе») или кислородный отбеливатель («БОС», «Амвей»).\n\n**Порядок действий:**  \n1. Разведите средство согласно",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
       }
     ],
     "sources": [],
     "products": [],
     "quality": {
-      "has_our_brand": false,
-      "our_brand_position": null,
+      "has_our_brand": true,
+      "our_brand_position": 9,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1527
     },
@@ -4420,23 +4316,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Silane Guard",
-        "brand_canonical": "Silan",
-        "kind": "mention",
-        "first_mention_order": 10,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 5. Специальные защитные покрытия",
-        "evidence": "ые защитные покрытия для стекла автомобиля («Нано-протек», «Silane Guard»). Такие покрытия создают гидрофобную плёнку, благодаря кот",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -4447,7 +4326,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1799
     },
@@ -4508,40 +4387,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "АСЕ",
-        "brand_canonical": "Асефокс",
-        "kind": "mention",
-        "first_mention_order": 5,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧴 1. Свежие пятна крови:",
-        "evidence": ", «Amway PreWash») или кислородный отбеливатель (например, «АСЕ», «Белизна»). Наносите средство аккуратно, выдерживайте ука",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 6,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🧴 1. Свежие пятна крови:",
-        "evidence": "y PreWash») или кислородный отбеливатель (например, «АСЕ», «Белизна»). Наносите средство аккуратно, выдерживайте указанное прои",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -4552,7 +4397,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1559
     },
@@ -4706,32 +4551,15 @@
         }
       },
       {
-        "brand_raw": "Санита",
-        "brand_canonical": "Санитарный Утёнок",
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
         "kind": "mention",
-        "first_mention_order": 3,
+        "first_mention_order": 2,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
         "section": "### 1. Подготовка инструментов и материалов:",
-        "evidence": "Специальные средства бытовой химии («Доместос», «Санокс», «Санита», «Белизна»)\n  - Пищевая сода + уксусная эссенция (смешайте",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 4,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 1. Подготовка инструментов и материалов:",
-        "evidence": "ые средства бытовой химии («Доместос», «Санокс», «Санита», «Белизна»)\n  - Пищевая сода + уксусная эссенция (смешайте соду с вод",
+        "evidence": "ый сок\n  - Специальные средства бытовой химии («Доместос», «Санокс», «Санита», «Белизна»)\n  - Пищевая сода + уксусная эссенция",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -4748,7 +4576,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 3,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1674
     },
@@ -5011,23 +4839,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "## 🌿 Лучший универсальный отбеливатель:",
-        "evidence": "**«Белизна» (хлорсодержащий)**  \nПочему хорош:  \n- Эффективно удаляет",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Vanish Oxi Action",
         "brand_canonical": "Vanish",
         "kind": "mention",
@@ -5045,32 +4856,15 @@
         }
       },
       {
-        "brand_raw": "Bio",
-        "brand_canonical": "BIORICA",
+        "brand_raw": "Амвей",
+        "brand_canonical": "Amway",
         "kind": "mention",
-        "first_mention_order": 6,
+        "first_mention_order": 5,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "## 🧽 Лучший экологичный отбеливатель:",
-        "evidence": "**Био-отбеливатели («Vanish Oxi Action», «Амвей Bio»)**  \nПочему хороши:  \n- Не содержат агрессивного хлора, ги",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Асе",
-        "brand_canonical": "Асефокс",
-        "kind": "mention",
-        "first_mention_order": 9,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "## 💦 Лучший отбеливатель тканей:",
-        "evidence": "**Отбеливатель с оптическим эффектом («Асе», «Доместос Эффект»)**  \nПочему хорош:  \n- Создают визуальн",
+        "evidence": "**Био-отбеливатели («Vanish Oxi Action», «Амвей Bio»)**  \nПочему хороши:  \n- Не содержат агрессивного хлора",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -5096,15 +4890,15 @@
         }
       },
       {
-        "brand_raw": "Amway Bio.",
-        "brand_canonical": "Amway",
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
         "kind": "mention",
-        "first_mention_order": 17,
+        "first_mention_order": 12,
         "list_position": null,
         "count": 1,
         "mentioned_in_query": false,
-        "section": "### Итоговый вывод:",
-        "evidence": "ой лучше всего био-отбеливатели вроде Vanish Oxi Action или Amway Bio.\nЭкологичным и безопасным вариантом станет использование спе",
+        "section": "## 🛁 Лучший бытовой отбеливатель поверхностей:",
+        "evidence": "**«Санокс», «Белоснежка» (безопасные бытовые средства)**  \nПочему хор",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -5117,11 +4911,11 @@
     "products": [],
     "quality": {
       "has_our_brand": true,
-      "our_brand_position": 17,
+      "our_brand_position": 5,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 2116
     },
@@ -5204,6 +4998,23 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "Oxi Action Gel",
+        "brand_canonical": "Vanish",
+        "kind": "mention",
+        "first_mention_order": 5,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### ⚠️ 4. Специальные средства для конкретных видов загрязнений:",
+        "evidence": "- **Удаление жира:** Vanish Oxi Action Gel или Dr. Beckmann.\n- **Удаление крови:** хозяйственное мыло",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Dr. Beckmann.",
         "brand_canonical": "Dr. Beckmann",
         "kind": "mention",
@@ -5229,7 +5040,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 1,
+      "brand_count": 2,
       "source_count": 0,
       "answer_length": 1890
     },
@@ -5257,6 +5068,23 @@
     "answer_text": "Выбор подходящего кислородного отбеливателя зависит от твоих целей и условий стирки:\n\n### 1. Для белого белья:\n- **«Асе Оптикис»**  \n  Очень популярен благодаря эффективному удалению пятен и сохранению цвета ткани. Подходит даже для деликатных тканей.\n- **«Амвей» (OxiClean Max Capacity)**  \n  Эффективно справляется с пятнами, отлично подходит для интенсивного отбеливания белых вещей.\n\n### 2. Для цветного белья:\n- **«Vanish Oxi Action»**  \n  Хорошо сохраняет яркость цветов, эффективно борется с загрязнениями, не повреждая ткань.\n- **«Ушастый нянь»**  \n  Безопасен для детских вещей, бережно очищает цветные ткани, сохраняя насыщенность красок.\n\n### 3. Для сильно загрязненных вещей:\n- **«Amway SA8»**  \n  Мощный кислородный отбеливатель, быстро растворяется, легко выводит пятна и идеально подходит для замачивания.\n\n### Советы по выбору:\n- Если стираешь часто и много, выбирай концентрированные средства («Асе Оптикис», «SA8»), чтобы экономить деньги и расходовать меньше порошка.\n- Если стирать приходится редко, подойдут универсальные жидкие кислородные отбеливатели типа «Vanish».\n- Для детской одежды и деликатных тканей предпочтительны щадящие кислородные отбеливатели («Ушастый нянь»).\n\nВыбирай средство, ориентируясь на частоту стирок, тип ткани и степень загрязнений.",
     "answer_language": "ru",
     "brands": [
+      {
+        "brand_raw": "Амвей",
+        "brand_canonical": "Amway",
+        "kind": "mention",
+        "first_mention_order": 3,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "### 1. Для белого белья:",
+        "evidence": "ению цвета ткани. Подходит даже для деликатных тканей.\n- **«Амвей» (OxiClean Max Capacity)**  \n  Эффективно справляется с пят",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
       {
         "brand_raw": "OxiClean Max Capacity",
         "brand_canonical": "OxiClean",
@@ -5290,51 +5118,17 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Ушастый",
-        "brand_canonical": "Ушастый нянь",
-        "kind": "mention",
-        "first_mention_order": 8,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "### 2. Для цветного белья:",
-        "evidence": "ффективно борется с загрязнениями, не повреждая ткань.\n- **«Ушастый нянь»**  \n  Безопасен для детских вещей, бережно очищает цв",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Amway SA8",
-        "brand_canonical": "Amway",
-        "kind": "mention",
-        "first_mention_order": 10,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 3. Для сильно загрязненных вещей:",
-        "evidence": "- **«Amway SA8»**  \n  Мощный кислородный отбеливатель, быстро растворяется",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
     "products": [],
     "quality": {
       "has_our_brand": true,
-      "our_brand_position": 10,
+      "our_brand_position": 3,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 3,
       "source_count": 0,
       "answer_length": 1281
     },
@@ -5381,7 +5175,7 @@
       },
       {
         "brand_raw": "Domestos",
-        "brand_canonical": "Domestos",
+        "brand_canonical": "Доместос",
         "kind": "mention",
         "first_mention_order": 11,
         "list_position": null,
@@ -5406,6 +5200,23 @@
         "mentioned_in_query": false,
         "section": "## Рекомендации по выбору пасты:",
         "evidence": "ынке популярны проверенные временем марки: Comet, Domestos, Cillit Bang, Санокс, Sodasan, Чисток, которые хорошо себя зарекомендова",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
+        "kind": "mention",
+        "first_mention_order": 13,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "## Рекомендации по выбору пасты:",
+        "evidence": "ы проверенные временем марки: Comet, Domestos, Cillit Bang, Санокс, Sodasan, Чисток, которые хорошо себя зарекомендовали благо",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -5439,7 +5250,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 4,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 2123
     },
@@ -5661,7 +5472,7 @@
       },
       {
         "brand_raw": "Persil",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 2,
         "list_position": null,
@@ -5765,6 +5576,23 @@
         }
       },
       {
+        "brand_raw": "Stain Remover",
+        "brand_canonical": "Remover",
+        "kind": "mention",
+        "first_mention_order": 6,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 1. Специальные средства для цветного белья:",
+        "evidence": "и сохраняет яркость цветов.\n- **Mrs. Meyers Natural Laundry Stain Remover**  \n  Натуральный состав, безопасный для кожи и цвета ткани",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Dr. Beckmann Enzyme Plus",
         "brand_canonical": "Dr. Beckmann",
         "kind": "mention",
@@ -5774,23 +5602,6 @@
         "mentioned_in_query": false,
         "section": "### 2. Профессиональные пятновыводители с энзимами:",
         "evidence": "белковые и жировые пятна, сохраняя насыщенность красок.\n- **Dr. Beckmann Enzyme Plus**  \n  Убирает пятна и защищает ткань от выцветания.",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "C.",
-        "brand_canonical": "Easy Clean",
-        "kind": "mention",
-        "first_mention_order": 12,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### Советы по использованию:",
-        "evidence": "ьзуйте щадящие режимы стирки и температуру воды не выше 40 °C.\n- Для особо стойких пятен предварительно нанесите средство",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -5888,7 +5699,7 @@
       },
       {
         "brand_raw": "Persil Proffessional Gel",
-        "brand_canonical": "Persil",
+        "brand_canonical": "персил",
         "kind": "mention",
         "first_mention_order": 9,
         "list_position": null,
@@ -5919,23 +5730,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "Асе",
-        "brand_canonical": "Асефокс",
-        "kind": "mention",
-        "first_mention_order": 13,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 3. Универсальные порошковые отбеливатели:",
-        "evidence": "ное средство, удаляет пятна и возвращает белизне тканям.\n  *Асе универсальный порошок* — бюджетный вариант, хорошо отстирыв",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -5946,7 +5740,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 5,
       "source_count": 0,
       "answer_length": 1538
     },
@@ -5974,23 +5768,6 @@
     "answer_text": "Чтобы эффективно вывести старое пятно, которое уже подвергалось стирке, важно правильно подобрать средство и действовать последовательно:\n\n### 📌 Лучшие средства против старых пятен:\n\n1. **Белизна (хлорсодержащий отбеливатель)**  \n   Эффективно удаляет пятна от травы, вина, крови, кофе и др., однако осторожно используйте на цветных тканях и деликатных материалах, чтобы избежать выцветания и повреждения ткани.\n   \n2. **Vanish Oxi Action**  \n   Один из лучших профессиональных пятновыводителей, отлично справляется даже с застарелыми пятнами. Особенно эффективен против следов чая, кофе, фруктов, соков, шоколада и косметики.\n\n3. **Dr. Beckmann**  \n   Немецкий препарат, хорошо подходит для удаления сложных загрязнений, включая старые пятна. Подходит практически для всех типов тканей, кроме шерсти и шелка.\n\n4. **Amway Natrional Antistain**  \n   Профессиональный пятновыводитель, специально разработанный для борьбы с трудными загрязнениями. Хорошо растворяет въевшиеся пятна, восстанавливает первоначальный вид одежды.\n\n5. **Sarma ПятноOFF**  \n   Российский продукт, проверенный временем. Эффективно борется с пятнами любого происхождения, в том числе старыми и засохшими.\n\n### 🧹 Советы по выведению старого пятна:\n\n- Сначала протестируйте выбранное средство на незаметном участке ткани.\n- Наносите средство точечно, аккуратно обрабатывая загрязнённый участок.\n- Оставьте средство на несколько минут, пока оно не проникнет глубоко внутрь волокна.\n- Затем постирайте одежду обычным способом, желательно вручную или в щадящем режиме стиральной машины.\n\nПравильно подобранный пятновыводитель вместе с грамотной предварительной обработкой поможет вернуть вашей вещи первоначальное состояние.",
     "answer_language": "ru",
     "brands": [
-      {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 1,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 📌 Лучшие средства против старых пятен:",
-        "evidence": "1. **Белизна (хлорсодержащий отбеливатель)**  \n   Эффективно удаляет пят",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
       {
         "brand_raw": "Vanish Oxi Action",
         "brand_canonical": "Vanish",
@@ -6058,23 +5835,6 @@
           "disadvantages": [],
           "claims": []
         }
-      },
-      {
-        "brand_raw": "OFF",
-        "brand_canonical": "ProffExpert",
-        "kind": "mention",
-        "first_mention_order": 10,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 📌 Лучшие средства против старых пятен:",
-        "evidence": "восстанавливает первоначальный вид одежды.\n\n5. **Sarma ПятноOFF**  \n   Российский продукт, проверенный временем. Эффективно",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
       }
     ],
     "sources": [],
@@ -6085,7 +5845,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 6,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1691
     },
@@ -6219,25 +5979,8 @@
         }
       },
       {
-        "brand_raw": "OFF",
-        "brand_canonical": "ProffExpert",
-        "kind": "mention",
-        "first_mention_order": 8,
-        "list_position": null,
-        "count": 2,
-        "mentioned_in_query": false,
-        "section": "### 🧹 Универсальные средства:",
-        "evidence": "благодаря аэрозольной форме выпуска.\n\n- **Dr. Beckmann ПятноOFF**  \n  Быстро растворяет загрязнения, эффективно выводит пят",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Sano Spot Remover",
-        "brand_canonical": "Sano",
+        "brand_canonical": "Remover",
         "kind": "mention",
         "first_mention_order": 10,
         "list_position": null,
@@ -6261,7 +6004,7 @@
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
-      "brand_count": 5,
+      "brand_count": 4,
       "source_count": 0,
       "answer_length": 1324
     },
@@ -6290,6 +6033,23 @@
     "answer_language": "ru",
     "brands": [
       {
+        "brand_raw": "Ваниш",
+        "brand_canonical": "Vanish",
+        "kind": "mention",
+        "first_mention_order": 8,
+        "list_position": null,
+        "count": 2,
+        "mentioned_in_query": false,
+        "section": "### 3. Профессиональные пятновыводители:",
+        "evidence": "- **Средства типа Ваниш, Amway PreWash, Dr. Beckmann или Vanish:** следуйте инструк",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
         "brand_raw": "Amway PreWash",
         "brand_canonical": "Amway",
         "kind": "mention",
@@ -6316,23 +6076,6 @@
         "mentioned_in_query": false,
         "section": "### 3. Профессиональные пятновыводители:",
         "evidence": "- **Средства типа Ваниш, Amway PreWash, Dr. Beckmann или Vanish:** следуйте инструкции на упаковке, предваритель",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
-        "brand_raw": "Vanish",
-        "brand_canonical": "Vanish",
-        "kind": "mention",
-        "first_mention_order": 11,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 3. Профессиональные пятновыводители:",
-        "evidence": "- **Средства типа Ваниш, Amway PreWash, Dr. Beckmann или Vanish:** следуйте инструкции на упаковке, предварительно протести",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -6450,23 +6193,6 @@
     "answer_language": "ru",
     "brands": [
       {
-        "brand_raw": "Белизна",
-        "brand_canonical": "Белизна",
-        "kind": "mention",
-        "first_mention_order": 3,
-        "list_position": null,
-        "count": 1,
-        "mentioned_in_query": false,
-        "section": "### 🛁 3. Специальные чистящие средства",
-        "evidence": "строго результата подойдут готовые магазинные средства:\n- **Белизна**, «Доместос», «Санокс ультра» — отлично справляются с изве",
-        "sentiment": "neutral",
-        "attributes": {
-          "advantages": [],
-          "disadvantages": [],
-          "claims": []
-        }
-      },
-      {
         "brand_raw": "Доместос",
         "brand_canonical": "Доместос",
         "kind": "mention",
@@ -6476,6 +6202,23 @@
         "mentioned_in_query": false,
         "section": "### 🛁 3. Специальные чистящие средства",
         "evidence": "ьтата подойдут готовые магазинные средства:\n- **Белизна**, «Доместос», «Санокс ультра» — отлично справляются с известковым налет",
+        "sentiment": "neutral",
+        "attributes": {
+          "advantages": [],
+          "disadvantages": [],
+          "claims": []
+        }
+      },
+      {
+        "brand_raw": "Санокс",
+        "brand_canonical": "Санокс",
+        "kind": "mention",
+        "first_mention_order": 5,
+        "list_position": null,
+        "count": 1,
+        "mentioned_in_query": false,
+        "section": "### 🛁 3. Специальные чистящие средства",
+        "evidence": "ут готовые магазинные средства:\n- **Белизна**, «Доместос», «Санокс ультра» — отлично справляются с известковым налетом и плесе",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -6501,15 +6244,15 @@
         }
       },
       {
-        "brand_raw": "Amway",
+        "brand_raw": "Амвей",
         "brand_canonical": "Amway",
         "kind": "mention",
-        "first_mention_order": 10,
+        "first_mention_order": 9,
         "list_position": null,
-        "count": 1,
+        "count": 2,
         "mentioned_in_query": false,
         "section": "### 🌿 4. Средства на основе натуральных компонентов",
-        "evidence": "Если предпочитаете экологичные продукты:\n- «Амвей» (Amway) или аналогичные эко-продукты («Фрау Шмидт», «Чистолюбы») с",
+        "evidence": "Если предпочитаете экологичные продукты:\n- «Амвей» (Amway) или аналогичные эко-продукты («Фрау Шмидт», «Чисто",
         "sentiment": "neutral",
         "attributes": {
           "advantages": [],
@@ -6522,7 +6265,7 @@
     "products": [],
     "quality": {
       "has_our_brand": true,
-      "our_brand_position": 10,
+      "our_brand_position": 9,
       "our_brand_in_products": false,
       "our_brand_in_special_selection": false,
       "link_to_our_site": false,
