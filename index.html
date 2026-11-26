@@ -174,9 +174,8 @@ const regexEscape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const bound=p=>'(?<![\\p{L}\\p{N}])(?:'+p+')(?![\\p{L}\\p{N}])';
 const bfSource='(?:brand[\\s_‐‑–—-]*free|бр[еэа]нд[\\s_‐‑–—-]*фри|brend[\\s_‐‑–—-]*(?:free|fri))';
 const bf=new RegExp(bound(bfSource),'iu');
-const alt={Amway:['Амвей','Эмвей','Амвэй'],Vanish:['Ваниш'],Domestos:['Доместос'],Cif:['Сиф'],GRASS:['Грасс'],SYNERGETIC:['Синергетик'],'Dr. Beckmann':['Доктор Бекманн','Доктор Бекман','Dr.Beckmann'],Elizar:['Елизар'],Urgent:['Урджент'],'The Pink Stuff':['Pink Stuff'],Astonish:[],KENAZ:[],HEITMANN:[],Karcher:[],Avon:[],TianDe:['Тианде'],ION:[],'House Lux':[],Kix:[],Reflect:[],NAMZA:[],Laima:[],'Amore Care':[],GEALFIS:[],Timer:[],Blitz:['Magnit Blitz'],'Green Mama Home':['Green Mama'],'BioTrim Mystik':[],Sanros:[],'ЧИСТОЛЮБ':[],'Master Fresh':[],'Eco Londix':[],BabyGo:[],'Наша Мама':[],LELEA:[],'Salton CleanTech':['Salton'],'БОС':['Bos'],HG:[],Chirton:[],Cotico:[],Denkmit:[],'Der Waschkonig':[],Domal:[],ARAVIA:[],BABOR:[],CoMune:[],Leiff:[],Lion:[],Molecola:[],Refine:[],Resolve:[],Selena:[],SUPRIM:[],WALNUT:[],ВкусВилл:[],'Meine Liebe':['MEINE LIEBE'],BioMio:['Биомио'],Faberlic:['Фаберлик']};
 const aliasMap=new Map(Object.entries(alt).flatMap(([name,vs])=>[name,...vs].map(v=>[norm(v),name])));
-const canon=s=>bf.test(s||'')?HOME:aliasMap.get(norm(s))||String(s||'').trim();
+const canon=s=>bf.test(s||'')?HOME:String(s||'').trim();
 function dictionary(groups){
  const names=new Map(aliasMap);
  for(const g of groups)for(const r of g.data)for(const s of [...arr(r.brands).filter(Boolean).map(b=>b.brand_canonical||b.brand_raw),...arr(r.products).filter(Boolean).flatMap(p=>arr(p.brands))]){
