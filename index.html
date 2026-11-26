@@ -57,7 +57,7 @@
 <body>
 
 <h1>Мониторинг рекомендаций брендов</h1>
-<div class="sub">Видимость BRANDFREE в поиске и ответах ИИ по популярным и AI-адаптированным запросам.</div>
+<div class="sub">Видимость BRANDFREE в поиске и ответах ИИ по популярным и AI-адаптированным запросам (Россия и Вьетнам).</div>
 
 <div class="card" id="statusCard" style="margin-bottom: 16px;">
   <div id="statusText" class="muted">Загрузка manifest.json…</div>
@@ -96,8 +96,14 @@
       <div id="positionNote" class="muted" style="margin-top:8px"></div>
     </div>
     <div class="card">
-      <h2>ТОП брендов по числу записей</h2>
-      <div class="muted" style="margin-bottom:8px">Число записей с брендом в ответе или товарной карточке. В пределах одной записи бренд учитывается один раз.</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <h2 style="margin:0">ТОП брендов</h2>
+        <select id="topMode" style="min-width:200px;font-size:12px;padding:4px 8px">
+          <option value="unique">Уникальные записи</option>
+          <option value="total">Все упоминания (в т.ч. повторные)</option>
+        </select>
+      </div>
+      <div class="muted" style="margin-bottom:8px" id="topDesc">Число записей с брендом в ответе или товарной карточке. В пределах одной записи бренд учитывается один раз.</div>
       <div id="topBrands"></div>
     </div>
   </div>
@@ -131,8 +137,6 @@
 <script>
 (function () {
 'use strict';
-// Data stays in the project's JSON exports. Optional manifest entry:
-// {"path":"data/run.json","source_kind":"llm","query_type":"ai_adapted","model":"..."}
 const HOME='BRANDFREE';
 const FILES=['edge-search-headless-small','edge-search-headless-small-ai',...['alice','deepseek','Gigachat','Perplexity'].flatMap(n=>['llm_'+n,'llm_'+n+'_ai'])].map(n=>n+'_normalized.json');
 const REPORT={all:'Все источники',web:'Поисковая выдача',alice:'Алиса в поиске',llm:'Ответы LLM',unknown:'Без атрибуции'};
@@ -140,9 +144,9 @@ const SET={all:'Все запросы',popular:'Популярные',ai_adapted
 const TYPES={web_result:'Поисковая ссылка',alice_source:'Источник Алисы',citation:'Источник LLM',inline:'Ссылка в тексте',card:'Карточка выдачи'};
 const REL={official:'Официальный сайт',product:'Карточка товара',other:'Другой материал'};
 const J={direct:'Прямой совет',option:'Вариант в подборке',shop:'Где купить',mention:'Упоминание',review:'Обзор',marked:'Рекомендация в разметке',pending:'Без оценки'};
-const REVIEW={"2761-5fc3c0e9":["option","4"],"2636-bb21527d":["option","7"],"1773-fdf02723":["shop","4"],"3131-4f50e72f":["option","18"],"5808-31730a2d":["option","15"],"1857-4a6bdbff":["option","5"],"3084-dd1ece85":["option","9"],"1379-8d7f9fdc":["option","2"],"2139-dc9585ac":["option","5"],"2005-e0f0e6f0":["direct","0"],"3474-5bdb9410":["option","17"],"4988-629a4cfc":["option","8"],"4767-6a2f8728":["option","2"],"10529-1759028a":["option","76"],"4335-9e8cb84":["mention","9"],"4170-f1278e67":["mention","21"],"1526-68343f4a":["mention","4"],"1270-ecafee76":["shop","6"],"1071-f27bec87":["mention","6"],"1344-20ca98ea":["shop","4"],"5227-72e27b07":["mention","24"],"4831-b2cb4eae":["mention","13"],"1533-b691bf1d":["mention","12"],"796-618ca98d":["shop","3"],"6804-99d42b42":["option","34"],"2503-ce78df":["option","6"],"1475-2e6dec49":["shop","7"],"4192-868c2a7a":["option","17"],"5285-1306932c":["mention","19"],"6012-f2850f9f":["direct","8:11"],"2334-f752bfd9":["option","5"],"2205-b908e964":["option","5"],"4513-bc1da2db":["mention","4"],"2005-1586cc1d":["option","11"],"9547-5ee47353":["direct","67"],"7087-36a26ae5":["mention","54"],"1661-a77ce151":["shop","3"],"1302-6c2e88e2":["shop","2"],"1819-e87ec9c1":["direct","10"],"1909-f0b44450":["option","6"],"2034-d1308917":["option","5"],"2855-a430ce91":["option","22"],"1208-5f7725f6":["mention","0"],"1642-fc3c2275":["mention","0"]}; // Answer fingerprint → review category and line range
-const FRAGMENTS={"774-c424e83":"option","575-805ca176":"option","893-7902ee3b":"option","1439-cc2cff2c":"option","897-2b393a62":"option","597-eca88643":"option","401-40ff98bf":"option","252-533f8293":"mention","374-cbd9d49a":"mention","356-a531e7e7":"mention"}; // Query, section and evidence fingerprint → reviewed category
-const CHECKED={"5808-31730a2d":["bfWipes",15],"3084-dd1ece85":["bfOxy",9],"2005-e0f0e6f0":["bfPen",0],"10529-1759028a":["bfTest",70],"5227-72e27b07":["bfWipes",24],"5285-1306932c":["bfWeight",19],"1909-f0b44450":["bfRank",6],"272-889b2754":["oxygen",-1],"697-1dcfcfb1":["stickTime",-1],"430-8a9acc30":["foamSurface",-1],"1315-4d0147d3":["enzymes",-1],"418-aa6e5fe7":["pasteTime",-1],"233-c66399bb":["foamSurface",-1],"378-b9dfec2c":["oxygen",-1],"164-d39f95e3":["spray",-1]}; // Evidence fingerprint → checked claim and source line
+const REVIEW={"2761-5fc3c0e9":["option","4"],"2636-bb21527d":["option","7"],"1773-fdf02723":["shop","4"],"3131-4f50e72f":["option","18"],"5808-31730a2d":["option","15"],"1857-4a6bdbff":["option","5"],"3084-dd1ece85":["option","9"],"1379-8d7f9fdc":["option","2"],"2139-dc9585ac":["option","5"],"2005-e0f0e6f0":["direct","0"],"3474-5bdb9410":["option","17"],"4988-629a4cfc":["option","8"],"4767-6a2f8728":["option","2"],"10529-1759028a":["option","76"],"4335-9e8cb84":["mention","9"],"4170-f1278e67":["mention","21"],"1526-68343f4a":["mention","4"],"1270-ecafee76":["shop","6"],"1071-f27bec87":["mention","6"],"1344-20ca98ea":["shop","4"],"5227-72e27b07":["mention","24"],"4831-b2cb4eae":["mention","13"],"1533-b691bf1d":["mention","12"],"796-618ca98d":["shop","3"],"6804-99d42b42":["option","34"],"2503-ce78df":["option","6"],"1475-2e6dec49":["shop","7"],"4192-868c2a7a":["option","17"],"5285-1306932c":["mention","19"],"6012-f2850f9f":["direct","8:11"],"2334-f752bfd9":["option","5"],"2205-b908e964":["option","5"],"4513-bc1da2db":["mention","4"],"2005-1586cc1d":["option","11"],"9547-5ee47353":["direct","67"],"7087-36a26ae5":["mention","54"],"1661-a77ce151":["shop","3"],"1302-6c2e88e2":["shop","2"],"1819-e87ec9c1":["direct","10"],"1909-f0b44450":["option","6"],"2034-d1308917":["option","5"],"2855-a430ce91":["option","22"],"1208-5f7725f6":["mention","0"],"1642-fc3c2275":["mention","0"]};
+const FRAGMENTS={"774-c424e83":"option","575-805ca176":"option","893-7902ee3b":"option","1439-cc2cff2c":"option","897-2b393a62":"option","597-eca88643":"option","401-40ff98bf":"option","252-533f8293":"mention","374-cbd9d49a":"mention","356-a531e7e7":"mention"};
+const CHECKED={"5808-31730a2d":["bfWipes",15],"3084-dd1ece85":["bfOxy",9],"2005-e0f0e6f0":["bfPen",0],"10529-1759028a":["bfTest",70],"5227-72e27b07":["bfWipes",24],"5285-1306932c":["bfWeight",19],"1909-f0b44450":["bfRank",6],"272-889b2754":["oxygen",-1],"697-1dcfcfb1":["stickTime",-1],"430-8a9acc30":["foamSurface",-1],"1315-4d0147d3":["enzymes",-1],"418-aa6e5fe7":["pasteTime",-1],"233-c66399bb":["foamSurface",-1],"378-b9dfec2c":["oxygen",-1],"164-d39f95e3":["spray",-1]};
 const site='https://brandfree.ru/';
 const references={
  pasteTime:['ok','Время действия пасты','Производитель указывает 5–10 минут для сильных загрязнений.',site],
@@ -191,6 +195,7 @@ function cleanFile(s){return String(s).replace(/\s*\(\d+\)(?=\.json$)/i,'')}
 const leaf=s=>String(s||'').split(/[\\/]/).pop();
 function classification(file,r,meta){
  const name=cleanFile(leaf(file)).toLowerCase(),edge=name.startsWith('edge-search'),llm=name.startsWith('llm_');
+ const isVi=name.includes('_vi');
  const src=s=>({yandex_search:'web',search:'web',web:'web',llm:'llm',alice_search:'alice',alice_in_search:'alice',search_alice:'alice',alice:'alice'})[norm(s)];
  const hasSearchSource=arr(r.sources).some(s=>['web_result','alice_source'].includes(s?.type));
  const kind=src(meta.source_kind)||src(r.source_kind)||(edge?'web':llm?'llm':hasSearchSource||['yandex','yandex_search'].includes(norm(r.engine))?'web':r.model||r.model_requested?'llm':'unknown');
@@ -200,8 +205,9 @@ function classification(file,r,meta){
  const set=meta.query_type|| (ai?'ai_adapted':recognized?'popular':r.query_type||'unknown');
  const model=String(meta.model||r.model||r.model_requested||r.engine||'Модель не указана');
  const hint=norm(model+' '+name+' '+(r.engine||''));
- const engine=family==='search'?'Яндекс Поиск':hint.includes('deepseek')?'DeepSeek':hint.includes('gigachat')?'GigaChat':hint.includes('perplexity')?'Perplexity':hint.includes('alice')?'Алиса LLM':r.engine||'Другая модель';
- return {set,family,explicit,engine,model};
+ let engine=family==='search'?'Яндекс Поиск':hint.includes('deepseek')?'DeepSeek':hint.includes('gigachat')?'GigaChat':hint.includes('perplexity')?'Perplexity':hint.includes('alice')?'Алиса LLM':r.engine||'Другая модель';
+ if (isVi) engine += ' (Вьетнам)';
+ return {set,family,explicit,engine,model,isVi};
 }
 function buildRecord(group,raw,id,match,queries){
  const info=classification(group.name,raw,group.meta);const isSearch=info.family==='search';
@@ -289,7 +295,6 @@ async function prepare(groups){
   }
   const result=[], seen = new Set(), namesByURL = new Map();
   for(const g of groups)for(const raw of g.data){
-    // Capture names and timestamps differ across runs that can share the same record_id.
     const key = JSON.stringify([cleanFile(g.name),raw]);
     if(seen.has(key))continue;
     seen.add(key);
@@ -415,7 +420,7 @@ function applyFilters(){
   renderAll();
 }
 function aggregate(views,channel){
-  const frequency=new Map(),ranks=new Map(),matrix=new Map(),domains=new Map(),types=new Map(),urls=new Set();
+  const frequency=new Map(), totalFrequency=new Map(), ranks=new Map(), matrix=new Map(), domains=new Map(), types=new Map(), urls=new Set();
   const ownRows=[],confirmed=[],cards=[];
   let measured=0,ownCount=0,measuredAnswers=0,answerHits=0,pending=0,checked=0,issues=0,anyProductData=false;
   for(const v of views){
@@ -424,7 +429,19 @@ function aggregate(views,channel){
     if(v.answer&&(r.text||r.map.size))measuredAnswers++;
     if(coverage.has(HOME))ownCount++;
     if(v.cards.length)anyProductData=true;
-    for(const name of coverage)frequency.set(name,(frequency.get(name)||0)+1);
+    for(const name of coverage) frequency.set(name,(frequency.get(name)||0)+1);
+    
+    // Считаем общее количество упоминаний (включая повторные)
+    for(const b of v.brands.values()) {
+       const cnt = b.count || 1; // из JSON
+       totalFrequency.set(b.name, (totalFrequency.get(b.name)||0) + cnt);
+    }
+    for(const p of v.cards) {
+       for(const name of p.names) {
+          totalFrequency.set(name, (totalFrequency.get(name)||0) + 1);
+       }
+    }
+
     for(const b of v.brands.values())if(b.order){
       if(!ranks.has(b.name))ranks.set(b.name,[]);
       ranks.get(b.name).push(b.order);
@@ -460,7 +477,7 @@ function aggregate(views,channel){
       d.pages.get(s.url).n++;
     }
   }
-  return {frequency,ranks,matrix,domains,types,urls,ownRows,confirmed,cards,measured,ownCount,measuredAnswers,answerHits,pending,checked,issues,anyProductData};
+  return {frequency,totalFrequency,ranks,matrix,domains,types,urls,ownRows,confirmed,cards,measured,ownCount,measuredAnswers,answerHits,pending,checked,issues,anyProductData};
 }
 function value(id,n,note=''){
   const el=$(id);el.textContent=n;el.parentElement.title=note;
@@ -496,8 +513,15 @@ function renderBrandPositions(){
   $('positionNote').textContent=own.length?'BRANDFREE по местам · '+distribution(own):'';
 }
 function renderTopBrands(){
-  const rows=rankByCount(metrics.frequency).slice(0,15),max=rows[0]?.[1]||1;
-  $('topBrands').innerHTML=rows.map(([name,n])=>bar(name,100*n/max,nfmt(n),n+' из '+metrics.measured+' записей с доступными данными')).join('')||
+  const mode = $('topMode').value;
+  const data = mode === 'total' ? metrics.totalFrequency : metrics.frequency;
+  const desc = mode === 'total' 
+    ? 'Общее количество упоминаний (каждое повторение в тексте считается отдельно).'
+    : 'Число записей с брендом (в одной записи бренд считается один раз).';
+  $('topDesc').textContent = desc;
+
+  const rows=rankByCount(data).slice(0,15),max=rows[0]?.[1]||1;
+  $('topBrands').innerHTML=rows.map(([name,n])=>bar(name,100*n/max,nfmt(n),n+' упоминаний')).join('')||
     empty(metrics.measured?'В текстах и карточках бренды не найдены.':'Нет текста, разметки или карточек для подсчёта.');
 }
 function renderHeat(){
@@ -605,7 +629,7 @@ document.addEventListener('toggle',event=>{
 function renderAll(){
   renderKPI();renderBrandPositions();renderTopBrands();renderHeat();renderOurBrandTable();renderSources();
 }
-for(const id of ['fEngine','fQueryType'])$(id).onchange=applyFilters;
+for(const id of ['fEngine','fQueryType','topMode'])$(id).onchange=applyFilters;
 $('fQuery').oninput=applyFilters;
 $('reset').onclick=()=>{for(const id of ['fEngine','fQueryType','fQuery'])$(id).value='';applyFilters()};
 $('files').onchange=e=>importFiles([...e.target.files]);
